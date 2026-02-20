@@ -1,0 +1,29 @@
+{
+  "lesson_id": "a1-likes-dislikes",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Me mola mucho escuchar música y salir con los amigos.",
+        "translation": "I really like listening to music and going out with friends."
+      },
+      {
+        "line_index": 3,
+        "text": "Sí, me encanta el fútbol, pero no me gusta nada el rugby.",
+        "translation": "Yes, I love football, but I don't like rugby at all."
+      },
+      {
+        "line_index": 6,
+        "text": "Me gusta el flamenco y la música indie. ¿Y a ti?",
+        "translation": "I like flamenco and indie music. And you?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'molar' is a very common colloquial verb meaning 'to like/to be cool': 'me mola' = 'I like it / it's cool'. It's informal and widely used by young and middle-aged Spaniards. More formal: 'me gusta'.",
+      "gestures": "Pinching fingers and pulling away = chef's kiss = 'delicious / excellent'. This is used both for food and for things you love.",
+      "regional_variations": "Football (fútbol) dominates Spanish sporting culture. FC Barcelona vs Real Madrid (El Clásico) is a national event. 'Guay' means cool/great in Spain (not used in Latin America).",
+      "distincion": "'Me fascina' [me fasˈθina] and 'me encanta' — note the /θ/ in 'fascina'. 'Felicidades' [feliθiˈðaðes] is another /θ/ word heard when celebrating someone's interests or achievements."
+    }
+  }
+}

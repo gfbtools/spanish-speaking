@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "lesson_id": "",
+    "level": "A1",
+    "dialect": "es-PR",
+    "version": "1.0",
+    "estimated_minutes": 0,
+    "prerequisite_ids": [],
+    "confidence_score": 0,
+    "human_review": false
+  },
+
+  "title": {
+    "native": "",
+    "localized": ""
+  },
+
+  "objectives": [],
+
+  "lesson_flow": [
+    {
+      "activity_id": "",
+      "type": "vocabulary | dialogue | exercise | speaking",
+      "title": "",
+      "estimated_minutes": 0
+    }
+  ],
+
+  "content": {
+    "vocabulary": [],
+    "dialogue": [],
+    "exercises": [],
+    "speaking": {},
+    "flashcards": []
+  },
+
+  "cultural_notes": {},
+
+  "telemetry": [],
+
+  "acceptance_criteria": [],
+
+  "sources": [],
+
+  "changelog": []
+}

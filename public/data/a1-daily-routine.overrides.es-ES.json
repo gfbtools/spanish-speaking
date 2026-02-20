@@ -1,0 +1,29 @@
+{
+  "lesson_id": "a1-daily-routine",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 3,
+        "text": "Desayuno a las ocho. Suelo tomar un café con tostadas.",
+        "translation": "I have breakfast at eight. I usually have a coffee with toast."
+      },
+      {
+        "line_index": 5,
+        "text": "Salgo a las nueve menos cuarto. Voy al trabajo en metro.",
+        "translation": "I leave at quarter to nine. I go to work by tube."
+      },
+      {
+        "line_index": 7,
+        "text": "Normalmente me acuesto a las doce. Leo un poco antes de dormir.",
+        "translation": "I normally go to bed at midnight. I read a bit before sleeping."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Spanish daily routines run significantly later than in the UK or US: breakfast 8–9am, lunch 2–3pm (the main meal), dinner 9–11pm. 'El aperitivo' (pre-lunch drink and snacks) is common on weekends.",
+      "gestures": "Yawning and stretching when talking about waking up is universal. In Spain, people often mime coffee-drinking when discussing morning routines.",
+      "regional_variations": "'La siesta' is less common in modern urban Spain than the stereotype suggests — most working people take a lunch break but not a formal nap. However, shops still close 2–5pm in many towns.",
+      "distincion": "'Acostarse' [akosˈtaɾse] vs 'despertarse' [despeɾˈtaɾse] — no /θ/ issue in these verbs, but 'almorzar' [almoɾˈθaɾ] features the Castilian /θ/ in the stem."
+    }
+  }
+}

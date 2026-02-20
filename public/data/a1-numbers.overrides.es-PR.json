@@ -1,0 +1,16 @@
+{
+  "lesson_id": "a1-numbers",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 2, "text": "¿Y cuántos años tú tienes?", "translation": "And how old are you?" },
+      { "line_index": 4, "text": "¿Y cuál es tu dirección?", "translation": "And what is your address?" }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, phone numbers are often read as three groups — area code (787 or 939), then two groups of four digits. Age is asked and shared freely in casual conversation.",
+      "gestures": "Puerto Ricans may use 'bregar' (to deal with, to handle) when talking about numbers in context — 'Tengo que bregar con eso' (I have to deal with that). Numbers in addresses sometimes use English street names.",
+      "regional_variations": "Many Puerto Ricans switch to English numbers when giving phone numbers or addresses, especially with younger speakers. Both are perfectly acceptable — '55 / fifty-five' are interchangeable."
+    },
+    "phoneme_tolerance_adjustments": { "s_aspiration": true, "d_deletion": true }
+  }
+}

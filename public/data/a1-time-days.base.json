@@ -1,0 +1,105 @@
+{
+  "lesson_id": "a1-time-days",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": { "native": "El Tiempo y los Días", "localized": "Time, Days & Months" },
+  "objectives": [
+    "Tell and ask the time in Spanish",
+    "Name the days of the week and months",
+    "Talk about schedules and appointments",
+    "Use a.m./p.m. and 24-hour references"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": ["a1-numbers"],
+  "activities": [
+    { "activity_id": "act-time-1", "type": "vocabulary", "title": "Días y Meses", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-time-2", "type": "dialogue", "title": "Diálogo", "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-time-3", "type": "exercise", "title": "Práctica", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-time-4", "type": "speaking", "title": "Habla", "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Paciente", "text": "Disculpe, ¿a qué hora abre la clínica?", "translation": "Excuse me, what time does the clinic open?", "ipa": "[disˈkulpe ‖ a ke ˈoɾa ˈaβɾe la ˈklinika]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-001", "alternate_phrasing": [], "context": "Asking about opening hours" },
+    { "speaker": "Recepcionista", "text": "Abrimos a las ocho de la mañana.", "translation": "We open at eight in the morning.", "ipa": "[aˈβɾimos a las ˈotʃo ðe la maˈɲana]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-002", "alternate_phrasing": [], "context": "Stating opening time" },
+    { "speaker": "Paciente", "text": "¿Y qué días están abiertos?", "translation": "And which days are you open?", "ipa": "[i ke ˈðias esˈtan aˈβjeɾtos]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-003", "alternate_phrasing": [], "context": "Asking about open days" },
+    { "speaker": "Recepcionista", "text": "De lunes a viernes. Los sábados, solo por la mañana.", "translation": "Monday through Friday. Saturdays, mornings only.", "ipa": "[de ˈlunes a ˈβjeɾnes ‖ los ˈsaβaðos ˈsolo poɾ la maˈɲana]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-004", "alternate_phrasing": [], "context": "Stating weekly schedule" },
+    { "speaker": "Paciente", "text": "¿Puedo hacer una cita para el martes?", "translation": "Can I make an appointment for Tuesday?", "ipa": "[ˈpweðo aˈseɾ ˈuna ˈsita ˈpaɾa el ˈmaɾtes]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-005", "alternate_phrasing": [], "context": "Requesting an appointment" },
+    { "speaker": "Recepcionista", "text": "Sí, ¿a las diez y media le parece bien?", "translation": "Yes, does ten thirty work for you?", "ipa": "[ˈsi ‖ a las ˈdjes i ˈmeðja le paˈɾese ˈβjen]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-006", "alternate_phrasing": [], "context": "Proposing a time" },
+    { "speaker": "Paciente", "text": "Perfecto. El martes a las diez y media.", "translation": "Perfect. Tuesday at ten thirty.", "ipa": "[peɾˈfekto ‖ el ˈmaɾtes a las ˈdjes i ˈmeðja]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-007", "alternate_phrasing": [], "context": "Confirming appointment" },
+    { "speaker": "Recepcionista", "text": "Muy bien. ¡Hasta el martes!", "translation": "Very good. See you Tuesday!", "ipa": "[ˈmuj ˈβjen ‖ ˈasta el ˈmaɾtes]", "dialect": "es-MX", "audio_asset_id": "a1-time-mx-008", "alternate_phrasing": [], "context": "Closing the conversation" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a1-time-mx-c001", "front": "¿Qué hora es?", "back": "What time is it?", "ipa": "[ke ˈoɾa es]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-time-mx-c002", "front": "Son las tres y cuarto", "back": "It's quarter past three", "ipa": "[son las ˈtɾes i ˈkwaɾto]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-time-mx-c003", "front": "lunes, martes, miércoles", "back": "Monday, Tuesday, Wednesday", "ipa": "[ˈlunes ‖ ˈmaɾtes ‖ ˈmjeɾkoles]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-time-mx-c004", "front": "jueves, viernes, sábado, domingo", "back": "Thursday, Friday, Saturday, Sunday", "ipa": "[ˈxweβes ‖ ˈβjeɾnes ‖ ˈsaβaðo ‖ doˈmiŋɡo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-time-mx-c005", "front": "por la mañana / tarde / noche", "back": "in the morning / afternoon / evening", "ipa": "[poɾ la maˈɲana ‖ ˈtaɾðe ‖ ˈnotʃe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-time-mx-c006", "front": "una cita", "back": "an appointment", "ipa": "[ˈuna ˈsita]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-time-mx-c007", "front": "Es la una / Son las dos", "back": "It's one o'clock / It's two o'clock", "ipa": "[es la ˈuna ‖ son las ˈðos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-time-mx-c008", "front": "y media / y cuarto / menos cuarto", "back": "half past / quarter past / quarter to", "ipa": "[i ˈmeðja ‖ i ˈkwaɾto ‖ ˈmenos ˈkwaɾto]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-time-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta",
+      "question": "How do you say 'It's half past two'?",
+      "options": [
+        { "text": "Son las dos y media.", "correct": true },
+        { "text": "Son las dos y cuarto.", "correct": false },
+        { "text": "Es la dos y media.", "correct": false },
+        { "text": "Son las medias dos.", "correct": false }
+      ],
+      "feedback": { "correct": "¡Correcto! 'Son las dos y media' — 'son las' for all hours except 1.", "incorrect": "Remember: 'Son las [hour] y media' for half past. Only 'Es la una' for 1 o'clock." }
+    },
+    {
+      "exercise_id": "ex-time-mx-002",
+      "type": "matching",
+      "instruction": "Une el día con su posición en la semana",
+      "pairs": [
+        { "spanish": "lunes", "english": "1st day (Monday)" },
+        { "spanish": "miércoles", "english": "3rd day (Wednesday)" },
+        { "spanish": "viernes", "english": "5th day (Friday)" },
+        { "spanish": "domingo", "english": "Last day (Sunday)" }
+      ]
+    },
+    {
+      "exercise_id": "ex-time-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación sobre horarios",
+      "dialogue": [
+        { "speaker": "A", "text": "¿A qué _____ abre el banco?" },
+        { "speaker": "B", "text": "Abre a las _____ de la mañana. (9)" },
+        { "speaker": "A", "text": "¿Y qué _____ está abierto?" },
+        { "speaker": "B", "text": "De _____ a viernes." }
+      ],
+      "answers": ["hora", "nueve", "días", "lunes"],
+      "acceptable_variants": { "hora": [], "nueve": [], "días": [], "lunes": [] }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-time-mx-roleplay",
+    "type": "roleplay",
+    "title": "Haz una cita (Make an appointment)",
+    "scenario": "Call a doctor's office and schedule an appointment for next Thursday at 4pm.",
+    "prompt": "Pide una cita para el jueves a las cuatro de la tarde.",
+    "expected_elements": ["day of week", "time", "polite request"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear day and time pronunciation" },
+      { "criterion": "completeness", "weight": 0.4, "description": "Day, time and request all present" },
+      { "criterion": "fluency", "weight": 0.3, "description": "Natural conversational pace" }
+    ],
+    "sample_response": { "text": "Buenos días. ¿Puedo hacer una cita para el jueves a las cuatro de la tarde?", "ipa": "[ˈbwenos ˈðias ‖ ˈpweðo aˈseɾ ˈuna ˈsita ˈpaɾa el ˈxweβes a las ˈkwatɾo ðe la ˈtaɾðe]" }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, punctuality varies by context — business meetings are expected to start on time, but social events often start 30–60 min late ('la hora mexicana'). Appointments at clinics and offices are taken seriously.",
+    "gestures": "When referencing time, Mexicans often tap their wrist or point to where a watch would be even if not wearing one.",
+    "regional_variations": "In Mexico, the 12-hour clock is standard in conversation. '24:00' format is used on official schedules and transport timetables.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": ["Covers time telling", "Days of week all named", "Appointment-making scenario", "Three exercise types"],
+  "confidence_score": 0.94,
+  "human_review": false
+}

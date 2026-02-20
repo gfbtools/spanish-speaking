@@ -1,0 +1,227 @@
+{
+  "lesson_id": "a1-family",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "La Familia",
+    "localized": "Family"
+  },
+  "objectives": [
+    "Talk about your family and ask about others",
+    "Use possessive adjectives (mi, tu, su)",
+    "Use 'hay' for there is/are",
+    "Describe family relationships"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": ["a1-greetings", "a1-introducing-yourself"],
+  "activities": [
+    {
+      "activity_id": "act-1-vocabulary",
+      "type": "vocabulary",
+      "title": "Miembros de la Familia",
+      "content": {
+        "words": [
+          {"word": "madre", "translation": "mother", "ipa": "[ˈmaðɾe]"},
+          {"word": "padre", "translation": "father", "ipa": "[ˈpaðɾe]"},
+          {"word": "hermano", "translation": "brother", "ipa": "[eɾˈmano]"},
+          {"word": "hermana", "translation": "sister", "ipa": "[eɾˈmana]"},
+          {"word": "abuelo", "translation": "grandfather", "ipa": "[aˈβwelo]"},
+          {"word": "abuela", "translation": "grandmother", "ipa": "[aˈβwela]"},
+          {"word": "hijo", "translation": "son", "ipa": "[ˈixo]"},
+          {"word": "hija", "translation": "daughter", "ipa": "[ˈixa]"},
+          {"word": "esposo", "translation": "husband", "ipa": "[esˈposo]"},
+          {"word": "esposa", "translation": "wife", "ipa": "[esˈposa]"},
+          {"word": "primo", "translation": "cousin (male)", "ipa": "[ˈpɾimo]"},
+          {"word": "prima", "translation": "cousin (female)", "ipa": "[ˈpɾima]"},
+          {"word": "familia", "translation": "family", "ipa": "[faˈmilja]"},
+          {"word": "casado", "translation": "married", "ipa": "[kaˈsaðo]"},
+          {"word": "soltero", "translation": "single", "ipa": "[solˈteɾo]"}
+        ]
+      },
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-2-dialogue",
+      "type": "dialogue",
+      "title": "Hablando de la Familia",
+      "content": {"scenario": "Two friends talking about their families"},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-3-exercises",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    },
+    {
+      "activity_id": "act-4-speaking",
+      "type": "speaking",
+      "title": "Describe tu Familia",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "María",
+      "text": "¿Tienes hermanos?",
+      "ipa": "[ˈtjenes eɾˈmanos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-001",
+      "alternate_phrasing": [
+        {"dialect": "es-ES", "text": "¿Tienes hermanos?", "ipa": "[ˈtjenes eɾˈmanos]", "confidence_score": 1.0},
+        {"dialect": "es-PR", "text": "¿Tú tienes hermanos?", "ipa": "[tu ˈtjeneh eɾˈmanoh]", "confidence_score": 0.95}
+      ],
+      "context": "Asking about siblings"
+    },
+    {
+      "speaker": "Juan",
+      "text": "Sí, tengo dos hermanos. ¿Y tú?",
+      "ipa": "[ˈsi ˈteŋɡo ðos eɾˈmanos ‖ i ˈtu]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-002",
+      "alternate_phrasing": [
+        {"dialect": "es-PR", "text": "Sí, tengo dos hermanos. ¿Y tú?", "ipa": "[ˈsi ˈteŋɡo doh eɾˈmanoh]", "confidence_score": 0.96}
+      ],
+      "context": "Responding and asking back"
+    },
+    {
+      "speaker": "María",
+      "text": "No, soy hijo único. Pero tengo muchos primos.",
+      "ipa": "[ˈno ‖ soj ˈixo ˈuniko ‖ ˈpeɾo ˈteŋɡo ˈmutʃos ˈpɾimos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-003",
+      "alternate_phrasing": [
+        {"dialect": "es-PR", "text": "No, soy hijo único. Pero tengo muchos primos.", "ipa": "[ˈno ‖ soj ˈixo ˈuniko]", "confidence_score": 0.95}
+      ],
+      "context": "Describing family situation"
+    },
+    {
+      "speaker": "Juan",
+      "text": "¿Cómo se llaman tus padres?",
+      "ipa": "[ˈkomo se ˈʝaman tus ˈpaðɾes]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-004",
+      "alternate_phrasing": [
+        {"dialect": "es-ES", "text": "¿Cómo se llaman tus padres?", "ipa": "[ˈkomo se ˈʝaman tus ˈpaðɾes]", "confidence_score": 1.0}
+      ],
+      "context": "Asking about parents' names"
+    },
+    {
+      "speaker": "María",
+      "text": "Mi madre se llama Carmen y mi padre se llama José.",
+      "ipa": "[mi ˈmaðɾe se ˈʝama ˈkaɾmen i mi ˈpaðɾe se ˈʝama xoˈse]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-005",
+      "alternate_phrasing": [],
+      "context": "Giving parents' names"
+    },
+    {
+      "speaker": "Juan",
+      "text": "¿Tus abuelos viven contigo?",
+      "ipa": "[tus aˈβweloˈs ˈβiβen konˈtixo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-006",
+      "alternate_phrasing": [],
+      "context": "Asking about grandparents"
+    },
+    {
+      "speaker": "María",
+      "text": "No, viven en otro estado. Los visito los fines de semana.",
+      "ipa": "[ˈno ˈβiβen en ˈotɾo esˈtaðo ‖ los βiˈsito los ˈfines ðe seˈmana]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-fam-mx-007",
+      "alternate_phrasing": [],
+      "context": "Explaining grandparents' living situation"
+    }
+  ],
+  "srs_flashcards": [
+    {"card_id": "a1-fam-mx-card-001", "front": "madre", "back": "mother", "ipa": "[ˈmaðɾe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-002", "front": "padre", "back": "father", "ipa": "[ˈpaðɾe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-003", "front": "hermano/a", "back": "brother/sister", "ipa": "[eɾˈmano/a]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-004", "front": "abuelo/a", "back": "grandfather/grandmother", "ipa": "[aˈβwelo/a]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-005", "front": "hijo/a", "back": "son/daughter", "ipa": "[ˈixo/a]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-006", "front": "primo/a", "back": "cousin", "ipa": "[ˈpɾimo/a]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-007", "front": "familia", "back": "family", "ipa": "[faˈmilja]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-fam-mx-card-008", "front": "¿Tienes hermanos?", "back": "Do you have siblings?", "ipa": "[ˈtjenes eɾˈmanos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false}
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-fam-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta",
+      "question": "¿Cómo se dice 'mother' en español?",
+      "options": [
+        {"text": "madre", "correct": true},
+        {"text": "padre", "correct": false},
+        {"text": "hermana", "correct": false},
+        {"text": "abuela", "correct": false}
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Madre' means mother.",
+        "incorrect": "Recuerda: madre = mother, padre = father"
+      }
+    },
+    {
+      "exercise_id": "ex-fam-mx-002",
+      "type": "matching",
+      "instruction": "Une la palabra con su significado",
+      "pairs": [
+        {"spanish": "hermano", "english": "brother"},
+        {"spanish": "prima", "english": "cousin (female)"},
+        {"spanish": "abuelo", "english": "grandfather"},
+        {"spanish": "hija", "english": "daughter"}
+      ]
+    },
+    {
+      "exercise_id": "ex-fam-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con mi, tu o su",
+      "dialogue": [
+        {"speaker": "A", "text": "¿_____ madre se llama María?"},
+        {"speaker": "B", "text": "Sí, _____ madre es María. ¿Y _____ padre?"},
+        {"speaker": "A", "text": "_____ padre se llama Carlos."}
+      ],
+      "answers": ["Tu", "mi", "tu", "Mi"],
+      "acceptable_variants": {
+        "Tu": ["tu"],
+        "mi": ["mi"],
+        "Mi": ["mi"]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-fam-mx-roleplay",
+    "type": "roleplay",
+    "title": "Describe tu Familia",
+    "scenario": "Talk about your family with a new friend.",
+    "prompt": "Describe 3 family members. Mention their relationship to you and one characteristic.",
+    "expected_elements": ["family_members", "relationships", "descriptions"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {"criterion": "pronunciation", "weight": 0.35, "description": "Clear pronunciation"},
+      {"criterion": "completeness", "weight": 0.35, "description": "All expected elements included"},
+      {"criterion": "fluency", "weight": 0.3, "description": "Natural pace and flow"}
+    ],
+    "sample_response": {
+      "text": "Mi madre es alta. Mi padre es inteligente. Tengo un hermano.",
+      "ipa": "[mi ˈmaðɾe es ˈalta ‖ mi ˈpaðɾe es ĩnteˈlixente ‖ ˈteŋɡo un eɾˈmano]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, family is very important. Using possessives (mi, tu, su) correctly shows respect.",
+    "family_values": "Extended family (primos, tíos, abuelos) are often very close in Mexican culture.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "User can name 5+ family members",
+    "User can use possessive adjectives correctly",
+    "User can ask about others' families",
+    "Speaking intelligibility score ≥ 0.65"
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

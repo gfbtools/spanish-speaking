@@ -1,0 +1,42 @@
+{
+  "lesson_id": "a1-restaurant-ordering",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¡Buenas noches! ¿Mesa para dos?",
+        "translation": "Good evening! Table for two?"
+      },
+      {
+        "line_index": 1,
+        "text": "Sí, por favor. ¿Tienen una mesa cerca de la ventana?",
+        "translation": "Yes please. Do you have a table near the window?"
+      },
+      {
+        "line_index": 4,
+        "text": "Agua para mí, por favor. ¿Qué tú recomiendas?",
+        "translation": "Water for me please. What do you recommend?"
+      },
+      {
+        "line_index": 5,
+        "text": "El mofongo está buenísimo hoy.",
+        "translation": "The mofongo is excellent today."
+      },
+      {
+        "line_index": 6,
+        "text": "¡Perfecto! Quiero el mofongo y una ensalada, por favor.",
+        "translation": "Perfect! I'd like the mofongo and a salad please."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rican restaurants, service is warm and personal. It's common to chat with your server. Saying '¿Cómo estás?' to your waiter is natural and appreciated, not overly familiar.",
+      "menu_customs": "Puerto Rican cuisine staples you'll see on menus: mofongo (mashed plantains with garlic), tostones (fried plantains), arroz con gandules (rice with pigeon peas), pernil (roast pork). 'La propina' (the tip) is sometimes included — check the bill.",
+      "regional_variations": "You may hear 'jeva' or 'pana' used by younger servers casually. 'El bill' or 'la cuenta' both work for asking for the check. 'Un momentito' is the polite way to signal you need a moment."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

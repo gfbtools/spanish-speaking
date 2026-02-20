@@ -1,0 +1,24 @@
+{
+  "lesson_id": "a1-present-tense",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Trabajo en un colegio. Enseño matemáticas.",
+        "translation": "I work at a school. I teach maths."
+      },
+      {
+        "line_index": 5,
+        "text": "No, no como en el colegio. Vuelvo a casa para comer.",
+        "translation": "No, I don't eat at school. I go back home to eat."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'vosotros' is the second-person plural: 'vosotros trabajáis, coméis, vivís'. This is completely absent in Latin America, which uses 'ustedes' for all plural. Learning vosotros conjugations is essential for speaking with Spaniards.",
+      "gestures": "Counting verb forms on fingers is a universal teacher technique in Spain — holding up fingers for each person: yo, tú, él/ella, nosotros, vosotros, ellos.",
+      "regional_variations": "'Conducir' (to drive) is used in Spain, while Latin America uses 'manejar'. 'Coger' (to take/catch) is common in Spain for taking transport: 'Cojo el metro' — but this word has a vulgar meaning in Latin America, so avoid it there.",
+      "distincion": "Vosotros present tense: -AR → trabajáis, -ER → coméis, -IR → vivís. The accent on the ending is important: habláis [aˈblais], coméis [koˈmeis], vivís [biˈbis]."
+    }
+  }
+}

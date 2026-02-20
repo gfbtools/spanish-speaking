@@ -1,0 +1,381 @@
+{
+  "lesson_id": "a1-ser-estar",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Ser y Estar",
+    "localized": "Ser vs Estar (Intro)"
+  },
+  "objectives": [
+    "Distinguish when to use ser vs estar",
+    "Use ser for identity, origin, and permanent traits",
+    "Use estar for location, feelings, and temporary states",
+    "Form basic sentences with both verbs"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a1-greetings"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-se-1",
+      "type": "vocabulary",
+      "title": "Ser y Estar",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-se-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-se-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-se-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Profesora",
+      "text": "¿De dónde es usted, señor López?",
+      "translation": "Where are you from, Mr. López?",
+      "ipa": "[de ˈdonde es usˈteð seˈɲoɾ loˈpes]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-001",
+      "alternate_phrasing": [],
+      "context": "Using ser for origin (formal)"
+    },
+    {
+      "speaker": "Sr. López",
+      "text": "Soy de Veracruz, pero ahora estoy aquí en la capital.",
+      "translation": "I'm from Veracruz, but now I'm here in the capital.",
+      "ipa": "[ˈsoj ðe βeɾaˈkɾus ˈpeɾo aˈoɾa esˈtoj aˈki en la kapiˈtal]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-002",
+      "alternate_phrasing": [],
+      "context": "Ser for origin, estar for current location"
+    },
+    {
+      "speaker": "Profesora",
+      "text": "¿Cómo está usted hoy?",
+      "translation": "How are you today?",
+      "ipa": "[ˈkomo esˈta usˈteð ˈoj]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-003",
+      "alternate_phrasing": [],
+      "context": "Estar for current state/feeling"
+    },
+    {
+      "speaker": "Sr. López",
+      "text": "Estoy un poco cansado. Es que trabajo mucho.",
+      "translation": "I'm a bit tired. It's because I work a lot.",
+      "ipa": "[esˈtoj um ˈpoko kanˈsaðo ‖ es ke tɾaˈβaxo ˈmutʃo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-004",
+      "alternate_phrasing": [],
+      "context": "Estar for temporary feeling, ser in fixed expression"
+    },
+    {
+      "speaker": "Profesora",
+      "text": "¿Es usted casado?",
+      "translation": "Are you married?",
+      "ipa": "[es usˈteð kaˈsaðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-005",
+      "alternate_phrasing": [],
+      "context": "Ser for civil status"
+    },
+    {
+      "speaker": "Sr. López",
+      "text": "Sí, soy casado. Mi esposa es médica — es muy inteligente.",
+      "translation": "Yes, I'm married. My wife is a doctor — she's very intelligent.",
+      "ipa": "[ˈsi ˈsoj kaˈsaðo ‖ mi esˈposa es ˈmeðika ‖ es ˈmuj inteliˈxente]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-006",
+      "alternate_phrasing": [],
+      "context": "Ser for marital status and profession"
+    },
+    {
+      "speaker": "Profesora",
+      "text": "¿Dónde está ella ahora?",
+      "translation": "Where is she now?",
+      "ipa": "[ˈdonde esˈta ˈeʝa aˈoɾa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-007",
+      "alternate_phrasing": [],
+      "context": "Estar for location"
+    },
+    {
+      "speaker": "Sr. López",
+      "text": "Está en el hospital. El hospital está en el centro de la ciudad.",
+      "translation": "She's at the hospital. The hospital is in the city centre.",
+      "ipa": "[esˈta en el ospiˈtal ‖ el ospiˈtal esˈta en el ˈθentɾo ðe la θjuˈðað]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-se-mx-008",
+      "alternate_phrasing": [],
+      "context": "Estar for person's location and place's location"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-se-mx-c001",
+      "front": "SER: soy, eres, es, somos, son",
+      "back": "I am, you are, he/she is, we are, they are (identity)",
+      "ipa": "[ˈsoj ‖ ˈeɾes ‖ es ‖ ˈsomos ‖ ˈson]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c002",
+      "front": "ESTAR: estoy, estás, está, estamos, están",
+      "back": "I am, you are, he/she is... (location/state)",
+      "ipa": "[esˈtoj ‖ esˈtas ‖ esˈta ‖ esˈtamos ‖ esˈtan]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c003",
+      "front": "SER → identity, origin, profession",
+      "back": "Soy mexicano. Soy médico. Soy de Guadalajara.",
+      "ipa": "[ˈsoj mexiˈkano ‖ ˈsoj ˈmeðiko ‖ ˈsoj ðe ɡwaðalaˈxaɾa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c004",
+      "front": "ESTAR → location, feelings, conditions",
+      "back": "Estoy en casa. Estoy cansado. La tienda está cerrada.",
+      "ipa": "[esˈtoj en ˈkasa ‖ esˈtoj kanˈsaðo ‖ la ˈtjenða esˈta θeˈɾaða]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c005",
+      "front": "Estoy bien / mal / regular",
+      "back": "I'm well / bad / so-so",
+      "ipa": "[esˈtoj ˈβjen ‖ ˈmal ‖ reɣuˈlaɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c006",
+      "front": "¿Cómo estás? vs ¿Cómo eres?",
+      "back": "How are you (now)? vs What are you like (personality)?",
+      "ipa": "[ˈkomo esˈtas ‖ ˈkomo ˈeɾes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c007",
+      "front": "El banco está cerrado.",
+      "back": "The bank is closed. (temporary state → estar)",
+      "ipa": "[el ˈbaŋko esˈta θeˈɾaðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-se-mx-c008",
+      "front": "Es doctor. / Está enfermo.",
+      "back": "He is a doctor (profession) / He is sick (state)",
+      "ipa": "[es dokˈtoɾ ‖ esˈta enˈfeɾmo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-se-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge: ¿ser o estar?",
+      "question": "Mi abuela ___ de Oaxaca. (origin)",
+      "options": [
+        {
+          "text": "es",
+          "correct": true
+        },
+        {
+          "text": "está",
+          "correct": false
+        },
+        {
+          "text": "son",
+          "correct": false
+        },
+        {
+          "text": "estoy",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! Origin uses SER: 'Mi abuela es de Oaxaca.'",
+        "incorrect": "For origin, always use SER: '¿De dónde eres?' — 'Soy de...'."
+      }
+    },
+    {
+      "exercise_id": "ex-se-mx-002",
+      "type": "matching",
+      "instruction": "Une la frase con el uso correcto de ser/estar",
+      "pairs": [
+        {
+          "spanish": "La biblioteca está en el centro.",
+          "english": "ESTAR → location"
+        },
+        {
+          "spanish": "Ella es profesora.",
+          "english": "SER → profession"
+        },
+        {
+          "spanish": "Estoy muy cansado hoy.",
+          "english": "ESTAR → temporary state"
+        },
+        {
+          "spanish": "Somos mexicanos.",
+          "english": "SER → identity/nationality"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-se-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con ser o estar (forma correcta)",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿De dónde _____ tú?"
+        },
+        {
+          "speaker": "B",
+          "text": "_____ de Monterrey. ¿Y tú?"
+        },
+        {
+          "speaker": "A",
+          "text": "_____ de aquí. ¿Cómo _____ hoy?"
+        },
+        {
+          "speaker": "B",
+          "text": "_____ bien, gracias."
+        }
+      ],
+      "answers": [
+        "eres",
+        "Soy",
+        "Soy",
+        "estás",
+        "Estoy"
+      ],
+      "acceptable_variants": {
+        "eres": [],
+        "Soy": [
+          "soy"
+        ],
+        "estás": [],
+        "Estoy": [
+          "estoy"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-se-mx",
+    "type": "roleplay",
+    "title": "Preséntate completamente",
+    "scenario": "Introduce yourself fully: name, origin, profession, and how you're feeling today.",
+    "prompt": "Usa ser y estar para presentarte y decir cómo estás.",
+    "expected_elements": [
+      "ser for name",
+      "ser for origin",
+      "ser for profession or quality",
+      "estar for current feeling"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Ser and estar forms clearly distinguished"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Both verbs used correctly at least once each"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Introduction sounds natural"
+      }
+    ],
+    "sample_response": {
+      "text": "Me llamo Claudia. Soy de México. Soy estudiante. Hoy estoy un poco cansada pero estoy bien.",
+      "ipa": "[me ˈʝamo ˈklawðja ‖ ˈsoj ðe ˈmexiko ‖ ˈsoj estu ˈðjante ‖ ˈoj esˈtoj um ˈpoko kanˈsaða ˈpeɾo esˈtoj ˈβjen]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Ser/estar is the most common challenge for English speakers learning Spanish. In Mexico, 'estar casado' (estar for married) and 'ser casado' are both used — estar is slightly more common. Context resolves ambiguity.",
+    "gestures": "No specific gesture for this grammar point, but teachers often use two hands to represent the two verbs — permanent (closed fist = SER) vs temporary (open palm = ESTAR).",
+    "regional_variations": "'¿Cómo estamos?' (How are we doing?) is a warm, inclusive greeting in Mexico used by shopkeepers, teachers, and hosts. It uses estar but feels like a fixed expression.",
+    "confidence_score": 0.97,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "Ser and estar contrasted clearly",
+    "Location, feelings, origin, profession all covered",
+    "Three exercise types",
+    "Speaking rubric uses both verbs"
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

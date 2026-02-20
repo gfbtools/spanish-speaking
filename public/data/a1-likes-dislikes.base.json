@@ -1,0 +1,368 @@
+{
+  "lesson_id": "a1-likes-dislikes",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Gustos y Preferencias",
+    "localized": "Likes & Preferences"
+  },
+  "objectives": [
+    "Use gustar to express likes and dislikes",
+    "Talk about hobbies and free time",
+    "Express opinions with me gusta/no me gusta",
+    "Ask others about their preferences"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [
+    "a1-greetings",
+    "a1-present-tense"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-ld-1",
+      "type": "vocabulary",
+      "title": "Pasatiempos",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-ld-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-ld-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-ld-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Sara",
+      "text": "¿Qué te gusta hacer en tu tiempo libre?",
+      "translation": "What do you like to do in your free time?",
+      "ipa": "[ke te ˈɡusta aˈseɾ en tu ˈtjempo ˈliβɾe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-001",
+      "alternate_phrasing": [],
+      "context": "Asking about hobbies"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "Me gusta mucho escuchar música y salir con amigos.",
+      "translation": "I really like listening to music and going out with friends.",
+      "ipa": "[me ˈɡusta ˈmutʃo eskuˈtʃaɾ ˈmusika i saˈliɾ kon aˈmiɣos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-002",
+      "alternate_phrasing": [],
+      "context": "Stating likes"
+    },
+    {
+      "speaker": "Sara",
+      "text": "¿Te gusta el deporte?",
+      "translation": "Do you like sport?",
+      "ipa": "[te ˈɡusta el deˈpoɾte]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking about sport"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "Sí, me encanta el fútbol, pero no me gusta el béisbol.",
+      "translation": "Yes, I love football, but I don't like baseball.",
+      "ipa": "[ˈsi me enˈkanta el ˈfutβol ˈpeɾo no me ˈɡusta el ˈbejsβol]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-004",
+      "alternate_phrasing": [],
+      "context": "Expressing strong likes and dislikes"
+    },
+    {
+      "speaker": "Sara",
+      "text": "¿Y qué tipo de música te gusta?",
+      "translation": "And what kind of music do you like?",
+      "ipa": "[i ke ˈtipo ðe ˈmusika te ˈɡusta]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-005",
+      "alternate_phrasing": [],
+      "context": "Asking about music preference"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "Me gusta el rock y la música regional mexicana. ¿Y a ti?",
+      "translation": "I like rock and regional Mexican music. And you?",
+      "ipa": "[me ˈɡusta el ˈrok i la ˈmusika reˈxjonal mexiˈkana ‖ i a ˈti]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-006",
+      "alternate_phrasing": [],
+      "context": "Stating music preference and asking back"
+    },
+    {
+      "speaker": "Sara",
+      "text": "A mí me encanta el pop. No me gusta nada el reggaeton.",
+      "translation": "I love pop. I don't like reggaeton at all.",
+      "ipa": "[a ˈmi me enˈkanta el ˈpop ‖ no me ˈɡusta ˈnaða el reɣeˈton]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-007",
+      "alternate_phrasing": [],
+      "context": "Expressing preferences and strong dislike"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "¡Qué curioso! A mí me gusta muchísimo el reggaeton.",
+      "translation": "How interesting! I like reggaeton a lot.",
+      "ipa": "[ke kuˈɾjoso ‖ a ˈmi me ˈɡusta mutʃiˈsimo el reɣeˈton]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-ld-mx-008",
+      "alternate_phrasing": [],
+      "context": "Expressing surprise and counter-preference"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-ld-mx-c001",
+      "front": "Me gusta / No me gusta",
+      "back": "I like / I don't like",
+      "ipa": "[me ˈɡusta ‖ no me ˈɡusta]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c002",
+      "front": "Me encanta / Me fascina",
+      "back": "I love / I'm fascinated by",
+      "ipa": "[me enˈkanta ‖ me fasˈθina]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c003",
+      "front": "No me gusta nada",
+      "back": "I don't like it at all",
+      "ipa": "[no me ˈɡusta ˈnaða]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c004",
+      "front": "¿Qué te gusta hacer?",
+      "back": "What do you like to do?",
+      "ipa": "[ke te ˈɡusta aˈseɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c005",
+      "front": "el tiempo libre",
+      "back": "free time",
+      "ipa": "[el ˈtjempo ˈliβɾe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c006",
+      "front": "leer / cocinar / bailar",
+      "back": "to read / to cook / to dance",
+      "ipa": "[leˈeɾ ‖ koθiˈnaɾ ‖ bajˈlaɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c007",
+      "front": "¿A ti te gusta...?",
+      "back": "Do you (emphatic) like...?",
+      "ipa": "[a ˈti te ˈɡusta]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-ld-mx-c008",
+      "front": "el pasatiempo",
+      "back": "the hobby / pastime",
+      "ipa": "[el pasaˈtjempo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-ld-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta de gustar",
+      "question": "A ella ___ los libros de ciencia ficción.",
+      "options": [
+        {
+          "text": "le gustan",
+          "correct": true
+        },
+        {
+          "text": "le gusta",
+          "correct": false
+        },
+        {
+          "text": "les gusta",
+          "correct": false
+        },
+        {
+          "text": "me gustan",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Gustar' agrees with the subject (libros = plural → gustan), not the person.",
+        "incorrect": "'Gustar' is tricky — it agrees with what is liked, not who likes it. Libros is plural → gustan."
+      }
+    },
+    {
+      "exercise_id": "ex-ld-mx-002",
+      "type": "matching",
+      "instruction": "Une la expresión con su fuerza",
+      "pairs": [
+        {
+          "spanish": "Me gusta un poco",
+          "english": "I like it a little"
+        },
+        {
+          "spanish": "Me gusta mucho",
+          "english": "I like it a lot"
+        },
+        {
+          "spanish": "Me encanta",
+          "english": "I love it"
+        },
+        {
+          "spanish": "No me gusta nada",
+          "english": "I don't like it at all"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-ld-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa las frases sobre gustos",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿Te _____ cocinar?"
+        },
+        {
+          "speaker": "B",
+          "text": "Sí, me _____ mucho. ¿Y a ti?"
+        },
+        {
+          "speaker": "A",
+          "text": "A mí no me _____ nada. Prefiero comer."
+        }
+      ],
+      "answers": [
+        "gusta",
+        "gusta",
+        "gusta"
+      ],
+      "acceptable_variants": {
+        "gusta": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-ld-mx",
+    "type": "roleplay",
+    "title": "Mis gustos (My likes)",
+    "scenario": "You meet someone at a party. Share 3 things you love and 1 thing you dislike.",
+    "prompt": "Di tres cosas que te gustan y una que no te gusta.",
+    "expected_elements": [
+      "me gusta/encanta x3",
+      "no me gusta x1",
+      "at least one hobby"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Gustar forms clear"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Likes and dislike all expressed"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Natural conversational tone"
+      }
+    ],
+    "sample_response": {
+      "text": "Me encanta el fútbol y me gusta mucho cocinar. También me gusta leer. No me gusta nada madrugar.",
+      "ipa": "[me enˈkanta el ˈfutβol i me ˈɡusta ˈmutʃo koθiˈnaɾ ‖ tamˈbjen me ˈɡusta leˈeɾ ‖ no me ˈɡusta ˈnaða maðɾuˈɡaɾ]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "'Gustar' conversations are a staple of social bonding in Mexico. Music, food, sport and family are the most common topics. Don't be surprised if preferences lead to playful debate — Mexicans enjoy spirited discussion.",
+    "gestures": "Thumbs up = like, thumbs down = dislike. Chefs kiss gesture (kissing fingertips) indicates something is delicious or excellent.",
+    "regional_variations": "Fútbol means soccer everywhere. In Mexico, 'lucha libre' (wrestling) is a beloved cultural pastime. Telenovelas and regional music are genuinely popular topics of preference discussion.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "Gustar conjugated correctly",
+    "Likes and dislikes both covered",
+    "Intensity expressions taught",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.94,
+  "human_review": false
+}

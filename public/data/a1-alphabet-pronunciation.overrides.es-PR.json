@@ -1,0 +1,28 @@
+{
+  "lesson_id": "a1-alphabet-pronunciation",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 2,
+        "text": "Bien. ¿Y cómo se pronuncia la 'ñ' en Puerto Rico?",
+        "translation": "Good. And how is the 'ñ' pronounced in Puerto Rico?"
+      },
+      {
+        "line_index": 6,
+        "text": "¿Qué significa el acento escrito, como en 'café'?",
+        "translation": "What does the written accent mean, as in 'café'?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Puerto Rican Spanish has distinctive pronunciation features: final -s is often aspirated to [h] or dropped (buenos → buenoh or bueno), intervocalic -d is deleted (cansado → cansao), and -r and -l at syllable ends can interchange (Puerto → Puelto in very casual speech).",
+      "gestures": "When spelling names in PR, people often use city names or famous names to disambiguate letters: 'B de Borinquen' (B as in Borinquén — the indigenous name for Puerto Rico).",
+      "regional_variations": "In Puerto Rico, the 'r' in many words (especially at the end of syllables) is pronounced closer to [l]: 'verde' can sound like 'velde'. The double-r [rr] trill is strong and clear. These are regional features, not errors."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true,
+      "r_l_interchange": true
+    }
+  }
+}

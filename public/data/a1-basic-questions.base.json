@@ -1,0 +1,385 @@
+{
+  "lesson_id": "a1-basic-questions",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Preguntas Básicas",
+    "localized": "Question Formation"
+  },
+  "objectives": [
+    "Form questions using question words",
+    "Use ¿qué?, ¿quién?, ¿dónde?, ¿cuándo?, ¿cómo?, ¿por qué?",
+    "Understand and respond to simple questions",
+    "Use intonation questions vs question word questions"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [
+    "a1-greetings",
+    "a1-present-tense"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-bq-1",
+      "type": "vocabulary",
+      "title": "Palabras Interrogativas",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-bq-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-bq-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-bq-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Oficial",
+      "text": "Buenos días. ¿Cómo se llama usted?",
+      "translation": "Good morning. What is your name?",
+      "ipa": "[ˈbwenos ˈðias ‖ ˈkomo se ˈʝama usˈteð]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-001",
+      "alternate_phrasing": [],
+      "context": "Official asking for name"
+    },
+    {
+      "speaker": "Viajero",
+      "text": "Me llamo Antonio Reyes.",
+      "translation": "My name is Antonio Reyes.",
+      "ipa": "[me ˈʝamo anˈtonjo ˈrejes]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-002",
+      "alternate_phrasing": [],
+      "context": "Stating name formally"
+    },
+    {
+      "speaker": "Oficial",
+      "text": "¿De dónde es usted?",
+      "translation": "Where are you from?",
+      "ipa": "[de ˈdonde es usˈteð]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking nationality formally"
+    },
+    {
+      "speaker": "Viajero",
+      "text": "Soy de Colombia. ¿Por qué me pregunta?",
+      "translation": "I'm from Colombia. Why do you ask?",
+      "ipa": "[ˈsoj ðe koˈlombja ‖ poɾ ˈke me pɾeˈɡunta]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-004",
+      "alternate_phrasing": [],
+      "context": "Stating origin and asking why"
+    },
+    {
+      "speaker": "Oficial",
+      "text": "Es una verificación de rutina. ¿Cuánto tiempo lleva aquí?",
+      "translation": "It's a routine check. How long have you been here?",
+      "ipa": "[es ˈuna βerifikaˈθjon ðe ruˈtina ‖ ˈkwanto ˈtjempo ˈʝeβa aˈki]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-005",
+      "alternate_phrasing": [],
+      "context": "Explaining and asking duration"
+    },
+    {
+      "speaker": "Viajero",
+      "text": "Llevo tres días. ¿Dónde está la salida?",
+      "translation": "I've been here three days. Where is the exit?",
+      "ipa": "[ˈʝeβo ˈtɾes ˈðias ‖ ˈdonde esˈta la saˈliða]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-006",
+      "alternate_phrasing": [],
+      "context": "Answering and asking own question"
+    },
+    {
+      "speaker": "Oficial",
+      "text": "¿Quién le espera afuera?",
+      "translation": "Who is waiting for you outside?",
+      "ipa": "[ˈkjen le esˈpeɾa afˈweɾa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-007",
+      "alternate_phrasing": [],
+      "context": "Asking who is waiting"
+    },
+    {
+      "speaker": "Viajero",
+      "text": "Mi hermano. ¿Cuándo puedo salir?",
+      "translation": "My brother. When can I leave?",
+      "ipa": "[mi eɾˈmano ‖ ˈkwando ˈpweðo saˈliɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-bq-mx-008",
+      "alternate_phrasing": [],
+      "context": "Answering and asking when they can leave"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-bq-mx-c001",
+      "front": "¿Qué?",
+      "back": "What?",
+      "ipa": "[ˈke]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c002",
+      "front": "¿Quién? / ¿Quiénes?",
+      "back": "Who? (sing/plural)",
+      "ipa": "[ˈkjen ‖ ˈkjenes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c003",
+      "front": "¿Dónde? / ¿Adónde?",
+      "back": "Where? / Where to?",
+      "ipa": "[ˈdonde ‖ aˈdonde]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c004",
+      "front": "¿Cuándo?",
+      "back": "When?",
+      "ipa": "[ˈkwando]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c005",
+      "front": "¿Cómo?",
+      "back": "How?",
+      "ipa": "[ˈkomo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c006",
+      "front": "¿Por qué? / Porque",
+      "back": "Why? / Because",
+      "ipa": "[poɾ ˈke ‖ poɾˈke]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c007",
+      "front": "¿Cuánto/a? / ¿Cuántos/as?",
+      "back": "How much? / How many?",
+      "ipa": "[ˈkwanto ‖ ˈkwantos]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-bq-mx-c008",
+      "front": "¿Cuál? / ¿Cuáles?",
+      "back": "Which? / Which ones?",
+      "ipa": "[ˈkwal ‖ ˈkwales]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-bq-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la palabra interrogativa correcta",
+      "question": "___ hora es la reunión?",
+      "options": [
+        {
+          "text": "¿A qué",
+          "correct": true
+        },
+        {
+          "text": "¿Cuándo",
+          "correct": false
+        },
+        {
+          "text": "¿Dónde",
+          "correct": false
+        },
+        {
+          "text": "¿Quién",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! '¿A qué hora?' asks 'at what time?'",
+        "incorrect": "For specific time of an event, use '¿A qué hora?' not '¿Cuándo?'"
+      }
+    },
+    {
+      "exercise_id": "ex-bq-mx-002",
+      "type": "matching",
+      "instruction": "Une la pregunta con la respuesta lógica",
+      "pairs": [
+        {
+          "spanish": "¿Dónde vives?",
+          "english": "En la Colonia Roma."
+        },
+        {
+          "spanish": "¿Con quién hablas?",
+          "english": "Con mi mamá."
+        },
+        {
+          "spanish": "¿Por qué estudias español?",
+          "english": "Porque me gusta."
+        },
+        {
+          "spanish": "¿Cuántos hermanos tienes?",
+          "english": "Tres."
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-bq-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Forma la pregunta correcta",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿_____ te llamas?"
+        },
+        {
+          "speaker": "B",
+          "text": "Me llamo Carla."
+        },
+        {
+          "speaker": "A",
+          "text": "¿_____ eres?"
+        },
+        {
+          "speaker": "B",
+          "text": "Soy de Puebla."
+        },
+        {
+          "speaker": "A",
+          "text": "¿_____ años tienes?"
+        }
+      ],
+      "answers": [
+        "Cómo",
+        "De dónde",
+        "Cuántos"
+      ],
+      "acceptable_variants": {
+        "Cómo": [
+          "cómo"
+        ],
+        "De dónde": [
+          "de dónde"
+        ],
+        "Cuántos": [
+          "cuántos"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-bq-mx",
+    "type": "roleplay",
+    "title": "Una entrevista (An interview)",
+    "scenario": "Interview a new classmate. Ask at least 4 different question-word questions.",
+    "prompt": "Haz cuatro preguntas con palabras interrogativas diferentes.",
+    "expected_elements": [
+      "qué",
+      "dónde or cuándo",
+      "quién or cómo",
+      "cuánto or cuál"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Question words clear with correct stress"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Four distinct question words used"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Natural interview flow"
+      }
+    ],
+    "sample_response": {
+      "text": "¿Cómo te llamas? ¿De dónde eres? ¿Cuántos años tienes? ¿Qué te gusta hacer?",
+      "ipa": "[ˈkomo te ˈʝamas ‖ de ˈdonde ˈeɾes ‖ ˈkwantos ˈaɲos ˈtjenes ‖ ke te ˈɡusta aˈseɾ]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, question words always carry a written accent (tilde) when used as questions — ¿qué?, ¿dónde? etc. This distinguishes them from their non-question uses: 'que' (that), 'donde' (where, as conjunction).",
+    "gestures": "Raising eyebrows and tilting head slightly signals a question in Mexican non-verbal communication. Shrugging with open palms = 'I don't know'.",
+    "regional_variations": "'¿Mande?' is uniquely Mexican — used where other Spanish speakers say '¿Qué?' (What?) or '¿Cómo?' when asking someone to repeat themselves. It's considered polite, not rude.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "All 8 question words covered",
+    "¿Por qué? vs porque taught",
+    "Interview context realistic",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

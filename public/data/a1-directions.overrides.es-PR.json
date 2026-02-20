@@ -1,0 +1,48 @@
+{
+  "lesson_id": "a1-travel-asking-for-directions",
+  "dialect": "es-PR",
+  "overrides": {
+    "vocabulary_replacements": [
+      {
+        "base": "autobús",
+        "dialect": "guagua"
+      }
+    ],
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Disculpa, ¿me puedes ayudar?",
+        "translation": "Excuse me, can you help me?"
+      },
+      {
+        "line_index": 1,
+        "text": "Claro, dime. ¿Qué tú buscas?",
+        "translation": "Sure, tell me. What are you looking for?"
+      },
+      {
+        "line_index": 3,
+        "text": "Está cerca. Camina dos cuadras recto y dobla a la izquierda.",
+        "translation": "It's nearby. Walk two blocks straight and turn left."
+      },
+      {
+        "line_index": 5,
+        "text": "Sí, exacto. El banco está al lado de la guagua pública.",
+        "translation": "Yes, exactly. The bank is next to the public bus stop."
+      }
+    ],
+    "ipa_adjustments": {
+      "final_s_aspiration": true,
+      "intervocalic_d_softening": true
+    },
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, 'tú' forms are used even with strangers in casual settings — it feels natural and friendly rather than rude. 'Disculpa' (informal) is commonly heard on the street.",
+      "gestures": "Puerto Ricans often use lips to point direction — a quick pout toward where you mean — rather than always using a hand. Don't be surprised if someone gestures with their mouth.",
+      "regional_variations": "You'll hear 'guagua' for bus, 'carro público' for shared taxi vans, and 'bloques' alongside 'cuadras' for city blocks. 'Recto' is more common than 'derecho' for straight ahead.",
+      "lexical_note": "Key swaps: 'autobús' → 'guagua', 'apartamento' → 'apartamento' (same), 'coche' is rarely used — say 'carro' instead."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "lesson_id": "a1-weather",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "El Clima y el Tiempo",
+    "localized": "Weather & Seasons"
+  },
+  "objectives": [
+    "Describe current weather conditions",
+    "Name the four seasons",
+    "Use hacer, estar, and hay for weather",
+    "Ask and answer weather questions"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [
+    "a1-greetings",
+    "a1-ser-estar"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-wx-1",
+      "type": "vocabulary",
+      "title": "El Tiempo",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-wx-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-wx-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-wx-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Elena",
+      "text": "¡Qué calor hace hoy!",
+      "translation": "It's so hot today!",
+      "ipa": "[ke kaˈloɾ ˈase ˈoj]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-001",
+      "alternate_phrasing": [],
+      "context": "Commenting on hot weather"
+    },
+    {
+      "speaker": "Diego",
+      "text": "Sí, hace mucho calor. ¿Cuál es el pronóstico para mañana?",
+      "translation": "Yes, it's very hot. What's the forecast for tomorrow?",
+      "ipa": "[ˈsi ˈase ˈmutʃo kaˈloɾ ‖ ˈkwal es el pɾoˈnostiko ˈpaɾa maˈɲana]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-002",
+      "alternate_phrasing": [],
+      "context": "Asking about weather forecast"
+    },
+    {
+      "speaker": "Elena",
+      "text": "Dicen que va a llover por la tarde.",
+      "translation": "They say it's going to rain in the afternoon.",
+      "ipa": "[ˈðiθen ke βa a ʝoˈβeɾ poɾ la ˈtaɾðe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-003",
+      "alternate_phrasing": [],
+      "context": "Sharing weather forecast"
+    },
+    {
+      "speaker": "Diego",
+      "text": "¡Ay! Entonces necesito llevar paraguas.",
+      "translation": "Oh! Then I need to bring an umbrella.",
+      "ipa": "[ˈaj ‖ enˈtonθes neθeˈsito ʝeˈβaɾ paˈɾaɣwas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-004",
+      "alternate_phrasing": [],
+      "context": "Reacting to rain forecast"
+    },
+    {
+      "speaker": "Elena",
+      "text": "¿Cómo está el clima en tu ciudad natal?",
+      "translation": "What's the weather like in your hometown?",
+      "ipa": "[ˈkomo esˈta el ˈklima en tu θjuˈðað naˈtal]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-005",
+      "alternate_phrasing": [],
+      "context": "Asking about hometown weather"
+    },
+    {
+      "speaker": "Diego",
+      "text": "En Monterrey hace mucho calor en verano. En invierno es fresco.",
+      "translation": "In Monterrey it's very hot in summer. In winter it's cool.",
+      "ipa": "[en monteˈrej ˈase ˈmutʃo kaˈloɾ en βeˈɾano ‖ en imˈbjeɾno es ˈfɾesko]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-006",
+      "alternate_phrasing": [],
+      "context": "Describing seasonal weather in hometown"
+    },
+    {
+      "speaker": "Elena",
+      "text": "Aquí en la Ciudad de México llueve mucho en verano.",
+      "translation": "Here in Mexico City it rains a lot in summer.",
+      "ipa": "[aˈki en la θjuˈðað ðe ˈmexiko ˈʝweβe ˈmutʃo en βeˈɾano]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-007",
+      "alternate_phrasing": [],
+      "context": "Describing local seasonal weather"
+    },
+    {
+      "speaker": "Diego",
+      "text": "¿Y en primavera? ¿Hace buen tiempo?",
+      "translation": "And in spring? Is the weather nice?",
+      "ipa": "[i en pɾimaˈβeɾa ‖ ˈase ˈβwen ˈtjempo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-wx-mx-008",
+      "alternate_phrasing": [],
+      "context": "Asking about spring weather"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-wx-mx-c001",
+      "front": "Hace calor / frío",
+      "back": "It's hot / cold",
+      "ipa": "[ˈase kaˈloɾ ‖ ˈfɾio]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c002",
+      "front": "Llueve / Nieva",
+      "back": "It's raining / It's snowing",
+      "ipa": "[ˈʝweβe ‖ ˈnjeba]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c003",
+      "front": "Está nublado / soleado",
+      "back": "It's cloudy / sunny",
+      "ipa": "[esˈta nuˈβlaðo ‖ soleˈaðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c004",
+      "front": "la primavera / el verano",
+      "back": "spring / summer",
+      "ipa": "[la pɾimaˈβeɾa ‖ el βeˈɾano]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c005",
+      "front": "el otoño / el invierno",
+      "back": "autumn / winter",
+      "ipa": "[el oˈtoɲo ‖ el imˈbjeɾno]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c006",
+      "front": "Hay viento / niebla",
+      "back": "It's windy / foggy",
+      "ipa": "[aj ˈβjento ‖ ˈnjeβla]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c007",
+      "front": "el paraguas",
+      "back": "the umbrella",
+      "ipa": "[el paˈɾaɣwas]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-wx-mx-c008",
+      "front": "¿Qué tiempo hace?",
+      "back": "What's the weather like?",
+      "ipa": "[ke ˈtjempo ˈase]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-wx-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta",
+      "question": "Which phrase correctly says 'It's very cold'?",
+      "options": [
+        {
+          "text": "Hace mucho frío.",
+          "correct": true
+        },
+        {
+          "text": "Está mucho frío.",
+          "correct": false
+        },
+        {
+          "text": "Hay mucho frío.",
+          "correct": false
+        },
+        {
+          "text": "Es mucho frío.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! Temperature uses 'hacer': hace frío, hace calor, hace viento.",
+        "incorrect": "Weather temperature uses 'hacer' in Spanish: 'hace frío', not 'estar' or 'ser'."
+      }
+    },
+    {
+      "exercise_id": "ex-wx-mx-002",
+      "type": "matching",
+      "instruction": "Une la estación con su descripción",
+      "pairs": [
+        {
+          "spanish": "primavera",
+          "english": "warm, flowers bloom"
+        },
+        {
+          "spanish": "verano",
+          "english": "hot, school holiday"
+        },
+        {
+          "spanish": "otoño",
+          "english": "cool, leaves fall"
+        },
+        {
+          "spanish": "invierno",
+          "english": "cold, possible snow"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-wx-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación sobre el clima",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿Qué _____ hace hoy?"
+        },
+        {
+          "speaker": "B",
+          "text": "_____ mucho calor y _____ sol."
+        },
+        {
+          "speaker": "A",
+          "text": "¿Va a _____ mañana?"
+        },
+        {
+          "speaker": "B",
+          "text": "Sí, dicen que va a llover _____ la tarde."
+        }
+      ],
+      "answers": [
+        "tiempo",
+        "Hace",
+        "hay",
+        "llover",
+        "por"
+      ],
+      "acceptable_variants": {
+        "tiempo": [],
+        "Hace": [],
+        "hay": [],
+        "llover": [],
+        "por": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-wx-mx",
+    "type": "roleplay",
+    "title": "El tiempo hoy (Today's weather)",
+    "scenario": "Call a friend and describe today's weather and what you're planning to do because of it.",
+    "prompt": "Describe el clima hoy y di qué vas a hacer.",
+    "expected_elements": [
+      "weather description",
+      "hace/está/hay",
+      "activity plan"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Weather verbs and nouns clear"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Weather described and activity planned"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Natural conversational tone"
+      }
+    ],
+    "sample_response": {
+      "text": "Hoy hace mucho sol pero está un poco nublado. No va a llover. Voy al parque por la tarde.",
+      "ipa": "[ˈoj ˈase ˈmutʃo ˈsol ˈpeɾo esˈta um ˈpoko nuˈβlaðo ‖ no βa a ʝoˈβeɾ ‖ ˈboj al ˈpaɾke poɾ la ˈtaɾðe]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Weather is always a safe small-talk topic in Mexico. The rainy season (temporada de lluvias) runs June–October — afternoon storms are common in Mexico City during this period.",
+    "gestures": "Fanning oneself with a hand universally signals heat. Shivering and hugging oneself signals cold.",
+    "regional_variations": "Mexico City has a mild climate year-round (spring-like). The north (Monterrey) has extremes; the coasts (Cancún, Puerto Vallarta) are tropical. Always specify the region when discussing Mexican weather.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "Hacer/estar/hay all used",
+    "Four seasons named",
+    "Forecast language included",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.94,
+  "human_review": false
+}

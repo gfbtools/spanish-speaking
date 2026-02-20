@@ -1,0 +1,29 @@
+{
+  "lesson_id": "a1-weather",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Sí, hace mucho calor. ¿Cuál es la previsión para mañana?",
+        "translation": "Yes, it's very hot. What's the forecast for tomorrow?"
+      },
+      {
+        "line_index": 5,
+        "text": "En Sevilla hace muchísimo calor en verano. En invierno es bastante suave.",
+        "translation": "In Seville it's incredibly hot in summer. In winter it's quite mild."
+      },
+      {
+        "line_index": 6,
+        "text": "Aquí en Madrid llueve poco pero hace mucho viento en invierno.",
+        "translation": "Here in Madrid it rarely rains but there's a lot of wind in winter."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Spain's climate varies dramatically by region: the north (Galicia, Basque Country) is green and rainy; the centre (Madrid, Castile) has extreme summers and cold winters; the south (Andalusia) is very hot and dry in summer.",
+      "gestures": "Blowing on fingertips and shaking the hand means 'very hot' (like touching something hot). Hugging oneself and shivering dramatically signals cold.",
+      "regional_variations": "'La previsión' (Spain) vs 'el pronóstico' (Latin America) — both mean forecast. 'Hace fresquito' is a common diminutive for pleasantly cool weather. 'El paraguas' vs 'el paragua' — both exist but 'paraguas' is standard.",
+      "distincion": "Weather vocab with /θ/: 'once grados' [ˈonθe], 'diciembre' [diˈθjembɾe], 'luz solar' [luθ soˈlaɾ]. Good practice words for the Castilian /θ/."
+    }
+  }
+}

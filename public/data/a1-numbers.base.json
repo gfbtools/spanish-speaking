@@ -1,0 +1,105 @@
+{
+  "lesson_id": "a1-numbers",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": { "native": "Los Números y la Edad", "localized": "Numbers & Age" },
+  "objectives": [
+    "Count from 0 to 100 in Spanish",
+    "State and ask about age",
+    "Use numbers for phone numbers and addresses",
+    "Understand numbers in context"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": ["a1-greetings"],
+  "activities": [
+    { "activity_id": "act-num-1", "type": "vocabulary", "title": "Los Números", "content": {}, "estimated_minutes": 6 },
+    { "activity_id": "act-num-2", "type": "dialogue", "title": "Diálogo", "content": {}, "estimated_minutes": 6 },
+    { "activity_id": "act-num-3", "type": "exercise", "title": "Práctica", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-num-4", "type": "speaking", "title": "Habla", "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Recepcionista", "text": "¿Cuál es su número de teléfono?", "translation": "What is your phone number?", "ipa": "[ˈkwal es su ˈnumero ðe teleˈfono]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-001", "alternate_phrasing": [], "context": "Asking for a phone number at a front desk" },
+    { "speaker": "Cliente", "text": "Es el cinco-cinco-cinco, treinta y dos, cuarenta y uno.", "translation": "It's five-five-five, thirty-two, forty-one.", "ipa": "[es el ˈsiŋko ˈsiŋko ˈsiŋko ‖ ˈtɾejnta i ˈðos ‖ kwaˈɾenta i ˈuno]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-002", "alternate_phrasing": [], "context": "Giving a phone number" },
+    { "speaker": "Recepcionista", "text": "¿Y cuántos años tiene usted?", "translation": "And how old are you?", "ipa": "[i ˈkwantos ˈaɲos ˈtjene usˈteð]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-003", "alternate_phrasing": [], "context": "Asking age formally" },
+    { "speaker": "Cliente", "text": "Tengo treinta y cinco años.", "translation": "I am thirty-five years old.", "ipa": "[ˈteŋɡo ˈtɾejnta i ˈsiŋko ˈaɲos]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-004", "alternate_phrasing": [], "context": "Stating age" },
+    { "speaker": "Recepcionista", "text": "¿Y cuál es su dirección?", "translation": "And what is your address?", "ipa": "[i ˈkwal es su ðiɾekˈθjon]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-005", "alternate_phrasing": [], "context": "Asking for address" },
+    { "speaker": "Cliente", "text": "Calle Juárez, número cuarenta y ocho.", "translation": "Juárez Street, number forty-eight.", "ipa": "[ˈkaʝe ˈxwaɾes ‖ ˈnumeɾo kwaˈɾenta i ˈotʃo]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-006", "alternate_phrasing": [], "context": "Giving a street address" },
+    { "speaker": "Recepcionista", "text": "Perfecto. ¿Tiene código postal?", "translation": "Perfect. Do you have a postal code?", "ipa": "[peɾˈfekto ‖ ˈtjene ˈkoðiɣo posˈtal]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-007", "alternate_phrasing": [], "context": "Asking for postal code" },
+    { "speaker": "Cliente", "text": "Sí, es el seis-cuatro-tres-dos-uno.", "translation": "Yes, it's six-four-three-two-one.", "ipa": "[ˈsi ‖ es el ˈsejs ˈkwatɾo ˈtɾes ˈðos ˈuno]", "dialect": "es-MX", "audio_asset_id": "a1-num-mx-008", "alternate_phrasing": [], "context": "Giving postal code" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a1-num-mx-c001", "front": "uno, dos, tres", "back": "one, two, three", "ipa": "[ˈuno ‖ ˈðos ‖ ˈtɾes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c002", "front": "diez, veinte, treinta", "back": "ten, twenty, thirty", "ipa": "[ˈdjes ‖ ˈβejnte ‖ ˈtɾejnta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c003", "front": "cuarenta, cincuenta, sesenta", "back": "forty, fifty, sixty", "ipa": "[kwaˈɾenta ‖ θinˈkwenta ‖ seˈsenta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c004", "front": "setenta, ochenta, noventa", "back": "seventy, eighty, ninety", "ipa": "[seˈtenta ‖ oˈtʃenta ‖ noˈβenta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c005", "front": "cien / ciento", "back": "one hundred (cien alone, ciento before more)", "ipa": "[ˈθjen ‖ ˈθjento]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a1-num-mx-c006", "front": "¿Cuántos años tienes?", "back": "How old are you?", "ipa": "[ˈkwantos ˈaɲos ˈtjenes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c007", "front": "Tengo ___ años", "back": "I am ___ years old", "ipa": "[ˈteŋɡo ˈaɲos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-num-mx-c008", "front": "el número de teléfono", "back": "the phone number", "ipa": "[el ˈnumeɾo ðe teleˈfono]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-num-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta",
+      "question": "How do you say 'I am forty-two years old'?",
+      "options": [
+        { "text": "Tengo cuarenta y dos años.", "correct": true },
+        { "text": "Tengo cuatro y dos años.", "correct": false },
+        { "text": "Soy cuarenta y dos.", "correct": false },
+        { "text": "Tengo cuarenta dos años.", "correct": false }
+      ],
+      "feedback": { "correct": "¡Correcto! 'Tengo + number + años' is the standard age formula.", "incorrect": "Remember: 'Tengo [number] años' — and compound numbers use 'y': cuarenta y dos." }
+    },
+    {
+      "exercise_id": "ex-num-mx-002",
+      "type": "matching",
+      "instruction": "Une el número con su nombre",
+      "pairs": [
+        { "spanish": "15", "english": "quince" },
+        { "spanish": "30", "english": "treinta" },
+        { "spanish": "47", "english": "cuarenta y siete" },
+        { "spanish": "100", "english": "cien" }
+      ]
+    },
+    {
+      "exercise_id": "ex-num-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con el número correcto en palabras",
+      "dialogue": [
+        { "speaker": "A", "text": "¿Cuántos años tienes?" },
+        { "speaker": "B", "text": "Tengo _____ años. (28)" },
+        { "speaker": "A", "text": "¿Y cuál es tu número de teléfono?" },
+        { "speaker": "B", "text": "Es el _____, _____, _____. (55 / 19 / 87)" }
+      ],
+      "answers": ["veintiocho", "cincuenta y cinco", "diecinueve", "ochenta y siete"],
+      "acceptable_variants": { "veintiocho": ["28"], "cincuenta y cinco": ["55"], "diecinueve": ["19"], "ochenta y siete": ["87"] }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-num-mx-roleplay",
+    "type": "roleplay",
+    "title": "Da tus datos (Give your details)",
+    "scenario": "You are registering at a clinic. Give your age, phone number and address number.",
+    "prompt": "Di tu edad, número de teléfono y número de tu calle.",
+    "expected_elements": ["age statement", "phone number", "address number"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear number pronunciation" },
+      { "criterion": "completeness", "weight": 0.4, "description": "All three data points given" },
+      { "criterion": "fluency", "weight": 0.3, "description": "Numbers given at natural pace" }
+    ],
+    "sample_response": { "text": "Tengo treinta años. Mi teléfono es cinco-cinco-cinco, veinte, treinta. Vivo en el número cuarenta y dos.", "ipa": "[ˈteŋɡo ˈtɾejnta ˈaɲos ‖ mi teleˈfono es ˈsiŋko ˈsiŋko ˈsiŋko ˈβejnte ˈtɾejnta ‖ ˈbiβo en el ˈnumeɾo kwaˈɾenta i ˈðos]" }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, phone numbers are typically read in pairs or triplets. Addresses use 'número' (often abbreviated 'No.' or '#'). Age is asked freely in Mexican culture — it's not considered impolite.",
+    "gestures": "When counting on fingers, Mexicans typically start with the index finger rather than the thumb.",
+    "regional_variations": "In Mexico, 'veintidós' is written as one word (not 'veinte y dos'). Numbers 16–19 and 21–29 are usually written as single words.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": ["Covers 0–100", "Age formula taught", "Phone and address context included", "Three exercise types"],
+  "confidence_score": 0.95,
+  "human_review": false
+}

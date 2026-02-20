@@ -1,0 +1,24 @@
+{
+  "lesson_id": "a1-alphabet-pronunciation",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 2,
+        "text": "Bien. ¿Y cómo se pronuncia la 'ñ' en castellano?",
+        "translation": "Good. And how is the 'ñ' pronounced in Castilian Spanish?"
+      },
+      {
+        "line_index": 4,
+        "text": "Correcto. ¿Y las vocales? ¿Cómo son en castellano?",
+        "translation": "Correct. And the vowels? What are they like in Castilian?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, the language is often called 'castellano' (Castilian) rather than 'español', particularly in regions with co-official languages (Catalan, Basque, Galician). Both terms are correct — 'español' is more international.",
+      "gestures": "When spelling in Spain, letters are disambiguated as: 'b de Barcelona, v de Valencia'. This city-name system helps avoid confusion between similar-sounding letters.",
+      "regional_variations": "The key Castilian pronunciation feature: 'c' before e/i and 'z' = /θ/ (as in English 'thin'): zapato [θaˈpato], cerveza [θerˈβeθa], gracias [ˈɡɾaθjas]. This applies throughout Spain (except some southern areas). Not a lisp — a distinct phoneme.",
+      "distincion": "The /θ/ phoneme is the most important pronunciation marker of es-ES. Practice words: cena [ˈθena], ciudad [θjuˈðað], zumo [ˈθumo], plaza [ˈplaθa], marzo [ˈmaɾθo]."
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "lesson_id": "a1-family",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¿Tienes hermanos?",
+        "translation": "Do you have siblings?"
+      },
+      {
+        "line_index": 1,
+        "text": "Sí, tengo dos hermanos. ¿Y tú?",
+        "translation": "Yes, I have two siblings. And you?"
+      },
+      {
+        "line_index": 4,
+        "text": "Somos cinco: mis padres, mi abuela, mi hermana y yo.",
+        "translation": "There are five of us: my parents, my grandmother, my sister and me."
+      },
+      {
+        "line_index": 6,
+        "text": "Sí, vivimos todos juntos. Es un poco caótico pero nos encanta.",
+        "translation": "Yes, we all live together. It's a bit chaotic but we love it!"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'vosotros' is used for informal plural address — 'vosotros tenéis' rather than 'ustedes tienen'. Family structures have modernised significantly; nuclear families are increasingly common, especially in cities.",
+      "family_values": "Family Sunday lunches (comidas del domingo) remain a strong tradition. It's common for adult children to live with parents into their late 20s due to housing costs, especially in Madrid and Barcelona.",
+      "regional_variations": "You'll hear 'tío/tía' used casually between friends (like 'mate' or 'dude' in English) — context makes it clear whether it means uncle/aunt or just a friend. 'Chaval' is common slang for a young person or kid."
+    },
+    "distincion": "In Castilian Spanish, 'c' before 'e/i' and 'z' are pronounced /θ/ (like English 'th'). So 'gracias' sounds like 'graTHias'. This is the key pronunciation marker of es-ES."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "lesson_id": "a1-basic-questions",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Buenos días. ¿Cómo se llama usted?",
+        "translation": "Good morning. What is your name?"
+      },
+      {
+        "line_index": 4,
+        "text": "Es una verificación de rutina. ¿Cuánto tiempo lleva usted aquí?",
+        "translation": "It's a routine check. How long have you been here?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, question words always use the tilde: ¿qué? ¿dónde? etc. 'Eh' is appended as a tag question in informal speech: '¿Vienes, eh?' (You're coming, right?). '¿Verdad?' and '¿No?' are also common tags.",
+      "gestures": "In Spain, a quick outward flick of the hand (fingers pointing away) means 'What?' or 'What do you want?' in casual settings. Raised eyebrow = question / curiosity.",
+      "regional_variations": "'¿Cómo?' is the polite way to ask someone to repeat in Spain (not '¿Mande?'). '¿Qué dices?' (What are you saying?) is more casual. '¿A ver?' (Let's see / Go ahead) invites someone to explain.",
+      "distincion": "Question words with /θ/: none of the core question words have /θ/ directly, but answers often do: 'En la plaza' [en la ˈplaθa], 'Hace cinco minutos' [ˈase ˈθiŋko miˈnutos]."
+    }
+  }
+}

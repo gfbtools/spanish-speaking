@@ -1,0 +1,378 @@
+{
+  "lesson_id": "a1-present-tense",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "El Presente Regular",
+    "localized": "Present Tense Regular Verbs"
+  },
+  "objectives": [
+    "Conjugate -ar, -er, and -ir verbs in present tense",
+    "Use common regular verbs in sentences",
+    "Form negative sentences in present tense",
+    "Ask and answer yes/no questions"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a1-greetings",
+    "a1-ser-estar"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-pt-1",
+      "type": "vocabulary",
+      "title": "Verbos Regulares",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-pt-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-pt-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-pt-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Verónica",
+      "text": "¿Dónde trabajas?",
+      "translation": "Where do you work?",
+      "ipa": "[ˈdonde tɾaˈβaxas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-001",
+      "alternate_phrasing": [],
+      "context": "Asking about workplace"
+    },
+    {
+      "speaker": "Rafael",
+      "text": "Trabajo en una escuela. Enseño matemáticas.",
+      "translation": "I work at a school. I teach maths.",
+      "ipa": "[tɾaˈβaxo en ˈuna esˈkwela ‖ enˈseɲo matemˈatikas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-002",
+      "alternate_phrasing": [],
+      "context": "Stating job and subject"
+    },
+    {
+      "speaker": "Verónica",
+      "text": "¿A qué hora empiezas?",
+      "translation": "What time do you start?",
+      "ipa": "[a ke ˈoɾa emˈpjeθas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking about start time"
+    },
+    {
+      "speaker": "Rafael",
+      "text": "Empiezo a las siete. Las clases terminan a las dos.",
+      "translation": "I start at seven. Classes finish at two.",
+      "ipa": "[emˈpjeθo a las ˈsjete ‖ las ˈklases teɾˈminan a las ˈðos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-004",
+      "alternate_phrasing": [],
+      "context": "Stating start and end times"
+    },
+    {
+      "speaker": "Verónica",
+      "text": "¿Comes en la escuela?",
+      "translation": "Do you eat at school?",
+      "ipa": "[ˈkomes en la esˈkwela]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-005",
+      "alternate_phrasing": [],
+      "context": "Yes/no question"
+    },
+    {
+      "speaker": "Rafael",
+      "text": "No, no como en la escuela. Vuelvo a casa para comer.",
+      "translation": "No, I don't eat at school. I go back home to eat.",
+      "ipa": "[ˈno ‖ no ˈkomo en la esˈkwela ‖ ˈβwelβo a ˈkasa ˈpaɾa ˈkomeɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-006",
+      "alternate_phrasing": [],
+      "context": "Negative sentence and explanation"
+    },
+    {
+      "speaker": "Verónica",
+      "text": "¿Vives cerca de la escuela?",
+      "translation": "Do you live near the school?",
+      "ipa": "[ˈbiβes ˈθeɾka ðe la esˈkwela]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-007",
+      "alternate_phrasing": [],
+      "context": "Asking about distance from work"
+    },
+    {
+      "speaker": "Rafael",
+      "text": "Sí, vivo a diez minutos. Camino todos los días.",
+      "translation": "Yes, I live ten minutes away. I walk every day.",
+      "ipa": "[ˈsi ˈbiβo a ˈdjes miˈnutos ‖ kaˈmino ˈtoðos los ˈðias]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-pt-mx-008",
+      "alternate_phrasing": [],
+      "context": "Stating proximity and daily habit"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-pt-mx-c001",
+      "front": "-AR endings: hablo, hablas, habla, hablamos, hablan",
+      "back": "I speak, you speak, he speaks, we speak, they speak",
+      "ipa": "[ˈaβlo ‖ ˈaβlas ‖ ˈaβla ‖ aˈβlamos ‖ ˈaβlan]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c002",
+      "front": "-ER endings: como, comes, come, comemos, comen",
+      "back": "I eat, you eat, he eats, we eat, they eat",
+      "ipa": "[ˈkomo ‖ ˈkomes ‖ ˈkome ‖ koˈmemos ‖ ˈkomen]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c003",
+      "front": "-IR endings: vivo, vives, vive, vivimos, viven",
+      "back": "I live, you live, he lives, we live, they live",
+      "ipa": "[ˈbiβo ‖ ˈbiβes ‖ ˈbiβe ‖ biˈβimos ‖ ˈbiβen]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c004",
+      "front": "No + verb (negative)",
+      "back": "No hablo. No como. No vivo aquí.",
+      "ipa": "[no ˈaβlo ‖ no ˈkomo ‖ no ˈbiβo aˈki]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c005",
+      "front": "trabajar / estudiar / escuchar",
+      "back": "to work / to study / to listen",
+      "ipa": "[tɾaβaˈxaɾ ‖ estuˈðjaɾ ‖ eskuˈtʃaɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c006",
+      "front": "beber / leer / comprender",
+      "back": "to drink / to read / to understand",
+      "ipa": "[beˈβeɾ ‖ leˈeɾ ‖ kompɾenˈdeɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c007",
+      "front": "abrir / escribir / recibir",
+      "back": "to open / to write / to receive",
+      "ipa": "[aˈβɾiɾ ‖ eskɾiˈβiɾ ‖ reθiˈβiɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-pt-mx-c008",
+      "front": "¿Hablas español? — Sí, hablo un poco.",
+      "back": "Do you speak Spanish? — Yes, I speak a little.",
+      "ipa": "[ˈaβlas espaˈɲol ‖ ˈsi ˈaβlo um ˈpoko]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-pt-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la conjugación correcta",
+      "question": "Nosotros ___ (vivir) en un apartamento grande.",
+      "options": [
+        {
+          "text": "vivimos",
+          "correct": true
+        },
+        {
+          "text": "viven",
+          "correct": false
+        },
+        {
+          "text": "vivís",
+          "correct": false
+        },
+        {
+          "text": "vivo",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! -IR nosotros ending: vivimos.",
+        "incorrect": "For nosotros (-IR verbs): vivir → vivimos. The -IR nosotros ending is -imos."
+      }
+    },
+    {
+      "exercise_id": "ex-pt-mx-002",
+      "type": "matching",
+      "instruction": "Une el sujeto con la forma verbal correcta de hablar",
+      "pairs": [
+        {
+          "spanish": "yo",
+          "english": "hablo"
+        },
+        {
+          "spanish": "tú",
+          "english": "hablas"
+        },
+        {
+          "spanish": "ella",
+          "english": "habla"
+        },
+        {
+          "spanish": "ellos",
+          "english": "hablan"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-pt-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con la forma correcta del verbo",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿Tú _____ (estudiar) inglés?"
+        },
+        {
+          "speaker": "B",
+          "text": "Sí, yo _____ (estudiar) todos los días."
+        },
+        {
+          "speaker": "A",
+          "text": "¿Y ella también _____  (estudiar)?"
+        },
+        {
+          "speaker": "B",
+          "text": "No, ella _____ (aprender) francés."
+        }
+      ],
+      "answers": [
+        "estudias",
+        "estudio",
+        "estudia",
+        "aprende"
+      ],
+      "acceptable_variants": {
+        "estudias": [],
+        "estudio": [],
+        "estudia": [],
+        "aprende": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-pt-mx",
+    "type": "roleplay",
+    "title": "Tu trabajo o estudios (Your work or studies)",
+    "scenario": "Tell a new acquaintance about your work or studies using present tense verbs.",
+    "prompt": "Describe tu trabajo o tus estudios. Usa cinco verbos diferentes.",
+    "expected_elements": [
+      "-ar verb",
+      "-er verb",
+      "-ir verb",
+      "negative sentence",
+      "question answered"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Verb endings clearly pronounced"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Multiple verb types used"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Natural description flow"
+      }
+    ],
+    "sample_response": {
+      "text": "Trabajo en una oficina. Hablo con clientes todos los días. Como en mi escritorio. No salgo al mediodía. Vivo cerca de la oficina.",
+      "ipa": "[tɾaˈβaxo en ˈuna ofiˈθina ‖ ˈaβlo kon ˈkljentes ˈtoðos los ˈðias ‖ ˈkomo en mi eskɾiˈtoɾjo ‖ no ˈsalɣo al meðjoˈðia ‖ ˈbiβo ˈθeɾka ðe la ofiˈθina]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, polite formal speech uses 'usted' conjugations which match third-person singular: 'usted trabaja', 'usted come'. This is important for professional and elder interactions.",
+    "gestures": "Mexicans often act out verbs when teaching them — miming eating, writing, or working to reinforce meaning physically.",
+    "regional_variations": "In Mexico, 'manejar' is used for 'to drive' (not 'conducir' as in Spain). 'Agarrar' (to grab/take) is very commonly used where Spain uses 'coger'. These are high-frequency regular verbs worth learning.",
+    "confidence_score": 0.97,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "-ar/-er/-ir all conjugated",
+    "Negative form taught",
+    "Yes/no questions covered",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}
