@@ -12,10 +12,29 @@ interface SpeakingPracticeProps {
 }
 
 // Browser SpeechRecognition type declarations
+interface SpeechRecognitionEvent extends Event {
+  results: SpeechRecognitionResultList;
+}
+interface SpeechRecognitionErrorEvent extends Event {
+  error: string;
+}
+interface SpeechRecognitionInstance {
+  lang: string;
+  interimResults: boolean;
+  maxAlternatives: number;
+  onresult: ((event: SpeechRecognitionEvent) => void) | null;
+  onerror: ((event: SpeechRecognitionErrorEvent) => void) | null;
+  start(): void;
+  stop(): void;
+  abort(): void;
+}
+interface SpeechRecognitionConstructor {
+  new(): SpeechRecognitionInstance;
+}
 declare global {
   interface Window {
-    SpeechRecognition: typeof SpeechRecognition;
-    webkitSpeechRecognition: typeof SpeechRecognition;
+    SpeechRecognition: SpeechRecognitionConstructor;
+    webkitSpeechRecognition: SpeechRecognitionConstructor;
   }
 }
 
@@ -52,7 +71,7 @@ function getSimilarity(a: string, b: string): number {
 
 function buildFeedback(
   transcript: string,
-  expected: string,
+  _expected: string,
   elements: string[],
   similarity: number,
 ): { feedback: string[]; suggestions: string[] } {
@@ -96,7 +115,7 @@ export function SpeakingPractice({ rubric, dialect }: SpeakingPracticeProps) {
   const [permissionError, setPermissionError] = useState('');
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const { speak } = useTTS(dialect);
 
@@ -123,11 +142,11 @@ export function SpeakingPractice({ rubric, dialect }: SpeakingPracticeProps) {
         recognition.interimResults = false;
         recognition.maxAlternatives = 1;
 
-        recognition.onresult = (event) => {
+        recognition.onresult = (event: SpeechRecognitionEvent) => {
           const text = event.results[0][0].transcript;
           setTranscript(text);
         };
-        recognition.onerror = (e) => {
+        recognition.onerror = (e: SpeechRecognitionErrorEvent) => {
           if (e.error !== 'no-speech') {
             console.warn('SR error:', e.error);
           }
