@@ -19,8 +19,8 @@ export function Header({ dialect, onDialectChange }: HeaderProps) {
     <header className="sticky top-0 z-40 w-full bg-white border-b border-amber-200 shadow-sm">
       <div className="container mx-auto px-4 h-14 flex items-center justify-between max-w-2xl">
         <div className="flex items-center gap-2">
-          <span className="text-2xl">🌮</span>
-          <span className="font-bold text-gray-800 text-lg">Español</span>
+          <span className="text-2xl">🗣️</span>
+          <span className="font-bold text-gray-800 text-lg">Spanish4U</span>
         </div>
 
         <div className="flex items-center gap-2">

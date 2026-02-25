@@ -309,53 +309,61 @@ function MatchingExercise({ exercise, index, onComplete, isCompleted }: Exercise
 }
 
 // ─── Fill in the Blanks (word bank click-to-place) ───────────────────────────
+// Uses index-based tracking throughout so duplicate words (e.g. two 'Soy' tiles)
+// work correctly — each tile is a unique slot regardless of its text value.
 
 function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
   const answers = exercise.answers ?? [];
   const variants = exercise.acceptable_variants ?? {};
 
-  const [wordBank] = useState<string[]>(() => {
-    const words = [...answers];
-    for (let i = words.length - 1; i > 0; i--) {
+  // wordBank is [{word, bankIdx}] — bankIdx is the stable identity key
+  const [wordBank] = useState<{ word: string; bankIdx: number }[]>(() => {
+    const items = answers.map((word, i) => ({ word, bankIdx: i }));
+    // Fisher-Yates shuffle
+    for (let i = items.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [words[i], words[j]] = [words[j], words[i]];
+      [items[i], items[j]] = [items[j], items[i]];
     }
-    return words;
+    return items;
   });
 
-  const [filled, setFilled] = useState<(string | null)[]>(answers.map(() => null));
-  const [usedWords, setUsedWords] = useState<Set<string>>(new Set());
-  const [picked, setPicked] = useState<string | null>(null);
+  // filled[blankIndex] = bankIdx of the tile placed there, or null
+  const [filled, setFilled] = useState<(number | null)[]>(answers.map(() => null));
+  // Set of bankIdx values currently placed in a blank
+  const [usedBankIdxs, setUsedBankIdxs] = useState<Set<number>>(new Set());
+  // bankIdx of the currently picked tile, or null
+  const [pickedIdx, setPickedIdx] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [attempts, setAttempts] = useState(0);
 
   const allFilled = filled.every(f => f !== null);
 
-  const handleBankClick = (word: string) => {
-    if (submitted || usedWords.has(word)) return;
-    setPicked(prev => prev === word ? null : word);
+  const handleBankClick = (bankIdx: number) => {
+    if (submitted || usedBankIdxs.has(bankIdx)) return;
+    setPickedIdx(prev => prev === bankIdx ? null : bankIdx);
   };
 
   const handleBlankClick = (blankIndex: number) => {
     if (submitted) return;
-    if (picked) {
-      const prev = filled[blankIndex];
+    if (pickedIdx !== null) {
+      const prevBankIdx = filled[blankIndex];
       const newFilled = [...filled];
-      newFilled[blankIndex] = picked;
+      newFilled[blankIndex] = pickedIdx;
       setFilled(newFilled);
-      const newUsed = new Set(usedWords);
-      newUsed.add(picked);
-      if (prev) newUsed.delete(prev);
-      setUsedWords(newUsed);
-      setPicked(null);
-    } else if (filled[blankIndex]) {
-      const word = filled[blankIndex]!;
+      const newUsed = new Set(usedBankIdxs);
+      newUsed.add(pickedIdx);
+      if (prevBankIdx !== null) newUsed.delete(prevBankIdx); // return previous tile
+      setUsedBankIdxs(newUsed);
+      setPickedIdx(null);
+    } else if (filled[blankIndex] !== null) {
+      // Tap a filled blank to return it to the bank
+      const prevBankIdx = filled[blankIndex]!;
       const newFilled = [...filled];
       newFilled[blankIndex] = null;
       setFilled(newFilled);
-      const newUsed = new Set(usedWords);
-      newUsed.delete(word);
-      setUsedWords(newUsed);
+      const newUsed = new Set(usedBankIdxs);
+      newUsed.delete(prevBankIdx);
+      setUsedBankIdxs(newUsed);
     }
   };
 
@@ -365,22 +373,38 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
     return (variants[correctWord] ?? []).some(v => norm(userWord) === norm(v));
   };
 
+  // Get the display word for a blank from its bankIdx
+  const wordForBlank = (blankIndex: number): string | null => {
+    const bi = filled[blankIndex];
+    if (bi === null) return null;
+    return wordBank.find(w => w.bankIdx === bi)?.word ?? null;
+  };
+
   const handleSubmit = () => {
     const newAttempts = attempts + 1;
     setAttempts(newAttempts);
     setSubmitted(true);
-    const isCorrect = filled.every((w, i) => w !== null && checkFill(w, answers[i]));
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect, userAnswer: filled.join(','), attempts: newAttempts });
+    const isCorrect = filled.every((bi, i) => {
+      if (bi === null) return false;
+      const word = wordBank.find(w => w.bankIdx === bi)?.word ?? '';
+      return checkFill(word, answers[i]);
+    });
+    const userAnswer = filled.map(bi => bi !== null ? (wordBank.find(w => w.bankIdx === bi)?.word ?? '') : '').join(',');
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect, userAnswer, attempts: newAttempts });
   };
 
   const handleReset = () => {
     setFilled(answers.map(() => null));
-    setUsedWords(new Set());
-    setPicked(null);
+    setUsedBankIdxs(new Set());
+    setPickedIdx(null);
     setSubmitted(false);
   };
 
   let blankCounter = 0;
+
+  // Determine if speaker labels are just single letters (like 'A', 'B') — show them differently
+  const speakerLabels = [...new Set(exercise.dialogue?.map(l => l.speaker) ?? [])];
+  const singleLetterSpeakers = speakerLabels.every(s => s.length === 1);
 
   return (
     <Card className={isCompleted ? 'border-green-300 bg-green-50/30' : ''}>
@@ -392,9 +416,9 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
           <div>
             <p className="text-xs text-gray-500 font-normal mb-1">{exercise.instruction}</p>
             <p className="text-gray-800 font-semibold text-base">
-              {picked
-                ? <span className="text-amber-700">"{picked}" selected — click a blank to place it</span>
-                : 'Click a word below to pick it up, then click a blank to place it'
+              {pickedIdx !== null
+                ? <span className="text-amber-700">"{wordBank.find(w => w.bankIdx === pickedIdx)?.word}" selected — tap a blank to place it</span>
+                : 'Tap a word below, then tap a blank to place it'
               }
             </p>
           </div>
@@ -407,13 +431,16 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
             const parts = line.text.split('_____');
             return (
               <div key={lineIndex} className="flex items-baseline gap-2 flex-wrap">
-                <span className="text-xs font-bold text-gray-500 uppercase min-w-[64px] shrink-0">{line.speaker}:</span>
+                <span className={`font-bold text-gray-500 shrink-0 ${singleLetterSpeakers ? 'text-xs bg-gray-200 rounded px-1.5 py-0.5' : 'text-xs uppercase min-w-[64px]'}`}>
+                  {singleLetterSpeakers ? line.speaker : `${line.speaker}:`}
+                </span>
                 <span className="text-gray-800 text-base leading-relaxed flex items-baseline flex-wrap gap-1">
                   {parts.map((part, partIndex) => {
                     if (partIndex === parts.length - 1) return <span key={partIndex}>{part}</span>;
                     const bi = blankCounter++;
-                    const word = filled[bi];
-                    const isOk = submitted && word !== null && checkFill(word, answers[bi]);
+                    const bankIdx = filled[bi];
+                    const word = wordForBlank(bi);
+                    const isOk  = submitted && word !== null && checkFill(word, answers[bi]);
                     const isBad = submitted && word !== null && !checkFill(word, answers[bi]);
                     return (
                       <span key={partIndex} className="inline-flex items-baseline">
@@ -426,9 +453,9 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
                             ${word
                               ? isOk   ? 'bg-green-100 border-green-500 text-green-800'
                                 : isBad  ? 'bg-red-100 border-red-500 text-red-700'
-                                : picked ? 'bg-amber-200 border-amber-500 text-amber-900 hover:bg-amber-300'
+                                : pickedIdx !== null ? 'bg-amber-200 border-amber-500 text-amber-900 hover:bg-amber-300'
                                          : 'bg-amber-100 border-amber-400 text-amber-900 hover:bg-amber-200'
-                              : picked ? 'bg-blue-50 border-blue-400 border-dashed text-blue-400 hover:bg-blue-100'
+                              : pickedIdx !== null ? 'bg-blue-50 border-blue-400 border-dashed text-blue-400 hover:bg-blue-100'
                                        : 'bg-white border-gray-400 border-dashed text-gray-300'
                             }
                           `}
@@ -449,16 +476,16 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
         <div>
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Word Bank</p>
           <div className="flex flex-wrap gap-2">
-            {wordBank.map((word) => {
-              const used = usedWords.has(word);
-              const isPicked = picked === word;
+            {wordBank.map(({ word, bankIdx }) => {
+              const used = usedBankIdxs.has(bankIdx);
+              const isPicked = pickedIdx === bankIdx;
               return (
                 <button
-                  key={word}
-                  onClick={() => handleBankClick(word)}
+                  key={bankIdx}
+                  onClick={() => handleBankClick(bankIdx)}
                   disabled={submitted || used}
                   className={`
-                    px-4 py-2 rounded-lg border-2 text-sm font-semibold transition-all
+                    px-4 py-2 rounded-lg border-2 text-sm font-semibold transition-all min-w-[48px]
                     ${used
                       ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-default'
                       : isPicked
@@ -475,7 +502,11 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
         </div>
 
         {submitted && (() => {
-          const correctCount = filled.filter((w, i) => w !== null && checkFill(w, answers[i])).length;
+          const correctCount = filled.filter((bi, i) => {
+            if (bi === null) return false;
+            const word = wordBank.find(w => w.bankIdx === bi)?.word ?? '';
+            return checkFill(word, answers[i]);
+          }).length;
           const allRight = correctCount === answers.length;
           return (
             <div className={`p-3 rounded-lg text-sm font-medium ${allRight ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'}`}>
