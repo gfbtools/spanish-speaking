@@ -80,26 +80,26 @@ export function LessonViewer({ lesson, dialect, onLessonComplete }: LessonViewer
 
       {/* Lesson Content Tabs */}
       <Tabs value={activeTab} onValueChange={setActiveTab}>
-        <TabsList className="grid w-full grid-cols-5 bg-white/80">
-          <TabsTrigger value="overview" className="flex items-center gap-2">
+        <TabsList className="grid w-full grid-cols-5 bg-white/80 h-auto">
+          <TabsTrigger value="overview" className="flex flex-col items-center gap-1 py-2 text-xs">
             <BookOpen className="w-4 h-4" />
-            <span className="hidden sm:inline">Overview</span>
+            <span>Overview</span>
           </TabsTrigger>
-          <TabsTrigger value="dialogue" className="flex items-center gap-2">
+          <TabsTrigger value="dialogue" className="flex flex-col items-center gap-1 py-2 text-xs">
             <MessageSquare className="w-4 h-4" />
-            <span className="hidden sm:inline">Dialogue</span>
+            <span>Dialogue</span>
           </TabsTrigger>
-          <TabsTrigger value="exercises" className="flex items-center gap-2">
+          <TabsTrigger value="exercises" className="flex flex-col items-center gap-1 py-2 text-xs">
             <Target className="w-4 h-4" />
-            <span className="hidden sm:inline">Exercises</span>
+            <span>Exercises</span>
           </TabsTrigger>
-          <TabsTrigger value="flashcards" className="flex items-center gap-2">
+          <TabsTrigger value="flashcards" className="flex flex-col items-center gap-1 py-2 text-xs">
             <Brain className="w-4 h-4" />
-            <span className="hidden sm:inline">Flashcards</span>
+            <span>Flashcards</span>
           </TabsTrigger>
-          <TabsTrigger value="speaking" className="flex items-center gap-2">
+          <TabsTrigger value="speaking" className="flex flex-col items-center gap-1 py-2 text-xs">
             <Mic className="w-4 h-4" />
-            <span className="hidden sm:inline">Speaking</span>
+            <span>Speaking</span>
           </TabsTrigger>
         </TabsList>
 

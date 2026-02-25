@@ -1,31 +1,24 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Header } from './sections/Header';
-import { Hero } from './sections/Hero';
 import { LessonViewer } from './sections/LessonViewer';
 import { LessonBrowser } from './sections/LessonBrowser';
 import { VocabularyBrowser } from './sections/VocabularyBrowser';
 import { ProgressDashboard } from './sections/ProgressDashboard';
-import { Footer } from './sections/Footer';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { Lesson, VocabularyEntry, UserProgress, Dialect } from './types';
-import { BookOpen, BookMarked, BarChart3, Library } from 'lucide-react';
+import { BookOpen, Library, BookMarked, BarChart3, ChevronLeft } from 'lucide-react';
 
 // ── Lesson JSON imports ───────────────────────────────────────────
-// Directions (migrated)
 import baseDirections from '../public/data/a1-directions.base.json';
 import overrideDirectionsPR from '../public/data/a1-directions.overrides.es-PR.json';
 
-// Family (migrated)
 import baseFamily from '../public/data/a1-family.base.json';
 import overrideFamilyPR from '../public/data/a1-family.overrides.es-PR.json';
 import overrideFamilyES from '../public/data/a1-family.overrides.es-ES.json';
 
-// Restaurant (migrated)
 import baseRestaurant from '../public/data/a1-restaurant.base.json';
 import overrideRestaurantPR from '../public/data/a1-restaurant.overrides.es-PR.json';
 import overrideRestaurantES from '../public/data/a1-restaurant.overrides.es-ES.json';
 
-// New lessons
 import baseGreetings from '../public/data/a1-greetings.base.json';
 import overrideGreetingsPR from '../public/data/a1-greetings.overrides.es-PR.json';
 import overrideGreetingsES from '../public/data/a1-greetings.overrides.es-ES.json';
@@ -74,7 +67,6 @@ import basePresentTense from '../public/data/a1-present-tense.base.json';
 import overridePresentTensePR from '../public/data/a1-present-tense.overrides.es-PR.json';
 import overridePresentTenseES from '../public/data/a1-present-tense.overrides.es-ES.json';
 
-// Vocabulary
 import vocabA1 from '../public/data/vocab_a1.json';
 import vocabEsPR from '../public/data/vocab_es_pr.json';
 
@@ -82,37 +74,29 @@ import { mergeDialectLesson } from './utils/mergeDialectLesson';
 
 // ── Lesson registry ───────────────────────────────────────────────
 export const lessonRegistry = [
-  { id: 'a1-greetings',               title: 'Greetings & Introductions',    module: 'Foundations', level: 'A1' },
-  { id: 'a1-alphabet-pronunciation',  title: 'Alphabet & Sounds',            module: 'Foundations', level: 'A1' },
-  { id: 'a1-numbers',                 title: 'Numbers & Age',                module: 'Foundations', level: 'A1' },
-  { id: 'a1-ser-estar',               title: 'Ser vs Estar',                 module: 'Foundations', level: 'A1' },
-  { id: 'a1-present-tense',           title: 'Present Tense Regular Verbs',  module: 'Foundations', level: 'A1' },
-  { id: 'a1-basic-questions',         title: 'Question Formation',           module: 'Foundations', level: 'A1' },
-  { id: 'a1-time-days',               title: 'Time, Days & Months',          module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-family',                  title: 'Family & Relationships',       module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-descriptions',            title: 'Basic Descriptions',           module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-daily-routine',           title: 'Daily Routine',                module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-weather',                 title: 'Weather & Seasons',            module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-likes-dislikes',          title: 'Likes & Preferences',          module: 'Daily Life',  level: 'A1' },
-  { id: 'a1-food-restaurant',         title: 'At the Restaurant',            module: 'Travel',      level: 'A1' },
-  { id: 'a1-shopping',                title: 'Shopping & Money',             module: 'Travel',      level: 'A1' },
-  { id: 'a1-travel-asking-for-directions', title: 'Asking for Directions',   module: 'Travel',      level: 'A1' },
+  { id: 'a1-greetings',               title: 'Greetings & Introductions',   module: 'Foundations', level: 'A1', emoji: '👋' },
+  { id: 'a1-alphabet-pronunciation',  title: 'Alphabet & Sounds',           module: 'Foundations', level: 'A1', emoji: '🔤' },
+  { id: 'a1-numbers',                 title: 'Numbers & Age',               module: 'Foundations', level: 'A1', emoji: '🔢' },
+  { id: 'a1-ser-estar',               title: 'Ser vs Estar',                module: 'Foundations', level: 'A1', emoji: '⚖️' },
+  { id: 'a1-present-tense',           title: 'Present Tense Verbs',         module: 'Foundations', level: 'A1', emoji: '📝' },
+  { id: 'a1-basic-questions',         title: 'Question Formation',          module: 'Foundations', level: 'A1', emoji: '❓' },
+  { id: 'a1-time-days',               title: 'Time, Days & Months',         module: 'Daily Life',  level: 'A1', emoji: '📅' },
+  { id: 'a1-family',                  title: 'Family & Relationships',      module: 'Daily Life',  level: 'A1', emoji: '👨‍👩‍👧' },
+  { id: 'a1-descriptions',            title: 'Basic Descriptions',          module: 'Daily Life',  level: 'A1', emoji: '🎨' },
+  { id: 'a1-daily-routine',           title: 'Daily Routine',               module: 'Daily Life',  level: 'A1', emoji: '☀️' },
+  { id: 'a1-weather',                 title: 'Weather & Seasons',           module: 'Daily Life',  level: 'A1', emoji: '🌤️' },
+  { id: 'a1-likes-dislikes',          title: 'Likes & Preferences',         module: 'Daily Life',  level: 'A1', emoji: '❤️' },
+  { id: 'a1-food-restaurant',         title: 'At the Restaurant',           module: 'Travel',      level: 'A1', emoji: '🍽️' },
+  { id: 'a1-shopping',                title: 'Shopping & Money',            module: 'Travel',      level: 'A1', emoji: '🛍️' },
+  { id: 'a1-travel-asking-for-directions', title: 'Asking for Directions',  module: 'Travel',      level: 'A1', emoji: '🗺️' },
 ];
 
-// ── Lesson data resolver ──────────────────────────────────────────
 type OverrideMap = { 'es-PR'?: any; 'es-ES'?: any };
 
 function resolveLesson(base: any, overrides: OverrideMap, dialect: Dialect): Lesson {
-  if (dialect === 'es-PR' && overrides['es-PR']) {
-    return mergeDialectLesson(base, overrides['es-PR']);
-  }
-  if (dialect === 'es-ES' && overrides['es-ES']) {
-    return mergeDialectLesson(base, overrides['es-ES']);
-  }
-  // es-MX is the base; es-419 returns base with corrected dialect label
-  if (dialect === 'es-419') {
-    return { ...(base as Lesson), dialect };
-  }
+  if (dialect === 'es-PR' && overrides['es-PR']) return mergeDialectLesson(base, overrides['es-PR']);
+  if (dialect === 'es-ES' && overrides['es-ES']) return mergeDialectLesson(base, overrides['es-ES']);
+  if (dialect === 'es-419') return { ...(base as Lesson), dialect };
   return base as Lesson;
 }
 
@@ -136,25 +120,26 @@ const lessonMap: Record<string, { base: any; overrides: OverrideMap }> = {
 
 function getLessonData(lessonId: string, dialect: Dialect): Lesson {
   const entry = lessonMap[lessonId];
-  if (!entry) return lessonMap['a1-greetings'].base as Lesson; // safe fallback
+  if (!entry) return lessonMap['a1-greetings'].base as Lesson;
   return resolveLesson(entry.base, entry.overrides, dialect);
 }
 
-// ── App component ─────────────────────────────────────────────────
+type Screen = 'lessons' | 'study' | 'vocabulary' | 'progress';
+
 function App() {
   const [dialect, setDialect] = useState<Dialect>('es-MX');
-  const [currentLessonId, setCurrentLessonId] = useState<string>('a1-greetings');
+  const [currentLessonId, setCurrentLessonId] = useState<string | null>(null);
   const [vocabulary, setVocabulary] = useState<VocabularyEntry[]>([]);
   const [progress, setProgress] = useState<UserProgress | null>(null);
-  const [activeTab, setActiveTab] = useState('lessons');
+  const [screen, setScreen] = useState<Screen>('lessons');
 
   const lesson = useMemo(() => {
+    if (!currentLessonId) return null;
     return getLessonData(currentLessonId, dialect);
   }, [currentLessonId, dialect]);
 
   useEffect(() => {
-    const allVocab = [...(vocabA1 as VocabularyEntry[]), ...(vocabEsPR as VocabularyEntry[])];
-    setVocabulary(allVocab);
+    setVocabulary([...(vocabA1 as VocabularyEntry[]), ...(vocabEsPR as VocabularyEntry[])]);
 
     const savedProgress = localStorage.getItem('userProgress');
     if (savedProgress) {
@@ -180,84 +165,126 @@ function App() {
     if (savedDialect) setDialect(savedDialect);
   }, []);
 
-  const handleDialectChange = (newDialect: Dialect) => {
-    setDialect(newDialect);
-    localStorage.setItem('preferredDialect', newDialect);
+  const handleDialectChange = (d: Dialect) => {
+    setDialect(d);
+    localStorage.setItem('preferredDialect', d);
   };
 
   const handleLessonSelect = (lessonId: string) => {
     setCurrentLessonId(lessonId);
-    setActiveTab('lesson');
+    setScreen('study');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleLessonComplete = (_score: number, timeSpent: number) => {
     if (progress) {
-      const updatedProgress = {
+      const updated = {
         ...progress,
         lessons_completed: progress.lessons_completed + 1,
         overall_progress: Math.min(1, (progress.lessons_completed + 1) / progress.lessons_total),
         study_time_minutes: progress.study_time_minutes + Math.floor(timeSpent / 60),
       };
-      setProgress(updatedProgress);
-      localStorage.setItem('userProgress', JSON.stringify(updatedProgress));
+      setProgress(updated);
+      localStorage.setItem('userProgress', JSON.stringify(updated));
     }
   };
 
+  const navItems: { id: Screen; label: string; icon: React.ElementType }[] = [
+    { id: 'lessons',    label: 'Lessons',    icon: Library },
+    { id: 'study',      label: 'Study',      icon: BookOpen },
+    { id: 'vocabulary', label: 'Vocabulary', icon: BookMarked },
+    { id: 'progress',   label: 'Progress',   icon: BarChart3 },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex flex-col">
       <Header dialect={dialect} onDialectChange={handleDialectChange} />
 
-      <main className="container mx-auto px-4 py-8">
-        <Hero />
+      {/* Main content — pb-20 leaves room for bottom nav on mobile */}
+      <main className="flex-1 container mx-auto px-4 py-6 pb-24 max-w-2xl">
 
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
-          <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto bg-white/80 backdrop-blur-sm shadow-lg">
-            <TabsTrigger value="lessons" className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
-              <Library className="w-4 h-4" /><span>Lessons</span>
-            </TabsTrigger>
-            <TabsTrigger value="lesson" className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
-              <BookOpen className="w-4 h-4" /><span>Current</span>
-            </TabsTrigger>
-            <TabsTrigger value="vocabulary" className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
-              <BookMarked className="w-4 h-4" /><span>Vocabulary</span>
-            </TabsTrigger>
-            <TabsTrigger value="progress" className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
-              <BarChart3 className="w-4 h-4" /><span>Progress</span>
-            </TabsTrigger>
-          </TabsList>
+        {/* ── Lessons screen ── */}
+        {screen === 'lessons' && (
+          <LessonBrowser
+            lessons={lessonRegistry}
+            currentLessonId={currentLessonId}
+            onSelectLesson={handleLessonSelect}
+            dialect={dialect}
+            progress={progress}
+          />
+        )}
 
-          <TabsContent value="lessons" className="mt-6">
-            <LessonBrowser
-              lessons={lessonRegistry}
-              currentLessonId={currentLessonId}
-              onSelectLesson={handleLessonSelect}
-              dialect={dialect}
-              progress={progress}
-            />
-          </TabsContent>
-
-          <TabsContent value="lesson" className="mt-6">
-            {lesson && (
-              <LessonViewer
-                key={`${currentLessonId}-${dialect}`}
-                lesson={lesson}
-                dialect={dialect}
-                onLessonComplete={handleLessonComplete}
-              />
+        {/* ── Study screen ── */}
+        {screen === 'study' && (
+          <div>
+            {currentLessonId && lesson ? (
+              <>
+                {/* Back button */}
+                <button
+                  onClick={() => setScreen('lessons')}
+                  className="flex items-center gap-1 text-sm text-amber-700 font-medium mb-4 hover:underline"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  All Lessons
+                </button>
+                <LessonViewer
+                  key={`${currentLessonId}-${dialect}`}
+                  lesson={lesson}
+                  dialect={dialect}
+                  onLessonComplete={handleLessonComplete}
+                />
+              </>
+            ) : (
+              <div className="text-center py-20">
+                <BookOpen className="w-16 h-16 text-amber-300 mx-auto mb-4" />
+                <h2 className="text-xl font-bold text-gray-700 mb-2">No lesson selected</h2>
+                <p className="text-gray-500 mb-6">Go to Lessons and tap one to start studying.</p>
+                <button
+                  onClick={() => setScreen('lessons')}
+                  className="px-6 py-3 bg-amber-500 text-white rounded-xl font-semibold hover:bg-amber-600 transition-colors"
+                >
+                  Browse Lessons
+                </button>
+              </div>
             )}
-          </TabsContent>
+          </div>
+        )}
 
-          <TabsContent value="vocabulary" className="mt-6">
-            <VocabularyBrowser vocabulary={vocabulary} dialect={dialect} />
-          </TabsContent>
+        {/* ── Vocabulary screen ── */}
+        {screen === 'vocabulary' && (
+          <VocabularyBrowser vocabulary={vocabulary} dialect={dialect} />
+        )}
 
-          <TabsContent value="progress" className="mt-6">
-            {progress && <ProgressDashboard progress={progress} />}
-          </TabsContent>
-        </Tabs>
+        {/* ── Progress screen ── */}
+        {screen === 'progress' && progress && (
+          <ProgressDashboard progress={progress} />
+        )}
       </main>
 
-      <Footer />
+      {/* ── Bottom navigation (mobile-first) ── */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-amber-200 shadow-lg z-50">
+        <div className="flex">
+          {navItems.map(({ id, label, icon: Icon }) => {
+            const active = screen === id;
+            return (
+              <button
+                key={id}
+                onClick={() => setScreen(id)}
+                className={`
+                  flex-1 flex flex-col items-center justify-center py-3 gap-1 transition-colors
+                  ${active
+                    ? 'text-amber-600 bg-amber-50 border-t-2 border-amber-500'
+                    : 'text-gray-500 hover:text-amber-500 hover:bg-amber-50/50'
+                  }
+                `}
+              >
+                <Icon className="w-5 h-5" />
+                <span className="text-xs font-medium">{label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
     </div>
   );
 }
