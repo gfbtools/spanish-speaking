@@ -438,7 +438,6 @@ function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: Exer
                   {parts.map((part, partIndex) => {
                     if (partIndex === parts.length - 1) return <span key={partIndex}>{part}</span>;
                     const bi = blankCounter++;
-                    const bankIdx = filled[bi];
                     const word = wordForBlank(bi);
                     const isOk  = submitted && word !== null && checkFill(word, answers[bi]);
                     const isBad = submitted && word !== null && !checkFill(word, answers[bi]);
