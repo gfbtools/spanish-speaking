@@ -1,0 +1,393 @@
+{
+  "lesson_id": "a3-hypotheticals",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Hipotéticos y Deseos",
+    "localized": "Hypotheticals & Wishes (Ojalá, Si + Subjunctive)"
+  },
+  "objectives": [
+    "Use ojalá + present subjunctive for hopes",
+    "Use ojalá + imperfect subjunctive for unlikely wishes",
+    "Form si + imperfect subjunctive + conditional for hypothetical scenarios",
+    "Express regret and wishes about the past"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a3-subjunctive-present",
+    "a3-conditional"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-hyp-1",
+      "type": "vocabulary",
+      "title": "Expresiones Hipotéticas",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-hyp-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-hyp-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-hyp-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Beatriz",
+      "text": "Ojalá que apruebe el examen mañana. Estudié muchísimo.",
+      "translation": "I hope I pass the exam tomorrow. I studied so much.",
+      "ipa": "[oxaˈla ke apˈɾweβe el ekˈsamen maˈɲana]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-001",
+      "alternate_phrasing": [],
+      "context": "Ojalá + present subjunctive (possible wish)"
+    },
+    {
+      "speaker": "Ernesto",
+      "text": "Ojalá pudieras calmarte. Te veo muy nerviosa.",
+      "translation": "I wish you could calm down. You look very nervous.",
+      "ipa": "[oxaˈla puˈðjeɾas kalˈmaɾte ‖ te ˈβeo muj neɾˈβjosa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-002",
+      "alternate_phrasing": [],
+      "context": "Ojalá + imperfect subjunctive (unlikely wish)"
+    },
+    {
+      "speaker": "Beatriz",
+      "text": "Si tuviera más tiempo, habría estudiado más. Pero empecé tarde.",
+      "translation": "If I had had more time, I would have studied more. But I started late.",
+      "ipa": "[si tuˈβjeɾa ˈmas ˈtjempo ‖ aˈβɾia estuˈðjaðo ˈmas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-003",
+      "alternate_phrasing": [],
+      "context": "Si + imperfect subj + conditional perfect (regret)"
+    },
+    {
+      "speaker": "Ernesto",
+      "text": "Si yo fuera tú, haría un repaso rápido esta noche y dormiría bien.",
+      "translation": "If I were you, I'd do a quick review tonight and sleep well.",
+      "ipa": "[si jo ˈfweɾa ˈtu ‖ aˈɾia un reˈpaso ˈrapiðo ˈesta ˈnoʧe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-004",
+      "alternate_phrasing": [],
+      "context": "Si yo fuera tú (advice)"
+    },
+    {
+      "speaker": "Beatriz",
+      "text": "Ojalá que tengas razón. Si suspendiera, tendría que repetir el curso.",
+      "translation": "I hope you're right. If I failed, I would have to repeat the course.",
+      "ipa": "[oxaˈla ke ˈteŋɡas raˈθon ‖ si suspenˈðjeɾa ‖ tenˈðɾia ke repeˈtiɾ el ˈkuɾso]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-005",
+      "alternate_phrasing": [],
+      "context": "Ojalá present + si hypothetical"
+    },
+    {
+      "speaker": "Ernesto",
+      "text": "No pienses en eso. Si me preguntaras, diría que estás muy preparada.",
+      "translation": "Don't think about that. If you asked me, I'd say you're very prepared.",
+      "ipa": "[no ˈpjenses en ˈeso ‖ si me pɾeɣunˈtaɾas ‖ diˈɾia ke esˈtas muj pɾepaˈɾaða]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-006",
+      "alternate_phrasing": [],
+      "context": "Si + imperfect subj + conditional (reassurance)"
+    },
+    {
+      "speaker": "Beatriz",
+      "text": "Ojalá fuera tan segura de mí misma como tú pareces serlo.",
+      "translation": "I wish I were as self-assured as you seem to be.",
+      "ipa": "[oxaˈla ˈfweɾa tan seˈɣuɾa ðe ˈmi ˈmisma ˈkomo ˈtu paˈɾeθes seɾlo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-007",
+      "alternate_phrasing": [],
+      "context": "Ojalá + imperfect (impossible wish about present)"
+    },
+    {
+      "speaker": "Ernesto",
+      "text": "¡Vas a salir bien! Y si no, ya verás — la próxima vez será diferente.",
+      "translation": "You'll do well! And if not, you'll see — next time will be different.",
+      "ipa": "[ˈβas a saˈliɾ ˈβjen ‖ i si ˈno ‖ ja βeˈɾas ‖ la ˈpɾoksima ˈβeθ seˈɾa ðifeˈɾente]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-hyp-mx-008",
+      "alternate_phrasing": [],
+      "context": "Encouragement with si clause"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a3-hyp-mx-c001",
+      "front": "Ojalá + present subjunctive",
+      "back": "I hope... (possible): Ojalá llegue a tiempo.",
+      "ipa": "[oxaˈla ˈʝeɣe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c002",
+      "front": "Ojalá + imperfect subjunctive",
+      "back": "I wish... (unlikely/impossible): Ojalá tuviera más dinero.",
+      "ipa": "[oxaˈla tuˈβjeɾa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c003",
+      "front": "Si yo fuera tú,...",
+      "back": "If I were you,... (advice)",
+      "ipa": "[si jo ˈfweɾa ˈtu]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c004",
+      "front": "Si tuviera tiempo, + conditional",
+      "back": "If I had time, I would... (present hypothetical)",
+      "ipa": "[si tuˈβjeɾa ˈtjempo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c005",
+      "front": "hubiera + participle (conditional perfect)",
+      "back": "would have done (past hypothetical result)",
+      "ipa": "[uˈβjeɾa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c006",
+      "front": "¡Ojalá que sí!",
+      "back": "I sure hope so! (affirmative wish response)",
+      "ipa": "[oxaˈla ke ˈsi]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c007",
+      "front": "Quisiera + infinitive",
+      "back": "I would like to... (polite/hypothetical wish, imperfect subj of querer)",
+      "ipa": "[kiˈsjeɾa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-hyp-mx-c008",
+      "front": "Si hubiera sabido,...",
+      "back": "If I had known,... (past hypothetical)",
+      "ipa": "[si uˈβjeɾa saˈβiðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-hyp-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta para expresar un deseo hipotético",
+      "question": "You wish you could fly — it's clearly not possible right now. Which is correct?",
+      "options": [
+        {
+          "text": "Ojalá pudiera volar.",
+          "correct": true
+        },
+        {
+          "text": "Ojalá pueda volar.",
+          "correct": false
+        },
+        {
+          "text": "Ojalá volo.",
+          "correct": false
+        },
+        {
+          "text": "Ojalá podré volar.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Ojalá pudiera' (imperfect subjunctive) = impossible or very unlikely wish. 'Ojalá pueda' would imply it might actually happen.",
+        "incorrect": "'Ojalá pudiera volar' (imperfect subjunctive) is correct for impossible wishes. 'Ojalá pueda' (present subjunctive) is for possible wishes."
+      }
+    },
+    {
+      "exercise_id": "ex-hyp-mx-002",
+      "type": "matching",
+      "instruction": "Une la estructura hipotética con su significado",
+      "pairs": [
+        {
+          "spanish": "Ojalá llegue pronto.",
+          "english": "I hope he arrives soon. (possible)"
+        },
+        {
+          "spanish": "Ojalá tuviera más vacaciones.",
+          "english": "I wish I had more vacation. (impossible/unlikely)"
+        },
+        {
+          "spanish": "Si viviera cerca, te visitaría más.",
+          "english": "If I lived nearby, I'd visit you more. (hypothetical)"
+        },
+        {
+          "spanish": "Si hubiera sabido, no lo habría comprado.",
+          "english": "If I had known, I wouldn't have bought it. (past regret)"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-hyp-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con la forma correcta del subjuntivo o condicional",
+      "dialogue": [
+        {
+          "speaker": "Paz",
+          "text": "Ojalá _____ mañana. Me lo merezco después de tanto trabajo. (hacer buen tiempo — hacer)"
+        },
+        {
+          "speaker": "Gus",
+          "text": "¡Ojalá! Si _____ buen tiempo, podríamos ir a la playa. (hacer — hypothetical)"
+        },
+        {
+          "speaker": "Paz",
+          "text": "Quisiera _____ todo y quedarme ahí una semana. (olvidar — yo)"
+        },
+        {
+          "speaker": "Gus",
+          "text": "Si _____ más días libres, lo haríamos. (tener — nosotros)"
+        }
+      ],
+      "answers": [
+        "haga",
+        "hiciera",
+        "olvidar",
+        "tuviéramos"
+      ],
+      "acceptable_variants": {
+        "haga": [],
+        "hiciera": [
+          "hubiera"
+        ],
+        "olvidar": [],
+        "tuviéramos": [
+          "tuviéramos",
+          "tuviéramos"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-hyp-mx-roleplay",
+    "type": "roleplay",
+    "title": "Deseos e hipótesis (Wishes and hypotheticals)",
+    "scenario": "Share your wishes and hypotheticals with a friend — what you hope will happen (ojalá + present subj), what you wish were true (ojalá + imperfect subj), and what you'd do in a hypothetical scenario (si + imperfect subj + conditional).",
+    "prompt": "Expresa deseos reales, deseos imposibles y situaciones hipotéticas usando ojalá y si.",
+    "expected_elements": [
+      "ojalá + present subjunctive",
+      "ojalá + imperfect subjunctive",
+      "si + imperfect subj + conditional"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "grammar",
+        "weight": 0.6,
+        "description": "Correct subjunctive forms with ojalá and si clauses"
+      },
+      {
+        "criterion": "vocabulary",
+        "weight": 0.25,
+        "description": "Abstract and emotional vocabulary"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.15,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Ojalá que apruebe mis exámenes finales esta semana. Ojalá pudiera tomar un descanso largo después — lo necesito. Si tuviera un mes libre, viajaría por Sudamérica sin plan fijo.",
+      "ipa": "[oxaˈla ke apˈɾweβe mis ekˈsamenes ˈfinales ‖ oxaˈla puˈðjeɾa toˈmaɾ un desˈkanse laɾɣo]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "'Ojalá' is one of the most emotionally rich words in Spanish — it carries hope, longing, and resignation depending on context. Mexicans use it constantly in everyday speech, far beyond textbook usage.",
+    "gestures": "Clasping hands briefly while saying 'ojalá' is a natural, almost prayer-like gesture in Mexican culture — reflecting the word's Arabic/religious origin.",
+    "regional_variations": "'Ojalá' is universal across all Spanish dialects. Puerto Ricans often add 'así sea' (so may it be) after ojalá for emphasis. Mexicans may say '¡Ojalá y!' (an informal intensifier) before the subjunctive.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A3"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "hypotheticals_ojalá_si_clauses"
+    }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

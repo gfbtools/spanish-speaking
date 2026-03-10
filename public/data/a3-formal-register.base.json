@@ -1,0 +1,393 @@
+{
+  "lesson_id": "a3-formal-register",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": {
+    "native": "El Registro Formal y Profesional",
+    "localized": "Formal & Professional Spanish"
+  },
+  "objectives": [
+    "Use usted consistently in professional and formal contexts",
+    "Write and speak using formal register: vocabulary, tone, and structure",
+    "Navigate formal situations: interviews, emails, official requests",
+    "Distinguish between formal written and spoken registers"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a2-work-school",
+    "a3-expressing-opinions"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-form-1",
+      "type": "vocabulary",
+      "title": "Vocabulario Formal",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-form-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-form-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-form-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Entrevistador",
+      "text": "Buenos días. Siéntese, por favor. Gracias por venir.",
+      "translation": "Good morning. Please sit down. Thank you for coming.",
+      "ipa": "[ˈβwenos ˈðias ‖ ˈsjentese poɾ faˈβoɾ ‖ ˈɡɾaθjas poɾ ˈβeniɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-001",
+      "alternate_phrasing": [],
+      "context": "Formal job interview opening"
+    },
+    {
+      "speaker": "Candidato",
+      "text": "Muchas gracias. Es un placer estar aquí. Estoy muy interesado en este puesto.",
+      "translation": "Thank you very much. It's a pleasure to be here. I'm very interested in this position.",
+      "ipa": "[ˈmuʧas ˈɡɾaθjas ‖ es un plaˈθeɾ esˈtaɾ aˈki]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-002",
+      "alternate_phrasing": [],
+      "context": "Formal candidate introduction"
+    },
+    {
+      "speaker": "Entrevistador",
+      "text": "Cuénteme un poco sobre usted y su trayectoria profesional.",
+      "translation": "Tell me a bit about yourself and your professional background.",
+      "ipa": "[ˈkwenteme un ˈpoko ˈsoβɾe usˈteð i su tɾajekˈtoɾja pɾofesjoˈnal]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-003",
+      "alternate_phrasing": [],
+      "context": "Formal usted interview question"
+    },
+    {
+      "speaker": "Candidato",
+      "text": "Con mucho gusto. Soy licenciado en administración de empresas con cinco años de experiencia.",
+      "translation": "With pleasure. I have a degree in business administration with five years of experience.",
+      "ipa": "[kon ˈmuʧo ˈɡusto ‖ ˈsoj liθenˈθjaðo en aðministɾaˈθjon ðe emˈpɾesas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-004",
+      "alternate_phrasing": [],
+      "context": "Formal self-introduction"
+    },
+    {
+      "speaker": "Entrevistador",
+      "text": "¿Podría describir sus principales logros en su anterior empresa?",
+      "translation": "Could you describe your main achievements at your previous company?",
+      "ipa": "[poˈðɾia ðeskɾiˈβiɾ sus pɾinˈθipales ˈloɣɾos en su anteˈɾjoɾ emˈpɾesa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-005",
+      "alternate_phrasing": [],
+      "context": "Formal conditional question"
+    },
+    {
+      "speaker": "Candidato",
+      "text": "Desde luego. Logré incrementar las ventas en un veinte por ciento durante mi gestión.",
+      "translation": "Of course. I managed to increase sales by twenty percent during my tenure.",
+      "ipa": "[ˈdesðe ˈlweɣo ‖ loˈɣɾe iŋkɾemenˈtaɾ las ˈβentas en un ˈβejnte poɾ ˈθjento]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-006",
+      "alternate_phrasing": [],
+      "context": "Formal achievement description"
+    },
+    {
+      "speaker": "Entrevistador",
+      "text": "Muy impresionante. ¿Cuáles serían sus expectativas salariales, si me permite preguntarlo?",
+      "translation": "Very impressive. What would be your salary expectations, if I may ask?",
+      "ipa": "[muj impɾesjoˈnante ‖ ˈkwales seˈɾian sus ekspektaˈtiβas salaˈɾjales]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-007",
+      "alternate_phrasing": [],
+      "context": "Formal polite question about salary"
+    },
+    {
+      "speaker": "Candidato",
+      "text": "Con base en mi experiencia, estaría buscando alrededor de cuarenta mil pesos mensuales.",
+      "translation": "Based on my experience, I would be looking for around forty thousand pesos per month.",
+      "ipa": "[kon ˈbase en mi ekspeˈɾjenθja ‖ estaˈɾia buskˈando alɾeðeˈðoɾ ðe kwaˈɾenta ˈmil ˈpesos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-form-mx-008",
+      "alternate_phrasing": [],
+      "context": "Formal salary response with conditional"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a3-form-mx-c001",
+      "front": "Con mucho gusto.",
+      "back": "With pleasure. / I'd be happy to. (formal acceptance)",
+      "ipa": "[kon ˈmuʧo ˈɡusto]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c002",
+      "front": "Estimado/a señor/señora",
+      "back": "Dear Mr./Mrs. (formal letter opening)",
+      "ipa": "[estiˈmaðo seˈɲoɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c003",
+      "front": "Me dirijo a usted para...",
+      "back": "I am writing to you to... (formal letter)",
+      "ipa": "[me ðiˈɾixo a usˈteð ˈpaɾa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c004",
+      "front": "Quedo a sus órdenes.",
+      "back": "I remain at your service. (formal closing)",
+      "ipa": "[ˈkeðo a sus ˈoɾðenes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c005",
+      "front": "Desde luego.",
+      "back": "Of course. / Certainly. (formal affirmation)",
+      "ipa": "[ˈdesðe ˈlweɣo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c006",
+      "front": "¿Me permite?",
+      "back": "May I? / If you'll allow me. (formal permission)",
+      "ipa": "[me peɾˈmite]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c007",
+      "front": "En espera de su respuesta...",
+      "back": "Awaiting your response... (formal letter)",
+      "ipa": "[en esˈpeɾa ðe su resˈpwesta]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-form-mx-c008",
+      "front": "Le agradezco de antemano...",
+      "back": "I thank you in advance... (formal gratitude)",
+      "ipa": "[le aɣɾaˈðeθko ðe anteˈmano]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-form-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la opción más formal",
+      "question": "You're emailing a potential employer for the first time. Which opening is most appropriate?",
+      "options": [
+        {
+          "text": "Estimado señor Rodríguez: Me dirijo a usted para presentarme...",
+          "correct": true
+        },
+        {
+          "text": "Hola Rodríguez, te escribo porque...",
+          "correct": false
+        },
+        {
+          "text": "Buenas, quería decirte que...",
+          "correct": false
+        },
+        {
+          "text": "Qué tal, le mando este mensaje para...",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Estimado señor + apellido' is the standard formal email opening in Mexico. Always use usted with someone you haven't met professionally.",
+        "incorrect": "'Estimado señor Rodríguez' + usted is the correct formal register for first professional contact in Mexico."
+      }
+    },
+    {
+      "exercise_id": "ex-form-mx-002",
+      "type": "matching",
+      "instruction": "Une la expresión formal con su equivalente informal",
+      "pairs": [
+        {
+          "spanish": "¿Me podría ayudar? (formal)",
+          "english": "¿Me ayudas? (informal)"
+        },
+        {
+          "spanish": "Le agradezco su tiempo. (formal)",
+          "english": "Gracias por tu tiempo. (informal)"
+        },
+        {
+          "spanish": "Quedo a sus órdenes. (formal)",
+          "english": "Avísame si necesitas algo. (informal)"
+        },
+        {
+          "spanish": "Con base en lo anterior... (formal)",
+          "english": "Por lo que te dije antes... (informal)"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-form-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la carta formal con las expresiones correctas",
+      "dialogue": [
+        {
+          "speaker": "Carta",
+          "text": "_____ señora Directora: (Estimada)"
+        },
+        {
+          "speaker": "Carta",
+          "text": "Me _____ a usted para solicitar información sobre el puesto vacante. (dirijo)"
+        },
+        {
+          "speaker": "Carta",
+          "text": "Le _____ de antemano su atención a esta solicitud. (agradezco)"
+        },
+        {
+          "speaker": "Carta",
+          "text": "_____ a su respuesta, _____ atentamente. (En espera / quedo)"
+        }
+      ],
+      "answers": [
+        "Estimada",
+        "dirijo",
+        "agradezco",
+        "En espera",
+        "quedo"
+      ],
+      "acceptable_variants": {
+        "Estimada": [],
+        "dirijo": [],
+        "agradezco": [],
+        "En espera": [
+          "A la espera"
+        ],
+        "quedo": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-form-mx-roleplay",
+    "type": "roleplay",
+    "title": "Entrevista de trabajo formal",
+    "scenario": "You're in a job interview. Respond to three questions using formal register — introduce yourself, describe a past achievement, and ask one question about the position.",
+    "prompt": "Participa en una entrevista formal usando usted, vocabulario profesional y estructuras formales.",
+    "expected_elements": [
+      "usted throughout",
+      "formal vocabulary (logré, me dedico a, con base en)",
+      "conditional for polite requests",
+      "formal closing"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "register",
+        "weight": 0.5,
+        "description": "Consistent formal register with usted and formal vocabulary"
+      },
+      {
+        "criterion": "grammar",
+        "weight": 0.3,
+        "description": "Correct conditional and subjunctive in formal structures"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear, measured formal pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Buenas tardes. Es un honor estar aquí. Soy diseñadora gráfica con seis años de experiencia. En mi anterior empresa, logré desarrollar una nueva identidad visual que incrementó el reconocimiento de marca en un treinta por ciento. ¿Podría indicarme cuáles serían las principales responsabilidades del puesto?",
+      "ipa": "[ˈβwenas ˈtaɾðes ‖ es un oˈnoɾ esˈtaɾ aˈki]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, 'usted' is expected in professional settings, with older people, authority figures, and anyone you're meeting formally for the first time. Switching prematurely to 'tú' is considered disrespectful.",
+    "gestures": "A firm handshake, steady eye contact, and an upright posture signal professionalism in Mexican business contexts.",
+    "regional_variations": "Puerto Rico uses 'usted' similarly but may transition to 'tú' faster in some professional contexts. Spain uses 'usted' in formal settings but is generally quicker to move to 'tú' professionally. Mexico tends to maintain 'usted' longer in hierarchical contexts.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A3"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "formal_register_professional_Spanish"
+    }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

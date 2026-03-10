@@ -1,0 +1,395 @@
+{
+  "lesson_id": "a3-relative-clauses",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Las Oraciones Relativas",
+    "localized": "Relative Clauses (que, quien, donde, lo que)"
+  },
+  "objectives": [
+    "Use 'que' to connect main clause to defining relative clause",
+    "Use 'quien/quienes' for people in non-defining clauses",
+    "Use 'donde' for places and 'lo que' for abstract ideas",
+    "Form complex sentences with embedded relative clauses"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a1-basic-questions",
+    "a2-preterite"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-rel-1",
+      "type": "vocabulary",
+      "title": "Pronombres Relativos",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-rel-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-rel-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-rel-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Sofía",
+      "text": "La novela que estoy leyendo ahora es increíble.",
+      "translation": "The novel that I'm reading now is incredible.",
+      "ipa": "[la noˈβela ke esˈtoj leˈʝendo aˈoɾa es iŋkɾeˈiβle]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-001",
+      "alternate_phrasing": [],
+      "context": "Que = defining relative clause with thing"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "¿Es la autora de quien me hablaste el otro día?",
+      "translation": "Is she the author whom you told me about the other day?",
+      "ipa": "[es la awˈtoɾa ðe ˈkjen me aˈβlaste el ˈotɾo ˈðia]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-002",
+      "alternate_phrasing": [],
+      "context": "Quien = person in relative clause with preposition"
+    },
+    {
+      "speaker": "Sofía",
+      "text": "Sí, la que ganó el premio el año pasado. Todo lo que escribe es magistral.",
+      "translation": "Yes, the one who won the award last year. Everything she writes is masterful.",
+      "ipa": "[si ‖ la ke ɡaˈno el ˈpɾemjo el ˈaɲo paˈsaðo ‖ ˈtoðo lo ke esˈkɾiβe es maxisˈtɾal]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-003",
+      "alternate_phrasing": [],
+      "context": "Lo que = abstract relative clause"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "¿De dónde es? ¿Sigue viviendo en el lugar donde nació?",
+      "translation": "Where is she from? Does she still live in the place where she was born?",
+      "ipa": "[ðe ˈðonde ˈes ‖ ˈsiɣe biˈβjendo en el luˈɣaɾ ˈðonde naˈθjo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-004",
+      "alternate_phrasing": [],
+      "context": "Donde = relative clause of place"
+    },
+    {
+      "speaker": "Sofía",
+      "text": "No, se mudó a la Ciudad de México, que es donde tiene más lectores.",
+      "translation": "No, she moved to Mexico City, which is where she has the most readers.",
+      "ipa": "[no ‖ se muˈðo a la θjuˈðað ðe ˈmexiko ‖ ke es ˈðonde ˈtjene ˈmas lekˈtoɾes]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-005",
+      "alternate_phrasing": [],
+      "context": "Non-defining relative clause"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "Lo que más me sorprende es que publica un libro nuevo cada año.",
+      "translation": "What surprises me most is that she publishes a new book every year.",
+      "ipa": "[lo ke ˈmas me soɾˈpɾende es ke puˈβlika un ˈliβɾo ˈnweβo ˈkaða ˈaɲo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-006",
+      "alternate_phrasing": [],
+      "context": "Lo que as subject of main clause"
+    },
+    {
+      "speaker": "Sofía",
+      "text": "Es que tiene una disciplina que yo nunca podría igualar.",
+      "translation": "It's that she has a discipline that I could never match.",
+      "ipa": "[es ke ˈtjene ˈuna ðisˈθiplina ke jo ˈnuŋka poˈðɾia iɣuaˈlaɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-007",
+      "alternate_phrasing": [],
+      "context": "Embedded relative clause"
+    },
+    {
+      "speaker": "Tomás",
+      "text": "Quien trabaja así merece todo el éxito que ha tenido.",
+      "translation": "Whoever works like that deserves all the success they've had.",
+      "ipa": "[ˈkjen tɾaˈβaxa aˈsi meˈɾeθe ˈtoðo el ˈeksito ke a teˈniðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-rel-mx-008",
+      "alternate_phrasing": [],
+      "context": "Quien as generalizing subject"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a3-rel-mx-c001",
+      "front": "que",
+      "back": "that / which / who (most common relative pronoun)",
+      "ipa": "[ke]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c002",
+      "front": "quien / quienes",
+      "back": "who / whom (for people, especially after prepositions)",
+      "ipa": "[ˈkjen / ˈkjenes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c003",
+      "front": "donde",
+      "back": "where (relative pronoun for places)",
+      "ipa": "[ˈðonde]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c004",
+      "front": "lo que",
+      "back": "what / that which (for abstract or unspecified things)",
+      "ipa": "[lo ke]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c005",
+      "front": "El libro que leí...",
+      "back": "The book that I read... (defining relative clause)",
+      "ipa": "[el ˈliβɾo ke leˈi]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c006",
+      "front": "La persona con quien hablé...",
+      "back": "The person with whom I spoke...",
+      "ipa": "[la peɾˈsona kon ˈkjen aˈβle]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c007",
+      "front": "Lo que me gusta es...",
+      "back": "What I like is... (lo que as subject)",
+      "ipa": "[lo ke me ˈɡusta es]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-rel-mx-c008",
+      "front": "el lugar donde nací",
+      "back": "the place where I was born",
+      "ipa": "[el luˈɣaɾ ˈðonde naˈθi]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-rel-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge el pronombre relativo correcto",
+      "question": "The restaurant ___ we ate at last night was excellent.",
+      "options": [
+        {
+          "text": "donde",
+          "correct": true
+        },
+        {
+          "text": "que",
+          "correct": false
+        },
+        {
+          "text": "lo que",
+          "correct": false
+        },
+        {
+          "text": "quien",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Perfecto! 'Donde' is used for places: 'el restaurante donde comimos'. 'Que' could also work here but 'donde' is more natural for a location.",
+        "incorrect": "For places, 'donde' is the most natural choice: 'el restaurante donde comimos'. 'Que' can work but 'donde' specifies location more precisely."
+      }
+    },
+    {
+      "exercise_id": "ex-rel-mx-002",
+      "type": "matching",
+      "instruction": "Une la oración con el pronombre relativo correcto",
+      "pairs": [
+        {
+          "spanish": "La chica ___ conocí es tu prima.",
+          "english": "que (person — direct object)"
+        },
+        {
+          "spanish": "El barrio ___ crecí es muy bonito.",
+          "english": "donde (place)"
+        },
+        {
+          "spanish": "___ más me molesta es el ruido.",
+          "english": "Lo que (abstract / what)"
+        },
+        {
+          "spanish": "El maestro con ___ aprendí más fue el de historia.",
+          "english": "quien (person after preposition)"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-rel-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con el pronombre relativo correcto: que, quien, donde, lo que",
+      "dialogue": [
+        {
+          "speaker": "Eva",
+          "text": "El café _____ estamos es mi favorito de la colonia."
+        },
+        {
+          "speaker": "René",
+          "text": "Sí, la barista _____ hace el espresso es increíble."
+        },
+        {
+          "speaker": "Eva",
+          "text": "_____ me encanta es que usan granos de Oaxaca."
+        },
+        {
+          "speaker": "René",
+          "text": "El dueño, con _____ hablé ayer, me dijo que abren pronto otra sucursal."
+        }
+      ],
+      "answers": [
+        "donde",
+        "que",
+        "Lo que",
+        "quien"
+      ],
+      "acceptable_variants": {
+        "donde": [
+          "en que"
+        ],
+        "que": [],
+        "Lo que": [
+          "lo que"
+        ],
+        "quien": [
+          "el que"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-rel-mx-roleplay",
+    "type": "roleplay",
+    "title": "Descríbelo con una cláusula relativa (Describe it with a relative clause)",
+    "scenario": "Describe a place you love, a person who inspired you, and something that changed your life — using relative clauses to add detail.",
+    "prompt": "Usa cláusulas relativas (que, quien, donde, lo que) para dar más información sobre personas, lugares o ideas.",
+    "expected_elements": [
+      "que (thing or person)",
+      "donde (place)",
+      "lo que (abstract)",
+      "quien (person after preposition)"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "grammar",
+        "weight": 0.5,
+        "description": "Correct relative pronouns in well-formed clauses"
+      },
+      {
+        "criterion": "vocabulary",
+        "weight": 0.3,
+        "description": "Descriptive and abstract vocabulary"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "La ciudad donde crecí es pequeña pero muy tranquila. El maestro que más me influyó era muy apasionado. Lo que más recuerdo de la escuela es la biblioteca, donde pasaba horas leyendo.",
+      "ipa": "[la θjuˈðað ˈðonde kɾeˈθi es peˈkeɲa ˈpeɾo muj tɾaŋˈkila]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Relative clauses dramatically increase the sophistication of Spanish speech. In formal writing, 'el cual / la cual / los cuales' can replace 'que' for added clarity in complex sentences.",
+    "gestures": "No specific gesture — relative clauses are a structural sophistication most apparent in writing and formal speech.",
+    "regional_variations": "'Que' is overwhelmingly the most common relative pronoun across all Spanish dialects. 'Quien' is slightly more formal. In casual Mexican speech, relative clauses are often simplified: 'el lugar en que' → 'el lugar donde'. Puerto Rico and Spain follow the same pattern.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A3"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "relative_clauses"
+    }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

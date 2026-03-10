@@ -1,0 +1,22 @@
+{
+  "lesson_id": "a3-formal-register",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Muchas gracias. Es un placer estar aquí. Estoy sumamente interesado en esta posición.",
+        "translation": "Thank you very much. It's a pleasure to be here. I'm extremely interested in this position. (PR: posición common in bilingual context)"
+      },
+      {
+        "line_index": 5,
+        "text": "Con mucho gusto. Logré aumentar las ventas en un veinte por ciento durante mi gestión.",
+        "translation": "With pleasure. I managed to increase sales by twenty percent during my tenure."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Puerto Rico has a strong bilingual professional culture. English business terms often appear in Spanish speech: 'el networking', 'el follow-up', 'el deadline'. Formal register still uses usted but code-switching is common.",
+      "regional_variations": "In PR professional settings, 'la posición' (position) is used alongside 'el puesto'. 'El résumé' or 'el currículo' for resume. Puerto Rican formal Spanish is influenced by US corporate culture."
+    }
+  }
+}

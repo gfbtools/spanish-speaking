@@ -1,0 +1,121 @@
+{
+  "lesson_id": "a2-health-body",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": { "native": "La Salud y el Cuerpo", "localized": "Health & Body" },
+  "objectives": [
+    "Name major body parts in Spanish",
+    "Describe symptoms and ailments",
+    "Communicate with a doctor or pharmacist",
+    "Express pain and discomfort accurately"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": ["a1-basic-questions"],
+  "activities": [
+    { "activity_id": "act-hlth-1", "type": "vocabulary", "title": "El Cuerpo", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-hlth-2", "type": "dialogue",   "title": "Diálogo",   "content": {}, "estimated_minutes": 6 },
+    { "activity_id": "act-hlth-3", "type": "exercises",  "title": "Ejercicios","content": {}, "estimated_minutes": 6 },
+    { "activity_id": "act-hlth-4", "type": "speaking",   "title": "Práctica",  "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Paciente", "text": "Buenos días, doctor. Me siento muy mal.", "translation": "Good morning, doctor. I feel very ill.", "ipa": "[ˈβwenos ˈðias ‖ me ˈsjento muj ˈmal]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-001", "alternate_phrasing": [], "context": "Arriving at the doctor" },
+    { "speaker": "Doctor",   "text": "¿Qué le duele? ¿Desde cuándo?", "translation": "What hurts? Since when?", "ipa": "[ke le ˈðwele ‖ ˈdesðe ˈkwando]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-002", "alternate_phrasing": [], "context": "Doctor asks about symptoms" },
+    { "speaker": "Paciente", "text": "Me duele mucho la cabeza y tengo fiebre desde ayer.", "translation": "My head hurts a lot and I've had a fever since yesterday.", "ipa": "[me ˈðwele ˈmuʧo la kaˈβeθa i ˈteŋɡo ˈfjeβɾe ˈdesðe aˈʝeɾ]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-003", "alternate_phrasing": [], "context": "Describing headache and fever" },
+    { "speaker": "Doctor",   "text": "¿Tiene tos o le duele la garganta?", "translation": "Do you have a cough or does your throat hurt?", "ipa": "[ˈtjene ˈtos o le ˈðwele la ɣaɾˈɣanta]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-004", "alternate_phrasing": [], "context": "Doctor checks more symptoms" },
+    { "speaker": "Paciente", "text": "Sí, tengo tos y también me duelen los huesos.", "translation": "Yes, I have a cough and my bones ache too.", "ipa": "[si ‖ ˈteŋɡo ˈtos i tamˈbjen me ˈðwelen los ˈwesos]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-005", "alternate_phrasing": [], "context": "More symptoms" },
+    { "speaker": "Doctor",   "text": "Parece que tiene gripe. Le voy a recetar un medicamento.", "translation": "It seems you have the flu. I'm going to prescribe you medication.", "ipa": "[paˈɾeθe ke ˈtjene ˈɡɾipe ‖ le ˈβoj a reθeˈtaɾ un meðikaˈmento]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-006", "alternate_phrasing": [], "context": "Diagnosis" },
+    { "speaker": "Paciente", "text": "¿Necesito descansar en casa?", "translation": "Do I need to rest at home?", "ipa": "[neθeˈsito ðeskanˈsaɾ en ˈkasa]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-007", "alternate_phrasing": [], "context": "Asking about recovery" },
+    { "speaker": "Doctor",   "text": "Sí, descanse dos días, tome mucha agua y evite el frío.", "translation": "Yes, rest two days, drink lots of water and avoid the cold.", "ipa": "[si ‖ desˈkanse ðos ˈðias ‖ ˈtome ˈmuʧa ˈaɣwa i eˈβite el ˈfɾio]", "dialect": "es-MX", "audio_asset_id": "a2-hlth-mx-008", "alternate_phrasing": [], "context": "Doctor's advice" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a2-hlth-mx-c001", "front": "me duele la cabeza", "back": "my head hurts", "ipa": "[me ˈðwele la kaˈβeθa]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c002", "front": "la garganta", "back": "throat", "ipa": "[la ɣaɾˈɣanta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c003", "front": "la fiebre", "back": "fever", "ipa": "[la ˈfjeβɾe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c004", "front": "tengo tos", "back": "I have a cough", "ipa": "[ˈteŋɡo ˈtos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c005", "front": "el estómago", "back": "stomach", "ipa": "[el esˈtomago]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c006", "front": "me siento mal", "back": "I feel sick/bad", "ipa": "[me ˈsjento ˈmal]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c007", "front": "la rodilla", "back": "knee", "ipa": "[la roˈðiʝa]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-hlth-mx-c008", "front": "el medicamento", "back": "medication / medicine", "ipa": "[el meðikaˈmento]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-hlth-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta para describir dolor (Choose correct pain expression)",
+      "question": "How do you say 'My stomach hurts' in Spanish?",
+      "options": [
+        { "text": "Me duele el estómago.", "correct": true },
+        { "text": "Mi estómago duele.", "correct": false },
+        { "text": "Tengo dolor de estómago me.", "correct": false },
+        { "text": "El estómago me está mal.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Exacto! 'Me duele el estómago' — the verb 'doler' works like 'gustar': it agrees with what hurts, not the person.",
+        "incorrect": "'Me duele el estómago' is the standard form. 'Doler' works like 'gustar' — you say 'me duele' (singular) or 'me duelen' (plural, e.g. los pies)."
+      }
+    },
+    {
+      "exercise_id": "ex-hlth-mx-002",
+      "type": "matching",
+      "instruction": "Une la parte del cuerpo con su descripción (Match body part to description)",
+      "pairs": [
+        { "spanish": "la cabeza",   "english": "head" },
+        { "spanish": "el pecho",    "english": "chest" },
+        { "spanish": "la espalda",  "english": "back" },
+        { "spanish": "el tobillo",  "english": "ankle" }
+      ]
+    },
+    {
+      "exercise_id": "ex-hlth-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación en la farmacia (Complete the pharmacy conversation)",
+      "dialogue": [
+        { "speaker": "Cliente",    "text": "Buenas tardes, _____ mucho la garganta. (doler — me)" },
+        { "speaker": "Farmacéutico", "text": "¿Tiene _____ también? (fiebre)" },
+        { "speaker": "Cliente",    "text": "Sí, y _____ mucho cansancio. (tener — yo)" },
+        { "speaker": "Farmacéutico", "text": "Le recomiendo este _____ para el dolor. (medicamento)" }
+      ],
+      "answers": ["me duele", "fiebre", "tengo", "medicamento"],
+      "acceptable_variants": {
+        "me duele": [],
+        "fiebre": [],
+        "tengo": [],
+        "medicamento": ["remedio", "jarabe"]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-hlth-mx-roleplay",
+    "type": "roleplay",
+    "title": "En el consultorio (At the Doctor's Office)",
+    "scenario": "You don't feel well. Describe your symptoms to the doctor — what hurts, since when, and how you feel overall.",
+    "prompt": "Describe tus síntomas al médico. ¿Qué te duele? ¿Desde cuándo?",
+    "expected_elements": ["me duele", "tengo", "desde", "body part"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "vocabulary",    "weight": 0.5, "description": "Body parts and symptoms vocabulary" },
+      { "criterion": "grammar",       "weight": 0.3, "description": "Correct use of doler and tener for symptoms" },
+      { "criterion": "pronunciation", "weight": 0.2, "description": "Clear pronunciation" }
+    ],
+    "sample_response": {
+      "text": "Doctor, me duele mucho la cabeza y tengo fiebre desde esta mañana. También me duele la garganta y me siento muy cansada.",
+      "ipa": "[me ˈðwele ˈmuʧo la kaˈβeθa i ˈteŋɡo ˈfjeβɾe ˈdesðe ˈesta maˈɲana]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, it's common to say '¿Cómo te sientes?' (How do you feel?) as genuine concern. People don't rush health conversations — they take time to express care.",
+    "gestures": "Touching the relevant body part while describing pain is expected and helpful. Doctors in Mexico often ask '¿Le duele aquí?' while pressing gently.",
+    "regional_variations": "Mexicans commonly use 'me cayó mal la comida' (the food didn't agree with me) for stomach issues. For a headache, 'traigo dolor de cabeza' is also natural alongside 'me duele la cabeza'.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A2" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "doler_tener_symptoms" }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

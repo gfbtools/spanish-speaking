@@ -1,0 +1,397 @@
+{
+  "lesson_id": "a2-making-plans",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Haciendo Planes e Invitaciones",
+    "localized": "Making Plans & Invitations"
+  },
+  "objectives": [
+    "Invite someone to do something",
+    "Accept and decline invitations politely",
+    "Suggest alternatives and negotiate plans",
+    "Use time expressions for future arrangements"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [
+    "a2-future-tense",
+    "a1-time-days"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-plan-1",
+      "type": "vocabulary",
+      "title": "Invitaciones",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-plan-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-plan-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-plan-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Ricardo",
+      "text": "Oye, ¿te gustaría venir a una barbacoa el sábado?",
+      "translation": "Hey, would you like to come to a barbecue on Saturday?",
+      "ipa": "[ˈoje ‖ te ɡustaˈɾia βeˈniɾ a ˈuna baɾbaˈkoa el ˈsaβaðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-001",
+      "alternate_phrasing": [
+        "¿Quieres venir a...?"
+      ],
+      "context": "Extending an invitation"
+    },
+    {
+      "speaker": "Laura",
+      "text": "¡Me encantaría! ¿A qué hora empieza?",
+      "translation": "I would love to! What time does it start?",
+      "ipa": "[me eŋkantaˈɾia ‖ a ke ˈoɾa emˈpjeθa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-002",
+      "alternate_phrasing": [],
+      "context": "Accepting invitation"
+    },
+    {
+      "speaker": "Ricardo",
+      "text": "A partir de las dos. Está en casa de mis papás en Tlalpan.",
+      "translation": "Starting at two. It's at my parents' house in Tlalpan.",
+      "ipa": "[a paɾˈtiɾ ðe las ðos ‖ esˈta en ˈkasa ðe mis paˈpas en tlaˈpan]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-003",
+      "alternate_phrasing": [],
+      "context": "Giving party details"
+    },
+    {
+      "speaker": "Laura",
+      "text": "Perfecto. ¿Quieres que lleve algo?",
+      "translation": "Perfect. Do you want me to bring anything?",
+      "ipa": "[peɾˈfekto ‖ ˈkjeɾes ke ˈʝeβe ˈalɣo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-004",
+      "alternate_phrasing": [],
+      "context": "Offering to contribute"
+    },
+    {
+      "speaker": "Ricardo",
+      "text": "Si quieres, puedes traer algo de tomar. Todo lo demás ya está.",
+      "translation": "If you want, you can bring something to drink. Everything else is already set.",
+      "ipa": "[si ˈkjeɾes ‖ ˈpweðes tɾaˈeɾ ˈalɣo ðe toˈmaɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-005",
+      "alternate_phrasing": [],
+      "context": "Suggesting what to bring"
+    },
+    {
+      "speaker": "Laura",
+      "text": "Por cierto, ¿le puedo avisar a Marcos para que venga también?",
+      "translation": "By the way, can I let Marcos know to come too?",
+      "ipa": "[poɾ ˈθjeɾto ‖ le ˈpweðo aβiˈsaɾ a ˈmaɾkos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-006",
+      "alternate_phrasing": [],
+      "context": "Asking to invite someone else"
+    },
+    {
+      "speaker": "Ricardo",
+      "text": "¡Claro que sí! Mientras más, mejor. Que venga con su familia.",
+      "translation": "Of course! The more the merrier. He can come with his family.",
+      "ipa": "[ˈklaɾo ke ˈsi ‖ ˈmjentɾas ˈmas ˈmexoɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-007",
+      "alternate_phrasing": [],
+      "context": "Welcoming more guests"
+    },
+    {
+      "speaker": "Laura",
+      "text": "¡Genial! Nos vemos el sábado entonces. ¡Cuídense!",
+      "translation": "Great! See you Saturday then. Take care!",
+      "ipa": "[xeˈnjal ‖ nos ˈβemos el ˈsaβaðo enˈtonθes ‖ ˈkwiðense]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-plan-mx-008",
+      "alternate_phrasing": [],
+      "context": "Closing the conversation"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a2-plan-mx-c001",
+      "front": "¿Te gustaría...?",
+      "back": "Would you like to...?",
+      "ipa": "[te ɡustaˈɾia]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c002",
+      "front": "me encantaría",
+      "back": "I would love to",
+      "ipa": "[me eŋkantaˈɾia]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c003",
+      "front": "lo siento, no puedo",
+      "back": "I'm sorry, I can't",
+      "ipa": "[lo ˈsjento no ˈpweðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c004",
+      "front": "¿Qué te parece si...?",
+      "back": "What do you think about...? / How about...?",
+      "ipa": "[ke te paˈɾeθe si]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c005",
+      "front": "a partir de",
+      "back": "starting from / as of",
+      "ipa": "[a paɾˈtiɾ ðe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c006",
+      "front": "quedar",
+      "back": "to arrange to meet / to plan to get together",
+      "ipa": "[keˈðaɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c007",
+      "front": "nos vemos",
+      "back": "see you / we'll see each other",
+      "ipa": "[nos ˈβemos]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-plan-mx-c008",
+      "front": "me viene bien el viernes",
+      "back": "Friday works for me",
+      "ipa": "[me ˈβjene ˈβjen el ˈβjeɾnes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-plan-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta más natural para declinar una invitación",
+      "question": "Your friend invites you to a party but you can't make it. What's the most natural response?",
+      "options": [
+        {
+          "text": "¡Qué lástima! Ese día no puedo, tengo otro compromiso.",
+          "correct": true
+        },
+        {
+          "text": "No quiero ir.",
+          "correct": false
+        },
+        {
+          "text": "La fiesta no me gusta.",
+          "correct": false
+        },
+        {
+          "text": "Voy a ir pero no puedo.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! '¡Qué lástima! No puedo' is polite — it expresses regret and gives a brief reason without being rude.",
+        "incorrect": "'¡Qué lástima! No puedo, tengo otro compromiso' is the most natural and polite decline in Mexican Spanish."
+      }
+    },
+    {
+      "exercise_id": "ex-plan-mx-002",
+      "type": "matching",
+      "instruction": "Une la invitación con la respuesta apropiada",
+      "pairs": [
+        {
+          "spanish": "¿Quieres ir al cine esta noche?",
+          "english": "¡Me encantaría! ¿Qué película vamos a ver?"
+        },
+        {
+          "spanish": "¿Puedes venir a cenar el viernes?",
+          "english": "Lo siento, ese día tengo planes."
+        },
+        {
+          "spanish": "¿Vamos a la playa el domingo?",
+          "english": "¡Qué buena idea! Hace mucho que no voy."
+        },
+        {
+          "spanish": "¿Te gustaría tomar un café?",
+          "english": "Sí, ¡cómo no! ¿A qué hora te viene bien?"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-plan-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación para hacer planes",
+      "dialogue": [
+        {
+          "speaker": "Camila",
+          "text": "¿_____ venir al mercado el domingo? (gustar — conditional)"
+        },
+        {
+          "speaker": "Juan",
+          "text": "¡_____ mucho! ¿A qué hora quedamos? (encantar — conditional)"
+        },
+        {
+          "speaker": "Camila",
+          "text": "_____ las diez de la mañana, ¿te viene bien? (a partir de)"
+        },
+        {
+          "speaker": "Juan",
+          "text": "Perfecto. _____ allí a las diez entonces. (quedar — nosotros)"
+        }
+      ],
+      "answers": [
+        "Te gustaría",
+        "Me encantaría",
+        "A partir de",
+        "Quedamos"
+      ],
+      "acceptable_variants": {
+        "Te gustaría": [],
+        "Me encantaría": [
+          "Me gustaría mucho"
+        ],
+        "A partir de": [
+          "Desde"
+        ],
+        "Quedamos": [
+          "quedamos"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-plan-mx-roleplay",
+    "type": "roleplay",
+    "title": "Hagamos planes (Let's make plans)",
+    "scenario": "Call a friend to make plans for the weekend — invite them to something, agree on a time and place, and confirm what each person will bring or do.",
+    "prompt": "Invita a un amigo a hacer algo este fin de semana. Acuerden hora, lugar y detalles.",
+    "expected_elements": [
+      "invitation phrase",
+      "time and place",
+      "acceptance or alternative",
+      "closing confirmation"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "vocabulary",
+        "weight": 0.4,
+        "description": "Social plans and time expressions"
+      },
+      {
+        "criterion": "grammar",
+        "weight": 0.4,
+        "description": "Conditional invitations and future tense"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Hola, ¿te gustaría ir a comer el sábado? Conozco un restaurante muy bueno en la Condesa. Podríamos quedar a la una. ¿Te viene bien?",
+      "ipa": "[ˈola ‖ te ɡustaˈɾia ˈiɾ a koˈmeɾ el ˈsaβaðo]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, social plans are often flexible — it's normal to say '¿Cómo ves?' (What do you think?) and adjust times. Being overly rigid about schedules can feel cold.",
+    "gestures": "A big smile and open arms when accepting an invitation signal genuine enthusiasm in Mexican culture.",
+    "regional_variations": "'Juntarnos' (to get together) is very common in Mexican Spanish: '¿Nos juntamos el viernes?' Also '¿Cómo ves si vamos...?' (What do you think about going...?) is a soft, collaborative way to suggest plans.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A2"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "invitations_plans"
+    }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

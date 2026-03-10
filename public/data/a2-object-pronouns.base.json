@@ -1,0 +1,121 @@
+{
+  "lesson_id": "a2-object-pronouns",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": { "native": "Los Pronombres de Objeto", "localized": "Direct & Indirect Object Pronouns" },
+  "objectives": [
+    "Identify and use direct object pronouns (me, te, lo, la, nos, los, las)",
+    "Identify and use indirect object pronouns (me, te, le, nos, les)",
+    "Place object pronouns correctly before conjugated verbs",
+    "Avoid redundant noun repetition using pronouns"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a1-present-tense", "a2-preterite"],
+  "activities": [
+    { "activity_id": "act-obj-1", "type": "vocabulary", "title": "Pronombres", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-obj-2", "type": "dialogue",   "title": "Diálogo",    "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-obj-3", "type": "exercises",  "title": "Ejercicios", "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-obj-4", "type": "speaking",   "title": "Práctica",   "content": {}, "estimated_minutes": 5 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Nadia",  "text": "¿Le compraste el regalo a tu mamá?", "translation": "Did you buy your mom the gift?", "ipa": "[le kompɾˈaste el reˈɣalo a tu maˈma]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-001", "alternate_phrasing": [], "context": "Asking about a purchase" },
+    { "speaker": "Tomás",  "text": "Sí, se lo compré ayer. Es una bolsa muy bonita.", "translation": "Yes, I bought it for her yesterday. It's a very nice purse.", "ipa": "[si ‖ se lo komˈpɾe aˈʝeɾ ‖ es ˈuna ˈβolsa muj βoˈnita]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-002", "alternate_phrasing": [], "context": "Confirming a purchase" },
+    { "speaker": "Nadia",  "text": "¿Ya la envolviste?", "translation": "Did you already wrap it?", "ipa": "[ja la embolˈβiste]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-003", "alternate_phrasing": [], "context": "Asking about wrapping" },
+    { "speaker": "Tomás",  "text": "Todavía no. La voy a envolver esta noche.", "translation": "Not yet. I'm going to wrap it tonight.", "ipa": "[toˈðaβia ˈno ‖ la ˈβoj a embolˈβeɾ ˈesta ˈnoʧe]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-004", "alternate_phrasing": [], "context": "Explaining future plans" },
+    { "speaker": "Nadia",  "text": "¿Y a tu papá? ¿Le vas a comprar algo?", "translation": "And your dad? Are you going to buy him something?", "ipa": "[i a tu paˈpa ‖ le βas a kompɾˈaɾ ˈalɣo]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-005", "alternate_phrasing": [], "context": "Asking about father's gift" },
+    { "speaker": "Tomás",  "text": "Sí. Le quiero comprar una corbata. Lo vi en la tienda la semana pasada.", "translation": "Yes. I want to buy him a tie. I saw it at the store last week.", "ipa": "[si ‖ le ˈkjeɾo kompˈɾaɾ ˈuna koɾˈbata ‖ lo ˈβi en la ˈtjenða]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-006", "alternate_phrasing": [], "context": "Describing gift idea" },
+    { "speaker": "Nadia",  "text": "Mira, yo te ayudo a escogerla si quieres.", "translation": "Look, I'll help you choose it if you want.", "ipa": "[ˈmiɾa ‖ jo te aˈʝuðo a eskoˈxeɾla si ˈkjeɾes]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-007", "alternate_phrasing": [], "context": "Offering help" },
+    { "speaker": "Tomás",  "text": "¡Gracias! Te lo agradezco mucho.", "translation": "Thanks! I appreciate it a lot.", "ipa": "[ˈɡɾaθjas ‖ te lo aɡɾaˈðeθko ˈmuʧo]", "dialect": "es-MX", "audio_asset_id": "a2-obj-mx-008", "alternate_phrasing": [], "context": "Expressing gratitude" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a2-obj-mx-c001", "front": "lo / la", "back": "him/it (m) / her/it (f) — direct object", "ipa": "[lo / la]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a2-obj-mx-c002", "front": "le", "back": "to him/her/it — indirect object", "ipa": "[le]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a2-obj-mx-c003", "front": "¿Lo tienes?", "back": "Do you have it?", "ipa": "[lo ˈtjenes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-obj-mx-c004", "front": "Le dije la verdad.", "back": "I told him/her the truth.", "ipa": "[le ˈðixe la βeɾˈðað]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a2-obj-mx-c005", "front": "nos", "back": "us (direct or indirect object)", "ipa": "[nos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-obj-mx-c006", "front": "se lo doy", "back": "I give it to him/her (le+lo → se+lo)", "ipa": "[se lo ˈðoj]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a2-obj-mx-c007", "front": "Te llamo mañana.", "back": "I'll call you tomorrow.", "ipa": "[te ˈʝamo maˈɲana]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-obj-mx-c008", "front": "los / las", "back": "them (m/f) — direct object plural", "ipa": "[los / las]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-obj-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta (Choose the correct sentence)",
+      "question": "Your friend asks 'Did you see the movie?' How do you say 'Yes, I saw it'?",
+      "options": [
+        { "text": "Sí, la vi.", "correct": true },
+        { "text": "Sí, vi la.", "correct": false },
+        { "text": "Sí, le vi.", "correct": false },
+        { "text": "Sí, vi ella.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'La vi' — 'la' replaces 'la película' (feminine direct object) and comes BEFORE the verb.",
+        "incorrect": "'La vi' is correct. The direct object pronoun 'la' (for feminine nouns) goes before the conjugated verb. 'Le' is indirect object. Pronouns don't follow the verb in this position."
+      }
+    },
+    {
+      "exercise_id": "ex-obj-mx-002",
+      "type": "matching",
+      "instruction": "Une el pronombre con su función (Match the pronoun to its function)",
+      "pairs": [
+        { "spanish": "lo",  "english": "direct object — masculine/it" },
+        { "spanish": "le",  "english": "indirect object — to him/her" },
+        { "spanish": "nos", "english": "direct/indirect — us" },
+        { "spanish": "les", "english": "indirect object — to them" }
+      ]
+    },
+    {
+      "exercise_id": "ex-obj-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Reemplaza el objeto con el pronombre correcto (Replace the object with the correct pronoun)",
+      "dialogue": [
+        { "speaker": "Rosa",   "text": "¿Llamaste a tu hermano? — Sí, _____ llamé ayer. (him)" },
+        { "speaker": "Felipe", "text": "¿Tienes las llaves? — Sí, _____ tengo aquí. (them-f)" },
+        { "speaker": "Rosa",   "text": "¿Le mandaste el mensaje a Ana? — Sí, _____ _____ mandé. (to her / it-m)" },
+        { "speaker": "Felipe", "text": "¿Nos compraste los boletos? — Sí, _____ compré para ustedes. (them-m)" }
+      ],
+      "answers": ["lo", "las", "se", "lo", "los"],
+      "acceptable_variants": {
+        "lo": [],
+        "las": [],
+        "se": [],
+        "los": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-obj-mx-roleplay",
+    "type": "roleplay",
+    "title": "¿Lo hiciste? (Did you do it?)",
+    "scenario": "Your friend asks whether you did various tasks — called someone, bought something, sent a message. Answer each using the correct object pronoun.",
+    "prompt": "Responde a las preguntas usando pronombres de objeto directo e indirecto.",
+    "expected_elements": ["lo/la", "le/les", "te", "nos"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "grammar",       "weight": 0.5, "description": "Correct pronoun choice and placement" },
+      { "criterion": "vocabulary",    "weight": 0.25, "description": "Action verbs and everyday nouns" },
+      { "criterion": "pronunciation", "weight": 0.25, "description": "Clear pronunciation" }
+    ],
+    "sample_response": {
+      "text": "Sí, lo llamé esta mañana. Le mandé un mensaje también. Las llaves las tengo aquí, no te preocupes.",
+      "ipa": "[si ‖ lo ʝaˈme ˈesta maˈɲana ‖ le manˈðe um menˈsaxe tamˈbjen]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In casual Mexican Spanish, pronoun doubling is common: '¿A Juan lo viste?' (Did you see Juan?) — the object Juan is mentioned AND replaced by 'lo'. This is natural, not redundant.",
+    "gestures": "Pointing while using pronouns is natural in conversation — pointing to an object while saying 'lo' or 'la' helps clarify reference.",
+    "regional_variations": "In Mexico (and most of Latin America), 'lo' is used for masculine people and things. Spain uses 'le' for masculine people (leísmo). Stick with 'lo' for people and things in Mexican/Latin American Spanish.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A2" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "object_pronouns" }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

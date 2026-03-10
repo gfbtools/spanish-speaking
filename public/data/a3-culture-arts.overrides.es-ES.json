@@ -1,0 +1,22 @@
+{
+  "lesson_id": "a3-culture-arts",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Sí, es una de las colecciones más impresionantes que he visto en mi vida. Como el Prado, pero diferente.",
+        "translation": "Yes, it's one of the most impressive collections I've ever seen. Like the Prado, but different."
+      },
+      {
+        "line_index": 5,
+        "text": "Además de las artes visuales, la música española tiene una riqueza impresionante — el flamenco, la zarzuela, el pop español.",
+        "translation": "Beyond the visual arts, Spanish music has impressive richness — flamenco, zarzuela, Spanish pop."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Spain has an extraordinary artistic heritage: the Prado Museum (Velázquez, Goya, El Greco), Guggenheim Bilbao, flamenco (UNESCO heritage), Gaudí's architecture in Barcelona, and a rich literary tradition from Cervantes to García Lorca.",
+      "regional_variations": "Spain has strong regional artistic identities: Catalan modernisme (Gaudí), Basque sculpture (Chillida), Andalusian flamenco, Galician bagpipe music. Respecting regional diversity is essential when discussing Spanish culture."
+    }
+  }
+}

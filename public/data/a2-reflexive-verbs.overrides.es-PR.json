@@ -1,0 +1,27 @@
+{
+  "lesson_id": "a2-reflexive-verbs",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¡Mija, ya son las siete! ¿A qué hora tú te despiertas?",
+        "translation": "Honey, it's already seven! What time do you wake up? (PR pronoun order)"
+      },
+      {
+        "line_index": 5,
+        "text": "Sí, él siempre se levanta primero y se baña antes que yo.",
+        "translation": "Yes, he always gets up first and showers before me."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, 'bañarse' is used like in Mexico for both bathing and showering. The reflexive structure is identical across dialects.",
+      "gestures": "Puerto Rican households are warm and family-oriented — morning routine conversations happen loudly and affectionately.",
+      "regional_variations": "In PR, 'levantarse' is standard. You may hear 'pararse' used informally to mean 'get up' in some contexts: 'Párate ya' (Get up already)."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

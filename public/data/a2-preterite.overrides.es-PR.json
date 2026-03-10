@@ -1,0 +1,28 @@
+{
+  "lesson_id": "a2-preterite",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¿Qué tú hiciste el fin de semana pasado?",
+        "translation": "What did you do last weekend? (PR subject pronoun order)"
+      },
+      {
+        "line_index": 2,
+        "text": "¡Qué bien! Yo salí con unas amiguitas el sábado.",
+        "translation": "How nice! I went out with some girlfriends on Saturday."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, the preterite is used the same way as in Mexico. A distinctive feature: subject pronouns are placed before the verb more often — '¿Qué tú hiciste?' instead of '¿Qué hiciste tú?'",
+      "gestures": "Puerto Ricans are expressive storytellers — hand gestures and facial expressions accompany past-tense narratives naturally.",
+      "regional_variations": "Puerto Rican Spanish frequently uses the present perfect where Mexico uses the preterite: 'He comido' vs 'Comí'. Both are understood but PR speakers lean toward the compound form in some contexts."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true,
+      "r_l_interchange": true
+    }
+  }
+}

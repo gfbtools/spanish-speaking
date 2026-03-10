@@ -1,0 +1,120 @@
+{
+  "lesson_id": "a2-imperfect",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": { "native": "El Imperfecto", "localized": "Imperfect Tense" },
+  "objectives": [
+    "Conjugate regular and common irregular verbs in the imperfect",
+    "Use imperfect for habitual past actions and descriptions",
+    "Contrast imperfect with preterite usage",
+    "Describe what things used to be like"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a2-preterite"],
+  "activities": [
+    { "activity_id": "act-imp-1", "type": "vocabulary", "title": "Palabras Clave", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-imp-2", "type": "dialogue",   "title": "Diálogo",        "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-imp-3", "type": "exercises",  "title": "Ejercicios",     "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-imp-4", "type": "speaking",   "title": "Práctica oral",  "content": {}, "estimated_minutes": 5 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Abuela", "text": "Cuando yo era joven, vivíamos en un pueblo pequeño.", "translation": "When I was young, we lived in a small town.", "ipa": "[ˈkwando jo ˈeɾa ˈxoβen ‖ biˈβiamos en um ˈpweβlo peˈkeɲo]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-001", "alternate_phrasing": [], "context": "Grandmother telling stories" },
+    { "speaker": "Nieta",  "text": "¿Cómo era la vida allí?", "translation": "What was life like there?", "ipa": "[ˈkomo ˈeɾa la ˈβiða aˈʝi]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-002", "alternate_phrasing": [], "context": "Asking about the past" },
+    { "speaker": "Abuela", "text": "Era tranquila. Todos nos conocíamos y siempre nos ayudábamos.", "translation": "It was peaceful. Everyone knew each other and we always helped each other.", "ipa": "[ˈeɾa tɾaŋˈkila ‖ ˈtoðos nos konoˈθiamos i ˈsjempɾe nos aʝuˈðaβamos]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-003", "alternate_phrasing": [], "context": "Describing past life" },
+    { "speaker": "Nieta",  "text": "¿Qué hacías de niña?", "translation": "What did you used to do as a child?", "ipa": "[ke aˈθias ðe ˈniɲa]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-004", "alternate_phrasing": [], "context": "Asking about childhood" },
+    { "speaker": "Abuela", "text": "Jugaba con mis primos, corría por los campos y leía muchos cuentos.", "translation": "I used to play with my cousins, run through the fields and read many stories.", "ipa": "[xuˈɣaβa kon mis ˈpɾimos ‖ koˈria poɾ los ˈkampos i leˈia ˈmuʧos ˈkwentos]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-005", "alternate_phrasing": [], "context": "Childhood memories" },
+    { "speaker": "Nieta",  "text": "¿Y cómo era tu escuela?", "translation": "And what was your school like?", "ipa": "[i ˈkomo ˈeɾa tu esˈkwela]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-006", "alternate_phrasing": [], "context": "Asking about school" },
+    { "speaker": "Abuela", "text": "La escuela era pequeña — solo había veinte estudiantes en mi clase.", "translation": "The school was small — there were only twenty students in my class.", "ipa": "[la esˈkwela ˈeɾa peˈkeɲa ‖ ˈsolo aˈβia ˈβejnte estuˈðjantes en mi ˈklase]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-007", "alternate_phrasing": [], "context": "School description" },
+    { "speaker": "Nieta",  "text": "¡Me gustaría haber vivido en esa época!", "translation": "I would have liked to have lived in that era!", "ipa": "[me ɣustaˈɾia aˈβeɾ biˈβiðo en ˈesa ˈepoka]", "dialect": "es-MX", "audio_asset_id": "a2-imp-mx-008", "alternate_phrasing": [], "context": "Expressing wish" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a2-imp-mx-c001", "front": "hablar → yo (imperfect)", "back": "hablaba", "ipa": "[aˈβlaba]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-imp-mx-c002", "front": "ser → él (imperfect)", "back": "era", "ipa": "[ˈeɾa]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-imp-mx-c003", "front": "ir → nosotros (imperfect)", "back": "íbamos", "ipa": "[ˈiβamos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-imp-mx-c004", "front": "siempre", "back": "always (imperfect marker)", "ipa": "[ˈsjempɾe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-imp-mx-c005", "front": "cuando era niño/a", "back": "when I was a child", "ipa": "[ˈkwando ˈeɾa ˈniɲo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-imp-mx-c006", "front": "comer → tú (imperfect)", "back": "comías", "ipa": "[koˈmias]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-imp-mx-c007", "front": "ver → yo (imperfect — irregular)", "back": "veía", "ipa": "[ˈbeia]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-imp-mx-c008", "front": "antes", "back": "before / used to (time marker)", "ipa": "[ˈantes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-imp-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta (Choose the correct sentence)",
+      "question": "Which sentence correctly uses the imperfect to describe a habitual past action?",
+      "options": [
+        { "text": "Cuando era niño, comía tacos todos los domingos.", "correct": true },
+        { "text": "Cuando era niño, comí tacos todos los domingos.", "correct": false },
+        { "text": "Cuando era niño, como tacos todos los domingos.", "correct": false },
+        { "text": "Cuando era niño, comeré tacos todos los domingos.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Perfecto! The imperfect 'comía' expresses a repeated habitual action in the past.",
+        "incorrect": "'Comía' (imperfect) is correct for habitual past. 'Comí' (preterite) would mean one specific time. 'Como' is present, 'comeré' is future."
+      }
+    },
+    {
+      "exercise_id": "ex-imp-mx-002",
+      "type": "matching",
+      "instruction": "Une el uso del imperfecto con su ejemplo (Match the imperfect use to its example)",
+      "pairs": [
+        { "spanish": "Habitual action",    "english": "Siempre desayunaba a las ocho." },
+        { "spanish": "Description",        "english": "La casa era grande y bonita." },
+        { "spanish": "Age in the past",    "english": "Tenía diez años cuando aprendí." },
+        { "spanish": "Ongoing background", "english": "Llovía cuando llegué a casa." }
+      ]
+    },
+    {
+      "exercise_id": "ex-imp-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con la forma correcta del imperfecto (Complete with the imperfect)",
+      "dialogue": [
+        { "speaker": "Marcos", "text": "De niño, mi familia y yo _____ al parque todos los domingos. (ir)" },
+        { "speaker": "Lucia",  "text": "¡Qué bonito! Yo _____ con mis abuelos los fines de semana. (estar)" },
+        { "speaker": "Marcos", "text": "¿Tu abuelo te _____ cuentos? (contar)" },
+        { "speaker": "Lucia",  "text": "Sí, siempre nos _____ historias antes de dormir. (contar)" }
+      ],
+      "answers": ["íbamos", "estaba", "contaba", "contaba"],
+      "acceptable_variants": {
+        "íbamos": ["ibamos"],
+        "estaba": [],
+        "contaba": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-imp-mx-roleplay",
+    "type": "roleplay",
+    "title": "Mi infancia (My Childhood)",
+    "scenario": "Tell a friend about what your life was like when you were a child — where you lived, what you used to do, what school was like.",
+    "prompt": "Describe cómo era tu vida de niño/a. Usa el imperfecto.",
+    "expected_elements": ["era/tenía/vivía", "habitual activity", "description of place or person"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "grammar",       "weight": 0.4, "description": "Correct imperfect conjugations" },
+      { "criterion": "vocabulary",    "weight": 0.3, "description": "Childhood and description vocabulary" },
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear pronunciation of imperfect endings -aba/-ía" }
+    ],
+    "sample_response": {
+      "text": "Cuando era niña, vivía en un apartamento pequeño con mis padres. Iba a la escuela a pie todos los días. Los fines de semana jugaba con mis vecinos y veíamos películas juntos.",
+      "ipa": "[ˈkwando ˈeɾa ˈniɲa ‖ biˈβia en un apaɾtaˈmento peˈkeɲo ‖ ˈiβa a la esˈkwela a ˈpje]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Nostalgia is a common conversational topic in Latin America. Sharing childhood memories with '¿Te acuerdas cuando...?' (Do you remember when...?) is a warm social opener.",
+    "gestures": "Placing a hand over the heart while saying 'cuando era niño/a' signals emotional warmth and nostalgia.",
+    "regional_variations": "In Mexico, 'antes' (before/used to) is commonly added to emphasize the imperfect: 'Antes vivía en Guadalajara.' The verb 'soler' + infinitive can substitute for imperfect habit: 'Solía correr por las mañanas.'",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A2" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "imperfect" }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}
