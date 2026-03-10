@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-likes-dislikes",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Me gusta bien escuchar música y salir con los panas.",
+        "translation": "I really like listening to music and going out with my friends."
+      },
+      {
+        "line_index": 3,
+        "text": "Sí, me encanta el béisbol, pero no me gusta nada el fútbol.",
+        "translation": "Yes, I love baseball, but I don't like football at all."
+      },
+      {
+        "line_index": 6,
+        "text": "Me gusta la salsa y el reggaeton. ¿Y tú?",
+        "translation": "I like salsa and reggaeton. And you?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, 'bien' is used as an intensifier instead of 'muy': 'me gusta bien' = 'I really like it'. Baseball (béisbol) is the most popular sport — Puerto Rico has a proud professional league and has produced many MLB stars.",
+      "gestures": "Enthusiastic nodding and 'sí, sí, sí' signals strong agreement/liking. Sucking teeth and waving the hand dismissively signals dislike.",
+      "regional_variations": "'Los panas' means friends/buddies in PR. 'Chévere' and 'brutal' both mean great/awesome. Salsa music is deeply tied to Puerto Rican identity — it's not just liked, it's a cultural pillar. Reggaeton originated in Puerto Rico."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

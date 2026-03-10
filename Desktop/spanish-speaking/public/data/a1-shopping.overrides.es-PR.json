@@ -1,0 +1,18 @@
+{
+  "lesson_id": "a1-shopping",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 0, "text": "Buenas tardes. ¿Cuánto cuesta esta camisa?", "translation": "Good afternoon. How much does this shirt cost?" },
+      { "line_index": 1, "text": "Cuesta veinte dólares.", "translation": "It costs twenty dollars." },
+      { "line_index": 3, "text": "Sí, esta otra está más barata — quince dólares.", "translation": "Yes, this other one is cheaper — fifteen dollars." },
+      { "line_index": 7, "text": "Gracias. Aquí tiene su cambio — cinco dólares.", "translation": "Thank you. Here's your change — five dollars." }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Puerto Rico uses US dollars (dólares), not pesos. Prices are quoted in dollars and cents. Bargaining is not typical in formal shops — prices are generally fixed. At flea markets (pulgas) or informal vendors, some negotiation may be possible.",
+      "gestures": "In Puerto Rico, shopping culture is influenced by both US retail norms and Latin American market traditions. Malls are very popular — Plaza Las Américas in San Juan is one of the largest in the Caribbean.",
+      "regional_variations": "'El chavito' or 'chavo' means a small coin (penny/cent). 'Está en oferta' (it's on sale) and '2x1' promotions are heavily advertised. Credit and debit cards are universally accepted in most PR establishments."
+    },
+    "phoneme_tolerance_adjustments": { "s_aspiration": true, "d_deletion": true }
+  }
+}

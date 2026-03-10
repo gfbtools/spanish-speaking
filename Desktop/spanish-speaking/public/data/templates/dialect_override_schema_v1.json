@@ -1,0 +1,11 @@
+{
+  "lesson_id": "",
+  "dialect": "es-PR",
+  "overrides": {
+    "vocabulary_replacements": [],
+    "dialogue_line_replacements": [],
+    "ipa_adjustments": [],
+    "cultural_notes_overrides": {},
+    "phoneme_tolerance_adjustments": {}
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "lesson_id": "a2-preterite-irregular",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": { "native": "El Pretérito Irregular", "localized": "Preterite Irregular Verbs" },
+  "objectives": [
+    "Conjugate high-frequency irregular preterite verbs: ser/ir, tener, estar, hacer, poder, querer, venir",
+    "Recognize the u-stem and j-stem preterite patterns",
+    "Use irregular preterites in natural conversation",
+    "Avoid common errors with ser vs ir in preterite"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a2-preterite"],
+  "activities": [
+    { "activity_id": "act-pirr-1", "type": "vocabulary", "title": "Verbos Irregulares", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-pirr-2", "type": "dialogue",   "title": "Diálogo",             "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-pirr-3", "type": "exercises",  "title": "Ejercicios",          "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-pirr-4", "type": "speaking",   "title": "Práctica oral",       "content": {}, "estimated_minutes": 5 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Rebeca", "text": "¿Pudiste llegar a tiempo a la reunión?", "translation": "Were you able to arrive on time for the meeting?", "ipa": "[puˈðiste ʝeˈɣar a ˈtjempo a la rewˈnjon]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-001", "alternate_phrasing": [], "context": "Asking about punctuality" },
+    { "speaker": "Diego",  "text": "No, tuve mucho tráfico y llegué tarde. Lo siento.", "translation": "No, I had a lot of traffic and arrived late. I'm sorry.", "ipa": "[no ‖ ˈtuβe ˈmuʧo ˈtɾafiko i ʝeˈɣe ˈtaɾðe ‖ lo ˈsjento]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-002", "alternate_phrasing": [], "context": "Explaining lateness" },
+    { "speaker": "Rebeca", "text": "No te preocupes. ¿Y cómo estuvo la reunión?", "translation": "Don't worry. And how was the meeting?", "ipa": "[no te pɾeoˈkupes ‖ i ˈkomo esˈtuβo la rewˈnjon]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-003", "alternate_phrasing": [], "context": "Reassurance and follow-up" },
+    { "speaker": "Diego",  "text": "Fue muy productiva. El jefe quiso presentar el nuevo proyecto.", "translation": "It was very productive. The boss wanted to present the new project.", "ipa": "[ˈfwe muj pɾoðukˈtiβa ‖ el ˈxefe ˈkiso pɾesenˈtaɾ el ˈnweβo pɾoˈʝekto]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-004", "alternate_phrasing": [], "context": "Describing the meeting" },
+    { "speaker": "Rebeca", "text": "¿Quién hizo la presentación?", "translation": "Who did the presentation?", "ipa": "[ˈkjen ˈiθo la pɾesentaˈθjon]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-005", "alternate_phrasing": [], "context": "Asking who did something" },
+    { "speaker": "Diego",  "text": "Lo hizo Mariana. Vino con muchas ideas y estuvo genial.", "translation": "Mariana did it. She came with lots of ideas and was great.", "ipa": "[lo ˈiθo maˈɾjana ‖ ˈβino kon ˈmuʧas iˈðeas i esˈtuβo xeˈnjal]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-006", "alternate_phrasing": [], "context": "Describing a colleague" },
+    { "speaker": "Rebeca", "text": "¡Qué bueno! ¿Y adónde fueron a comer después?", "translation": "Great! And where did you go to eat afterwards?", "ipa": "[ke ˈβweno ‖ i aˈðonde ˈfweron a koˈmeɾ desˈpwes]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-007", "alternate_phrasing": [], "context": "Asking about after-meeting" },
+    { "speaker": "Diego",  "text": "Fuimos al restaurante de la esquina. La comida estuvo riquísima.", "translation": "We went to the restaurant on the corner. The food was delicious.", "ipa": "[ˈfwimos al restawˈɾante ðe la esˈkina ‖ la koˈmiða esˈtuβo riˈkisima]", "dialect": "es-MX", "audio_asset_id": "a2-pirr-mx-008", "alternate_phrasing": [], "context": "Describing food experience" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a2-pirr-mx-c001", "front": "ser/ir → yo (preterite)", "back": "fui", "ipa": "[ˈfwi]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-pirr-mx-c002", "front": "tener → yo (preterite)", "back": "tuve", "ipa": "[ˈtuβe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-pirr-mx-c003", "front": "hacer → él (preterite)", "back": "hizo", "ipa": "[ˈiθo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-pirr-mx-c004", "front": "estar → ellos (preterite)", "back": "estuvieron", "ipa": "[estuˈβjeɾon]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-pirr-mx-c005", "front": "poder → tú (preterite)", "back": "pudiste", "ipa": "[puˈðiste]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-pirr-mx-c006", "front": "venir → nosotros (preterite)", "back": "vinimos", "ipa": "[biˈnimos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-pirr-mx-c007", "front": "querer → él (preterite)", "back": "quiso", "ipa": "[ˈkiso]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-pirr-mx-c008", "front": "decir → yo (preterite)", "back": "dije", "ipa": "[ˈðixe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-pirr-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta del pretérito irregular (Choose the correct irregular preterite)",
+      "question": "Yesterday I had to work all day. Which is correct?",
+      "options": [
+        { "text": "Ayer tuve que trabajar todo el día.", "correct": true },
+        { "text": "Ayer tenía que trabajar todo el día.", "correct": false },
+        { "text": "Ayer tienes que trabajar todo el día.", "correct": false },
+        { "text": "Ayer tendré que trabajar todo el día.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Tuve' is the preterite of tener — used here for a completed obligation.",
+        "incorrect": "'Tuve' (preterite of tener) is correct for a completed past event. 'Tenía' is imperfect, 'tienes' is present, 'tendré' is future."
+      }
+    },
+    {
+      "exercise_id": "ex-pirr-mx-002",
+      "type": "matching",
+      "instruction": "Une el infinitivo con su pretérito irregular (Match verb to its irregular preterite — yo form)",
+      "pairs": [
+        { "spanish": "hacer",  "english": "hice" },
+        { "spanish": "estar",  "english": "estuve" },
+        { "spanish": "venir",  "english": "vine" },
+        { "spanish": "decir",  "english": "dije" }
+      ]
+    },
+    {
+      "exercise_id": "ex-pirr-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa el diálogo con el pretérito irregular correcto (Complete with the irregular preterite)",
+      "dialogue": [
+        { "speaker": "Elena", "text": "¿Cómo _____ tu viaje a Oaxaca? (estar)" },
+        { "speaker": "Jorge", "text": "¡_____ increíble! _____ a la playa todos los días. (ser / ir)" },
+        { "speaker": "Elena", "text": "¿Y qué _____ de comer allá? (tener)" },
+        { "speaker": "Jorge", "text": "_____ los mejores tacos de mi vida. (tener)" }
+      ],
+      "answers": ["estuvo", "Fue", "fui", "tuviste", "Tuve"],
+      "acceptable_variants": {
+        "estuvo": [],
+        "Fue": ["fue"],
+        "fui": [],
+        "tuviste": [],
+        "Tuve": ["tuve"]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-pirr-mx-roleplay",
+    "type": "roleplay",
+    "title": "Cuéntame qué pasó (Tell me what happened)",
+    "scenario": "Something memorable happened to you recently — a trip, an event, a challenge. Tell your friend using at least 4 irregular preterite verbs.",
+    "prompt": "Usa verbos irregulares en pretérito para contar algo que te pasó.",
+    "expected_elements": ["fui/fue", "tuve/tuvo", "hice/hizo", "estuvo/estuve"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "grammar",       "weight": 0.4, "description": "Correct irregular preterite forms" },
+      { "criterion": "vocabulary",    "weight": 0.3, "description": "Event and activity vocabulary" },
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Pronunciation of irregular forms" }
+    ],
+    "sample_response": {
+      "text": "El mes pasado fui a Guadalajara por trabajo. Tuve una reunión importante y todo estuvo muy bien. Hice nuevos amigos y al final fuimos a cenar juntos.",
+      "ipa": "[el mes paˈsaðo ˈfwi a ɣwaðalaˈxaɾa ‖ ˈtuβe una rewˈnjon impoɾˈtante]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, storytelling often uses dramatic expressions: '¡No lo puedo creer!' (I can't believe it!) or '¡Sí, de verdad!' (Yes, really!) to keep the listener engaged.",
+    "gestures": "Raising both hands palms-up while saying 'no pude' (I couldn't) is a common gesture expressing helplessness or frustration.",
+    "regional_variations": "Mexicans frequently use 'andar' in preterite idiomatically: '¿Cómo anduviste?' (How were you doing? / How did things go?). The verb 'andar' has an irregular preterite: anduve, anduviste, anduvo.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A2" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "preterite_irregular" }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

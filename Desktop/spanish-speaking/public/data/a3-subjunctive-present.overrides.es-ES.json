@@ -1,0 +1,22 @@
+{
+  "lesson_id": "a3-subjunctive-present",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 2,
+        "text": "Dudo que lo dominéis en un día, pero con práctica lo lograréis.",
+        "translation": "I doubt you'll master it in one day, but with practice you'll get it. (Spain: vosotros form)"
+      },
+      {
+        "line_index": 7,
+        "text": "¡Ojalá tengamos más clases así! ¡Están geniales!",
+        "translation": "Hopefully we'll have more classes like this! They're great! (Spain: genial)"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, the subjunctive is even more heavily used than in Latin America, particularly in formal speech and writing. Spaniards tend to use it in contexts where Latin Americans might use indicative in casual speech.",
+      "regional_variations": "Spain uses vosotros in the subjunctive: 'espero que estudiéis', 'quiero que vengáis'. The subjunctive endings for vosotros: -éis (-ar verbs) and -áis/-áis (-er/-ir verbs). This is the main structural difference for A3-level learners."
+    }
+  }
+}

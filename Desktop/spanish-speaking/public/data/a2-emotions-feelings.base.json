@@ -1,0 +1,389 @@
+{
+  "lesson_id": "a2-emotions-feelings",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Las Emociones y los Sentimientos",
+    "localized": "Emotions & Feelings"
+  },
+  "objectives": [
+    "Describe a wide range of emotions in Spanish",
+    "Use estar vs. ser for emotional states",
+    "Express empathy and give emotional support",
+    "Talk about mood and emotional reactions"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [
+    "a1-ser-estar",
+    "a1-basic-questions"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-emo-1",
+      "type": "vocabulary",
+      "title": "Emociones",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-emo-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-emo-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-emo-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Patricia",
+      "text": "Te noto rara hoy. ¿Estás bien?",
+      "translation": "You seem off today. Are you okay?",
+      "ipa": "[te ˈnoto ˈrara ˈoj ‖ esˈtas ˈβjen]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-001",
+      "alternate_phrasing": [],
+      "context": "Noticing friend's mood"
+    },
+    {
+      "speaker": "Gabriela",
+      "text": "La verdad no. Estoy muy estresada con el trabajo.",
+      "translation": "Honestly, no. I'm very stressed about work.",
+      "ipa": "[la βeɾˈðað ˈno ‖ esˈtoj muj estɾeˈsaða kon el tɾaˈβaxo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-002",
+      "alternate_phrasing": [],
+      "context": "Admitting stress"
+    },
+    {
+      "speaker": "Patricia",
+      "text": "Lo siento mucho. ¿Qué pasó?",
+      "translation": "I'm really sorry. What happened?",
+      "ipa": "[lo ˈsjento ˈmuʧo ‖ ke paˈso]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-003",
+      "alternate_phrasing": [],
+      "context": "Showing empathy"
+    },
+    {
+      "speaker": "Gabriela",
+      "text": "Mi jefe me criticó frente a todos y me sentí muy humillada.",
+      "translation": "My boss criticized me in front of everyone and I felt very humiliated.",
+      "ipa": "[mi ˈxefe me kɾitiˈko ˈfɾente a ˈtoðos i me senˈti muj umiˈʝaða]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-004",
+      "alternate_phrasing": [],
+      "context": "Describing what happened"
+    },
+    {
+      "speaker": "Patricia",
+      "text": "¡Qué horrible! Eso no está bien. ¿Cómo te sientes ahora?",
+      "translation": "How horrible! That's not right. How do you feel now?",
+      "ipa": "[ke oˈriβle ‖ ˈeso no esˈta ˈβjen ‖ ˈkomo te ˈsjentes aˈoɾa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-005",
+      "alternate_phrasing": [],
+      "context": "Validating feelings"
+    },
+    {
+      "speaker": "Gabriela",
+      "text": "Todavía me siento enojada y un poco triste. No sé qué hacer.",
+      "translation": "I'm still angry and a bit sad. I don't know what to do.",
+      "ipa": "[toˈðaβia me ˈsjento enoˈxaða i un ˈpoko ˈtɾiste]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-006",
+      "alternate_phrasing": [],
+      "context": "Describing current feelings"
+    },
+    {
+      "speaker": "Patricia",
+      "text": "Tranquila. Respira y no te lo tomes tan personal.",
+      "translation": "Calm down. Breathe and don't take it so personally.",
+      "ipa": "[tɾaŋˈkila ‖ resˈpiɾa i no te lo ˈtomes tan peɾsoˈnal]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-007",
+      "alternate_phrasing": [],
+      "context": "Offering comfort"
+    },
+    {
+      "speaker": "Gabriela",
+      "text": "Tienes razón. Gracias por escucharme. Me siento mejor contigo.",
+      "translation": "You're right. Thanks for listening. I feel better with you.",
+      "ipa": "[ˈtjenes raˈθon ‖ ˈɡɾaθjas poɾ eskuˈʧaɾme ‖ me ˈsjento meˈxoɾ konˈtiɣo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a2-emo-mx-008",
+      "alternate_phrasing": [],
+      "context": "Expressing gratitude and relief"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a2-emo-mx-c001",
+      "front": "estar enojado/a",
+      "back": "to be angry",
+      "ipa": "[esˈtaɾ enoˈxaðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c002",
+      "front": "estar triste",
+      "back": "to be sad",
+      "ipa": "[esˈtaɾ ˈtɾiste]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c003",
+      "front": "estar emocionado/a",
+      "back": "to be excited / emotional",
+      "ipa": "[esˈtaɾ emoθjoˈnaðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c004",
+      "front": "sentirse bien/mal",
+      "back": "to feel good/bad",
+      "ipa": "[senˈtiɾse ˈβjen ˈmal]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c005",
+      "front": "estar estresado/a",
+      "back": "to be stressed",
+      "ipa": "[esˈtaɾ estɾeˈsaðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c006",
+      "front": "tener miedo",
+      "back": "to be afraid / to have fear",
+      "ipa": "[teˈneɾ ˈmjeðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c007",
+      "front": "¿Cómo te sientes?",
+      "back": "How do you feel?",
+      "ipa": "[ˈkomo te ˈsjentes]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a2-emo-mx-c008",
+      "front": "estar orgulloso/a",
+      "back": "to be proud",
+      "ipa": "[esˈtaɾ oɾɣuˈʝoso]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-emo-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la emoción correcta",
+      "question": "Your friend just got a promotion at work. How would they most likely feel?",
+      "options": [
+        {
+          "text": "Está feliz y emocionada.",
+          "correct": true
+        },
+        {
+          "text": "Está aburrida.",
+          "correct": false
+        },
+        {
+          "text": "Está asustada.",
+          "correct": false
+        },
+        {
+          "text": "Está enojada.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! Getting a promotion is exciting and happy news — 'feliz y emocionada'.",
+        "incorrect": "A promotion is good news — the person would be 'feliz' (happy) and 'emocionada' (excited)."
+      }
+    },
+    {
+      "exercise_id": "ex-emo-mx-002",
+      "type": "matching",
+      "instruction": "Une la emoción con su opuesto",
+      "pairs": [
+        {
+          "spanish": "feliz",
+          "english": "triste"
+        },
+        {
+          "spanish": "tranquilo",
+          "english": "estresado"
+        },
+        {
+          "spanish": "enojado",
+          "english": "contento"
+        },
+        {
+          "spanish": "asustado",
+          "english": "valiente"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-emo-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con la emoción correcta usando estar",
+      "dialogue": [
+        {
+          "speaker": "Mamá",
+          "text": "¿Por qué _____ tan callada hoy? (estar — tú / triste)"
+        },
+        {
+          "speaker": "Hija",
+          "text": "_____ un poco triste. Tuve un problema con mi amiga. (estar — yo)"
+        },
+        {
+          "speaker": "Mamá",
+          "text": "¿Y cómo _____ ahora ella? (estar — ella)"
+        },
+        {
+          "speaker": "Hija",
+          "text": "Creo que también _____ enojada conmigo. (estar — ella)"
+        }
+      ],
+      "answers": [
+        "estás",
+        "Estoy",
+        "está",
+        "está"
+      ],
+      "acceptable_variants": {
+        "estás": [],
+        "Estoy": [
+          "estoy"
+        ],
+        "está": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-emo-mx-roleplay",
+    "type": "roleplay",
+    "title": "¿Cómo te sientes? (How do you feel?)",
+    "scenario": "A friend asks how you're doing. Describe your current mood and why — something positive or challenging that happened recently.",
+    "prompt": "Describe cómo te sientes hoy y por qué. Usa verbos de emoción con estar.",
+    "expected_elements": [
+      "emotion adjective with estar",
+      "reason/cause",
+      "time reference"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "vocabulary",
+        "weight": 0.5,
+        "description": "Emotion vocabulary"
+      },
+      {
+        "criterion": "grammar",
+        "weight": 0.3,
+        "description": "Correct estar + emotion adjective"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Hoy estoy un poco cansada porque trabajé mucho ayer. Pero también estoy contenta porque mañana tengo el día libre.",
+      "ipa": "[ˈoj esˈtoj un ˈpoko kanˈsaða ‖ ˈpeɾo tamˈbjen esˈtoj konˈtenta]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, showing emotional support is important. Saying '¿Cómo estás de verdad?' (How are you really?) signals genuine concern beyond surface-level greetings.",
+    "gestures": "Placing a hand on someone's shoulder or arm while listening is a sign of genuine empathy in Mexican culture.",
+    "regional_variations": "'Estar chido/a' (to feel good/cool) is very common Mexican slang. 'Estar agüitado/a' means to feel down or bummed out. These are casual but widely used.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A2"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "emotions_estar"
+    }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

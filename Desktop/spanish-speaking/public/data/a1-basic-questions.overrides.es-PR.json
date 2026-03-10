@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-basic-questions",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Buenos días. ¿Cómo usted se llama?",
+        "translation": "Good morning. What is your name?"
+      },
+      {
+        "line_index": 3,
+        "text": "Soy de Colombia. ¿Por qué tú me preguntas?",
+        "translation": "I'm from Colombia. Why do you ask?"
+      },
+      {
+        "line_index": 5,
+        "text": "Llevo tres días. ¿Dónde está la salida?",
+        "translation": "I've been here three days. Where is the exit?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, subject pronouns appear frequently in questions and statements: '¿Cómo tú te llamas?' rather than '¿Cómo te llamas?' This is a defining feature of Caribbean Spanish and sounds natural, not redundant.",
+      "gestures": "In Puerto Rico, lip-pointing (discussed in directions lesson) extends to answering questions about location — a pursed-lip gesture toward the direction is common.",
+      "regional_variations": "'¿Mande?' is not used in Puerto Rico. Puerto Ricans use '¿Qué?' or '¿Cómo?' to ask someone to repeat. '¿Verdad?' (right? / isn't it?) is used as a tag question constantly in PR conversation."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

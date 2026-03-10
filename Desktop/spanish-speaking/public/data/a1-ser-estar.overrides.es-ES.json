@@ -1,0 +1,24 @@
+{
+  "lesson_id": "a1-ser-estar",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 3,
+        "text": "Estoy un poco cansado. Es que trabajo demasiado.",
+        "translation": "I'm a bit tired. It's because I work too much."
+      },
+      {
+        "line_index": 5,
+        "text": "Sí, soy casado. Mi mujer es médica — es muy inteligente.",
+        "translation": "Yes, I'm married. My wife is a doctor — she's very intelligent."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'mi mujer' (my woman/wife) is the standard informal term for wife — not 'mi esposa' as in Latin America. Both are correct but 'mujer' dominates casual speech in Spain.",
+      "gestures": "Spaniards use 'bueno...' (well...) as a filler before using estar for hesitant states — 'Bueno, estoy más o menos' (Well, I'm so-so). This filler signals a nuanced answer coming.",
+      "regional_variations": "In Spain, 'estar' + past participle is often preferred for states: 'estoy hecho polvo' (I'm exhausted, literally 'I'm turned to dust'). The key ser/estar contrast is the same across all dialects — the rule doesn't change.",
+      "distincion": "'Estar' has no /θ/ issue. But ser conjugations: 'sois' [ˈsojθ] is the Spain vosotros form — not used in Latin America. This is the most dialect-specific ser/estar form."
+    }
+  }
+}

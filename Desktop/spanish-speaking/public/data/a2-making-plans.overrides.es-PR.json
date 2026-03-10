@@ -1,0 +1,27 @@
+{
+  "lesson_id": "a2-making-plans",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Oye, ¿tú quieres venir a una barbacoa el sábado?",
+        "translation": "Hey, do you want to come to a barbecue on Saturday? (PR pronoun order)"
+      },
+      {
+        "line_index": 6,
+        "text": "¡Claro que sí! Entre más, mejor. Que venga con su familia.",
+        "translation": "Of course! The more the merrier. He can come with his family."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, social invitations are often last-minute and spontaneous. 'Cae por la casa' (drop by the house) is a common casual invitation that means you're welcome anytime.",
+      "gestures": "A kiss on the cheek when arriving at a social event is standard in Puerto Rico, even on first meeting in informal settings.",
+      "regional_variations": "'Tirar para' means to head/go to a place: '¿Tiramos para la playa?' (Shall we head to the beach?). Very common in PR for making plans."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

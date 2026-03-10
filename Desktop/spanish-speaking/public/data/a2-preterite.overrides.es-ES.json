@@ -1,0 +1,23 @@
+{
+  "lesson_id": "a2-preterite",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 4,
+        "text": "Fuimos al cine y después tomamos un café en un bar.",
+        "translation": "We went to the movies and afterwards had a coffee at a bar."
+      },
+      {
+        "line_index": 6,
+        "text": "Vimos una peli de acción. Empezó a las ocho y terminó a las diez.",
+        "translation": "We saw an action film. It started at eight and ended at ten."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, the present perfect ('he hecho', 'he comido') is strongly preferred over the simple preterite for recent past actions. 'Esta mañana he desayunado' not 'desayuné'.",
+      "gestures": "Spanish storytelling is energetic — arms open wide for emphasis, leaning forward for key moments.",
+      "regional_variations": "Key difference: Spain uses present perfect for recent events. 'He ido al mercado esta mañana' (I went to the market this morning). The simple preterite is for less recent or clearly completed past events."
+    }
+  }
+}

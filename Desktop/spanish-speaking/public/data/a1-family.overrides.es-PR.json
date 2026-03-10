@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-family",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¿Tú tienes hermanos?",
+        "translation": "Do you have siblings?"
+      },
+      {
+        "line_index": 2,
+        "text": "No, soy hijo único. Pero tengo montones de primos.",
+        "translation": "No, I'm an only child. But I have tons of cousins."
+      },
+      {
+        "line_index": 4,
+        "text": "Somos cinco: mis padres, mi abuela, mi hermana y yo.",
+        "translation": "There are five of us: my parents, my grandmother, my sister and me."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, family gatherings (reuniones familiares) are central to social life. Extended family — tíos, primos, abuelos — are often treated as immediate family and may live nearby or together.",
+      "family_values": "'Compadrazgo' (godparent bonds) is deeply important in PR culture. Godparents (padrinos/madrinas) are chosen carefully and maintain close family-like relationships throughout life.",
+      "regional_variations": "You'll often hear 'nene/nena' for young children, 'viejo/vieja' affectionately for parents or spouse, and 'chamaco' for a kid. 'Mano' (short for hermano) is used casually between close friends like brothers."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

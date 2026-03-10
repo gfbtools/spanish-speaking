@@ -1,0 +1,209 @@
+{
+  "level": "A1",
+  "version": "2.0",
+  "description": "Complete A1 curriculum — 15 modules, full base+override architecture",
+  "required_modules": [
+    {
+      "module_id": "a1-greetings",
+      "title": "Greetings & Introductions"
+    },
+    {
+      "module_id": "a1-alphabet-pronunciation",
+      "title": "Alphabet & Sounds"
+    },
+    {
+      "module_id": "a1-numbers",
+      "title": "Numbers & Age"
+    },
+    {
+      "module_id": "a1-time-days",
+      "title": "Time, Days, Months"
+    },
+    {
+      "module_id": "a1-family",
+      "title": "Family & Relationships"
+    },
+    {
+      "module_id": "a1-descriptions",
+      "title": "Basic Adjectives & Descriptions"
+    },
+    {
+      "module_id": "a1-food-restaurant",
+      "title": "Food & Ordering"
+    },
+    {
+      "module_id": "a1-shopping",
+      "title": "Shopping & Money"
+    },
+    {
+      "module_id": "a1-directions",
+      "title": "Asking for Directions"
+    },
+    {
+      "module_id": "a1-daily-routine",
+      "title": "Daily Routine"
+    },
+    {
+      "module_id": "a1-weather",
+      "title": "Weather & Seasons"
+    },
+    {
+      "module_id": "a1-likes-dislikes",
+      "title": "Likes & Preferences"
+    },
+    {
+      "module_id": "a1-basic-questions",
+      "title": "Question Formation"
+    },
+    {
+      "module_id": "a1-ser-estar",
+      "title": "Ser vs Estar (Intro)"
+    },
+    {
+      "module_id": "a1-present-tense",
+      "title": "Present Tense Regular Verbs"
+    }
+  ],
+  "dialects_supported": [
+    "es-MX",
+    "es-PR",
+    "es-ES"
+  ],
+  "lesson_status": [
+    {
+      "module_id": "a1-greetings",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-alphabet-pronunciation",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-numbers",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-time-days",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-family",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-descriptions",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-food-restaurant",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-shopping",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-directions",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-daily-routine",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-weather",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-likes-dislikes",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-basic-questions",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-ser-estar",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    },
+    {
+      "module_id": "a1-present-tense",
+      "dialects_completed": [
+        "es-MX",
+        "es-PR",
+        "es-ES"
+      ],
+      "status": "complete"
+    }
+  ]
+}

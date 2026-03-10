@@ -1,0 +1,403 @@
+{
+  "lesson_id": "a3-passive-impersonal",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": {
+    "native": "La Voz Pasiva y el Se Impersonal",
+    "localized": "Passive Voice & Impersonal Se"
+  },
+  "objectives": [
+    "Form the passive voice with ser + past participle",
+    "Use the impersonal 'se' to avoid naming an agent",
+    "Understand when passive vs active voice is preferred",
+    "Recognize passive in formal writing, news, and signs"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a2-reflexive-verbs",
+    "a2-preterite"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-pass-1",
+      "type": "vocabulary",
+      "title": "Voz Pasiva",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-pass-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-pass-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-pass-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Periodista",
+      "text": "Se informó que el nuevo hospital será construido el próximo año.",
+      "translation": "It was reported that the new hospital will be built next year.",
+      "ipa": "[se infoɾˈmo ke el ˈnweβo ospiˈtal seˈɾa konstɾwiˈðo el ˈpɾoksimo ˈaɲo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-001",
+      "alternate_phrasing": [],
+      "context": "News report using passive"
+    },
+    {
+      "speaker": "Lectora",
+      "text": "¿Por quién fue aprobado el proyecto?",
+      "translation": "By whom was the project approved?",
+      "ipa": "[poɾ ˈkjen ˈfwe apɾoˈβaðo el pɾoˈʝekto]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-002",
+      "alternate_phrasing": [],
+      "context": "Asking about agent in passive"
+    },
+    {
+      "speaker": "Periodista",
+      "text": "Fue aprobado por el Congreso tras meses de debate.",
+      "translation": "It was approved by Congress after months of debate.",
+      "ipa": "[ˈfwe apɾoˈβaðo poɾ el ˈkoŋɡɾeso tɾas ˈmeses ðe ðeˈβate]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-003",
+      "alternate_phrasing": [],
+      "context": "Answering with full passive"
+    },
+    {
+      "speaker": "Lectora",
+      "text": "¿Se sabe cuánto costará la construcción?",
+      "translation": "Is it known how much the construction will cost?",
+      "ipa": "[se ˈsaβe ˈkwanto kostaˈɾa la konstɾukˈθjon]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-004",
+      "alternate_phrasing": [],
+      "context": "Se impersonal for unknown info"
+    },
+    {
+      "speaker": "Periodista",
+      "text": "Se estima que costará más de dos mil millones de pesos.",
+      "translation": "It is estimated that it will cost more than two billion pesos.",
+      "ipa": "[se esˈtima ke kostaˈɾa ˈmas ðe ðos ˈmil miˈʝones ðe ˈpesos]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-005",
+      "alternate_phrasing": [],
+      "context": "Se impersonal estimation"
+    },
+    {
+      "speaker": "Lectora",
+      "text": "¿Y los materiales? ¿Han sido importados del extranjero?",
+      "translation": "And the materials? Have they been imported from abroad?",
+      "ipa": "[i los mateˈɾjales ‖ an ˈsiðo impoɾˈtaðos ðel estɾanˈxeɾo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-006",
+      "alternate_phrasing": [],
+      "context": "Passive with present perfect"
+    },
+    {
+      "speaker": "Periodista",
+      "text": "No. Se usarán materiales nacionales siempre que sea posible.",
+      "translation": "No. National materials will be used whenever possible.",
+      "ipa": "[no ‖ se usaˈɾan mateˈɾjales naθjoˈnales ˈsjempɾe ke ˈsea poˈsiβle]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-007",
+      "alternate_phrasing": [],
+      "context": "Se impersonal for future"
+    },
+    {
+      "speaker": "Lectora",
+      "text": "Bien. En México se construye mucho, pero no todo se hace con calidad.",
+      "translation": "Good. In Mexico a lot is built, but not everything is done with quality.",
+      "ipa": "[ˈbjen ‖ en ˈmexiko se konstˈɾuje ˈmuʧo ‖ ˈpeɾo no ˈtoðo se ˈaθe kon kaliˈðað]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pass-mx-008",
+      "alternate_phrasing": [],
+      "context": "Opinion using impersonal se"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a3-pass-mx-c001",
+      "front": "ser + past participle",
+      "back": "passive voice formula: El libro fue escrito por García.",
+      "ipa": "[seɾ mas paɾtiˈθipjo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c002",
+      "front": "Se habla español aquí.",
+      "back": "Spanish is spoken here. (impersonal se)",
+      "ipa": "[se ˈaβla esˈpaɲol aˈki]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c003",
+      "front": "fue construido",
+      "back": "was built (past passive)",
+      "ipa": "[ˈfwe konstɾwiˈðo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c004",
+      "front": "Se dice que...",
+      "back": "It is said that... / They say that... (impersonal)",
+      "ipa": "[se ˈðiθe ke]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c005",
+      "front": "por + agent",
+      "back": "by (agent marker in passive sentences)",
+      "ipa": "[poɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c006",
+      "front": "Se venden tacos aquí.",
+      "back": "Tacos are sold here. (impersonal se — plural subject)",
+      "ipa": "[se ˈβenden ˈtakos aˈki]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c007",
+      "front": "han sido aprobados",
+      "back": "have been approved (passive with present perfect)",
+      "ipa": "[an ˈsiðo apɾoˈβaðos]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pass-mx-c008",
+      "front": "Se necesita experiencia.",
+      "back": "Experience is needed. (impersonal se — job posting)",
+      "ipa": "[se neθeˈsita ekspeˈɾjenθja]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-pass-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta en voz pasiva",
+      "question": "The painting was made by Frida Kahlo. Which is correct?",
+      "options": [
+        {
+          "text": "El cuadro fue hecho por Frida Kahlo.",
+          "correct": true
+        },
+        {
+          "text": "El cuadro se hizo por Frida Kahlo.",
+          "correct": false
+        },
+        {
+          "text": "Frida Kahlo fue hecha el cuadro.",
+          "correct": false
+        },
+        {
+          "text": "El cuadro hizo por Frida Kahlo.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'Fue hecho por' is the correct passive voice structure: ser (preterite) + past participle + por + agent.",
+        "incorrect": "The passive formula is: ser (conjugated) + past participle + por + agent. 'Fue hecho por Frida Kahlo' is correct."
+      }
+    },
+    {
+      "exercise_id": "ex-pass-mx-002",
+      "type": "matching",
+      "instruction": "Une la señal o frase con su significado en voz pasiva o se impersonal",
+      "pairs": [
+        {
+          "spanish": "Se prohíbe fumar.",
+          "english": "Smoking is prohibited."
+        },
+        {
+          "spanish": "Se alquilan cuartos.",
+          "english": "Rooms for rent."
+        },
+        {
+          "spanish": "Se habla inglés.",
+          "english": "English spoken here."
+        },
+        {
+          "spanish": "Se busca cocinero.",
+          "english": "Cook wanted / sought."
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-pass-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Transforma las oraciones usando se impersonal o voz pasiva",
+      "dialogue": [
+        {
+          "speaker": "Redactor",
+          "text": "El director firmó el contrato. → El contrato _____ _____ por el director. (fue / firmado)"
+        },
+        {
+          "speaker": "Redactor",
+          "text": "La gente dice que el proyecto es exitoso. → _____ _____ que el proyecto es exitoso. (se / dice)"
+        },
+        {
+          "speaker": "Redactor",
+          "text": "Aquí venden artesanías. → Aquí _____ _____. (se / venden artesanías)"
+        },
+        {
+          "speaker": "Redactor",
+          "text": "Necesitan más empleados. → _____ más _____. (se necesitan / empleados)"
+        }
+      ],
+      "answers": [
+        "fue",
+        "firmado",
+        "Se",
+        "dice",
+        "se",
+        "venden artesanías",
+        "Se necesitan",
+        "empleados"
+      ],
+      "acceptable_variants": {
+        "fue": [],
+        "firmado": [],
+        "Se": [
+          "se"
+        ],
+        "dice": [],
+        "se": [],
+        "venden artesanías": [
+          "venden",
+          "artesanías"
+        ],
+        "Se necesitan": [
+          "se necesitan"
+        ],
+        "empleados": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-pass-mx-roleplay",
+    "type": "roleplay",
+    "title": "Noticias del día (News of the day)",
+    "scenario": "You're describing recent local or national news to a friend. Use passive voice and impersonal se to report facts without always naming who did what.",
+    "prompt": "Describe noticias recientes usando voz pasiva y se impersonal.",
+    "expected_elements": [
+      "fue/fueron + participle",
+      "se dice/sabe/estima",
+      "por + agent (at least once)"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "grammar",
+        "weight": 0.5,
+        "description": "Correct passive and impersonal se structures"
+      },
+      {
+        "criterion": "vocabulary",
+        "weight": 0.3,
+        "description": "Formal and news vocabulary"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Se anunció que el gobierno aprobó una nueva ley de educación. La ley fue firmada por el presidente ayer. Se dice que el cambio beneficiará a millones de estudiantes en todo el país.",
+      "ipa": "[se anuŋˈθjo ke el ɡoˈβjeɾno apɾoˈβo ˈuna ˈnweβa ˈlej ðe eðuˈkaθjon]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Passive voice and impersonal se are extremely common in Mexican newspapers, official announcements, and academic writing. Signs like 'Se renta', 'Se vende', 'Se solicita' are everywhere.",
+    "gestures": "No specific gesture — passive structures belong to written and formal speech registers.",
+    "regional_variations": "In Mexico, 'se' impersonal is the most common way to avoid naming agents in everyday speech. The full passive (ser + participle) is more formal and appears in written media. Both patterns are identical across Mexican, Puerto Rican, and Spanish dialects.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A3"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "passive_impersonal_se"
+    }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

@@ -1,0 +1,16 @@
+{
+  "lesson_id": "a1-descriptions",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 1, "text": "Es alto y delgado. Tiene el pelo negro y los ojos marrones.", "translation": "He's tall and slim. He has black hair and brown eyes." },
+      { "line_index": 3, "text": "Es muy majo y divertido, pero a veces es un poco serio.", "translation": "He's very nice and fun, but sometimes he's a bit serious." }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'majo/a' (nice, pleasant) is a very common adjective not used in Latin America. Physical descriptions in Spain tend to be more direct. 'Guapo/a' is used more freely as a term of address ('Oye, guapo') than in Mexico.",
+      "gestures": "Spaniards are expressive but in a different register to Latin Americans — volume and directness are both higher. Describing someone's appearance is done openly and is not considered rude.",
+      "regional_variations": "In Spain, 'marrón' is standard for brown (eyes, hair) — not 'café'. 'Rubio/a' for blonde is universal. 'Pecoso/a' (freckled) is commonly heard given higher rates of fair skin in northern Spain.",
+      "distincion": "Key adjectives to note for /θ/: 'inteligente' has no /θ/ issue, but 'capaz' [kaˈpaθ] (capable) and 'feliz' [feˈliθ] (happy) do. Practice these once comfortable with the basics."
+    }
+  }
+}

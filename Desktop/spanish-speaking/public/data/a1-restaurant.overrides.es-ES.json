@@ -1,0 +1,34 @@
+{
+  "lesson_id": "a1-restaurant-ordering",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "Sí, por favor. ¿Tenéis una mesa cerca de la ventana?",
+        "translation": "Yes please. Do you have a table near the window?"
+      },
+      {
+        "line_index": 4,
+        "text": "Agua para mí, por favor. ¿Qué recomendáis?",
+        "translation": "Water for me please. What do you recommend?"
+      },
+      {
+        "line_index": 5,
+        "text": "La paella está buenísima hoy.",
+        "translation": "The paella is excellent today."
+      },
+      {
+        "line_index": 6,
+        "text": "Perfecto. Quiero la paella y una ensalada, por favor.",
+        "translation": "Perfect. I'd like the paella and a salad please."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'vosotros' is standard — servers will say '¿Qué queréis?' not '¿Qué quieren?'. Lunch (la comida) is the main meal of the day, typically 2–4pm. Dinner (la cena) is late, often 9–11pm.",
+      "menu_customs": "Look for 'el menú del día' — a fixed-price lunch menu with starter, main, dessert, bread and a drink, typically excellent value. Tipping is appreciated but not obligatory; rounding up or leaving small change is standard.",
+      "regional_variations": "In Spain you ask for 'la cuenta' to pay. 'Ponme...' ('put me a...') is a casual way to order at a bar: 'Ponme una caña' (pour me a beer). 'Oiga' is a polite way to get a server's attention."
+    },
+    "distincion": "Note the /θ/ sound: 'gracias' = 'graTHias', 'cerveza' = 'therBETHa'. This is not a lisp — it's a standard Castilian phoneme that distinguishes es-ES from all Latin American dialects."
+  }
+}

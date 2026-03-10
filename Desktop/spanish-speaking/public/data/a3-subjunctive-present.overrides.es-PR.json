@@ -1,0 +1,22 @@
+{
+  "lesson_id": "a3-subjunctive-present",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Quiero que todos estudien el subjuntivo esta semana, ¿entendido?",
+        "translation": "I want everyone to study the subjunctive this week, understood?"
+      },
+      {
+        "line_index": 7,
+        "text": "¡Ojalá tengamos más clases así! ¡Está buenísima!",
+        "translation": "Hopefully we'll have more classes like this! It's so good! (PR: está buenísima = colloquial praise)"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, the subjunctive is used identically to Mexico in all formal and standard contexts. PR Spanish is known for its subject pronoun usage: '¿Quieres tú que yo lo haga?' is more common than in Mexico.",
+      "regional_variations": "Puerto Rican speakers use '¡Ojalá!' frequently in daily speech. '¡Ojalá que sí!' and '¡Ojalá que no!' are common reactions. The subjunctive after ojalá is standard across all PR registers."
+    }
+  }
+}
