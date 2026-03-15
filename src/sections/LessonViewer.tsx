@@ -11,7 +11,7 @@ interface LessonViewerProps {
   dialect: Dialect;
   onLessonComplete: (score: number, timeSpent: number) => void;
   onNextLesson?: () => void;
-  lessonTitle?: string;
+  
 }
 
 type Step =
@@ -64,7 +64,7 @@ function stepLabel(step: Step, lesson: Lesson): string {
   }
 }
 
-export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson, lessonTitle }: LessonViewerProps) {
+export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson}: LessonViewerProps) {
   const steps = buildSteps(lesson);
   const [stepIdx, setStepIdx] = useState(0);
   const [exerciseResults, setExerciseResults] = useState<ExerciseResult[]>([]);
