@@ -1,0 +1,17 @@
+{
+  "lesson_id": "a1-time-days",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 3, "text": "De lunes a viernes. Los sábados, solo por la mañana.", "translation": "Monday to Friday. Saturdays, mornings only." },
+      { "line_index": 4, "text": "¿Puedo pedir una cita para el martes?", "translation": "Can I request an appointment for Tuesday?" },
+      { "line_index": 5, "text": "Sí, ¿le va bien a las diez y media?", "translation": "Yes, does ten thirty suit you?" }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, lunch is 2–4pm and dinner 9–11pm — significantly later than English norms. Shops and businesses often close 2–5pm for the afternoon break. Medical appointments in the public system (Seguridad Social) may require advance booking.",
+      "gestures": "In Spain, time references often include 'a mediodía' (at noon/midday) as a common reference point. 'Por la tarde' in Spain typically means afternoon AND early evening.",
+      "regional_variations": "Spain uses the 24-hour clock more commonly in everyday speech than Latin America: 'Son las quince horas' (3pm) is normal in announcements. Days of the week are never capitalised in Spanish.",
+      "distincion": "Days with 'c' or 'z': 'lunes, martes, miércoles' — note 'miércoles' has no /θ/ issue, but 'diciembre' (December) features the Castilian /θ/: [diˈθjembɾe]."
+    }
+  }
+}

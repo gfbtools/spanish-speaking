@@ -1,0 +1,121 @@
+{
+  "lesson_id": "a2-reflexive-verbs",
+  "level": "A2",
+  "dialect": "es-MX",
+  "title": { "native": "Los Verbos Reflexivos", "localized": "Reflexive Verbs" },
+  "objectives": [
+    "Conjugate reflexive verbs with correct pronouns (me, te, se, nos, os, se)",
+    "Use reflexive verbs for daily routine and personal care",
+    "Distinguish reflexive from non-reflexive use of the same verb",
+    "Ask and answer questions about daily routines"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a1-daily-routine", "a1-present-tense"],
+  "activities": [
+    { "activity_id": "act-ref-1", "type": "vocabulary", "title": "Verbos Reflexivos", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-ref-2", "type": "dialogue",   "title": "Diálogo",            "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-ref-3", "type": "exercises",  "title": "Ejercicios",         "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-ref-4", "type": "speaking",   "title": "Práctica oral",      "content": {}, "estimated_minutes": 5 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Mamá",  "text": "¡Mija, ya son las siete! ¿A qué hora te despiertas?", "translation": "Honey, it's already seven! What time do you wake up?", "ipa": "[ˈmixa ‖ ja son las ˈsjete ‖ a ke ˈoɾa te ðesˈpjeɾtas]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-001", "alternate_phrasing": [], "context": "Morning wake-up call" },
+    { "speaker": "Valeria", "text": "Me despierto a las siete y media, mamá. Me levanto ahora.", "translation": "I wake up at seven thirty, mom. I'm getting up now.", "ipa": "[me ðesˈpjeɾto a las ˈsjete i ˈmeðja ‖ me leˈβanto aˈoɾa]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-002", "alternate_phrasing": [], "context": "Responding to wake-up call" },
+    { "speaker": "Mamá",  "text": "¿Cuánto tiempo tardas en arreglarte?", "translation": "How long does it take you to get ready?", "ipa": "[ˈkwanto ˈtjempo ˈtaɾðas en aˈreɣlaɾte]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-003", "alternate_phrasing": [], "context": "Asking about routine time" },
+    { "speaker": "Valeria", "text": "Me ducho en diez minutos, me visto rápido y me maquillo en el camino.", "translation": "I shower in ten minutes, dress quickly and do my makeup on the way.", "ipa": "[me ˈðuʧo en ˈðjeθ miˈnutos ‖ me ˈβisto ˈrapiðo i me maˈkiʝo en el kaˈmino]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-004", "alternate_phrasing": [], "context": "Describing morning routine" },
+    { "speaker": "Mamá",  "text": "¿Tu hermano ya se bañó?", "translation": "Did your brother already bathe?", "ipa": "[tu eɾˈmano ja se baˈɲo]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-005", "alternate_phrasing": [], "context": "Asking about sibling" },
+    { "speaker": "Valeria", "text": "Sí, él siempre se levanta primero y se baña antes que yo.", "translation": "Yes, he always gets up first and bathes before me.", "ipa": "[si ‖ el ˈsjempɾe se leˈβanta pɾiˈmeɾo i se ˈbaɲa ˈantes ke jo]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-006", "alternate_phrasing": [], "context": "Comparing routines" },
+    { "speaker": "Mamá",  "text": "¿A qué hora se acuestan ustedes normalmente?", "translation": "What time do you all normally go to bed?", "ipa": "[a ke ˈoɾa se aˈkwestan usˈteðes noɾmalˈmente]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-007", "alternate_phrasing": [], "context": "Asking about bedtime" },
+    { "speaker": "Valeria", "text": "Nos acostamos a las diez. Pero yo me quedo dormida antes.", "translation": "We go to bed at ten. But I fall asleep before that.", "ipa": "[nos akosˈtamos a las ˈðjeθ ‖ ˈpeɾo jo me ˈkeðo doɾˈmiða ˈantes]", "dialect": "es-MX", "audio_asset_id": "a2-ref-mx-008", "alternate_phrasing": [], "context": "Describing sleep habits" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a2-ref-mx-c001", "front": "despertarse (yo)", "back": "me despierto", "ipa": "[me ðesˈpjeɾto]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c002", "front": "levantarse (él/ella)", "back": "se levanta", "ipa": "[se leˈβanta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c003", "front": "ducharse (nosotros)", "back": "nos duchamos", "ipa": "[nos ˈðuʧamos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c004", "front": "vestirse (tú)", "back": "te vistes", "ipa": "[te ˈβistes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c005", "front": "acostarse (ellos)", "back": "se acuestan", "ipa": "[se aˈkwestan]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c006", "front": "afeitarse (yo)", "back": "me afeito", "ipa": "[me aˈfejto]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a2-ref-mx-c007", "front": "llamarse (yo)", "back": "me llamo", "ipa": "[me ˈʝamo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a2-ref-mx-c008", "front": "sentirse (tú)", "back": "te sientes", "ipa": "[te ˈsjentes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-ref-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta (Choose the correct sentence)",
+      "question": "How do you say 'She washes her hair every morning'?",
+      "options": [
+        { "text": "Ella se lava el pelo todas las mañanas.", "correct": true },
+        { "text": "Ella lava el pelo todas las mañanas.", "correct": false },
+        { "text": "Ella se lava su pelo todas las mañanas.", "correct": false },
+        { "text": "Ella te lava el pelo todas las mañanas.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Exacto! With reflexive verbs, Spanish uses the definite article 'el/la' not a possessive. 'Se lava el pelo' — not 'se lava su pelo'.",
+        "incorrect": "The reflexive 'se lava' is needed (she washes herself), and Spanish uses 'el pelo' (the hair) not 'su pelo' when the body part is already understood to be the person's own."
+      }
+    },
+    {
+      "exercise_id": "ex-ref-mx-002",
+      "type": "matching",
+      "instruction": "Une el verbo con su significado (Match the reflexive verb to its meaning)",
+      "pairs": [
+        { "spanish": "despertarse", "english": "to wake up" },
+        { "spanish": "quejarse",    "english": "to complain" },
+        { "spanish": "enamorarse",  "english": "to fall in love" },
+        { "spanish": "olvidarse",   "english": "to forget" }
+      ]
+    },
+    {
+      "exercise_id": "ex-ref-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con el verbo reflexivo correcto (Complete with the correct reflexive verb)",
+      "dialogue": [
+        { "speaker": "Raúl",   "text": "¿A qué hora _____ tú normalmente? (levantarse)" },
+        { "speaker": "Carmen", "text": "_____ a las seis. Luego _____ y desayuno. (levantarse / ducharse)" },
+        { "speaker": "Raúl",   "text": "¿Y tus hijos? ¿Se levantan solos?" },
+        { "speaker": "Carmen", "text": "Sí, pero el mayor siempre _____ en el baño. (quedarse)" }
+      ],
+      "answers": ["te levantas", "Me levanto", "me ducho", "se queda"],
+      "acceptable_variants": {
+        "te levantas": [],
+        "Me levanto": ["me levanto"],
+        "me ducho": [],
+        "se queda": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-ref-mx-roleplay",
+    "type": "roleplay",
+    "title": "Mi rutina diaria (My Daily Routine)",
+    "scenario": "Describe your morning routine from waking up to leaving the house. Use at least 5 reflexive verbs.",
+    "prompt": "Describe tu rutina de la mañana usando verbos reflexivos.",
+    "expected_elements": ["me despierto/levanto", "me ducho/baño", "me visto", "me peino/maquillo/afeito"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "grammar",       "weight": 0.4, "description": "Correct reflexive pronoun placement" },
+      { "criterion": "vocabulary",    "weight": 0.3, "description": "Daily routine and personal care vocabulary" },
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear pronunciation of reflexive verbs" }
+    ],
+    "sample_response": {
+      "text": "Me despierto a las seis y media. Me levanto, me ducho y luego me visto. Me peino rápido y desayuno. Salgo de casa a las siete y cuarto.",
+      "ipa": "[me ðesˈpjeɾto a las ˈsjeis i ˈmeðja ‖ me leˈβanto ‖ me ˈðuʧo i ˈlweɣo me ˈβisto]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "Morning routines are a common conversation topic. Mexicans often greet with '¿Ya te levantaste?' (Are you up already?) as warm small talk with family.",
+    "gestures": "Miming washing hands or face while discussing hygiene routines is common in instructional contexts.",
+    "regional_variations": "In Mexico, 'bañarse' (to bathe/shower) is used more broadly than 'ducharse' — most people say 'me voy a bañar' regardless of whether they're taking a bath or shower. 'Ducharse' is more common in Spain.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A2" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "reflexive_verbs" }
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

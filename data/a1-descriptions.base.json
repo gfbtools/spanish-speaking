@@ -1,0 +1,105 @@
+{
+  "lesson_id": "a1-descriptions",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": { "native": "Descripciones Básicas", "localized": "Basic Adjectives & Descriptions" },
+  "objectives": [
+    "Describe people's physical appearance",
+    "Use adjective agreement (gender and number)",
+    "Describe personality and character",
+    "Use ser for permanent characteristics"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a1-greetings", "a1-ser-estar"],
+  "activities": [
+    { "activity_id": "act-desc-1", "type": "vocabulary", "title": "Adjetivos", "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-desc-2", "type": "dialogue", "title": "Diálogo", "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-desc-3", "type": "exercise", "title": "Práctica", "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-desc-4", "type": "speaking", "title": "Habla", "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Rosa", "text": "¿Cómo es tu hermano?", "translation": "What is your brother like?", "ipa": "[ˈkomo es tu eɾˈmano]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-001", "alternate_phrasing": [], "context": "Asking for a description of someone" },
+    { "speaker": "Pedro", "text": "Es alto y delgado. Tiene el pelo negro y los ojos cafés.", "translation": "He's tall and slim. He has black hair and brown eyes.", "ipa": "[es ˈalto i ðelˈɣaðo ‖ ˈtjene el ˈpelo ˈneɣɾo i los ˈoxos kaˈfes]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-002", "alternate_phrasing": [], "context": "Describing physical appearance" },
+    { "speaker": "Rosa", "text": "¿Y cómo es su personalidad?", "translation": "And what is his personality like?", "ipa": "[i ˈkomo es su peɾsonaliˈðað]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-003", "alternate_phrasing": [], "context": "Asking about personality" },
+    { "speaker": "Pedro", "text": "Es muy simpático y divertido, pero a veces es un poco serio.", "translation": "He's very friendly and fun, but sometimes he's a bit serious.", "ipa": "[es ˈmuj simˈpatiko i diβeɾˈtiðo ‖ ˈpeɾo a ˈβeses es um ˈpoko ˈseɾjo]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-004", "alternate_phrasing": [], "context": "Describing personality" },
+    { "speaker": "Rosa", "text": "¿Es mayor o menor que tú?", "translation": "Is he older or younger than you?", "ipa": "[es maˈʝoɾ o meˈnoɾ ke ˈtu]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-005", "alternate_phrasing": [], "context": "Asking about relative age" },
+    { "speaker": "Pedro", "text": "Es tres años mayor. Él es el mayor de la familia.", "translation": "He's three years older. He's the oldest in the family.", "ipa": "[es ˈtɾes ˈaɲos maˈʝoɾ ‖ el es el maˈʝoɾ ðe la faˈmilja]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-006", "alternate_phrasing": [], "context": "Giving relative age and family position" },
+    { "speaker": "Rosa", "text": "¡Qué interesante! ¿Y cómo se llama?", "translation": "How interesting! And what's his name?", "ipa": "[ke inteɾeˈsante ‖ i ˈkomo se ˈʝama]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-007", "alternate_phrasing": [], "context": "Asking for the name" },
+    { "speaker": "Pedro", "text": "Se llama Miguel. Es abogado — muy trabajador.", "translation": "His name is Miguel. He's a lawyer — very hardworking.", "ipa": "[se ˈʝama miˈɣel ‖ es aβoˈɣaðo ‖ ˈmuj tɾaβaxaˈðoɾ]", "dialect": "es-MX", "audio_asset_id": "a1-desc-mx-008", "alternate_phrasing": [], "context": "Giving name and profession" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a1-desc-mx-c001", "front": "alto / baja", "back": "tall (m) / short (f)", "ipa": "[ˈalto ‖ ˈbaxa]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-desc-mx-c002", "front": "delgado / gordo", "back": "slim / fat", "ipa": "[ðelˈɣaðo ‖ ˈɡoɾðo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-desc-mx-c003", "front": "el pelo negro / rubio / castaño", "back": "black / blonde / brown hair", "ipa": "[el ˈpelo ˈneɣɾo ‖ ˈruβjo ‖ kasˈtaɲo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-desc-mx-c004", "front": "simpático / antipático", "back": "friendly / unfriendly", "ipa": "[simˈpatiko ‖ antiˈpatiko]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-desc-mx-c005", "front": "inteligente / trabajador", "back": "intelligent / hardworking", "ipa": "[inteliˈxente ‖ tɾaβaxaˈðoɾ]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-desc-mx-c006", "front": "mayor / menor", "back": "older / younger", "ipa": "[maˈʝoɾ ‖ meˈnoɾ]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-desc-mx-c007", "front": "los ojos cafés / verdes / azules", "back": "brown / green / blue eyes (MX)", "ipa": "[los ˈoxos kaˈfes ‖ ˈβeɾðes ‖ aˈsules]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a1-desc-mx-c008", "front": "¿Cómo es...?", "back": "What is ... like?", "ipa": "[ˈkomo es]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-desc-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta del adjetivo",
+      "question": "María es muy _____ (trabajador — feminine form).",
+      "options": [
+        { "text": "trabajadora", "correct": true },
+        { "text": "trabajador", "correct": false },
+        { "text": "trabajadoras", "correct": false },
+        { "text": "trabajadores", "correct": false }
+      ],
+      "feedback": { "correct": "¡Correcto! Adjectives ending in -or add -a for feminine: trabajador → trabajadora.", "incorrect": "Remember adjective agreement: feminine singular needs -a at the end." }
+    },
+    {
+      "exercise_id": "ex-desc-mx-002",
+      "type": "matching",
+      "instruction": "Une el adjetivo con su opuesto",
+      "pairs": [
+        { "spanish": "alto", "english": "bajo" },
+        { "spanish": "delgado", "english": "gordo" },
+        { "spanish": "simpático", "english": "antipático" },
+        { "spanish": "mayor", "english": "menor" }
+      ]
+    },
+    {
+      "exercise_id": "ex-desc-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Describe a esta persona",
+      "dialogue": [
+        { "speaker": "A", "text": "¿Cómo _____ tu amiga?" },
+        { "speaker": "B", "text": "Es _____ y delgada. (tall-f)" },
+        { "speaker": "A", "text": "¿Y cómo es su _____?" },
+        { "speaker": "B", "text": "Es muy _____ y generosa." }
+      ],
+      "answers": ["es", "alta", "personalidad", "simpática"],
+      "acceptable_variants": { "es": [], "alta": [], "personalidad": ["carácter"], "simpática": ["amable"] }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-desc-mx-roleplay",
+    "type": "roleplay",
+    "title": "Describe a alguien (Describe someone)",
+    "scenario": "Your friend hasn't met your sibling. Describe them physically and by personality.",
+    "prompt": "Describe a tu hermano o hermana: apariencia y personalidad.",
+    "expected_elements": ["physical description", "personality description", "ser usage"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear adjective pronunciation" },
+      { "criterion": "completeness", "weight": 0.4, "description": "Physical and personality covered" },
+      { "criterion": "fluency", "weight": 0.3, "description": "Natural descriptive flow" }
+    ],
+    "sample_response": { "text": "Mi hermana se llama Luisa. Es baja y tiene el pelo castaño. Es muy simpática e inteligente.", "ipa": "[mi eɾˈmana se ˈʝama ˈlwisa ‖ es ˈbaxa i ˈtjene el ˈpelo kasˈtaɲo ‖ es ˈmuj simˈpatika e inteliˈxente]" }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, physical descriptions are generally given openly and without discomfort. Terms like 'gordito/a' (chubby) are used as affectionate diminutives, not insults. Context and tone are everything.",
+    "gestures": "Mexicans often gesture at their own face or body to indicate where a feature is when describing someone — pointing to eyes for eye color, height with a hand level.",
+    "regional_variations": "In Mexico, 'café' is the standard word for brown eyes — not 'marrón' as in Spain. 'Moreno/a' (dark-complexioned) is a common, neutral descriptor in Mexico.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": ["Physical and personality adjectives", "Adjective agreement taught", "ser used correctly", "Three exercise types"],
+  "confidence_score": 0.94,
+  "human_review": false
+}

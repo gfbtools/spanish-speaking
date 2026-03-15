@@ -1,0 +1,106 @@
+{
+  "lesson_id": "a1-greetings",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": { "native": "Saludos y Presentaciones", "localized": "Greetings & Introductions" },
+  "objectives": [
+    "Greet people formally and informally",
+    "Introduce yourself with name, origin and age",
+    "Ask and answer 'How are you?'",
+    "Say goodbye appropriately"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [],
+  "activities": [
+    { "activity_id": "act-greet-1", "type": "vocabulary", "title": "Palabras Clave", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-greet-2", "type": "dialogue", "title": "Diálogo", "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-greet-3", "type": "exercise", "title": "Práctica", "content": {}, "estimated_minutes": 5 },
+    { "activity_id": "act-greet-4", "type": "speaking", "title": "Habla", "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Ana", "text": "¡Buenos días! Me llamo Ana. ¿Y tú?", "translation": "Good morning! My name is Ana. And you?", "ipa": "[ˈbwenos ˈðias ‖ me ˈʝamo ˈana ‖ i ˈtu]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-001", "alternate_phrasing": [], "context": "Meeting someone for the first time in the morning" },
+    { "speaker": "Carlos", "text": "¡Hola! Me llamo Carlos. Mucho gusto.", "translation": "Hi! My name is Carlos. Nice to meet you.", "ipa": "[ˈola ‖ me ˈʝamo ˈkaɾlos ‖ ˈmutʃo ˈɡusto]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-002", "alternate_phrasing": [], "context": "Responding to introduction" },
+    { "speaker": "Ana", "text": "¿De dónde eres?", "translation": "Where are you from?", "ipa": "[de ˈdonde ˈeɾes]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-003", "alternate_phrasing": [], "context": "Asking about origin" },
+    { "speaker": "Carlos", "text": "Soy de Guadalajara. ¿Y tú?", "translation": "I'm from Guadalajara. And you?", "ipa": "[ˈsoj ðe ɡwaðalaˈxaɾa ‖ i ˈtu]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-004", "alternate_phrasing": [], "context": "Stating origin and returning question" },
+    { "speaker": "Ana", "text": "Soy de Ciudad de México. ¿Cuántos años tienes?", "translation": "I'm from Mexico City. How old are you?", "ipa": "[ˈsoj ðe sjuˈðað ðe ˈmexiko ‖ ˈkwantos ˈaɲos ˈtjenes]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-005", "alternate_phrasing": [], "context": "Asking age" },
+    { "speaker": "Carlos", "text": "Tengo veintitrés años. ¿Cómo estás?", "translation": "I'm twenty-three years old. How are you?", "ipa": "[ˈteŋɡo βejntiˈtɾes ˈaɲos ‖ ˈkomo esˈtas]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-006", "alternate_phrasing": [], "context": "Stating age and asking how they are" },
+    { "speaker": "Ana", "text": "Muy bien, gracias. ¡Hasta luego!", "translation": "Very well, thank you. See you later!", "ipa": "[ˈmuj ˈβjen ˈɡɾasjas ‖ ˈasta ˈlweɣo]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-007", "alternate_phrasing": [], "context": "Saying goodbye" },
+    { "speaker": "Carlos", "text": "¡Hasta pronto! Fue un placer.", "translation": "See you soon! It was a pleasure.", "ipa": "[ˈasta ˈpɾonto ‖ fwe um plaˈseɾ]", "dialect": "es-MX", "audio_asset_id": "a1-greet-mx-008", "alternate_phrasing": [], "context": "Warm farewell" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a1-greet-mx-c001", "front": "Buenos días", "back": "Good morning", "ipa": "[ˈbwenos ˈðias]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-greet-mx-c002", "front": "Me llamo...", "back": "My name is...", "ipa": "[me ˈʝamo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-greet-mx-c003", "front": "Mucho gusto", "back": "Nice to meet you", "ipa": "[ˈmutʃo ˈɡusto]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-greet-mx-c004", "front": "¿De dónde eres?", "back": "Where are you from?", "ipa": "[de ˈdonde ˈeɾes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-greet-mx-c005", "front": "¿Cuántos años tienes?", "back": "How old are you?", "ipa": "[ˈkwantos ˈaɲos ˈtjenes]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-greet-mx-c006", "front": "¿Cómo estás?", "back": "How are you? (informal)", "ipa": "[ˈkomo esˈtas]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-greet-mx-c007", "front": "Hasta luego", "back": "See you later / Goodbye", "ipa": "[ˈasta ˈlweɣo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-greet-mx-c008", "front": "Soy de...", "back": "I am from...", "ipa": "[ˈsoj ðe]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-greet-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta (Choose the correct answer)",
+      "question": "How do you say 'Nice to meet you' in Spanish?",
+      "options": [
+        { "text": "Mucho gusto", "correct": true },
+        { "text": "Hasta luego", "correct": false },
+        { "text": "Muchas gracias", "correct": false },
+        { "text": "Buenos días", "correct": false }
+      ],
+      "feedback": { "correct": "¡Correcto! 'Mucho gusto' is the standard phrase when meeting someone.", "incorrect": "Try again — think about a phrase used specifically when meeting someone new." }
+    },
+    {
+      "exercise_id": "ex-greet-mx-002",
+      "type": "matching",
+      "instruction": "Une el saludo con su significado (Match the greeting with its meaning)",
+      "pairs": [
+        { "spanish": "Buenos días", "english": "Good morning" },
+        { "spanish": "Buenas tardes", "english": "Good afternoon" },
+        { "spanish": "Buenas noches", "english": "Good evening / Good night" },
+        { "spanish": "Hasta mañana", "english": "See you tomorrow" }
+      ]
+    },
+    {
+      "exercise_id": "ex-greet-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación (Complete the conversation)",
+      "dialogue": [
+        { "speaker": "Tú", "text": "¡Hola! Me _____ Sofía." },
+        { "speaker": "Amigo", "text": "Mucho gusto. ¿De dónde _____?" },
+        { "speaker": "Tú", "text": "_____ de Monterrey. ¿Y tú?" },
+        { "speaker": "Amigo", "text": "Soy de Oaxaca. ¿Cuántos años _____?" },
+        { "speaker": "Tú", "text": "Tengo veinte _____." }
+      ],
+      "answers": ["llamo", "eres", "Soy", "tienes", "años"],
+      "acceptable_variants": { "llamo": [], "eres": [], "Soy": ["soy"], "tienes": [], "años": [] }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-greet-mx-roleplay",
+    "type": "roleplay",
+    "title": "Preséntate (Introduce Yourself)",
+    "scenario": "You are meeting a new classmate for the first time.",
+    "prompt": "Saluda, di tu nombre, de dónde eres y cuántos años tienes.",
+    "expected_elements": ["greeting", "name", "origin", "age"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear pronunciation of greetings and name" },
+      { "criterion": "completeness", "weight": 0.4, "description": "All four elements included" },
+      { "criterion": "fluency", "weight": 0.3, "description": "Natural connected speech" }
+    ],
+    "sample_response": { "text": "¡Hola! Me llamo Ana. Soy de México. Tengo veintidós años.", "ipa": "[ˈola ‖ me ˈʝamo ˈana ‖ ˈsoj ðe ˈmexiko ‖ ˈteŋɡo βejntiˈðos ˈaɲos]" }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, 'Buenos días/tardes/noches' are always safe formal greetings. Among friends, 'Hola' or '¿Qué onda?' (What's up?) are common. 'Usted' is used with elders and in professional settings.",
+    "gestures": "A handshake is standard for first meetings in professional settings. Among friends and family, a single cheek kiss is common, especially in social settings.",
+    "regional_variations": "In Mexico City you may hear '¿Qué tal?' or '¿Cómo te va?' as alternatives to '¿Cómo estás?'. 'Güey' or 'wey' is heard informally between male friends — avoid it with strangers.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": ["Dialogue covers greeting, introduction, origin, age, farewell", "All flashcards have IPA", "Exercises cover 3 different types", "Speaking rubric has clear expected elements"],
+  "confidence_score": 0.95,
+  "human_review": false
+}

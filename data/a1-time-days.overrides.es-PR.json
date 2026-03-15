@@ -1,0 +1,17 @@
+{
+  "lesson_id": "a1-time-days",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 0, "text": "Disculpa, ¿a qué hora abre la clínica?", "translation": "Excuse me, what time does the clinic open?" },
+      { "line_index": 4, "text": "¿Puedo hacer una cita pa'l martes?", "translation": "Can I make an appointment for Tuesday?" },
+      { "line_index": 5, "text": "Sí, ¿a las diez y media le cae bien?", "translation": "Yes, does ten thirty work for you?" }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Puerto Rico runs on a relaxed sense of time in social settings — 'Puerto Rico time' is similar to 'la hora mexicana'. However medical, government and business appointments are taken seriously. Always confirm the day before.",
+      "gestures": "In Puerto Rico, time is often referenced with 'a eso de las...' (around...) — 'A eso de las tres' means 'around three' and signals flexibility.",
+      "regional_variations": "'Pa'' (contraction of 'para') is extremely common in casual PR speech: 'pa'l lunes' (for Monday), 'pa'rriba' (upward), 'pa'bajo' (downward). The week is also sometimes referenced starting Sunday ('domingo') as the first day."
+    },
+    "phoneme_tolerance_adjustments": { "s_aspiration": true, "d_deletion": true }
+  }
+}

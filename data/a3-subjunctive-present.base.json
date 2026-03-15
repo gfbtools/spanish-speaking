@@ -1,0 +1,121 @@
+{
+  "lesson_id": "a3-subjunctive-present",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": { "native": "El Subjuntivo Presente", "localized": "Present Subjunctive" },
+  "objectives": [
+    "Conjugate regular and common irregular verbs in the present subjunctive",
+    "Use subjunctive after expressions of desire, doubt, emotion, and recommendation",
+    "Recognize the WEIRDO triggers (Wishes, Emotion, Impersonal, Recommendations, Doubt/Denial, Ojalá)",
+    "Distinguish indicative from subjunctive in natural speech"
+  ],
+  "estimated_minutes": 30,
+  "prerequisite_ids": ["a2-preterite", "a2-future-tense", "a1-present-tense"],
+  "activities": [
+    { "activity_id": "act-subj-1", "type": "vocabulary", "title": "Expresiones que disparan el subjuntivo", "content": {}, "estimated_minutes": 7 },
+    { "activity_id": "act-subj-2", "type": "dialogue",   "title": "Diálogo",                                 "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-subj-3", "type": "exercises",  "title": "Ejercicios",                              "content": {}, "estimated_minutes": 10 },
+    { "activity_id": "act-subj-4", "type": "speaking",   "title": "Práctica oral",                           "content": {}, "estimated_minutes": 5 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Profesora", "text": "Quiero que todos estudien el subjuntivo esta semana.", "translation": "I want everyone to study the subjunctive this week.", "ipa": "[ˈkjeɾo ke ˈtoðos esˈtuðjen el subxunˈtiβo]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-001", "alternate_phrasing": [], "context": "Teacher giving instructions" },
+    { "speaker": "Estudiante", "text": "Espero que no sea tan difícil como parece.", "translation": "I hope it's not as difficult as it seems.", "ipa": "[esˈpeɾo ke no ˈsea tan diˈfiθil ˈkomo paˈɾeθe]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-002", "alternate_phrasing": [], "context": "Student expressing hope" },
+    { "speaker": "Profesora", "text": "Dudo que lo dominen en un día, pero con práctica lo lograrán.", "translation": "I doubt you'll master it in one day, but with practice you'll get it.", "ipa": "[ˈðuðo ke lo ðoˈminen en un ˈðia ‖ ˈpeɾo kon ˈpɾaktika]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-003", "alternate_phrasing": [], "context": "Teacher using doubt trigger" },
+    { "speaker": "Estudiante", "text": "¿Es posible que lleguemos a usarlo de forma natural?", "translation": "Is it possible that we'll come to use it naturally?", "ipa": "[es poˈsiβle ke ʝeˈɣemos a uˈsaɾlo ðe ˈfoɾma natuˈɾal]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-004", "alternate_phrasing": [], "context": "Student asking with impersonal expression" },
+    { "speaker": "Profesora", "text": "Absolutamente. Recomiendo que practiquen con nativos siempre que puedan.", "translation": "Absolutely. I recommend you practice with natives whenever you can.", "ipa": "[absolutaˈmente ‖ rekomiˈendo ke pɾakˈtiken kon ˈnatiβos]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-005", "alternate_phrasing": [], "context": "Teacher recommending" },
+    { "speaker": "Estudiante", "text": "Me alegra que nos explique todo con tanto detalle.", "translation": "I'm glad you explain everything to us in such detail.", "ipa": "[me aˈleɣɾa ke nos ekspliˈke ˈtoðo kon ˈtanto deˈtaʝe]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-006", "alternate_phrasing": [], "context": "Student expressing emotion trigger" },
+    { "speaker": "Profesora", "text": "No creo que haya una forma más efectiva que la inmersión total.", "translation": "I don't think there is a more effective way than total immersion.", "ipa": "[no ˈkɾeo ke ˈaʝa ˈuna ˈfoɾma mas efeˈktiβa ke la inmeɾˈsjon toˈtal]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-007", "alternate_phrasing": [], "context": "Teacher using denial/negation trigger" },
+    { "speaker": "Estudiante", "text": "¡Ojalá tengamos más clases como ésta!", "translation": "Hopefully we'll have more classes like this one!", "ipa": "[oxaˈla teŋˈɡamos ˈmas ˈklases ˈkomo ˈesta]", "dialect": "es-MX", "audio_asset_id": "a3-subj-mx-008", "alternate_phrasing": [], "context": "Ojalá + subjunctive" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a3-subj-mx-c001", "front": "hablar → que yo (subjunctive)", "back": "que hable", "ipa": "[ke ˈaβle]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a3-subj-mx-c002", "front": "ser → que él (subjunctive)", "back": "que sea", "ipa": "[ke ˈsea]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a3-subj-mx-c003", "front": "tener → que nosotros (subjunctive)", "back": "que tengamos", "ipa": "[ke teŋˈɡamos]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a3-subj-mx-c004", "front": "Quiero que tú ___", "back": "Quiero que tú vayas (I want you to go)", "ipa": "[ˈkjeɾo ke tu ˈβaɣas]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a3-subj-mx-c005", "front": "Ojalá + ___", "back": "Ojalá + subjunctive (hopefully / I hope that)", "ipa": "[oxaˈla]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a3-subj-mx-c006", "front": "Es importante que ___", "back": "Es importante que + subjunctive", "ipa": "[es impoɾˈtante ke]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a3-subj-mx-c007", "front": "No creo que ___", "back": "No creo que + subjunctive (I don't think that...)", "ipa": "[no ˈkɾeo ke]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a3-subj-mx-c008", "front": "hacer → que tú (subjunctive)", "back": "que hagas", "ipa": "[ke ˈaɣas]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-subj-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta del subjuntivo (Choose the correct subjunctive form)",
+      "question": "My mom wants me to call her every day. Which is correct?",
+      "options": [
+        { "text": "Mi mamá quiere que la llame todos los días.", "correct": true },
+        { "text": "Mi mamá quiere que la llamo todos los días.", "correct": false },
+        { "text": "Mi mamá quiere que la llamé todos los días.", "correct": false },
+        { "text": "Mi mamá quiere yo llamo todos los días.", "correct": false }
+      ],
+      "feedback": {
+        "correct": "¡Perfecto! 'Quiere que' triggers the subjunctive — 'llame' (yo subjunctive of llamar). Two different subjects require que + subjunctive.",
+        "incorrect": "'Querer que' always triggers the subjunctive. With two different subjects (mom and me), the structure is: quiere que + subjunctive. 'Llame' is the yo present subjunctive of llamar."
+      }
+    },
+    {
+      "exercise_id": "ex-subj-mx-002",
+      "type": "matching",
+      "instruction": "Une el disparador con la categoría WEIRDO correcta (Match trigger to WEIRDO category)",
+      "pairs": [
+        { "spanish": "Espero que...", "english": "Wish / Desire" },
+        { "spanish": "Me alegra que...", "english": "Emotion" },
+        { "spanish": "Es necesario que...", "english": "Impersonal expression" },
+        { "spanish": "No creo que...", "english": "Doubt / Denial" }
+      ]
+    },
+    {
+      "exercise_id": "ex-subj-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa con la forma correcta del subjuntivo (Complete with the correct subjunctive form)",
+      "dialogue": [
+        { "speaker": "Jefa",    "text": "Necesito que _____ el informe antes del viernes. (terminar — tú)" },
+        { "speaker": "Empleado","text": "Claro. ¿Es posible que me _____ más tiempo si hay algún problema? (dar — usted)" },
+        { "speaker": "Jefa",    "text": "Dudo que _____ necesario, pero lo consideraremos. (ser — ello)" },
+        { "speaker": "Empleado","text": "Ojalá que todo _____ bien esta semana. (salir)" }
+      ],
+      "answers": ["termines", "dé", "sea", "salga"],
+      "acceptable_variants": {
+        "termines": [],
+        "dé": ["de"],
+        "sea": [],
+        "salga": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-subj-mx-roleplay",
+    "type": "roleplay",
+    "title": "Dar consejos y expresar deseos (Give advice and express wishes)",
+    "scenario": "A friend is starting a new job. Give them advice using subjunctive expressions — what you hope, what you recommend, what's important.",
+    "prompt": "Dale consejos a un amigo que empieza un trabajo nuevo. Usa el subjuntivo.",
+    "expected_elements": ["espero que", "recomiendo que", "es importante que", "ojalá"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "grammar",       "weight": 0.5, "description": "Correct subjunctive conjugations after triggers" },
+      { "criterion": "vocabulary",    "weight": 0.3, "description": "WEIRDO trigger expressions and advice vocabulary" },
+      { "criterion": "pronunciation", "weight": 0.2, "description": "Clear pronunciation of subjunctive forms" }
+    ],
+    "sample_response": {
+      "text": "Espero que te vaya muy bien en tu nuevo trabajo. Es importante que llegues puntual los primeros días. Recomiendo que escuches mucho y hagas muchas preguntas. ¡Ojalá que te encante!",
+      "ipa": "[esˈpeɾo ke te ˈβaɣa muj ˈβjen ‖ es impoɾˈtante ke ˈʝeɣes punˈtwal]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "The subjunctive is more present in formal registers — business correspondence, political speech, and polite requests. In casual Mexico City speech, speakers sometimes drop it in rapid conversation, but it's essential for educated expression.",
+    "gestures": "Raising one finger while saying 'es importante que' signals emphasis and authority.",
+    "regional_variations": "Mexican Spanish uses the present subjunctive frequently. 'Ojalá' (from Arabic 'inshallah') is universally used across all Spanish dialects and is always followed by the subjunctive. Puerto Rican Spanish uses the same subjunctive structures with the same triggers.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    { "criterion": "dialogue_authenticity", "value": true },
+    { "criterion": "exercise_difficulty",   "value": "A3" },
+    { "criterion": "cultural_accuracy",     "value": true },
+    { "criterion": "grammar_focus",         "value": "present_subjunctive" }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

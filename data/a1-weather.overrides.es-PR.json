@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-weather",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¡Qué calor hace hoy, chico!",
+        "translation": "It's so hot today, man!"
+      },
+      {
+        "line_index": 3,
+        "text": "¡Ay bendito! Entonces tengo que llevar paraguas.",
+        "translation": "Oh goodness! Then I need to bring an umbrella."
+      },
+      {
+        "line_index": 5,
+        "text": "En Puerto Rico hace mucho calor todo el año. No hay invierno de verdad.",
+        "translation": "In Puerto Rico it's very hot all year. There's no real winter."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "Puerto Rico has a tropical climate with warm weather year-round (24–32°C). There is no true winter — the 'cooler' months (December–February) drop to around 20°C at night. Hurricane season runs June–November.",
+      "gestures": "Fanning oneself is a constant gesture in PR's heat. '¡Ay bendito!' is a quintessential Puerto Rican expression of sympathy, surprise, or mild distress — very useful in any situation.",
+      "regional_variations": "'El calor' is a constant topic. 'Está pegando fuerte' (the sun is beating down hard) is common. Rain is called 'el agua' in many rural areas. Tropical rain showers are brief but intense, often daily in summer."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

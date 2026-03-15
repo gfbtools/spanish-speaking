@@ -1,0 +1,18 @@
+{
+  "lesson_id": "a1-greetings",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 2, "text": "¿De dónde eres?", "translation": "Where are you from?" },
+      { "line_index": 3, "text": "Soy de Sevilla. ¿Y tú?", "translation": "I'm from Seville. And you?" },
+      { "line_index": 4, "text": "Soy de Madrid. ¿Cuántos años tienes?", "translation": "I'm from Madrid. How old are you?" },
+      { "line_index": 6, "text": "Muy bien, gracias. ¡Hasta luego!", "translation": "Very well, thank you. See you later!" }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'tío/tía' is used casually between friends (like 'mate'). '¿Qué tal?' is the most common informal greeting. In professional contexts, 'usted' is standard, but Spain's workplace culture is generally less formal than Latin America.",
+      "gestures": "Two cheek kisses (dos besos) are the standard greeting between women and between men and women in social settings. Men typically shake hands. This applies even on first meetings — don't be surprised.",
+      "regional_variations": "In Spain you'll hear 'vosotros' for plural informal address: '¿Cómo estáis?' instead of '¿Cómo están?'. 'Buenas' is used casually at any hour as a shorthand for any time-of-day greeting.",
+      "distincion": "Listen for /θ/: 'gracias' = [ˈɡɾaθjas], not [ˈɡɾasjas]. This is the most immediately noticeable feature of Castilian Spanish for learners."
+    }
+  }
+}

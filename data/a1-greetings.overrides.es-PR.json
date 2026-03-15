@@ -1,0 +1,18 @@
+{
+  "lesson_id": "a1-greetings",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 0, "text": "¡Buenos días! Me llamo Ana. ¿Y tú, cómo te llamas?", "translation": "Good morning! My name is Ana. And you, what's your name?" },
+      { "line_index": 2, "text": "¿De dónde tú eres?", "translation": "Where are you from?" },
+      { "line_index": 5, "text": "Tengo veintitrés años. ¿Cómo tú estás?", "translation": "I'm twenty-three. How are you?" },
+      { "line_index": 6, "text": "¡Bien, gracias! ¡Hasta luego!", "translation": "Good, thanks! See you later!" }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, greetings are warm and often loud — enthusiasm is welcomed. '¿Qué es la que hay?' or '¿Qué hay de nuevo?' are casual alternatives to '¿Cómo estás?'. Strangers are often greeted with 'Buenas' at any time of day.",
+      "gestures": "A hug (abrazo) and cheek kiss are common even on first meetings in social settings. In Puerto Rico, physical warmth in greetings is a sign of friendliness, not overfamiliarity.",
+      "regional_variations": "Subject pronouns are frequently used before verbs in PR Spanish: '¿Cómo tú estás?' instead of '¿Cómo estás?'. This is a distinctive Caribbean Spanish feature. 'Mira' (look) is often used to get attention before speaking."
+    },
+    "phoneme_tolerance_adjustments": { "s_aspiration": true, "d_deletion": true }
+  }
+}

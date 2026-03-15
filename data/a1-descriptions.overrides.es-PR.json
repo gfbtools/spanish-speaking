@@ -1,0 +1,16 @@
+{
+  "lesson_id": "a1-descriptions",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      { "line_index": 1, "text": "Es alto y flaco. Tiene el pelo negro y los ojos marrones.", "translation": "He's tall and skinny. He has black hair and brown eyes." },
+      { "line_index": 3, "text": "Es bien simpático y chévere, pero a veces es un poco serio.", "translation": "He's really friendly and cool, but sometimes he's a bit serious." }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, physical descriptions are very casual and affectionate. 'Flaco/a' (skinny) is used freely without negative connotation. 'Bien' replaces 'muy' as an intensifier: 'bien alto', 'bien simpático'.",
+      "gestures": "Puerto Ricans are expressive and animated when describing people — hands and facial expressions add a lot of meaning. Mimicking the described person's mannerisms is common and humorous.",
+      "regional_variations": "'Chévere' means cool, great, or awesome and is widely used in PR. 'Los ojos marrones' is used in PR instead of 'cafés'. 'Trigueño/a' describes a medium-brown skin tone and is a common, respectful descriptor."
+    },
+    "phoneme_tolerance_adjustments": { "s_aspiration": true, "d_deletion": true }
+  }
+}

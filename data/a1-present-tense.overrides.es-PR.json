@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-present-tense",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¿Dónde tú trabajas?",
+        "translation": "Where do you work?"
+      },
+      {
+        "line_index": 4,
+        "text": "¿Tú comes en la escuela?",
+        "translation": "Do you eat at school?"
+      },
+      {
+        "line_index": 6,
+        "text": "¿Tú vives cerca de la escuela?",
+        "translation": "Do you live near the school?"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, subject pronouns appear before verbs in questions and statements routinely: '¿Tú trabajas?' not '¿Trabajas?'. This is grammatically correct and regionally standard.",
+      "gestures": "When confirming an action, Puerto Ricans often combine a nod with 'sí, sí' for emphasis. Wagging a finger side to side while saying 'no' reinforces negation.",
+      "regional_variations": "'Bregar' (to deal with, to handle, to work on) is a uniquely Puerto Rican verb that appears across contexts: 'Estoy bregando' (I'm handling it). It's a regular -ar verb but culturally irreplaceable in PR."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

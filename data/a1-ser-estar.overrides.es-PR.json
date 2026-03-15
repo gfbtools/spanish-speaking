@@ -1,0 +1,32 @@
+{
+  "lesson_id": "a1-ser-estar",
+  "dialect": "es-PR",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "¿De dónde usted es, señor López?",
+        "translation": "Where are you from, Mr. López?"
+      },
+      {
+        "line_index": 2,
+        "text": "¿Cómo usted está hoy?",
+        "translation": "How are you today?"
+      },
+      {
+        "line_index": 3,
+        "text": "Estoy un poco cansao. Es que trabajo demasiado.",
+        "translation": "I'm a bit tired. It's because I work too much."
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Puerto Rico, 'cansao' (dropped final -d) is extremely common in natural speech: 'cansado' → 'cansao', 'ocupado' → 'ocupao'. This d-deletion is a hallmark of Caribbean Spanish and is not sloppy — it's natural.",
+      "gestures": "In PR, 'estar bien' (to be fine) is often said with a laid-back shrug and a smile — conveying contentment without overstating.",
+      "regional_variations": "'¿Cómo tú estás?' (with subject pronoun) is the typical PR form. '¿Cómo estás?' without the pronoun is also used and understood. Both are correct."
+    },
+    "phoneme_tolerance_adjustments": {
+      "s_aspiration": true,
+      "d_deletion": true
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "lesson_id": "a1-daily-routine",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "La Rutina Diaria",
+    "localized": "Daily Routine"
+  },
+  "objectives": [
+    "Describe daily activities using reflexive verbs",
+    "Tell what time you do things",
+    "Talk about morning and evening routines",
+    "Use common frequency adverbs"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a1-time-days",
+    "a1-present-tense"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-dr-1",
+      "type": "vocabulary",
+      "title": "Verbos Reflexivos",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-dr-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-dr-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-dr-4",
+      "type": "speaking",
+      "title": "Habla",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Lucía",
+      "text": "¿A qué hora te despiertas normalmente?",
+      "translation": "What time do you normally wake up?",
+      "ipa": "[a ke ˈoɾa te desˈpjeɾtas noɾˈmalˈmente]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-001",
+      "alternate_phrasing": [],
+      "context": "Asking about morning routine"
+    },
+    {
+      "speaker": "Marco",
+      "text": "Me despierto a las seis y media. Luego me ducho.",
+      "translation": "I wake up at six thirty. Then I shower.",
+      "ipa": "[me desˈpjeɾto a las ˈsejs i ˈmeðja ‖ ˈlweɣo me ˈðutʃo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-002",
+      "alternate_phrasing": [],
+      "context": "Describing morning routine"
+    },
+    {
+      "speaker": "Lucía",
+      "text": "¿A qué hora desayunas?",
+      "translation": "What time do you have breakfast?",
+      "ipa": "[a ke ˈoɾa ðesaˈʝunas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking about breakfast time"
+    },
+    {
+      "speaker": "Marco",
+      "text": "Desayuno a las siete. Siempre como huevos y fruta.",
+      "translation": "I have breakfast at seven. I always eat eggs and fruit.",
+      "ipa": "[ðesaˈʝuno a las ˈsjete ‖ ˈsjempɾe ˈkomo ˈweβos i ˈfɾuta]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-004",
+      "alternate_phrasing": [],
+      "context": "Describing breakfast habits"
+    },
+    {
+      "speaker": "Lucía",
+      "text": "¿A qué hora sales al trabajo?",
+      "translation": "What time do you leave for work?",
+      "ipa": "[a ke ˈoɾa ˈsales al tɾaˈβaxo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-005",
+      "alternate_phrasing": [],
+      "context": "Asking about leaving time"
+    },
+    {
+      "speaker": "Marco",
+      "text": "Salgo a las ocho menos cuarto. Llego al trabajo en metro.",
+      "translation": "I leave at quarter to eight. I get to work by metro.",
+      "ipa": "[ˈsalɣo a las ˈotʃo ˈmenos ˈkwaɾto ‖ ˈʝeɣo al tɾaˈβaxo en ˈmetɾo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-006",
+      "alternate_phrasing": [],
+      "context": "Stating departure and transport"
+    },
+    {
+      "speaker": "Lucía",
+      "text": "¿Y por la noche, ¿a qué hora te acuestas?",
+      "translation": "And at night, what time do you go to bed?",
+      "ipa": "[i poɾ la ˈnotʃe ‖ a ke ˈoɾa te aˈkwestas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-007",
+      "alternate_phrasing": [],
+      "context": "Asking about bedtime"
+    },
+    {
+      "speaker": "Marco",
+      "text": "Normalmente me acuesto a las once. Leo un poco antes de dormir.",
+      "translation": "I normally go to bed at eleven. I read a bit before sleeping.",
+      "ipa": "[noɾˈmalˈmente me aˈkwesto a las ˈonse ‖ ˈleo um ˈpoko ˈantes ðe ðoɾˈmiɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dr-mx-008",
+      "alternate_phrasing": [],
+      "context": "Describing evening routine"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-dr-mx-c001",
+      "front": "despertarse",
+      "back": "to wake up (reflexive)",
+      "ipa": "[despeɾˈtaɾse]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c002",
+      "front": "ducharse / bañarse",
+      "back": "to shower / to bathe",
+      "ipa": "[duˈtʃaɾse ‖ βaˈɲaɾse]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c003",
+      "front": "desayunar / almorzar / cenar",
+      "back": "to have breakfast / lunch / dinner",
+      "ipa": "[ðesaˈʝunaɾ ‖ almoɾˈθaɾ ‖ θeˈnaɾ]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c004",
+      "front": "acostarse",
+      "back": "to go to bed (reflexive)",
+      "ipa": "[akosˈtaɾse]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c005",
+      "front": "siempre / nunca / a veces",
+      "back": "always / never / sometimes",
+      "ipa": "[ˈsjempɾe ‖ ˈnuŋka ‖ a ˈβeses]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c006",
+      "front": "Me levanto a las...",
+      "back": "I get up at...",
+      "ipa": "[me leˈβanto a las]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c007",
+      "front": "salir al trabajo",
+      "back": "to leave for work",
+      "ipa": "[saˈliɾ al tɾaˈβaxo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dr-mx-c008",
+      "front": "antes de / después de",
+      "back": "before / after",
+      "ipa": "[ˈantes ðe ‖ desˈpwes ðe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-dr-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la forma correcta",
+      "question": "Yo ___ (ducharse) a las siete de la mañana.",
+      "options": [
+        {
+          "text": "me ducho",
+          "correct": true
+        },
+        {
+          "text": "me ducha",
+          "correct": false
+        },
+        {
+          "text": "ducho",
+          "correct": false
+        },
+        {
+          "text": "te duchas",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! Reflexive: 'me ducho' for yo.",
+        "incorrect": "Reflexive verbs need the matching pronoun: yo → me, tú → te, él → se."
+      }
+    },
+    {
+      "exercise_id": "ex-dr-mx-002",
+      "type": "matching",
+      "instruction": "Une la actividad con el momento del día",
+      "pairs": [
+        {
+          "spanish": "desayunar",
+          "english": "mañana"
+        },
+        {
+          "spanish": "almorzar",
+          "english": "mediodía"
+        },
+        {
+          "spanish": "cenar",
+          "english": "noche"
+        },
+        {
+          "spanish": "acostarse",
+          "english": "noche (tarde)"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-dr-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la rutina",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿A qué hora _____ (despertarse-tú)?"
+        },
+        {
+          "speaker": "B",
+          "text": "Me _____ a las siete."
+        },
+        {
+          "speaker": "A",
+          "text": "¿Siempre _____  el metro?"
+        },
+        {
+          "speaker": "B",
+          "text": "Sí, _____ tomo el metro."
+        }
+      ],
+      "answers": [
+        "te despiertas",
+        "despierto",
+        "tomas",
+        "siempre"
+      ],
+      "acceptable_variants": {
+        "te despiertas": [],
+        "despierto": [],
+        "tomas": [
+          "usas"
+        ],
+        "siempre": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-dr-mx",
+    "type": "roleplay",
+    "title": "Tu rutina (Your routine)",
+    "scenario": "Tell a new friend about your typical weekday from morning to night.",
+    "prompt": "Describe tu rutina diaria: mañana, tarde y noche.",
+    "expected_elements": [
+      "wake up time",
+      "morning activity",
+      "work/school",
+      "bedtime"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.3,
+        "description": "Reflexive verbs and times clear"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.4,
+        "description": "Full day covered"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Connected natural flow"
+      }
+    ],
+    "sample_response": {
+      "text": "Me despierto a las seis. Me ducho y desayuno. Salgo al trabajo a las ocho. Por la noche ceno y me acuesto a las diez.",
+      "ipa": "[me desˈpjeɾto a las ˈsejs ‖ me ˈðutʃo i ðesaˈʝuno ‖ ˈsalɣo al tɾaˈβaxo a las ˈotʃo ‖ poɾ la ˈnotʃe ˈθeno i me aˈkwesto a las ˈdjes]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, meal times differ from the US/Europe: breakfast 7–9am, comida (main meal) 2–4pm, cena (light dinner) 8–9pm. The afternoon meal is the most important and often eaten with family.",
+    "gestures": "Pointing to a wrist indicates time. Rubbing eyes suggests tiredness/sleep time.",
+    "regional_variations": "The word 'almuerzo' in Mexico typically means a mid-morning snack, while 'comida' is the main lunch meal. This differs from Spain where 'almuerzo' = lunch.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "Reflexive verbs taught",
+    "Full day covered",
+    "Frequency adverbs included",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.94,
+  "human_review": false
+}

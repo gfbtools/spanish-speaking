@@ -1,0 +1,535 @@
+{
+  "lesson_id": "a1-travel-asking-for-directions",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "Pidiendo Direcciones",
+    "localized": "Asking for Directions"
+  },
+  "objectives": [
+    "Ask for directions to a specific place using '¿Dónde está...?'",
+    "Understand and follow simple directional instructions",
+    "Use basic prepositions of place: a la derecha, a la izquierda, derecho",
+    "Express understanding or ask for clarification"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a1-greetings",
+    "a1-numbers"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-1-vocabulary",
+      "type": "vocabulary",
+      "title": "Palabras Importantes",
+      "content": {
+        "words": [
+          {
+            "word": "la calle",
+            "translation": "the street",
+            "ipa": "[la ˈkaʝe]"
+          },
+          {
+            "word": "la avenida",
+            "translation": "the avenue",
+            "ipa": "[la aβeˈniða]"
+          },
+          {
+            "word": "la esquina",
+            "translation": "the corner",
+            "ipa": "[la esˈkina]"
+          },
+          {
+            "word": "el semáforo",
+            "translation": "the traffic light",
+            "ipa": "[el seˈmafoɾo]"
+          },
+          {
+            "word": "la cuadra",
+            "translation": "the block",
+            "ipa": "[la ˈkwaðɾa]"
+          },
+          {
+            "word": "el edificio",
+            "translation": "the building",
+            "ipa": "[el eðiˈfiθjo]"
+          },
+          {
+            "word": "el banco",
+            "translation": "the bank",
+            "ipa": "[el ˈbaŋko]"
+          },
+          {
+            "word": "el baño",
+            "translation": "the bathroom",
+            "ipa": "[el ˈbaɲo]"
+          }
+        ]
+      },
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-2-dialogue",
+      "type": "dialogue",
+      "title": "Diálogo: En la Calle",
+      "content": {
+        "scenario": "A tourist asks a local for directions to the bank"
+      },
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-3-exercises",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-4-speaking",
+      "type": "speaking",
+      "title": "Práctica de Pronunciación",
+      "content": {},
+      "estimated_minutes": 5
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Turista",
+      "text": "Disculpe, ¿podría ayudarme?",
+      "ipa": "[diskuˈlpe ‖ ¿poˈðɾi.a aʝuðaɾˈme]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-001",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Perdone, ¿me puede ayudar?",
+          "ipa": "[peɾˈðone ‖ ¿me ˈpweðe aʝuˈðaɾ]",
+          "confidence_score": 0.95
+        },
+        {
+          "dialect": "es-PR",
+          "text": "Disculpa, ¿me puede ayudar?",
+          "ipa": "[diskulˈpa ‖ ¿me ˈpweðe aʝuˈðaɾ]",
+          "confidence_score": 0.92
+        }
+      ],
+      "context": "Getting attention politely",
+      "translation": "Excuse me, could you help me?"
+    },
+    {
+      "speaker": "Local",
+      "text": "Claro, con gusto. ¿Qué necesita?",
+      "ipa": "[ˈklaɾo ‖ kon ˈgusto ‖ ¿ke neθeˈsita]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-002",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Por supuesto. ¿En qué puedo ayudarle?",
+          "ipa": "[poɾ suˈpweθto ‖ ¿en ˈke ˈpweðo aʝuðaɾˈle]",
+          "confidence_score": 0.93
+        }
+      ],
+      "context": "Offering help",
+      "translation": "Of course, gladly. What do you need?"
+    },
+    {
+      "speaker": "Turista",
+      "text": "Busco el banco. ¿Dónde está?",
+      "ipa": "[ˈbusko el ˈbaŋko ‖ ¿ˈdonde esˈta]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-003",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Estoy buscando el banco. ¿Dónde queda?",
+          "ipa": "[esˈtoj busˈkando el ˈbaŋko ‖ ¿ˈdonde ˈkeða]",
+          "confidence_score": 0.94
+        }
+      ],
+      "context": "Asking for location",
+      "translation": "I'm looking for the bank. Where is it?"
+    },
+    {
+      "speaker": "Local",
+      "text": "Está cerca. Camine dos cuadras derecho y después gire a la izquierda.",
+      "ipa": "[esˈta ˈseɾka ‖ kaˈmine ðos ˈkwadɾas ðeˈɾetʃo i ðesˈpweθe ˈxiɾe a la isˈkjeɾða]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-004",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Está cerca. Vaya todo recto dos calles y luego gire a la izquierda.",
+          "ipa": "[esˈta ˈθeɾka ‖ ˈbaʝa ˈtoðo ˈɾekto ðos ˈkaʝes i ˈluɣo ˈxiɾe a la isˈkjeɾða]",
+          "confidence_score": 0.91
+        }
+      ],
+      "context": "Giving directions",
+      "translation": "It's nearby. Walk two blocks straight ahead and then turn left."
+    },
+    {
+      "speaker": "Turista",
+      "text": "¿A la izquierda en el semáforo?",
+      "ipa": "[¿a la isˈkjeɾða en el seˈmafoɾo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-005",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "¿Giro a la izquierda en el semáforo?",
+          "ipa": "[¿ˈxiɾo a la isˈkjeɾða en el seˈmafoɾo]",
+          "confidence_score": 0.96
+        }
+      ],
+      "context": "Confirming understanding",
+      "translation": "To the left at the traffic light?"
+    },
+    {
+      "speaker": "Local",
+      "text": "Sí, exacto. El banco está en la esquina, a la derecha.",
+      "ipa": "[ˈsi ‖ ekˈsakto ‖ el ˈbaŋko esˈta en la esˈkina ‖ a la ðeˈɾetʃa]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-006",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Sí, exacto. El banco está en la esquina, a mano derecha.",
+          "ipa": "[ˈsi ‖ ekˈsakto ‖ el ˈbaŋko esˈta en la esˈkina ‖ a ˈmano ðeˈɾetʃa]",
+          "confidence_score": 0.93
+        }
+      ],
+      "context": "Confirming and specifying location",
+      "translation": "Yes, exactly. The bank is on the corner, to the right."
+    },
+    {
+      "speaker": "Turista",
+      "text": "Perfecto, muchas gracias.",
+      "ipa": "[peɾˈfekto ‖ ˈmutʃas ˈɣɾasjas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-007",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "Perfecto, muchas gracias.",
+          "ipa": "[peɾˈfekto ‖ ˈmutʃas ˈɣɾasjas]",
+          "confidence_score": 1.0
+        }
+      ],
+      "context": "Expressing gratitude",
+      "translation": "Perfect, thank you very much."
+    },
+    {
+      "speaker": "Local",
+      "text": "De nada. ¡Que le vaya bien!",
+      "ipa": "[ðe ˈnaða ‖ ˈke le ˈbaʝa ˈβjen]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-dir-mx-008",
+      "alternate_phrasing": [
+        {
+          "dialect": "es-ES",
+          "text": "De nada. ¡Hasta luego!",
+          "ipa": "[ðe ˈnaða ‖ ˈasta ˈlweɣo]",
+          "confidence_score": 0.88
+        }
+      ],
+      "context": "Closing the interaction",
+      "translation": "You're welcome. Have a good day!"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-dir-mx-card-001",
+      "front": "¿Dónde está el banco?",
+      "back": "Where is the bank?",
+      "ipa": "[¿ˈdonde esˈta el ˈbaŋko]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-002",
+      "front": "Gire a la izquierda",
+      "back": "Turn left",
+      "ipa": "[ˈxiɾe a la isˈkjeɾða]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-003",
+      "front": "Siga derecho",
+      "back": "Go straight / Continue straight",
+      "ipa": "[ˈsiɣa ðeˈɾetʃo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.96,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-004",
+      "front": "Está en la esquina",
+      "back": "It's on the corner",
+      "ipa": "[esˈta en la esˈkina]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-005",
+      "front": "¿Podría ayudarme?",
+      "back": "Could you help me? (formal)",
+      "ipa": "[¿poˈðɾi.a aʝuðaɾˈme]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.95,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-006",
+      "front": "Dos cuadras",
+      "back": "Two blocks",
+      "ipa": "[ðos ˈkwadɾas]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.94,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-007",
+      "front": "A la derecha",
+      "back": "To the right",
+      "ipa": "[a la ðeˈɾetʃa]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-dir-mx-card-008",
+      "front": "Está cerca",
+      "back": "It's nearby / It's close",
+      "ipa": "[esˈta ˈseɾka]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta (Choose the correct answer)",
+      "question": "¿Cómo preguntas 'Where is the bank?' en español?",
+      "options": [
+        {
+          "text": "¿Dónde está el banco?",
+          "correct": true
+        },
+        {
+          "text": "¿Qué es el banco?",
+          "correct": false
+        },
+        {
+          "text": "¿Cuándo abre el banco?",
+          "correct": false
+        },
+        {
+          "text": "¿Por qué está el banco?",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! '¿Dónde está...?' means 'Where is...?'",
+        "incorrect": "Recuerda: 'dónde' = where, 'está' = is (location)"
+      }
+    },
+    {
+      "exercise_id": "ex-mx-002",
+      "type": "matching",
+      "instruction": "Une la frase con su significado (Match the phrase with its meaning)",
+      "pairs": [
+        {
+          "spanish": "Gire a la izquierda",
+          "english": "Turn left"
+        },
+        {
+          "spanish": "Siga derecho",
+          "english": "Go straight"
+        },
+        {
+          "spanish": "Está en la esquina",
+          "english": "It's on the corner"
+        },
+        {
+          "spanish": "A la derecha",
+          "english": "To the right"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la conversación (Complete the conversation)",
+      "dialogue": [
+        {
+          "speaker": "Turista",
+          "text": "Disculpe, ¿_____ ayudarme?"
+        },
+        {
+          "speaker": "Local",
+          "text": "Claro. ¿Qué necesita?"
+        },
+        {
+          "speaker": "Turista",
+          "text": "Busco el _____. ¿Dónde está?"
+        },
+        {
+          "speaker": "Local",
+          "text": "_____ derecho dos cuadras."
+        },
+        {
+          "speaker": "Turista",
+          "text": "Muchas _____."
+        }
+      ],
+      "answers": [
+        "podría",
+        "banco",
+        "Siga",
+        "gracias"
+      ],
+      "acceptable_variants": {
+        "podría": [
+          "puede"
+        ],
+        "banco": [
+          "baño",
+          "edificio"
+        ],
+        "Siga": [
+          "Camine",
+          "Vaya"
+        ],
+        "gracias": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-mx-roleplay",
+    "type": "roleplay",
+    "title": "Pide Direcciones (Ask for Directions)",
+    "scenario": "You need to find the bathroom. Ask a local for directions.",
+    "prompt": "Pide direcciones al baño. Usa: 'Disculpe', '¿Dónde está...?', 'gracias'",
+    "expected_elements": [
+      "greeting",
+      "question",
+      "gratitude"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.35,
+        "description": "Clear pronunciation of key words"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.35,
+        "description": "All expected elements included"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Natural pace and flow"
+      }
+    ],
+    "sample_response": {
+      "text": "Disculpe, ¿dónde está el baño?",
+      "ipa": "[diskulˈpe ‖ ¿ˈdonde esˈta el ˈbaɲo]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, using 'usted' forms (podría, podría ayudarme) is polite when speaking to strangers. 'Disculpe' is a common, polite way to get someone's attention.",
+    "gestures": "Mexicans often use hand gestures when giving directions - pointing, showing turns with hand movements.",
+    "regional_variations": "In some parts of Mexico, you might hear 'calle' instead of 'cuadra' for blocks. 'Derecho' and 'recto' are both used for 'straight'.",
+    "confidence_score": 0.92,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "User can correctly ask 'Where is...?' in Spanish",
+    "User understands at least 3 directional phrases",
+    "User can follow simple directions (left, right, straight)",
+    "Speaking intelligibility score ≥ 0.65",
+    "SRS cards reviewed with average quality ≥ 3"
+  ],
+  "telemetry_event_triggers": [
+    {
+      "event": "lesson_start",
+      "trigger": "User opens lesson"
+    },
+    {
+      "event": "dialogue_play",
+      "trigger": "User plays dialogue audio"
+    },
+    {
+      "event": "exercise_complete",
+      "trigger": "User submits exercise answer"
+    },
+    {
+      "event": "speaking_attempt",
+      "trigger": "User records speaking response"
+    },
+    {
+      "event": "srs_review",
+      "trigger": "User reviews flashcard"
+    },
+    {
+      "event": "lesson_complete",
+      "trigger": "User completes all activities"
+    }
+  ],
+  "sources": [
+    "Real Academia Española - Diccionario de la lengua española",
+    "Corpus del Español - Frequency data",
+    "Mexican Spanish field recordings",
+    "CEFR A1 can-do statements"
+  ],
+  "changelog": [
+    {
+      "timestamp": "2026-02-15T00:21:47.000193Z",
+      "author": "ai-generator",
+      "changes": "Initial lesson creation for es-MX dialect"
+    }
+  ],
+  "confidence_score": 0.94,
+  "human_review": false
+}

@@ -1,0 +1,105 @@
+{
+  "lesson_id": "a1-shopping",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": { "native": "De Compras", "localized": "Shopping & Money" },
+  "objectives": [
+    "Ask for prices in Spanish",
+    "Understand and use money vocabulary",
+    "Buy items in a market or shop",
+    "Use numbers in a commercial context"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a1-numbers", "a1-greetings"],
+  "activities": [
+    { "activity_id": "act-shop-1", "type": "vocabulary", "title": "El Dinero", "content": {}, "estimated_minutes": 6 },
+    { "activity_id": "act-shop-2", "type": "dialogue", "title": "En el Mercado", "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-shop-3", "type": "exercise", "title": "Práctica", "content": {}, "estimated_minutes": 8 },
+    { "activity_id": "act-shop-4", "type": "speaking", "title": "Habla", "content": {}, "estimated_minutes": 3 }
+  ],
+  "dialogue_blocks": [
+    { "speaker": "Cliente", "text": "Buenas tardes. ¿Cuánto cuesta esta camisa?", "translation": "Good afternoon. How much does this shirt cost?", "ipa": "[ˈbwenas ˈtaɾðes ‖ ˈkwanto ˈkwesta ˈesta kaˈmisa]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-001", "alternate_phrasing": [], "context": "Asking for the price of an item" },
+    { "speaker": "Vendedor", "text": "Cuesta doscientos pesos.", "translation": "It costs two hundred pesos.", "ipa": "[ˈkwesta ðosˈθjentos ˈpesos]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-002", "alternate_phrasing": [], "context": "Stating the price" },
+    { "speaker": "Cliente", "text": "¿Tiene algo más barato?", "translation": "Do you have anything cheaper?", "ipa": "[ˈtjene ˈalɣo mas βaˈɾato]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-003", "alternate_phrasing": [], "context": "Asking for a cheaper option" },
+    { "speaker": "Vendedor", "text": "Sí, esta otra es más económica — ciento cincuenta.", "translation": "Yes, this other one is more affordable — one fifty.", "ipa": "[ˈsi ˈesta ˈotɾa es mas ekoˈnomika ‖ ˈθjento θinˈkwenta]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-004", "alternate_phrasing": [], "context": "Offering a cheaper alternative" },
+    { "speaker": "Cliente", "text": "Me la llevo. ¿Acepta tarjeta?", "translation": "I'll take it. Do you accept card?", "ipa": "[me la ˈʝeβo ‖ aˈθepta taɾˈxeta]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-005", "alternate_phrasing": [], "context": "Deciding to buy and asking about payment" },
+    { "speaker": "Vendedor", "text": "Sí, aceptamos tarjeta y efectivo.", "translation": "Yes, we accept card and cash.", "ipa": "[ˈsi aθepˈtamos taɾˈxeta i efekˈtiβo]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-006", "alternate_phrasing": [], "context": "Confirming payment methods" },
+    { "speaker": "Cliente", "text": "Voy a pagar en efectivo. Aquí tiene doscientos.", "translation": "I'll pay in cash. Here's two hundred.", "ipa": "[ˈboj a paˈɣaɾ en efekˈtiβo ‖ aˈki ˈtjene ðosˈθjentos]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-007", "alternate_phrasing": [], "context": "Paying with cash" },
+    { "speaker": "Vendedor", "text": "Gracias. Aquí tiene su cambio — cincuenta pesos.", "translation": "Thank you. Here's your change — fifty pesos.", "ipa": "[ˈɡɾaθjas ‖ aˈki ˈtjene su ˈkambjo ‖ θinˈkwenta ˈpesos]", "dialect": "es-MX", "audio_asset_id": "a1-shop-mx-008", "alternate_phrasing": [], "context": "Giving change" }
+  ],
+  "srs_flashcards": [
+    { "card_id": "a1-shop-mx-c001", "front": "¿Cuánto cuesta?", "back": "How much does it cost?", "ipa": "[ˈkwanto ˈkwesta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-shop-mx-c002", "front": "el precio", "back": "the price", "ipa": "[el ˈpɾeθjo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-shop-mx-c003", "front": "caro / barato", "back": "expensive / cheap", "ipa": "[ˈkaɾo ‖ βaˈɾato]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false },
+    { "card_id": "a1-shop-mx-c004", "front": "el efectivo", "back": "cash", "ipa": "[el efekˈtiβo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-shop-mx-c005", "front": "la tarjeta de crédito", "back": "credit card", "ipa": "[la taɾˈxeta ðe ˈkɾeðito]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false },
+    { "card_id": "a1-shop-mx-c006", "front": "el cambio", "back": "the change (money)", "ipa": "[el ˈkambjo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a1-shop-mx-c007", "front": "Me lo/la llevo", "back": "I'll take it (m/f)", "ipa": "[me lo ˈʝeβo ‖ me la ˈʝeβo]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false },
+    { "card_id": "a1-shop-mx-c008", "front": "el descuento", "back": "the discount", "ipa": "[el desˈkwento]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-shop-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la respuesta correcta",
+      "question": "How do you ask 'Do you accept credit card?'",
+      "options": [
+        { "text": "¿Acepta tarjeta de crédito?", "correct": true },
+        { "text": "¿Tiene tarjeta de crédito?", "correct": false },
+        { "text": "¿Quiere tarjeta de crédito?", "correct": false },
+        { "text": "¿Paga tarjeta de crédito?", "correct": false }
+      ],
+      "feedback": { "correct": "¡Correcto! 'Aceptar' is the right verb — '¿Acepta tarjeta?'", "incorrect": "'Aceptar' means to accept — the key verb for asking about payment methods." }
+    },
+    {
+      "exercise_id": "ex-shop-mx-002",
+      "type": "matching",
+      "instruction": "Une la frase con su significado",
+      "pairs": [
+        { "spanish": "¿Cuánto cuesta?", "english": "How much does it cost?" },
+        { "spanish": "Es muy caro.", "english": "It's very expensive." },
+        { "spanish": "Me lo llevo.", "english": "I'll take it." },
+        { "spanish": "¿Tiene cambio?", "english": "Do you have change?" }
+      ]
+    },
+    {
+      "exercise_id": "ex-shop-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa el diálogo en la tienda",
+      "dialogue": [
+        { "speaker": "Cliente", "text": "¿Cuánto _____ este libro?" },
+        { "speaker": "Vendedor", "text": "_____ ochenta pesos." },
+        { "speaker": "Cliente", "text": "¿Tiene algo más _____?" },
+        { "speaker": "Vendedor", "text": "Sí, este otro _____ sesenta." }
+      ],
+      "answers": ["cuesta", "Cuesta", "barato", "cuesta"],
+      "acceptable_variants": { "cuesta": ["vale"], "Cuesta": ["Vale", "Son"], "barato": ["económico", "barata"], "cuesta": ["vale", "son"] }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-shop-mx-roleplay",
+    "type": "roleplay",
+    "title": "Compra algo (Buy something)",
+    "scenario": "You're at a market stall. Ask the price of a bag, negotiate, and buy it.",
+    "prompt": "Pregunta el precio, pide algo más barato si es necesario, y compra el artículo.",
+    "expected_elements": ["price question", "negotiation or acceptance", "payment"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      { "criterion": "pronunciation", "weight": 0.3, "description": "Clear numbers and key phrases" },
+      { "criterion": "completeness", "weight": 0.4, "description": "Full transaction completed" },
+      { "criterion": "fluency", "weight": 0.3, "description": "Natural market-stall pace" }
+    ],
+    "sample_response": { "text": "¿Cuánto cuesta esta bolsa? ¿Tiene algo más barato? Muy bien, me la llevo. ¿Acepta tarjeta?", "ipa": "[ˈkwanto ˈkwesta ˈesta ˈbolsa ‖ ˈtjene ˈalɣo mas βaˈɾato ‖ ˈmuj ˈβjen me la ˈʝeβo ‖ aˈθepta taɾˈxeta]" }
+  },
+  "cultural_notes": {
+    "formality": "Bargaining (regatear) is expected and welcomed in Mexican markets (mercados) and tianguis (street markets). In formal shops, prices are fixed. Always greet the vendor first — diving straight into price questions without 'Buenos días' is considered rude.",
+    "gestures": "Rubbing fingers together (thumb against index and middle) is the universal 'money' gesture in Mexico. Holding up fingers to indicate quantity is common in loud markets.",
+    "regional_variations": "Currency is the Mexican peso. Prices are often quoted without 'pesos': 'Cuesta ciento cincuenta' is understood. 'Feria' is informal slang for small change/coins.",
+    "confidence_score": 0.95,
+    "human_review": false
+  },
+  "acceptance_criteria": ["Price asking covered", "Payment methods included", "Negotiation phrase taught", "Three exercise types"],
+  "confidence_score": 0.94,
+  "human_review": false
+}

@@ -1,0 +1,391 @@
+{
+  "lesson_id": "a3-past-perfect",
+  "level": "A3",
+  "dialect": "es-MX",
+  "title": {
+    "native": "El Pluscuamperfecto",
+    "localized": "Past Perfect (Pluperfect)"
+  },
+  "objectives": [
+    "Form the past perfect with haber (imperfect) + past participle",
+    "Express actions completed before another past event",
+    "Use past perfect in narrative to establish sequence",
+    "Recognize common irregular past participles"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": [
+    "a2-preterite",
+    "a2-imperfect"
+  ],
+  "activities": [
+    {
+      "activity_id": "act-pp-1",
+      "type": "vocabulary",
+      "title": "Participios Pasados",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-pp-2",
+      "type": "dialogue",
+      "title": "Diálogo",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-pp-3",
+      "type": "exercises",
+      "title": "Ejercicios",
+      "content": {},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-pp-4",
+      "type": "speaking",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 4
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Alonso",
+      "text": "Cuando llegué al aeropuerto, el avión ya había despegado.",
+      "translation": "When I arrived at the airport, the plane had already taken off.",
+      "ipa": "[ˈkwando ʝeˈɣe al aeɾoˈpweɾto ‖ el aˈβjon ja aˈβia despeˈɣaðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-001",
+      "alternate_phrasing": [],
+      "context": "Missed flight story"
+    },
+    {
+      "speaker": "Nadia",
+      "text": "¡No lo puedo creer! ¿No habías revisado el horario antes?",
+      "translation": "I can't believe it! Hadn't you checked the schedule before?",
+      "ipa": "[no lo ˈpweðo kɾeˈeɾ ‖ no aˈβias reβiˈsaðo el oˈɾaɾjo ˈantes]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-002",
+      "alternate_phrasing": [],
+      "context": "Asking about preparation"
+    },
+    {
+      "speaker": "Alonso",
+      "text": "Sí, pero había un error en mi aplicación. Mostraba la hora equivocada.",
+      "translation": "Yes, but there was an error in my app. It was showing the wrong time.",
+      "ipa": "[si ‖ ˈpeɾo aˈβia un eˈroɾ en mi apliˈkaθjon]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-003",
+      "alternate_phrasing": [],
+      "context": "Explaining the error"
+    },
+    {
+      "speaker": "Nadia",
+      "text": "¿Y no te habías dado cuenta de nada raro?",
+      "translation": "And hadn't you noticed anything strange?",
+      "ipa": "[i no te aˈβias ˈðaðo ˈkwenta ðe ˈnaða ˈraɾo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-004",
+      "alternate_phrasing": [],
+      "context": "Probing further"
+    },
+    {
+      "speaker": "Alonso",
+      "text": "No. Nunca antes me había pasado algo así. Estaba seguro de que tenía tiempo.",
+      "translation": "No. Something like this had never happened to me before. I was sure I had time.",
+      "ipa": "[no ‖ ˈnuŋka ˈantes me aˈβia paˈsaðo ˈalɣo aˈsi]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-005",
+      "alternate_phrasing": [],
+      "context": "Expressing disbelief"
+    },
+    {
+      "speaker": "Nadia",
+      "text": "¿Y qué hiciste cuando te diste cuenta de que el avión ya se había ido?",
+      "translation": "And what did you do when you realized the plane had already left?",
+      "ipa": "[i ke iˈθiste ˈkwando te ˈðiste ˈkwenta ðe ke el aˈβjon ja se aˈβia ˈiðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-006",
+      "alternate_phrasing": [],
+      "context": "Asking about reaction"
+    },
+    {
+      "speaker": "Alonso",
+      "text": "Fui al mostrador. Por suerte, la aerolínea me había guardado un lugar en el próximo vuelo.",
+      "translation": "I went to the counter. Luckily, the airline had saved me a spot on the next flight.",
+      "ipa": "[ˈfwi al mosˈtɾaðoɾ ‖ poɾ ˈsweɾte ‖ la aeɾoˈlinea me aˈβia ɡwaɾˈðaðo un luˈɣaɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-007",
+      "alternate_phrasing": [],
+      "context": "Resolution"
+    },
+    {
+      "speaker": "Nadia",
+      "text": "¡Menos mal! Eso sí fue un milagro. ¿Habías tenido alguna vez tanta mala suerte?",
+      "translation": "Thank goodness! That was really a miracle. Had you ever had such bad luck?",
+      "ipa": "[ˈmenos ˈmal ‖ eso ˈsi ˈfwe un miˈlaɣɾo ‖ aˈβias teˈniðo]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a3-pp-mx-008",
+      "alternate_phrasing": [],
+      "context": "Closing with past perfect question"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a3-pp-mx-c001",
+      "front": "había + past participle",
+      "back": "had done (pluperfect formula)",
+      "ipa": "[aˈβia]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c002",
+      "front": "hacer → past participle",
+      "back": "hecho",
+      "ipa": "[ˈeʧo]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c003",
+      "front": "escribir → past participle",
+      "back": "escrito",
+      "ipa": "[esˈkɾito]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c004",
+      "front": "Ya habían llegado cuando llamé.",
+      "back": "They had already arrived when I called.",
+      "ipa": "[ja aˈβian ʝeˈɣaðo ˈkwando ʝaˈme]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c005",
+      "front": "ver → past participle",
+      "back": "visto",
+      "ipa": "[ˈbisto]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c006",
+      "front": "poner → past participle",
+      "back": "puesto",
+      "ipa": "[ˈpwesto]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c007",
+      "front": "Nunca antes había...",
+      "back": "I had never before... (experience emphasis)",
+      "ipa": "[ˈnuŋka ˈantes aˈβia]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a3-pp-mx-c008",
+      "front": "romper → past participle",
+      "back": "roto",
+      "ipa": "[ˈroto]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-pp-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la oración correcta con pluscuamperfecto",
+      "question": "You want to say 'When she called, I had already eaten.' Which is correct?",
+      "options": [
+        {
+          "text": "Cuando ella llamó, yo ya había comido.",
+          "correct": true
+        },
+        {
+          "text": "Cuando ella llamó, yo ya comí.",
+          "correct": false
+        },
+        {
+          "text": "Cuando ella llamó, yo ya he comido.",
+          "correct": false
+        },
+        {
+          "text": "Cuando ella llamaba, yo ya había comido.",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Perfecto! 'Había comido' (past perfect) correctly places eating BEFORE the call (preterite). The call is the reference point.",
+        "incorrect": "'Había comido' (past perfect) is correct — it shows eating happened BEFORE she called. The call is expressed in preterite as the reference point."
+      }
+    },
+    {
+      "exercise_id": "ex-pp-mx-002",
+      "type": "matching",
+      "instruction": "Une el infinitivo con su participio irregular",
+      "pairs": [
+        {
+          "spanish": "abrir",
+          "english": "abierto"
+        },
+        {
+          "spanish": "volver",
+          "english": "vuelto"
+        },
+        {
+          "spanish": "decir",
+          "english": "dicho"
+        },
+        {
+          "spanish": "morir",
+          "english": "muerto"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-pp-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Completa la historia con el pluscuamperfecto correcto",
+      "dialogue": [
+        {
+          "speaker": "Narrador",
+          "text": "Cuando Ana llegó a la fiesta, todos sus amigos ya _____ llegado. (haber — ellos)"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "La comida ya _____ servida y la música _____ empezado. (haber / haber — ella)"
+        },
+        {
+          "speaker": "Ana",
+          "text": "Nunca antes me _____ pasado llegar tan tarde. (haber — me)"
+        },
+        {
+          "speaker": "Amiga",
+          "text": "No importa — ¡el pastel todavía no _____ cortado! (haber — ellos)"
+        }
+      ],
+      "answers": [
+        "habían",
+        "había sido",
+        "había",
+        "había",
+        "había sido"
+      ],
+      "acceptable_variants": {
+        "habían": [],
+        "había sido": [
+          "se había servido"
+        ],
+        "había": []
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-pp-mx-roleplay",
+    "type": "roleplay",
+    "title": "Una vez que llegué... (Once I arrived...)",
+    "scenario": "Tell a story where things had already happened before you arrived or before a key moment — a surprise party, arriving late somewhere, finding out news after the fact.",
+    "prompt": "Cuenta una historia usando el pluscuamperfecto para describir qué había pasado antes.",
+    "expected_elements": [
+      "había + participle",
+      "reference point in preterite",
+      "cuando as connector",
+      "context before and after"
+    ],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {
+        "criterion": "grammar",
+        "weight": 0.5,
+        "description": "Correct pluperfect forms and sequence logic"
+      },
+      {
+        "criterion": "vocabulary",
+        "weight": 0.3,
+        "description": "Past narrative vocabulary"
+      },
+      {
+        "criterion": "pronunciation",
+        "weight": 0.2,
+        "description": "Clear pronunciation"
+      }
+    ],
+    "sample_response": {
+      "text": "Cuando llegué a la reunión, el director ya había comenzado su presentación. Todos habían recibido los documentos menos yo. Nadie me había avisado del cambio de hora. Me sentí muy avergonzado.",
+      "ipa": "[ˈkwando ʝeˈɣe a la rewˈnjon ‖ el diˈɾektoɾ ja aˈβia komenˈθaðo su pɾesentaˈθjon]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "The past perfect is essential for sophisticated storytelling in Spanish. News articles, literature, and formal anecdotes rely on it to establish sequence.",
+    "gestures": "Using two hands — one positioned 'before' the other in space — while explaining sequence helps listeners follow complex time references.",
+    "regional_variations": "In Mexico, the pluperfect is used consistently in both formal and informal speech for sequencing. Puerto Rico and Spain use it the same way. Unlike the preterite vs. present perfect distinction (which varies by region), the pluperfect is uniform across dialects.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    {
+      "criterion": "dialogue_authenticity",
+      "value": true
+    },
+    {
+      "criterion": "exercise_difficulty",
+      "value": "A3"
+    },
+    {
+      "criterion": "cultural_accuracy",
+      "value": true
+    },
+    {
+      "criterion": "grammar_focus",
+      "value": "past_perfect_pluperfect"
+    }
+  ],
+  "confidence_score": 0.96,
+  "human_review": false
+}

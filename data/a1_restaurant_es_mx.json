@@ -1,0 +1,191 @@
+{
+  "lesson_id": "a1-restaurant-ordering",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "En el Restaurante",
+    "localized": "At the Restaurant"
+  },
+  "objectives": [
+    "Order food and drinks in a restaurant",
+    "Use 'querer' and 'me gustaría'",
+    "Ask for the bill",
+    "Understand menu items"
+  ],
+  "estimated_minutes": 25,
+  "prerequisite_ids": ["a1-greetings", "a1-numbers"],
+  "activities": [
+    {
+      "activity_id": "act-1-vocabulary",
+      "type": "vocabulary",
+      "title": "Comida y Bebida",
+      "content": {
+        "words": [
+          {"word": "menú", "translation": "menu", "ipa": "[meˈnu]"},
+          {"word": "camarero", "translation": "waiter", "ipa": "[kamaˈɾeɾo]"},
+          {"word": "cuenta", "translation": "bill/check", "ipa": "[ˈkwenta]"},
+          {"word": "agua", "translation": "water", "ipa": "[ˈaɣwa]"},
+          {"word": "vino", "translation": "wine", "ipa": "[ˈβino]"},
+          {"word": "pollo", "translation": "chicken", "ipa": "[ˈpoʝo]"},
+          {"word": "carne", "translation": "meat", "ipa": "[ˈkaɾne]"},
+          {"word": "arroz", "translation": "rice", "ipa": "[aˈros]"},
+          {"word": "ensalada", "translation": "salad", "ipa": "[ẽnsaˈlaða]"},
+          {"word": "postre", "translation": "dessert", "ipa": "[ˈpostɾe]"},
+          {"word": "desayuno", "translation": "breakfast", "ipa": "[desaˈʝuno]"},
+          {"word": "almuerzo", "translation": "lunch", "ipa": "[alˈmweɾso]"},
+          {"word": "cena", "translation": "dinner", "ipa": "[ˈθena]"}
+        ]
+      },
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-2-dialogue",
+      "type": "dialogue",
+      "title": "Ordenando Comida",
+      "content": {"scenario": "Ordering a meal at a restaurant"},
+      "estimated_minutes": 8
+    },
+    {
+      "activity_id": "act-3-exercises",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 7
+    },
+    {
+      "activity_id": "act-4-speaking",
+      "type": "speaking",
+      "title": "Ordena una Comida",
+      "content": {},
+      "estimated_minutes": 5
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Camarero",
+      "text": "Buenas tardes. ¿Qué desean ordenar?",
+      "ipa": "[ˈβwenas ˈtaɾðes ‖ ke ðeˈsean oɾðeˈnaɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-001",
+      "alternate_phrasing": [],
+      "context": "Waiter greeting customers"
+    },
+    {
+      "speaker": "Cliente",
+      "text": "Para mí, una sopa de pollo, por favor.",
+      "ipa": "[ˈpaɾa ˈmi ‖ ˈuna ˈsopa ðe ˈpoʝo ‖ poɾ faˈβoɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-002",
+      "alternate_phrasing": [],
+      "context": "Ordering food"
+    },
+    {
+      "speaker": "Camarero",
+      "text": "¿Y para beber?",
+      "ipa": "[i ˈpaɾa βeˈβeɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking about drinks"
+    },
+    {
+      "speaker": "Cliente",
+      "text": "Me gustaría un agua, por favor.",
+      "ipa": "[me ɣustaˈɾia un ˈaɣwa ‖ poɾ faˈβoɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-004",
+      "alternate_phrasing": [],
+      "context": "Ordering a drink"
+    },
+    {
+      "speaker": "Camarero",
+      "text": "¿Algo más?",
+      "ipa": "[ˈalɣo ˈmas]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-005",
+      "alternate_phrasing": [],
+      "context": "Asking if customer wants anything else"
+    },
+    {
+      "speaker": "Cliente",
+      "text": "No, eso es todo. La cuenta, por favor.",
+      "ipa": "[ˈno ˈeso es ˈtoðo ‖ la ˈkwenta ‖ poɾ faˈβoɾ]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-006",
+      "alternate_phrasing": [],
+      "context": "Asking for the bill"
+    },
+    {
+      "speaker": "Camarero",
+      "text": "Enseguida. Aquí tiene.",
+      "ipa": "[ẽnseˈɣiða ‖ aˈki ˈtjene]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-rest-mx-007",
+      "alternate_phrasing": [],
+      "context": "Bringing the bill"
+    }
+  ],
+  "srs_flashcards": [
+    {"card_id": "a1-rest-mx-card-001", "front": "menú", "back": "menu", "ipa": "[meˈnu]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-rest-mx-card-002", "front": "cuenta", "back": "bill/check", "ipa": "[ˈkwenta]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 1.0, "human_review": false},
+    {"card_id": "a1-rest-mx-card-003", "front": "Me gustaría...", "back": "I would like...", "ipa": "[me ɣustaˈɾia]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.98, "human_review": false},
+    {"card_id": "a1-rest-mx-card-004", "front": "¿Qué desea ordenar?", "back": "What would you like to order?", "ipa": "[ke ðeˈsea oɾðeˈnaɾ]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.97, "human_review": false},
+    {"card_id": "a1-rest-mx-card-005", "front": "La cuenta, por favor", "back": "The check, please", "ipa": "[la ˈkwenta poɾ faˈβoɾ]", "next_review_days": 1, "ease_factor": 2.5, "interval": 0, "repetitions": 0, "dialect": "es-MX", "confidence_score": 0.99, "human_review": false}
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-rest-mx-001",
+      "type": "multiple_choice",
+      "instruction": "¿Qué significa 'cuenta'?",
+      "question": "What does 'cuenta' mean in a restaurant?",
+      "options": [
+        {"text": "menu", "correct": false},
+        {"text": "bill/check", "correct": true},
+        {"text": "waiter", "correct": false},
+        {"text": "food", "correct": false}
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'La cuenta' means the bill.",
+        "incorrect": "En un restaurante, 'cuenta' = bill/check"
+      }
+    },
+    {
+      "exercise_id": "ex-rest-mx-002",
+      "type": "matching",
+      "instruction": "Une la comida con su categoría",
+      "pairs": [
+        {"spanish": "pollo", "english": "meat/poultry"},
+        {"spanish": "ensalada", "english": "vegetables"},
+        {"spanish": "agua", "english": "drink"},
+        {"spanish": "postre", "english": "dessert"}
+      ]
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-rest-mx-roleplay",
+    "type": "roleplay",
+    "title": "Ordena una Comida",
+    "scenario": "You are at a restaurant. Order a meal with a drink.",
+    "prompt": "Ordena una comida completa: entrada, plato principal, bebida. Pide la cuenta al final.",
+    "expected_elements": ["greeting", "order", "drink", "bill_request"],
+    "phoneme_confidence_threshold": 0.6,
+    "intelligibility_threshold": 0.65,
+    "scoring_criteria": [
+      {"criterion": "pronunciation", "weight": 0.35, "description": "Clear pronunciation"},
+      {"criterion": "completeness", "weight": 0.35, "description": "All expected elements included"},
+      {"criterion": "fluency", "weight": 0.3, "description": "Natural pace and flow"}
+    ],
+    "sample_response": {
+      "text": "Me gustaría una sopa y un pollo. Para beber, agua. La cuenta, por favor.",
+      "ipa": "[me ɣustaˈɾia ˈuna ˈsopa i un ˈpoʝo]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, it's polite to say 'buen provecho' before eating. Tipping (propina) is typically 10-15%.",
+    "menu_customs": "Many Mexican restaurants offer 'menu del día' - a fixed-price daily special.",
+    "confidence_score": 0.94,
+    "human_review": false
+  },
+  "confidence_score": 0.94,
+  "human_review": false
+}

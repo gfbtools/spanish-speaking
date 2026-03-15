@@ -1,0 +1,373 @@
+{
+  "lesson_id": "a1-alphabet-pronunciation",
+  "level": "A1",
+  "dialect": "es-MX",
+  "title": {
+    "native": "El Alfabeto y la Pronunciación",
+    "localized": "Alphabet & Sounds"
+  },
+  "objectives": [
+    "Recite the Spanish alphabet",
+    "Identify key pronunciation differences from English",
+    "Pronounce vowels clearly and consistently",
+    "Recognize accent marks and their function"
+  ],
+  "estimated_minutes": 20,
+  "prerequisite_ids": [],
+  "activities": [
+    {
+      "activity_id": "act-al-1",
+      "type": "vocabulary",
+      "title": "El Alfabeto",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-al-2",
+      "type": "dialogue",
+      "title": "Deletreando",
+      "content": {},
+      "estimated_minutes": 6
+    },
+    {
+      "activity_id": "act-al-3",
+      "type": "exercise",
+      "title": "Práctica",
+      "content": {},
+      "estimated_minutes": 5
+    },
+    {
+      "activity_id": "act-al-4",
+      "type": "speaking",
+      "title": "Pronunciación",
+      "content": {},
+      "estimated_minutes": 3
+    }
+  ],
+  "dialogue_blocks": [
+    {
+      "speaker": "Maestra",
+      "text": "¿Cómo se deletrea tu nombre?",
+      "translation": "How do you spell your name?",
+      "ipa": "[ˈkomo se ðeleˈtɾea tu ˈnombɾe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-001",
+      "alternate_phrasing": [],
+      "context": "Asking someone to spell their name"
+    },
+    {
+      "speaker": "Alumno",
+      "text": "Mi nombre es Héctor. H-É-C-T-O-R.",
+      "translation": "My name is Héctor. H-E-C-T-O-R.",
+      "ipa": "[mi ˈnombɾe es ˈektoɾ ‖ atʃe aˈke θe te o ˈeɾe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-002",
+      "alternate_phrasing": [],
+      "context": "Spelling out a name"
+    },
+    {
+      "speaker": "Maestra",
+      "text": "Bien. ¿Y cómo se pronuncia la 'ñ'?",
+      "translation": "Good. And how is the 'ñ' pronounced?",
+      "ipa": "[ˈβjen ‖ i ˈkomo se pɾonˈunθja la ˈeɲe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-003",
+      "alternate_phrasing": [],
+      "context": "Asking about ñ pronunciation"
+    },
+    {
+      "speaker": "Alumno",
+      "text": "La 'ñ' suena como 'ny' en inglés, como en 'canyon'.",
+      "translation": "The 'ñ' sounds like 'ny' in English, like in 'canyon'.",
+      "ipa": "[la ˈeɲe ˈswena ˈkomo ˈni en inˈɡles ‖ ˈkomo en ˈkaɲon]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-004",
+      "alternate_phrasing": [],
+      "context": "Explaining ñ sound"
+    },
+    {
+      "speaker": "Maestra",
+      "text": "Correcto. ¿Y las vocales? ¿Cómo son en español?",
+      "translation": "Correct. And the vowels? What are they like in Spanish?",
+      "ipa": "[koˈrekto ‖ i las βoˈkales ‖ ˈkomo son en espaˈɲol]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-005",
+      "alternate_phrasing": [],
+      "context": "Asking about Spanish vowels"
+    },
+    {
+      "speaker": "Alumno",
+      "text": "Las vocales siempre suenan igual: a, e, i, o, u.",
+      "translation": "Vowels always sound the same: a, e, i, o, u.",
+      "ipa": "[las βoˈkales ˈsjempɾe ˈswenan iˈɡwal ‖ a e i o u]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-006",
+      "alternate_phrasing": [],
+      "context": "Explaining vowel consistency"
+    },
+    {
+      "speaker": "Maestra",
+      "text": "¿Qué significa el acento escrito, como en 'café'?",
+      "translation": "What does the written accent mean, as in 'café'?",
+      "ipa": "[ke siɡˈnifika el aˈθento esˈkɾito ‖ ˈkomo en kaˈfe]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-007",
+      "alternate_phrasing": [],
+      "context": "Asking about written accents"
+    },
+    {
+      "speaker": "Alumno",
+      "text": "El acento indica cuál sílaba se pronuncia más fuerte.",
+      "translation": "The accent shows which syllable is stressed most strongly.",
+      "ipa": "[el aˈθento inˈðika ˈkwal ˈsilaβa se pɾonˈunθja mas ˈfweɾte]",
+      "dialect": "es-MX",
+      "audio_asset_id": "a1-al-mx-008",
+      "alternate_phrasing": [],
+      "context": "Explaining stress function of accent"
+    }
+  ],
+  "srs_flashcards": [
+    {
+      "card_id": "a1-al-mx-c001",
+      "front": "a, e, i, o, u",
+      "back": "Spanish vowels — always short and pure (never diphthongs)",
+      "ipa": "[a e i o u]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c002",
+      "front": "ñ (eñe)",
+      "back": "[ɲ] — like 'ny' in canyon: mañana, español, niño",
+      "ipa": "[ˈeɲe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c003",
+      "front": "ll (elle) / y (ye)",
+      "back": "Both pronounced [ʝ] in Mexico — like English 'y'",
+      "ipa": "[ˈeʝe ‖ ˈʝe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c004",
+      "front": "rr (erre doble)",
+      "back": "Trilled [r] — perro, arroz, guitarra",
+      "ipa": "[ˈere ˈðoβle]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.96,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c005",
+      "front": "j / g(e,i)",
+      "back": "[x] — strong guttural h sound: jota, gente, gitano",
+      "ipa": "[x]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.97,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c006",
+      "front": "h (hache)",
+      "back": "Always silent in Spanish: hola [ˈola], hotel [oˈtel]",
+      "ipa": "[ˈatʃe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.99,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c007",
+      "front": "¿Cómo se deletrea...?",
+      "back": "How do you spell...?",
+      "ipa": "[ˈkomo se ðeleˈtɾea]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    },
+    {
+      "card_id": "a1-al-mx-c008",
+      "front": "el acento (tilde)",
+      "back": "written accent — marks stressed syllable or distinguishes meaning",
+      "ipa": "[el aˈθento ‖ ˈtilðe]",
+      "next_review_days": 1,
+      "ease_factor": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "dialect": "es-MX",
+      "confidence_score": 0.98,
+      "human_review": false
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ex-al-mx-001",
+      "type": "multiple_choice",
+      "instruction": "Escoge la pronunciación correcta",
+      "question": "The letter 'h' in Spanish is always:",
+      "options": [
+        {
+          "text": "Silent",
+          "correct": true
+        },
+        {
+          "text": "Pronounced like English 'h'",
+          "correct": false
+        },
+        {
+          "text": "Pronounced like English 'j'",
+          "correct": false
+        },
+        {
+          "text": "Pronounced differently depending on the word",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "¡Correcto! 'H' is always silent in Spanish: hola, hotel, hablar.",
+        "incorrect": "Unlike English, Spanish 'h' is completely silent in all words."
+      }
+    },
+    {
+      "exercise_id": "ex-al-mx-002",
+      "type": "matching",
+      "instruction": "Une la letra con su sonido en español",
+      "pairs": [
+        {
+          "spanish": "ñ",
+          "english": "[ɲ] — like ny in canyon"
+        },
+        {
+          "spanish": "ll",
+          "english": "[ʝ] — like y in yes (MX)"
+        },
+        {
+          "spanish": "j",
+          "english": "[x] — strong guttural h"
+        },
+        {
+          "spanish": "rr",
+          "english": "[r] — trilled r"
+        }
+      ]
+    },
+    {
+      "exercise_id": "ex-al-mx-003",
+      "type": "fill_in_blanks",
+      "instruction": "Deletrea estas palabras en español",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "text": "¿Cómo se deletrea 'España'?"
+        },
+        {
+          "speaker": "B",
+          "text": "E-S-P-___-Ñ-A (missing letter)"
+        },
+        {
+          "speaker": "A",
+          "text": "¿Y 'México'?"
+        },
+        {
+          "speaker": "B",
+          "text": "M-É-X-I-C-___ (missing letter)"
+        }
+      ],
+      "answers": [
+        "A",
+        "O"
+      ],
+      "acceptable_variants": {
+        "A": [
+          "a"
+        ],
+        "O": [
+          "o"
+        ]
+      }
+    }
+  ],
+  "speaking_rubric": {
+    "activity_id": "speak-al-mx",
+    "type": "roleplay",
+    "title": "Deletrea tu nombre (Spell your name)",
+    "scenario": "Give your full name and spell it out letter by letter in Spanish.",
+    "prompt": "Di tu nombre completo y deletréalo en español.",
+    "expected_elements": [
+      "name stated",
+      "letter-by-letter spelling",
+      "correct letter names"
+    ],
+    "phoneme_confidence_threshold": 0.55,
+    "intelligibility_threshold": 0.6,
+    "scoring_criteria": [
+      {
+        "criterion": "pronunciation",
+        "weight": 0.4,
+        "description": "Letter names correctly pronounced"
+      },
+      {
+        "criterion": "completeness",
+        "weight": 0.3,
+        "description": "Full name spelled out"
+      },
+      {
+        "criterion": "fluency",
+        "weight": 0.3,
+        "description": "Steady pace when spelling"
+      }
+    ],
+    "sample_response": {
+      "text": "Me llamo Ana García. A-N-A, G-A-R-C-Í-A.",
+      "ipa": "[me ˈʝamo ˈana ɡaɾˈθia ‖ a ˈene ˈa ‖ ˈxe ˈa ˈeɾe θe ˈi ˈa]"
+    }
+  },
+  "cultural_notes": {
+    "formality": "In Mexico, the alphabet is taught with these letter names: a, be, ce, de, e, efe, ge, hache, i, jota, ka, ele, eme, ene, eñe, o, pe, cu, erre, ese, te, u, uve, doble uve, equis, ye, zeta. Learning these is essential for spelling out names and words.",
+    "gestures": "When spelling, Mexicans often count letters on their fingers or write in the air to help the listener follow.",
+    "regional_variations": "In Mexico, 'll' and 'y' are both pronounced [ʝ] (yeísmo). The letters 'b' and 'v' are identical in pronunciation [β/b] — this causes many spelling errors even for native speakers.",
+    "confidence_score": 0.96,
+    "human_review": false
+  },
+  "acceptance_criteria": [
+    "Key pronunciation differences covered",
+    "Spelling vocabulary taught",
+    "Accent mark explained",
+    "Three exercise types"
+  ],
+  "confidence_score": 0.95,
+  "human_review": false
+}

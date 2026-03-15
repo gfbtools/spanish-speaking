@@ -1,0 +1,112 @@
+{
+  "lesson_id": "a1-travel-asking-for-directions",
+  "dialect": "es-ES",
+  "overrides": {
+    "vocabulary_replacements": [
+      {
+        "base": "la cuadra",
+        "dialect": "la manzana",
+        "note": "Standard Castilian term for a city block"
+      },
+      {
+        "base": "el carro",
+        "dialect": "el coche",
+        "note": "Spain uses 'coche' for car"
+      }
+    ],
+    "dialogue_line_replacements": [
+      {
+        "line_index": 0,
+        "text": "Perdone, ¿me puede ayudar?",
+        "ipa": "[peɾˈðone ‖ ¿me ˈpweðe aʝuˈðaɾ]",
+        "translation": "Excuse me, can you help me?"
+      },
+      {
+        "line_index": 1,
+        "text": "Por supuesto. ¿En qué puedo ayudarle?",
+        "ipa": "[poɾ suˈpweθto ‖ ¿en ˈke ˈpweðo aʝuˈðaɾle]",
+        "translation": "Of course. How can I help you?"
+      },
+      {
+        "line_index": 2,
+        "text": "Estoy buscando el banco. ¿Dónde queda?",
+        "ipa": "[esˈtoj busˈkando el ˈbaŋko ‖ ¿ˈdonde ˈkeða]",
+        "translation": "I'm looking for the bank. Where is it?"
+      },
+      {
+        "line_index": 3,
+        "text": "Está cerca. Vaya todo recto dos manzanas y luego gire a la izquierda.",
+        "ipa": "[esˈta ˈθeɾka ‖ ˈbaʝa ˈtoðo ˈɾekto ðos manˈθanas i ˈlweɣo ˈxiɾe a la isˈkjeɾða]",
+        "translation": "It's nearby. Go straight ahead two blocks and then turn left."
+      },
+      {
+        "line_index": 4,
+        "text": "¿Giro a la izquierda en el semáforo?",
+        "ipa": "[¿ˈxiɾo a la isˈkjeɾða en el seˈmafoɾo]",
+        "translation": "I turn left at the traffic light?"
+      },
+      {
+        "line_index": 5,
+        "text": "Eso es. El banco está en la esquina, a mano derecha.",
+        "ipa": "[ˈeso ˈes ‖ el ˈbaŋko esˈta en la esˈkina ‖ a ˈmano ðeˈɾetʃa]",
+        "translation": "That's right. The bank is on the corner, on the right-hand side."
+      },
+      {
+        "line_index": 6,
+        "text": "Perfecto, muchas gracias.",
+        "ipa": "[peɾˈfekto ‖ ˈmutʃas ˈɣɾaθjas]",
+        "translation": "Perfect, thank you very much."
+      },
+      {
+        "line_index": 7,
+        "text": "De nada. ¡Hasta luego!",
+        "ipa": "[ðe ˈnaða ‖ ˈasta ˈlweɣo]",
+        "translation": "You're welcome. Goodbye!"
+      }
+    ],
+    "flashcard_overrides": [
+      {
+        "card_id": "a1-dir-mx-card-001",
+        "front": "¿Dónde queda el banco?",
+        "ipa": "[¿ˈdonde ˈkeða el ˈbaŋko]",
+        "note": "Spain uses '¿dónde queda?' more naturally than '¿dónde está?' for fixed locations"
+      },
+      {
+        "card_id": "a1-dir-mx-card-003",
+        "front": "Vaya todo recto",
+        "ipa": "[ˈbaʝa ˈtoðo ˈɾekto]",
+        "back": "Go straight ahead",
+        "note": "'Todo recto' is the standard Castilian expression; 'derecho' is less common in Spain for directions"
+      },
+      {
+        "card_id": "a1-dir-mx-card-006",
+        "front": "Dos manzanas",
+        "ipa": "[ðos manˈθanas]",
+        "back": "Two blocks",
+        "note": "'Manzana' (apple/block) is the Castilian term; 'cuadra' is Latin American"
+      }
+    ],
+    "ipa_adjustments": {
+      "distincion": true,
+      "note": "Spain uses θ (theta) for 'c' before e/i and for 'z': 'gracias' → [ˈɣɾaθjas], 'cerca' → [ˈθeɾka]"
+    },
+    "speaking_rubric_overrides": {
+      "scenario": "You need to find the bathroom. Ask a local for directions using formal Castilian Spanish.",
+      "prompt": "Pide direcciones al baño. Usa: 'Perdone', '¿Dónde está...?' o '¿Dónde queda...?', 'gracias'",
+      "sample_response": {
+        "text": "Perdone, ¿dónde está el baño?",
+        "ipa": "[peɾˈðone ‖ ¿ˈdonde esˈta el ˈbaɲo]"
+      }
+    },
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'usted' is used but 'tú' with strangers is increasingly common in cities, especially among younger people. 'Perdone' or 'perdona' to get attention is more typical than 'disculpe'. 'Oiga' (formal) is also heard.",
+      "gestures": "Spaniards gesture freely when giving directions, typically using hands and arms. Unlike some Latin American countries, lip-pointing is not used.",
+      "regional_variations": "Key vocabulary differences from Latin America: 'manzana' (block) instead of 'cuadra', 'todo recto' instead of 'siga derecho', 'a mano derecha/izquierda' instead of just 'a la derecha/izquierda'. In southern Spain (Andalucía) you may hear seseo — 'c' and 'z' pronounced as 's', not θ.",
+      "distincion": "The defining feature of Castilian Spanish: the letters 'c' (before e/i) and 'z' are pronounced as the English 'th' in 'think' (θ). So 'gracias' = [ˈɣɾaθjas], 'izquierda' = [isˈkjeɾða], 'cerca' = [ˈθeɾka]. This is NOT a lisp — it's a full phoneme used consistently."
+    },
+    "phoneme_tolerance_adjustments": {
+      "distincion_required": false,
+      "note": "Accept both θ and s pronunciations for learners — distincion is a learning goal, not a scoring gate at A1"
+    }
+  }
+}

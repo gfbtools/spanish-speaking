@@ -1,0 +1,23 @@
+{
+  "lesson_id": "a2-reflexive-verbs",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 3,
+        "text": "Me ducho en diez minutos, me visto rápido y me maquillo en el camino.",
+        "translation": "I shower in ten minutes, dress quickly and do my makeup on the way."
+      },
+      {
+        "line_index": 5,
+        "text": "Sí, él siempre se levanta primero y se ducha antes que yo.",
+        "translation": "Yes, he always gets up first and showers before me. (Spain: ducharse more common)"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, 'ducharse' is more common than 'bañarse' for showering. 'Bañarse' specifically implies a bath (baño de bañera).",
+      "gestures": "Morning routines in Spain often start later — many Spaniards don't eat breakfast at home and get ready quickly.",
+      "regional_variations": "Spain uses 'ducharse' for showering. 'El baño' is both the bathroom and a bath. 'Lavarse los dientes' (brush teeth) uses the same reflexive structure across all dialects."
+    }
+  }
+}

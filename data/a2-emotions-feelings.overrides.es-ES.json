@@ -1,0 +1,23 @@
+{
+  "lesson_id": "a2-emotions-feelings",
+  "dialect": "es-ES",
+  "overrides": {
+    "dialogue_line_replacements": [
+      {
+        "line_index": 1,
+        "text": "La verdad que no. Estoy muy agobiada con el trabajo.",
+        "translation": "Honestly, no. I'm very overwhelmed with work. (Spain: agobiada = overwhelmed)"
+      },
+      {
+        "line_index": 5,
+        "text": "Todavía estoy mosqueada y un poco triste. No sé qué hacer.",
+        "translation": "I'm still annoyed/bothered and a bit sad. (Spain: mosqueada = irritated/bothered)"
+      }
+    ],
+    "cultural_notes_overrides": {
+      "formality": "In Spain, emotions are expressed directly. 'Estar agobiado/a' (to be overwhelmed) is very common for work stress. Spaniards appreciate directness in emotional conversations.",
+      "gestures": "Raising eyebrows and exhaling sharply signals frustration or exasperation in Spain.",
+      "regional_variations": "'Estar mosqueado/a' (irritated/suspicious) is distinctly Spanish. 'Estar hecho polvo' (to be exhausted/devastated — literally 'turned to dust') is widely used. 'Agobio' (overwhelm) is very Spanish."
+    }
+  }
+}
