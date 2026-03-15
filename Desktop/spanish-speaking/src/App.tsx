@@ -287,6 +287,7 @@ function App() {
   const [vocabulary, setVocabulary] = useState<VocabularyEntry[]>([]);
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [screen, setScreen] = useState<Screen>('lessons');
+  const [completedLessons, setCompletedLessons] = useState<Set<string>>(new Set());
 
   const lesson = useMemo(() => {
     if (!currentLessonId) return null;
@@ -299,7 +300,6 @@ function App() {
     const savedProgress = localStorage.getItem('userProgress');
     if (savedProgress) {
       const parsed = JSON.parse(savedProgress);
-      // Update lessons_total in case it was stale from a previous session
       setProgress({ ...parsed, lessons_total: lessonRegistry.length });
     } else {
       const defaultProgress: UserProgress = {
@@ -318,6 +318,12 @@ function App() {
       localStorage.setItem('userProgress', JSON.stringify(defaultProgress));
     }
 
+    // Load completed lessons from localStorage
+    const savedCompleted = localStorage.getItem('completedLessons');
+    if (savedCompleted) {
+      setCompletedLessons(new Set(JSON.parse(savedCompleted)));
+    }
+
     const savedDialect = localStorage.getItem('preferredDialect') as Dialect | null;
     if (savedDialect) setDialect(savedDialect);
   }, []);
@@ -333,16 +339,36 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleLessonComplete = (_score: number, timeSpent: number) => {
-    if (progress) {
-      const updated = {
-        ...progress,
-        lessons_completed: progress.lessons_completed + 1,
-        overall_progress: Math.min(1, (progress.lessons_completed + 1) / progress.lessons_total),
-        study_time_minutes: progress.study_time_minutes + Math.floor(timeSpent / 60),
-      };
-      setProgress(updated);
-      localStorage.setItem('userProgress', JSON.stringify(updated));
+  const handleLessonComplete = (score: number, timeSpent: number) => {
+    const passed = score >= 0.7;
+
+    if (passed && currentLessonId && !completedLessons.has(currentLessonId)) {
+      const updated = new Set(completedLessons).add(currentLessonId);
+      setCompletedLessons(updated);
+      localStorage.setItem('completedLessons', JSON.stringify([...updated]));
+
+      if (progress) {
+        const updatedProgress = {
+          ...progress,
+          lessons_completed: updated.size,
+          overall_progress: Math.min(1, updated.size / progress.lessons_total),
+          study_time_minutes: progress.study_time_minutes + Math.floor(timeSpent / 60),
+        };
+        setProgress(updatedProgress);
+        localStorage.setItem('userProgress', JSON.stringify(updatedProgress));
+      }
+    }
+  };
+
+  const handleNextLesson = () => {
+    if (!currentLessonId) return;
+    const idx = lessonRegistry.findIndex(l => l.id === currentLessonId);
+    if (idx >= 0 && idx < lessonRegistry.length - 1) {
+      const next = lessonRegistry[idx + 1];
+      setCurrentLessonId(next.id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      setScreen('lessons');
     }
   };
 
@@ -368,6 +394,7 @@ function App() {
             onSelectLesson={handleLessonSelect}
             dialect={dialect}
             progress={progress}
+            completedLessons={completedLessons}
           />
         )}
 
@@ -388,6 +415,7 @@ function App() {
                   lesson={lesson}
                   dialect={dialect}
                   onLessonComplete={handleLessonComplete}
+                  onNextLesson={handleNextLesson}
                 />
               </>
             ) : (
