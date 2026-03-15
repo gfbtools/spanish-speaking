@@ -11,7 +11,7 @@ interface LessonViewerProps {
   dialect: Dialect;
   onLessonComplete: (score: number, timeSpent: number) => void;
   onNextLesson?: () => void;
-  lessonTitle?: string;
+  
 }
 
 type Step =
