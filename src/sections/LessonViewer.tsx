@@ -4,14 +4,13 @@ import { DialogueViewer } from '@/components/DialogueViewer';
 import { ExerciseViewer } from '@/components/ExerciseViewer';
 import { FlashcardViewer } from '@/components/FlashcardViewer';
 import { SpeakingPractice } from '@/components/SpeakingPractice';
-import { CheckCircle, ChevronRight, Target, Star, Trophy, RotateCcw } from 'lucide-react';
+import { CheckCircle, ChevronRight, ChevronLeft, Target, Star, Trophy, RotateCcw } from 'lucide-react';
 
 interface LessonViewerProps {
   lesson: Lesson;
   dialect: Dialect;
   onLessonComplete: (score: number, timeSpent: number) => void;
   onNextLesson?: () => void;
-  
 }
 
 type Step =
@@ -64,7 +63,7 @@ function stepLabel(step: Step, lesson: Lesson): string {
   }
 }
 
-export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson}: LessonViewerProps) {
+export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson }: LessonViewerProps) {
   const steps = buildSteps(lesson);
   const [stepIdx, setStepIdx] = useState(0);
   const [exerciseResults, setExerciseResults] = useState<ExerciseResult[]>([]);
@@ -305,7 +304,7 @@ export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson}:
 
             {/* Actions */}
             <div className="space-y-3 pt-2">
-              {passed && onNextLesson && (
+              {passed && (
                 <button
                   onClick={onNextLesson}
                   className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-lg hover:from-amber-600 hover:to-orange-600 transition-all active:scale-[0.98] shadow-md"
@@ -330,22 +329,35 @@ export function LessonViewer({ lesson, dialect, onLessonComplete, onNextLesson}:
         </div>
       )}
 
-      {/* ── NEXT BUTTON ── */}
+      {/* ── NAV BUTTONS ── */}
       {step.type !== 'complete' && (
-        <button
-          onClick={goNext}
-          disabled={!canProceed()}
-          className={`
-            w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-lg transition-all
-            ${canProceed()
-              ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 active:scale-[0.98] shadow-md'
-              : 'bg-gray-100 text-gray-400 cursor-not-allowed'
-            }
-          `}
-        >
-          {isLast ? 'Finish' : step.type === 'intro' ? 'Start Lesson' : 'Next'}
-          <ChevronRight className="w-5 h-5" />
-        </button>
+        <div className="flex gap-3">
+          {/* Back button — show on all steps except intro */}
+          {stepIdx > 0 && (
+            <button
+              onClick={() => setStepIdx(prev => prev - 1)}
+              className="flex items-center justify-center gap-1 px-5 py-4 rounded-2xl border-2 border-gray-200 text-gray-600 font-semibold hover:bg-gray-50 transition-all"
+            >
+              <ChevronLeft className="w-5 h-5" />
+              Back
+            </button>
+          )}
+          {/* Next button */}
+          <button
+            onClick={goNext}
+            disabled={!canProceed()}
+            className={`
+              flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl font-bold text-lg transition-all
+              ${canProceed()
+                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 active:scale-[0.98] shadow-md'
+                : 'bg-gray-100 text-gray-400 cursor-not-allowed'
+              }
+            `}
+          >
+            {isLast ? 'Finish' : step.type === 'intro' ? 'Start Lesson' : 'Next'}
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
       )}
     </div>
   );
