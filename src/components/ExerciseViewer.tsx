@@ -1,9 +1,5 @@
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import type { Exercise, ExerciseResult } from '@/types';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Label } from '@/components/ui/label';
 import { CheckCircle, XCircle, RotateCcw, Check } from 'lucide-react';
 
 interface ExerciseViewerProps {
@@ -35,506 +31,424 @@ interface ExerciseCardProps {
   isCompleted: boolean;
 }
 
-function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
-  if (exercise.type === 'multiple_choice') {
-    return <MultipleChoiceExercise exercise={exercise} index={index} onComplete={onComplete} isCompleted={isCompleted} />;
-  }
-  if (exercise.type === 'matching') {
-    return <MatchingExercise exercise={exercise} index={index} onComplete={onComplete} isCompleted={isCompleted} />;
-  }
-  if (exercise.type === 'fill_in_blanks') {
-    return <FillInBlanksExercise exercise={exercise} index={index} onComplete={onComplete} isCompleted={isCompleted} />;
-  }
-  return null;
-}
-
-// ─── Multiple Choice ──────────────────────────────────────────────────────────
-
-function MultipleChoiceExercise({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
-  const [selected, setSelected] = useState('');
+// ── Multiple Choice ───────────────────────────────────────────────
+function MultipleChoice({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
-  const [attempts, setAttempts] = useState(0);
 
-  const correct = exercise.options?.find(o => o.correct)?.text ?? '';
-  const isCorrect = selected === correct;
+  const correctOption = exercise.options?.find((o: any) => o.correct);
+  const isCorrect = selected === correctOption?.text;
 
   const handleSubmit = () => {
     if (!selected) return;
-    const newAttempts = attempts + 1;
-    setAttempts(newAttempts);
     setSubmitted(true);
-    if (isCorrect || newAttempts >= 3) {
-      onComplete({ exerciseId: exercise.exercise_id, isCorrect, userAnswer: selected, attempts: newAttempts });
-    }
-  };
-
-  const handleReset = () => {
-    setSelected('');
-    setSubmitted(false);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: selected === correctOption?.text, userAnswer: selected, attempts: 1 });
   };
 
   return (
-    <Card className={isCompleted ? 'border-green-300 bg-green-50/30' : ''}>
-      <CardHeader>
-        <CardTitle className="text-lg flex items-start gap-3">
-          <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold shrink-0 mt-0.5">
-            {index + 1}
-          </span>
-          <div>
-            <p className="text-xs text-gray-500 font-normal mb-1">{exercise.instruction}</p>
-            <p className="text-gray-800 font-semibold">{exercise.question}</p>
-          </div>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <RadioGroup value={selected} onValueChange={setSelected} disabled={submitted && isCorrect}>
-          <div className="space-y-2">
-            {exercise.options?.map((option, i) => {
-              const isThisCorrect = option.correct;
-              const isThisSelected = selected === option.text;
-              let bg = 'hover:bg-amber-50 border-gray-200';
-              if (submitted) {
-                if (isThisCorrect) bg = 'bg-green-100 border-green-400';
-                else if (isThisSelected) bg = 'bg-red-100 border-red-400';
-                else bg = 'bg-gray-50 border-gray-200 opacity-60';
-              }
-              return (
-                <div key={i} className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors ${bg}`}>
-                  <RadioGroupItem value={option.text} id={`${exercise.exercise_id}-${i}`} disabled={submitted && isCorrect} />
-                  <Label htmlFor={`${exercise.exercise_id}-${i}`} className="flex-1 cursor-pointer text-gray-800">
-                    {option.text}
-                  </Label>
-                  {submitted && isThisCorrect && <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />}
-                  {submitted && isThisSelected && !isThisCorrect && <XCircle className="w-5 h-5 text-red-600 shrink-0" />}
-                </div>
-              );
-            })}
-          </div>
-        </RadioGroup>
+    <div className="space-y-3">
+      {exercise.question && (
+        <p className="font-semibold text-gray-800">{exercise.question}</p>
+      )}
+      <div className="space-y-2">
+        {exercise.options?.map((option: any, i: number) => {
+          const isSelected = selected === option.text;
+          const showCorrect = submitted && option.correct;
+          const showWrong = submitted && isSelected && !option.correct;
+          return (
+            <button
+              key={i}
+              onClick={() => !submitted && setSelected(option.text)}
+              disabled={submitted}
+              className={`
+                w-full text-left p-4 rounded-xl border-2 transition-all font-medium
+                ${showCorrect ? 'bg-green-100 border-green-400 text-green-800' :
+                  showWrong ? 'bg-red-100 border-red-400 text-red-800' :
+                  isSelected ? 'bg-amber-100 border-amber-400 text-amber-800' :
+                  submitted ? 'bg-gray-50 border-gray-200 text-gray-500' :
+                  'bg-white border-gray-200 hover:border-amber-300 hover:bg-amber-50 text-gray-800'}
+              `}
+            >
+              <div className="flex items-center justify-between">
+                <span>{option.text}</span>
+                {showCorrect && <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />}
+                {showWrong && <XCircle className="w-5 h-5 text-red-600 shrink-0" />}
+              </div>
+            </button>
+          );
+        })}
+      </div>
 
-        {submitted && exercise.feedback && (
-          <div className={`p-3 rounded-lg text-sm font-medium ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-            {isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}
-          </div>
-        )}
-
-        <div className="flex gap-2 pt-1">
-          {!submitted ? (
-            <Button onClick={handleSubmit} disabled={!selected} className="bg-amber-500 hover:bg-amber-600">
-              <Check className="w-4 h-4 mr-1" /> Check Answer
-            </Button>
-          ) : (
-            <>
-              {!isCorrect && attempts < 3 && (
-                <Button onClick={handleReset} variant="outline">
-                  <RotateCcw className="w-4 h-4 mr-1" /> Try Again
-                </Button>
-              )}
-              {isCorrect && (
-                <div className="flex items-center gap-2 text-green-600 font-medium">
-                  <CheckCircle className="w-5 h-5" /> Correct!
-                </div>
-              )}
-              {!isCorrect && attempts >= 3 && (
-                <div className="flex items-center gap-2 text-amber-700 font-medium">
-                  Correct answer: <strong>{correct}</strong>
-                </div>
-              )}
-            </>
-          )}
+      {submitted && exercise.feedback && (
+        <div className={`p-3 rounded-xl text-sm font-medium ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}
         </div>
-      </CardContent>
-    </Card>
+      )}
+
+      {!submitted && (
+        <button
+          onClick={handleSubmit}
+          disabled={!selected}
+          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+            ${selected ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+        >
+          <Check className="w-4 h-4" />
+          Check Answer
+        </button>
+      )}
+    </div>
   );
 }
 
-// ─── Matching ─────────────────────────────────────────────────────────────────
-
-function MatchingExercise({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
+// ── Matching ──────────────────────────────────────────────────────
+function Matching({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
   const pairs = exercise.pairs ?? [];
-
-  const [shuffledEnglish] = useState<string[]>(() => {
-    const eng = pairs.map(p => p.english);
-    for (let i = eng.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [eng[i], eng[j]] = [eng[j], eng[i]];
-    }
-    return eng;
-  });
-
   const [selectedSpanish, setSelectedSpanish] = useState<string | null>(null);
-  const [matched, setMatched] = useState<Record<string, string>>({});
-  const [wrong, setWrong] = useState<string | null>(null);
+  const [matched, setMatched] = useState<Record<string, string>>({}); // spanish -> english
   const [submitted, setSubmitted] = useState(false);
-  const [attempts, setAttempts] = useState(0);
+  const [wrongPair, setWrongPair] = useState<string | null>(null);
 
-  const matchedSpanish = new Set(Object.keys(matched));
-  const matchedEnglish = new Set(Object.values(matched));
+  // Shuffle English options once
+  const [englishOptions] = useState(() => [...pairs.map((p: any) => p.english)].sort(() => Math.random() - 0.5));
 
-  const handleSpanishClick = (spanish: string) => {
-    if (submitted || matchedSpanish.has(spanish)) return;
+  const matchedSpanish = Object.keys(matched);
+  const matchedEnglish = Object.values(matched);
+
+  const handleSpanishTap = (spanish: string) => {
+    if (submitted) return;
+    if (matchedSpanish.includes(spanish)) {
+      // Unselect — remove match
+      const updated = { ...matched };
+      delete updated[spanish];
+      setMatched(updated);
+      return;
+    }
     setSelectedSpanish(prev => prev === spanish ? null : spanish);
-    setWrong(null);
   };
 
-  const handleEnglishClick = (english: string) => {
-    if (submitted || matchedEnglish.has(english) || !selectedSpanish) return;
-    const correctEnglish = pairs.find(p => p.spanish === selectedSpanish)?.english;
-    if (english === correctEnglish) {
+  const handleEnglishTap = (english: string) => {
+    if (submitted) return;
+    if (!selectedSpanish) return;
+
+    if (matchedEnglish.includes(english)) {
+      // Already matched to another — unlink it
+      const updated = { ...matched };
+      const existingSpanish = Object.keys(updated).find(k => updated[k] === english);
+      if (existingSpanish) delete updated[existingSpanish];
+      setMatched(updated);
+      return;
+    }
+
+    // Check if correct
+    const correctPair = pairs.find((p: any) => p.spanish === selectedSpanish);
+    if (correctPair?.english === english) {
       setMatched(prev => ({ ...prev, [selectedSpanish]: english }));
       setSelectedSpanish(null);
-      setWrong(null);
     } else {
-      setWrong(selectedSpanish);
-      setTimeout(() => {
-        setWrong(null);
-        setSelectedSpanish(null);
-      }, 800);
+      setWrongPair(selectedSpanish);
+      setTimeout(() => setWrongPair(null), 600);
+      setSelectedSpanish(null);
     }
   };
 
-  const handleSubmit = useCallback(() => {
-    const newAttempts = attempts + 1;
-    setAttempts(newAttempts);
-    setSubmitted(true);
-    const isCorrect = Object.keys(matched).length === pairs.length;
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect, userAnswer: JSON.stringify(matched), attempts: newAttempts });
-  }, [attempts, matched, pairs.length, exercise.exercise_id, onComplete]);
-
-  const handleReset = () => {
-    setMatched({});
-    setSelectedSpanish(null);
-    setWrong(null);
-    setSubmitted(false);
-  };
-
-  const allMatched = matchedSpanish.size === pairs.length;
-
-  return (
-    <Card className={isCompleted ? 'border-green-300 bg-green-50/30' : ''}>
-      <CardHeader>
-        <CardTitle className="text-lg flex items-start gap-3">
-          <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold shrink-0 mt-0.5">
-            {index + 1}
-          </span>
-          <div>
-            <p className="text-xs text-gray-500 font-normal mb-1">{exercise.instruction}</p>
-            <p className="text-gray-800 font-semibold text-base">Click a Spanish phrase, then click its English match</p>
-          </div>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="grid grid-cols-2 gap-3">
-          {/* Spanish column */}
-          <div className="space-y-2">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">🇲🇽 Spanish</p>
-            {pairs.map((pair) => {
-              const isM = matchedSpanish.has(pair.spanish);
-              const isSel = selectedSpanish === pair.spanish;
-              const isW = wrong === pair.spanish;
-              let cls = 'p-3 rounded-lg border-2 cursor-pointer transition-all text-sm font-medium select-none ';
-              if (isM) cls += 'bg-green-100 border-green-400 text-green-800 cursor-default';
-              else if (isW) cls += 'bg-red-100 border-red-400 text-red-800 animate-pulse';
-              else if (isSel) cls += 'bg-amber-200 border-amber-500 text-amber-900 shadow-md ring-2 ring-amber-400';
-              else cls += 'bg-amber-50 border-amber-200 text-gray-800 hover:border-amber-400 hover:bg-amber-100';
-              return (
-                <div key={pair.spanish} className={cls} onClick={() => handleSpanishClick(pair.spanish)}>
-                  <div className="flex items-center justify-between gap-2">
-                    <span>{pair.spanish}</span>
-                    {isM && <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* English column */}
-          <div className="space-y-2">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">🇬🇧 English</p>
-            {shuffledEnglish.map((english) => {
-              const isM = matchedEnglish.has(english);
-              const canClick = !isM && selectedSpanish !== null;
-              let cls = 'p-3 rounded-lg border-2 transition-all text-sm font-medium select-none ';
-              if (isM) cls += 'bg-green-100 border-green-400 text-green-800 cursor-default';
-              else if (canClick) cls += 'bg-blue-50 border-blue-300 text-gray-800 cursor-pointer hover:bg-blue-100 hover:border-blue-500';
-              else cls += 'bg-gray-50 border-gray-200 text-gray-400 cursor-default';
-              return (
-                <div key={english} className={cls} onClick={() => handleEnglishClick(english)}>
-                  <div className="flex items-center justify-between gap-2">
-                    <span>{english}</span>
-                    {isM && <CheckCircle className="w-4 h-4 text-green-600 shrink-0" />}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {!submitted && (
-          <p className="text-sm text-center text-gray-500">
-            {matchedSpanish.size} of {pairs.length} matched
-            {selectedSpanish && (
-              <span className="text-amber-600 font-medium"> — now pick the English for <em>"{selectedSpanish}"</em></span>
-            )}
-          </p>
-        )}
-
-        {submitted && (
-          <div className="p-3 rounded-lg bg-green-100 text-green-800 text-sm font-medium flex items-center gap-2">
-            <CheckCircle className="w-4 h-4" /> All pairs matched — great work!
-          </div>
-        )}
-
-        <div className="flex gap-2 pt-1">
-          {!submitted ? (
-            <>
-              <Button onClick={handleSubmit} disabled={!allMatched} className="bg-amber-500 hover:bg-amber-600">
-                <Check className="w-4 h-4 mr-1" /> Submit Matches
-              </Button>
-              {matchedSpanish.size > 0 && (
-                <Button onClick={handleReset} variant="outline">
-                  <RotateCcw className="w-4 h-4 mr-1" /> Reset
-                </Button>
-              )}
-            </>
-          ) : (
-            <div className="flex items-center gap-2 text-green-600 font-medium">
-              <CheckCircle className="w-5 h-5" /> Complete!
-            </div>
-          )}
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
-// ─── Fill in the Blanks (word bank click-to-place) ───────────────────────────
-// Uses index-based tracking throughout so duplicate words (e.g. two 'Soy' tiles)
-// work correctly — each tile is a unique slot regardless of its text value.
-
-function FillInBlanksExercise({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
-  const answers = exercise.answers ?? [];
-  const variants = exercise.acceptable_variants ?? {};
-
-  // wordBank is [{word, bankIdx}] — bankIdx is the stable identity key
-  const [wordBank] = useState<{ word: string; bankIdx: number }[]>(() => {
-    const items = answers.map((word, i) => ({ word, bankIdx: i }));
-    // Fisher-Yates shuffle
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
-    }
-    return items;
-  });
-
-  // filled[blankIndex] = bankIdx of the tile placed there, or null
-  const [filled, setFilled] = useState<(number | null)[]>(answers.map(() => null));
-  // Set of bankIdx values currently placed in a blank
-  const [usedBankIdxs, setUsedBankIdxs] = useState<Set<number>>(new Set());
-  // bankIdx of the currently picked tile, or null
-  const [pickedIdx, setPickedIdx] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [attempts, setAttempts] = useState(0);
-
-  const allFilled = filled.every(f => f !== null);
-
-  const handleBankClick = (bankIdx: number) => {
-    if (submitted || usedBankIdxs.has(bankIdx)) return;
-    setPickedIdx(prev => prev === bankIdx ? null : bankIdx);
-  };
-
-  const handleBlankClick = (blankIndex: number) => {
-    if (submitted) return;
-    if (pickedIdx !== null) {
-      const prevBankIdx = filled[blankIndex];
-      const newFilled = [...filled];
-      newFilled[blankIndex] = pickedIdx;
-      setFilled(newFilled);
-      const newUsed = new Set(usedBankIdxs);
-      newUsed.add(pickedIdx);
-      if (prevBankIdx !== null) newUsed.delete(prevBankIdx); // return previous tile
-      setUsedBankIdxs(newUsed);
-      setPickedIdx(null);
-    } else if (filled[blankIndex] !== null) {
-      // Tap a filled blank to return it to the bank
-      const prevBankIdx = filled[blankIndex]!;
-      const newFilled = [...filled];
-      newFilled[blankIndex] = null;
-      setFilled(newFilled);
-      const newUsed = new Set(usedBankIdxs);
-      newUsed.delete(prevBankIdx);
-      setUsedBankIdxs(newUsed);
-    }
-  };
-
-  const checkFill = (userWord: string, correctWord: string): boolean => {
-    const norm = (s: string) => s.trim().toLowerCase();
-    if (norm(userWord) === norm(correctWord)) return true;
-    return (variants[correctWord] ?? []).some(v => norm(userWord) === norm(v));
-  };
-
-  // Get the display word for a blank from its bankIdx
-  const wordForBlank = (blankIndex: number): string | null => {
-    const bi = filled[blankIndex];
-    if (bi === null) return null;
-    return wordBank.find(w => w.bankIdx === bi)?.word ?? null;
-  };
+  const allMatched = matchedSpanish.length === pairs.length;
 
   const handleSubmit = () => {
-    const newAttempts = attempts + 1;
-    setAttempts(newAttempts);
     setSubmitted(true);
-    const isCorrect = filled.every((bi, i) => {
-      if (bi === null) return false;
-      const word = wordBank.find(w => w.bankIdx === bi)?.word ?? '';
-      return checkFill(word, answers[i]);
-    });
-    const userAnswer = filled.map(bi => bi !== null ? (wordBank.find(w => w.bankIdx === bi)?.word ?? '') : '').join(',');
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect, userAnswer, attempts: newAttempts });
+    const correct = pairs.every((p: any) => matched[p.spanish] === p.english);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: JSON.stringify(matched), attempts: 1 });
   };
-
-  const handleReset = () => {
-    setFilled(answers.map(() => null));
-    setUsedBankIdxs(new Set());
-    setPickedIdx(null);
-    setSubmitted(false);
-  };
-
-  let blankCounter = 0;
-
-  // Determine if speaker labels are just single letters (like 'A', 'B') — show them differently
-  const speakerLabels = [...new Set(exercise.dialogue?.map(l => l.speaker) ?? [])];
-  const singleLetterSpeakers = speakerLabels.every(s => s.length === 1);
 
   return (
-    <Card className={isCompleted ? 'border-green-300 bg-green-50/30' : ''}>
-      <CardHeader>
-        <CardTitle className="text-lg flex items-start gap-3">
-          <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold shrink-0 mt-0.5">
-            {index + 1}
-          </span>
-          <div>
-            <p className="text-xs text-gray-500 font-normal mb-1">{exercise.instruction}</p>
-            <p className="text-gray-800 font-semibold text-base">
-              {pickedIdx !== null
-                ? <span className="text-amber-700">"{wordBank.find(w => w.bankIdx === pickedIdx)?.word}" selected — tap a blank to place it</span>
-                : 'Tap a word below, then tap a blank to place it'
-              }
-            </p>
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 gap-3">
+        {/* Spanish column */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+            🇲🇽 Spanish
           </div>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-5">
-        {/* Conversation with blanks */}
-        <div className="space-y-3 bg-gray-50 rounded-xl p-4 border border-gray-200">
-          {exercise.dialogue?.map((line, lineIndex) => {
-            const parts = line.text.split('_____');
+          {pairs.map((pair: any) => {
+            const isSelected = selectedSpanish === pair.spanish;
+            const isMatched = matchedSpanish.includes(pair.spanish);
+            const isWrong = wrongPair === pair.spanish;
             return (
-              <div key={lineIndex} className="flex items-baseline gap-2 flex-wrap">
-                <span className={`font-bold text-gray-500 shrink-0 ${singleLetterSpeakers ? 'text-xs bg-gray-200 rounded px-1.5 py-0.5' : 'text-xs uppercase min-w-[64px]'}`}>
-                  {singleLetterSpeakers ? line.speaker : `${line.speaker}:`}
-                </span>
-                <span className="text-gray-800 text-base leading-relaxed flex items-baseline flex-wrap gap-1">
-                  {parts.map((part, partIndex) => {
-                    if (partIndex === parts.length - 1) return <span key={partIndex}>{part}</span>;
-                    const bi = blankCounter++;
-                    const word = wordForBlank(bi);
-                    const isOk  = submitted && word !== null && checkFill(word, answers[bi]);
-                    const isBad = submitted && word !== null && !checkFill(word, answers[bi]);
-                    return (
-                      <span key={partIndex} className="inline-flex items-baseline">
-                        <span>{part}</span>
-                        <span
-                          onClick={() => handleBlankClick(bi)}
-                          className={`
-                            inline-flex items-center justify-center min-w-[72px] px-2 py-0.5 mx-1
-                            rounded border-b-2 cursor-pointer transition-all text-sm font-bold
-                            ${word
-                              ? isOk   ? 'bg-green-100 border-green-500 text-green-800'
-                                : isBad  ? 'bg-red-100 border-red-500 text-red-700'
-                                : pickedIdx !== null ? 'bg-amber-200 border-amber-500 text-amber-900 hover:bg-amber-300'
-                                         : 'bg-amber-100 border-amber-400 text-amber-900 hover:bg-amber-200'
-                              : pickedIdx !== null ? 'bg-blue-50 border-blue-400 border-dashed text-blue-400 hover:bg-blue-100'
-                                       : 'bg-white border-gray-400 border-dashed text-gray-300'
-                            }
-                          `}
-                        >
-                          {word ?? '_____'}
-                          {isBad && <span className="ml-1 text-xs text-red-500">({answers[bi]})</span>}
-                        </span>
-                      </span>
-                    );
-                  })}
-                </span>
-              </div>
+              <button
+                key={pair.spanish}
+                onClick={() => handleSpanishTap(pair.spanish)}
+                className={`
+                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
+                    isWrong ? 'bg-red-100 border-red-400 animate-pulse' :
+                    isSelected ? 'bg-amber-100 border-amber-400 text-amber-800 shadow-md' :
+                    'bg-white border-amber-200 hover:border-amber-400 text-gray-800'}
+                `}
+              >
+                {pair.spanish}
+              </button>
             );
           })}
         </div>
 
-        {/* Word bank */}
-        <div>
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Word Bank</p>
-          <div className="flex flex-wrap gap-2">
-            {wordBank.map(({ word, bankIdx }) => {
-              const used = usedBankIdxs.has(bankIdx);
-              const isPicked = pickedIdx === bankIdx;
-              return (
-                <button
-                  key={bankIdx}
-                  onClick={() => handleBankClick(bankIdx)}
-                  disabled={submitted || used}
-                  className={`
-                    px-4 py-2 rounded-lg border-2 text-sm font-semibold transition-all min-w-[48px]
-                    ${used
-                      ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-default'
-                      : isPicked
-                      ? 'bg-amber-500 border-amber-600 text-white shadow-lg scale-105 ring-2 ring-amber-300'
-                      : 'bg-white border-amber-300 text-gray-800 hover:bg-amber-50 hover:border-amber-500 cursor-pointer'
-                    }
-                  `}
-                >
-                  {word}
-                </button>
-              );
-            })}
+        {/* English column */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+            🇬🇧 English
           </div>
+          {englishOptions.map((english) => {
+            const isMatched = matchedEnglish.includes(english);
+            const matchedTo = Object.keys(matched).find(k => matched[k] === english);
+            return (
+              <button
+                key={english}
+                onClick={() => handleEnglishTap(english)}
+                className={`
+                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
+                    selectedSpanish ? 'bg-white border-blue-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800' :
+                    'bg-white border-gray-200 text-gray-500'}
+                `}
+              >
+                {english}
+              </button>
+            );
+          })}
         </div>
+      </div>
 
-        {submitted && (() => {
-          const correctCount = filled.filter((bi, i) => {
-            if (bi === null) return false;
-            const word = wordBank.find(w => w.bankIdx === bi)?.word ?? '';
-            return checkFill(word, answers[i]);
-          }).length;
-          const allRight = correctCount === answers.length;
+      <p className="text-center text-sm text-gray-500">
+        {matchedSpanish.length} of {pairs.length} matched
+      </p>
+
+      {!submitted && (
+        <button
+          onClick={handleSubmit}
+          disabled={!allMatched}
+          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+            ${allMatched ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+        >
+          <Check className="w-4 h-4" />
+          Submit Matches
+        </button>
+      )}
+
+      {submitted && (
+        <div className="p-3 rounded-xl text-sm font-medium bg-green-100 text-green-800 flex items-center gap-2">
+          <CheckCircle className="w-5 h-5" />
+          Matching complete!
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Fill in Blanks ────────────────────────────────────────────────
+function FillInBlanks({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const answers = exercise.answers ?? [];
+  const variants = exercise.acceptable_variants ?? {};
+
+  // Build word bank from answers + distractors (shuffle)
+  const [wordBank] = useState(() => {
+    const words = [...answers];
+    // Add a couple fake distractors if answers are short
+    return words.sort(() => Math.random() - 0.5);
+  });
+
+  const [filledBlanks, setFilledBlanks] = useState<(string | null)[]>(answers.map(() => null));
+  const [selectedWord, setSelectedWord] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+  const [usedWords, setUsedWords] = useState<Set<string>>(new Set());
+
+  const dialogue = exercise.dialogue ?? [];
+
+  // Count blanks per line
+  const blankCounts = dialogue.map(line => (line.text.match(/_____/g) || []).length);
+  let blankIndex = 0;
+
+  const handleWordTap = (word: string) => {
+    if (submitted) return;
+    if (usedWords.has(word)) return;
+    setSelectedWord(prev => prev === word ? null : word);
+  };
+
+  const handleBlankTap = (idx: number) => {
+    if (submitted) return;
+
+    if (filledBlanks[idx]) {
+      // Return word to bank
+      const returned = filledBlanks[idx]!;
+      const updated = [...filledBlanks];
+      updated[idx] = null;
+      setFilledBlanks(updated);
+      setUsedWords(prev => { const s = new Set(prev); s.delete(returned); return s; });
+      return;
+    }
+
+    if (!selectedWord) return;
+
+    const updated = [...filledBlanks];
+    updated[idx] = selectedWord;
+    setFilledBlanks(updated);
+    setUsedWords(prev => new Set(prev).add(selectedWord));
+    setSelectedWord(null);
+  };
+
+  const allFilled = filledBlanks.every(b => b !== null);
+
+  const checkAnswers = (): boolean => {
+    return answers.every((answer: string, i: number) => {
+      const userAnswer = filledBlanks[i]?.toLowerCase().trim() ?? '';
+      const correct = answer.toLowerCase().trim();
+      const acceptedVariants = (variants[answer] ?? []).map((v: string) => v.toLowerCase().trim());
+      return userAnswer === correct || acceptedVariants.includes(userAnswer);
+    });
+  };
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+    const correct = checkAnswers();
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: filledBlanks.join(','), attempts: 1 });
+  };
+
+  const handleReset = () => {
+    setFilledBlanks(answers.map(() => null));
+    setUsedWords(new Set());
+    setSelectedWord(null);
+    setSubmitted(false);
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* Dialogue with blanks */}
+      <div className="space-y-3">
+        {dialogue.map((line: any, lineIdx: number) => {
+          const parts = line.text.split('_____');
+          const lineBlankCount = blankCounts[lineIdx];
+          const lineBlankIndices: number[] = [];
+          for (let i = 0; i < lineBlankCount; i++) {
+            lineBlankIndices.push(blankIndex++);
+          }
+          let localBlank = 0;
+
           return (
-            <div className={`p-3 rounded-lg text-sm font-medium ${allRight ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'}`}>
-              {allRight
-                ? '¡Perfecto! All blanks correct.'
-                : `${correctCount} of ${answers.length} correct — incorrect answers shown in red above.`}
+            <div key={lineIdx} className="flex items-start gap-2 p-3 bg-gray-50 rounded-xl">
+              <span className="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-1 rounded-lg shrink-0 mt-0.5">
+                {line.speaker}
+              </span>
+              <span className="text-gray-800 text-sm leading-relaxed">
+                {parts.map((part: string, partIdx: number) => {
+                  if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
+                  const bIdx = lineBlankIndices[localBlank++];
+                  const filled = filledBlanks[bIdx];
+                  const isCorrectBlank = submitted && filled?.toLowerCase().trim() === answers[bIdx]?.toLowerCase().trim();
+                  const isWrongBlank = submitted && !isCorrectBlank;
+
+                  return (
+                    <span key={partIdx}>
+                      {part}
+                      <button
+                        onClick={() => handleBlankTap(bIdx)}
+                        className={`
+                          inline-flex items-center justify-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
+                          ${filled
+                            ? isCorrectBlank ? 'bg-green-100 border-green-400 text-green-800'
+                            : isWrongBlank ? 'bg-red-100 border-red-400 text-red-800'
+                            : 'bg-amber-100 border-amber-400 text-amber-800'
+                            : selectedWord
+                            ? 'bg-blue-50 border-blue-300 border-dashed text-blue-400 animate-pulse'
+                            : 'bg-white border-gray-300 border-dashed text-gray-400'
+                          }
+                        `}
+                      >
+                        {filled ?? '___'}
+                      </button>
+                    </span>
+                  );
+                })}
+              </span>
             </div>
           );
-        })()}
+        })}
+      </div>
 
-        <div className="flex gap-2 pt-1">
-          {!submitted ? (
-            <>
-              <Button onClick={handleSubmit} disabled={!allFilled} className="bg-amber-500 hover:bg-amber-600">
-                <Check className="w-4 h-4 mr-1" /> Check Answers
-              </Button>
-              {filled.some(f => f !== null) && (
-                <Button onClick={handleReset} variant="outline">
-                  <RotateCcw className="w-4 h-4 mr-1" /> Reset
-                </Button>
-              )}
-            </>
-          ) : (
-            <Button onClick={handleReset} variant="outline">
-              <RotateCcw className="w-4 h-4 mr-1" /> Try Again
-            </Button>
-          )}
+      {/* Word bank */}
+      <div className="space-y-2">
+        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Word Bank</p>
+        <div className="flex flex-wrap gap-2">
+          {wordBank.map((word: string, i: number) => {
+            const isUsed = usedWords.has(word);
+            const isSelected = selectedWord === word;
+            return (
+              <button
+                key={i}
+                onClick={() => handleWordTap(word)}
+                disabled={isUsed || submitted}
+                className={`
+                  px-4 py-2 rounded-xl border-2 font-bold text-sm transition-all
+                  ${isUsed ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-not-allowed' :
+                    isSelected ? 'bg-amber-500 border-amber-600 text-white shadow-md scale-105' :
+                    'bg-white border-amber-300 text-amber-800 hover:bg-amber-50 hover:border-amber-400'}
+                `}
+              >
+                {word}
+              </button>
+            );
+          })}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+
+      {submitted && (
+        <div className={`p-3 rounded-xl text-sm font-medium ${checkAnswers() ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {checkAnswers() ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
+        </div>
+      )}
+
+      <div className="flex gap-2">
+        {!submitted ? (
+          <button
+            onClick={handleSubmit}
+            disabled={!allFilled}
+            className={`flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+              ${allFilled ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+          >
+            <Check className="w-4 h-4" />
+            Check Answers
+          </button>
+        ) : (
+          <button
+            onClick={handleReset}
+            className="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-gray-200 text-gray-600 font-semibold hover:bg-gray-50"
+          >
+            <RotateCcw className="w-4 h-4" />
+            Try Again
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Exercise Card wrapper ─────────────────────────────────────────
+function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
+  return (
+    <div className={`rounded-2xl border-2 overflow-hidden ${isCompleted ? 'border-green-300' : 'border-amber-200'}`}>
+      <div className={`px-4 py-3 flex items-center gap-3 ${isCompleted ? 'bg-green-50' : 'bg-amber-50'}`}>
+        <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0
+          ${isCompleted ? 'bg-green-500 text-white' : 'bg-amber-500 text-white'}`}>
+          {isCompleted ? '✓' : index + 1}
+        </span>
+        <span className="text-sm font-semibold text-gray-700">{exercise.instruction}</span>
+      </div>
+      <div className="p-4 bg-white">
+        {exercise.type === 'multiple_choice' && (
+          <MultipleChoice exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+        {exercise.type === 'matching' && (
+          <Matching exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+        {exercise.type === 'fill_in_blanks' && (
+          <FillInBlanks exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+      </div>
+    </div>
   );
 }
