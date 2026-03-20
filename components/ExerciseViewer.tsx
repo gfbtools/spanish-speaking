@@ -1,10 +1,5 @@
 import { useState } from 'react';
 import type { Exercise, ExerciseResult } from '@/types';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
 import { CheckCircle, XCircle, RotateCcw, Check } from 'lucide-react';
 
 interface ExerciseViewerProps {
@@ -36,198 +31,424 @@ interface ExerciseCardProps {
   isCompleted: boolean;
 }
 
-function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
-  const [userAnswer, setUserAnswer] = useState<string>('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [attempts, setAttempts] = useState(0);
+// ── Multiple Choice ───────────────────────────────────────────────
+function MultipleChoice({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  const correctOption = exercise.options?.find((o: any) => o.correct);
+  const isCorrect = selected === correctOption?.text;
 
   const handleSubmit = () => {
-    if (!userAnswer) return;
-
-    setIsSubmitted(true);
-    setAttempts(prev => prev + 1);
-
-    const isCorrect = checkAnswer(exercise, userAnswer);
-
-    if (isCorrect || attempts >= 2) {
-      onComplete({
-        exerciseId: exercise.exercise_id,
-        isCorrect,
-        userAnswer,
-        attempts: attempts + 1,
-      });
-    }
+    if (!selected) return;
+    setSubmitted(true);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: selected === correctOption?.text, userAnswer: selected, attempts: 1 });
   };
-
-  const handleReset = () => {
-    setUserAnswer('');
-    setIsSubmitted(false);
-  };
-
-  const isCorrect = isSubmitted ? checkAnswer(exercise, userAnswer) : null;
 
   return (
-    <Card className={`${isCompleted ? 'border-green-300 bg-green-50/30' : ''}`}>
-      <CardHeader>
-        <CardTitle className="text-lg flex items-center gap-2">
-          <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold">
-            {index + 1}
-          </span>
-          <span className="text-gray-700">{exercise.instruction}</span>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        {/* Multiple Choice */}
-        {exercise.type === 'multiple_choice' && exercise.options && (
-          <RadioGroup
-            value={userAnswer}
-            onValueChange={setUserAnswer}
-            disabled={isSubmitted && isCorrect === true}
-          >
-            <div className="space-y-2">
-              {exercise.options.map((option, optIndex) => (
-                <div
-                  key={optIndex}
-                  className={`flex items-center space-x-2 p-3 rounded-lg border transition-colors ${
-                    isSubmitted
-                      ? option.correct
-                        ? 'bg-green-100 border-green-300'
-                        : userAnswer === option.text
-                        ? 'bg-red-100 border-red-300'
-                        : 'bg-gray-50'
-                      : 'hover:bg-amber-50 border-gray-200'
-                  }`}
-                >
-                  <RadioGroupItem
-                    value={option.text}
-                    id={`${exercise.exercise_id}-${optIndex}`}
-                    disabled={isSubmitted && isCorrect === true}
-                  />
-                  <Label
-                    htmlFor={`${exercise.exercise_id}-${optIndex}`}
-                    className="flex-1 cursor-pointer"
-                  >
-                    {option.text}
-                  </Label>
-                  {isSubmitted && option.correct && (
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                  )}
-                  {isSubmitted && userAnswer === option.text && !option.correct && (
-                    <XCircle className="w-5 h-5 text-red-600" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </RadioGroup>
-        )}
-
-        {/* Fill in the Blanks */}
-        {exercise.type === 'fill_in_blanks' && exercise.dialogue && (
-          <div className="space-y-4">
-            {exercise.dialogue.map((line, lineIndex) => (
-              <div key={lineIndex} className="flex items-center gap-2">
-                <span className="font-medium text-gray-600 min-w-[80px]">{line.speaker}:</span>
-                <span className="text-gray-800">
-                  {line.text.split('_____').map((part, partIndex, arr) => (
-                    <span key={partIndex}>
-                      {part}
-                      {partIndex < arr.length - 1 && (
-                        <Input
-                          className="inline-block w-32 mx-1"
-                          value={userAnswer.split(',')[lineIndex] || ''}
-                          onChange={(e) => {
-                            const answers = userAnswer.split(',');
-                            answers[lineIndex] = e.target.value;
-                            setUserAnswer(answers.join(','));
-                          }}
-                          disabled={isSubmitted && isCorrect === true}
-                          placeholder="..."
-                        />
-                      )}
-                    </span>
-                  ))}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Matching */}
-        {exercise.type === 'matching' && exercise.pairs && (
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <h4 className="font-medium text-gray-700">Spanish</h4>
-              {exercise.pairs.map((pair, pairIndex) => (
-                <div key={pairIndex} className="p-2 bg-amber-50 rounded border border-amber-200">
-                  {pair.spanish}
-                </div>
-              ))}
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-medium text-gray-700">English</h4>
-              {exercise.pairs.map((pair, pairIndex) => (
-                <div key={pairIndex} className="p-2 bg-blue-50 rounded border border-blue-200">
-                  {pair.english}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Feedback */}
-        {isSubmitted && exercise.feedback && (
-          <div className={`p-3 rounded-lg ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-            <p className="font-medium">
-              {isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}
-            </p>
-          </div>
-        )}
-
-        {/* Actions */}
-        <div className="flex gap-2">
-          {!isSubmitted ? (
-            <Button
-              onClick={handleSubmit}
-              disabled={!userAnswer}
-              className="bg-amber-500 hover:bg-amber-600"
+    <div className="space-y-3">
+      {exercise.question && (
+        <p className="font-semibold text-gray-800">{exercise.question}</p>
+      )}
+      <div className="space-y-2">
+        {exercise.options?.map((option: any, i: number) => {
+          const isSelected = selected === option.text;
+          const showCorrect = submitted && option.correct;
+          const showWrong = submitted && isSelected && !option.correct;
+          return (
+            <button
+              key={i}
+              onClick={() => !submitted && setSelected(option.text)}
+              disabled={submitted}
+              className={`
+                w-full text-left p-4 rounded-xl border-2 transition-all font-medium
+                ${showCorrect ? 'bg-green-100 border-green-400 text-green-800' :
+                  showWrong ? 'bg-red-100 border-red-400 text-red-800' :
+                  isSelected ? 'bg-amber-100 border-amber-400 text-amber-800' :
+                  submitted ? 'bg-gray-50 border-gray-200 text-gray-500' :
+                  'bg-white border-gray-200 hover:border-amber-300 hover:bg-amber-50 text-gray-800'}
+              `}
             >
-              <Check className="w-4 h-4 mr-1" />
-              Check Answer
-            </Button>
-          ) : (
-            <>
-              {!isCorrect && attempts < 3 && (
-                <Button onClick={handleReset} variant="outline">
-                  <RotateCcw className="w-4 h-4 mr-1" />
-                  Try Again
-                </Button>
-              )}
-              {isCorrect && (
-                <div className="flex items-center gap-2 text-green-600">
-                  <CheckCircle className="w-5 h-5" />
-                  <span>Correct!</span>
-                </div>
-              )}
-            </>
-          )}
+              <div className="flex items-center justify-between">
+                <span>{option.text}</span>
+                {showCorrect && <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />}
+                {showWrong && <XCircle className="w-5 h-5 text-red-600 shrink-0" />}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      {submitted && exercise.feedback && (
+        <div className={`p-3 rounded-xl text-sm font-medium ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}
         </div>
-      </CardContent>
-    </Card>
+      )}
+
+      {!submitted && (
+        <button
+          onClick={handleSubmit}
+          disabled={!selected}
+          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+            ${selected ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+        >
+          <Check className="w-4 h-4" />
+          Check Answer
+        </button>
+      )}
+    </div>
   );
 }
 
-function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
-  if (exercise.type === 'multiple_choice' && exercise.options) {
-    const correctOption = exercise.options.find(o => o.correct);
-    return correctOption?.text === userAnswer;
-  }
+// ── Matching ──────────────────────────────────────────────────────
+function Matching({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const pairs = exercise.pairs ?? [];
+  const [selectedSpanish, setSelectedSpanish] = useState<string | null>(null);
+  const [matched, setMatched] = useState<Record<string, string>>({}); // spanish -> english
+  const [submitted, setSubmitted] = useState(false);
+  const [wrongPair, setWrongPair] = useState<string | null>(null);
 
-  if (exercise.type === 'fill_in_blanks' && exercise.answers) {
-    const userAnswers = userAnswer.split(',').map(a => a.trim().toLowerCase());
-    return exercise.answers.every((answer, index) => 
-      userAnswers[index]?.toLowerCase() === answer.toLowerCase()
-    );
-  }
+  // Shuffle English options once
+  const [englishOptions] = useState(() => [...pairs.map((p: any) => p.english)].sort(() => Math.random() - 0.5));
 
-  return false;
+  const matchedSpanish = Object.keys(matched);
+  const matchedEnglish = Object.values(matched);
+
+  const handleSpanishTap = (spanish: string) => {
+    if (submitted) return;
+    if (matchedSpanish.includes(spanish)) {
+      // Unselect — remove match
+      const updated = { ...matched };
+      delete updated[spanish];
+      setMatched(updated);
+      return;
+    }
+    setSelectedSpanish(prev => prev === spanish ? null : spanish);
+  };
+
+  const handleEnglishTap = (english: string) => {
+    if (submitted) return;
+    if (!selectedSpanish) return;
+
+    if (matchedEnglish.includes(english)) {
+      // Already matched to another — unlink it
+      const updated = { ...matched };
+      const existingSpanish = Object.keys(updated).find(k => updated[k] === english);
+      if (existingSpanish) delete updated[existingSpanish];
+      setMatched(updated);
+      return;
+    }
+
+    // Check if correct
+    const correctPair = pairs.find((p: any) => p.spanish === selectedSpanish);
+    if (correctPair?.english === english) {
+      setMatched(prev => ({ ...prev, [selectedSpanish]: english }));
+      setSelectedSpanish(null);
+    } else {
+      setWrongPair(selectedSpanish);
+      setTimeout(() => setWrongPair(null), 600);
+      setSelectedSpanish(null);
+    }
+  };
+
+  const allMatched = matchedSpanish.length === pairs.length;
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+    const correct = pairs.every((p: any) => matched[p.spanish] === p.english);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: JSON.stringify(matched), attempts: 1 });
+  };
+
+  return (
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 gap-3">
+        {/* Spanish column */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+            🇲🇽 Spanish
+          </div>
+          {pairs.map((pair: any) => {
+            const isSelected = selectedSpanish === pair.spanish;
+            const isMatched = matchedSpanish.includes(pair.spanish);
+            const isWrong = wrongPair === pair.spanish;
+            return (
+              <button
+                key={pair.spanish}
+                onClick={() => handleSpanishTap(pair.spanish)}
+                className={`
+                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
+                    isWrong ? 'bg-red-100 border-red-400 animate-pulse' :
+                    isSelected ? 'bg-amber-100 border-amber-400 text-amber-800 shadow-md' :
+                    'bg-white border-amber-200 hover:border-amber-400 text-gray-800'}
+                `}
+              >
+                {pair.spanish}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* English column */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+            🇬🇧 English
+          </div>
+          {englishOptions.map((english) => {
+            const isMatched = matchedEnglish.includes(english);
+            const matchedTo = Object.keys(matched).find(k => matched[k] === english);
+            return (
+              <button
+                key={english}
+                onClick={() => handleEnglishTap(english)}
+                className={`
+                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
+                    selectedSpanish ? 'bg-white border-blue-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800' :
+                    'bg-white border-gray-200 text-gray-500'}
+                `}
+              >
+                {english}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <p className="text-center text-sm text-gray-500">
+        {matchedSpanish.length} of {pairs.length} matched
+      </p>
+
+      {!submitted && (
+        <button
+          onClick={handleSubmit}
+          disabled={!allMatched}
+          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+            ${allMatched ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+        >
+          <Check className="w-4 h-4" />
+          Submit Matches
+        </button>
+      )}
+
+      {submitted && (
+        <div className="p-3 rounded-xl text-sm font-medium bg-green-100 text-green-800 flex items-center gap-2">
+          <CheckCircle className="w-5 h-5" />
+          Matching complete!
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Fill in Blanks ────────────────────────────────────────────────
+function FillInBlanks({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const answers = exercise.answers ?? [];
+  const variants = exercise.acceptable_variants ?? {};
+
+  // Build word bank from answers + distractors (shuffle)
+  const [wordBank] = useState(() => {
+    const words = [...answers];
+    // Add a couple fake distractors if answers are short
+    return words.sort(() => Math.random() - 0.5);
+  });
+
+  const [filledBlanks, setFilledBlanks] = useState<(string | null)[]>(answers.map(() => null));
+  const [selectedWord, setSelectedWord] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+  const [usedWords, setUsedWords] = useState<Set<string>>(new Set());
+
+  const dialogue = exercise.dialogue ?? [];
+
+  // Count blanks per line
+  const blankCounts = dialogue.map(line => (line.text.match(/_____/g) || []).length);
+  let blankIndex = 0;
+
+  const handleWordTap = (word: string) => {
+    if (submitted) return;
+    if (usedWords.has(word)) return;
+    setSelectedWord(prev => prev === word ? null : word);
+  };
+
+  const handleBlankTap = (idx: number) => {
+    if (submitted) return;
+
+    if (filledBlanks[idx]) {
+      // Return word to bank
+      const returned = filledBlanks[idx]!;
+      const updated = [...filledBlanks];
+      updated[idx] = null;
+      setFilledBlanks(updated);
+      setUsedWords(prev => { const s = new Set(prev); s.delete(returned); return s; });
+      return;
+    }
+
+    if (!selectedWord) return;
+
+    const updated = [...filledBlanks];
+    updated[idx] = selectedWord;
+    setFilledBlanks(updated);
+    setUsedWords(prev => new Set(prev).add(selectedWord));
+    setSelectedWord(null);
+  };
+
+  const allFilled = filledBlanks.every(b => b !== null);
+
+  const checkAnswers = (): boolean => {
+    return answers.every((answer: string, i: number) => {
+      const userAnswer = filledBlanks[i]?.toLowerCase().trim() ?? '';
+      const correct = answer.toLowerCase().trim();
+      const acceptedVariants = (variants[answer] ?? []).map((v: string) => v.toLowerCase().trim());
+      return userAnswer === correct || acceptedVariants.includes(userAnswer);
+    });
+  };
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+    const correct = checkAnswers();
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: filledBlanks.join(','), attempts: 1 });
+  };
+
+  const handleReset = () => {
+    setFilledBlanks(answers.map(() => null));
+    setUsedWords(new Set());
+    setSelectedWord(null);
+    setSubmitted(false);
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* Dialogue with blanks */}
+      <div className="space-y-3">
+        {dialogue.map((line: any, lineIdx: number) => {
+          const parts = line.text.split('_____');
+          const lineBlankCount = blankCounts[lineIdx];
+          const lineBlankIndices: number[] = [];
+          for (let i = 0; i < lineBlankCount; i++) {
+            lineBlankIndices.push(blankIndex++);
+          }
+          let localBlank = 0;
+
+          return (
+            <div key={lineIdx} className="flex items-start gap-2 p-3 bg-gray-50 rounded-xl">
+              <span className="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-1 rounded-lg shrink-0 mt-0.5">
+                {line.speaker}
+              </span>
+              <span className="text-gray-800 text-sm leading-relaxed">
+                {parts.map((part: string, partIdx: number) => {
+                  if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
+                  const bIdx = lineBlankIndices[localBlank++];
+                  const filled = filledBlanks[bIdx];
+                  const isCorrectBlank = submitted && filled?.toLowerCase().trim() === answers[bIdx]?.toLowerCase().trim();
+                  const isWrongBlank = submitted && !isCorrectBlank;
+
+                  return (
+                    <span key={partIdx}>
+                      {part}
+                      <button
+                        onClick={() => handleBlankTap(bIdx)}
+                        className={`
+                          inline-flex items-center justify-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
+                          ${filled
+                            ? isCorrectBlank ? 'bg-green-100 border-green-400 text-green-800'
+                            : isWrongBlank ? 'bg-red-100 border-red-400 text-red-800'
+                            : 'bg-amber-100 border-amber-400 text-amber-800'
+                            : selectedWord
+                            ? 'bg-blue-50 border-blue-300 border-dashed text-blue-400 animate-pulse'
+                            : 'bg-white border-gray-300 border-dashed text-gray-400'
+                          }
+                        `}
+                      >
+                        {filled ?? '___'}
+                      </button>
+                    </span>
+                  );
+                })}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Word bank */}
+      <div className="space-y-2">
+        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Word Bank</p>
+        <div className="flex flex-wrap gap-2">
+          {wordBank.map((word: string, i: number) => {
+            const isUsed = usedWords.has(word);
+            const isSelected = selectedWord === word;
+            return (
+              <button
+                key={i}
+                onClick={() => handleWordTap(word)}
+                disabled={isUsed || submitted}
+                className={`
+                  px-4 py-2 rounded-xl border-2 font-bold text-sm transition-all
+                  ${isUsed ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-not-allowed' :
+                    isSelected ? 'bg-amber-500 border-amber-600 text-white shadow-md scale-105' :
+                    'bg-white border-amber-300 text-amber-800 hover:bg-amber-50 hover:border-amber-400'}
+                `}
+              >
+                {word}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {submitted && (
+        <div className={`p-3 rounded-xl text-sm font-medium ${checkAnswers() ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {checkAnswers() ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
+        </div>
+      )}
+
+      <div className="flex gap-2">
+        {!submitted ? (
+          <button
+            onClick={handleSubmit}
+            disabled={!allFilled}
+            className={`flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
+              ${allFilled ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
+          >
+            <Check className="w-4 h-4" />
+            Check Answers
+          </button>
+        ) : (
+          <button
+            onClick={handleReset}
+            className="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-gray-200 text-gray-600 font-semibold hover:bg-gray-50"
+          >
+            <RotateCcw className="w-4 h-4" />
+            Try Again
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Exercise Card wrapper ─────────────────────────────────────────
+function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
+  return (
+    <div className={`rounded-2xl border-2 overflow-hidden ${isCompleted ? 'border-green-300' : 'border-amber-200'}`}>
+      <div className={`px-4 py-3 flex items-center gap-3 ${isCompleted ? 'bg-green-50' : 'bg-amber-50'}`}>
+        <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0
+          ${isCompleted ? 'bg-green-500 text-white' : 'bg-amber-500 text-white'}`}>
+          {isCompleted ? '✓' : index + 1}
+        </span>
+        <span className="text-sm font-semibold text-gray-700">{exercise.instruction}</span>
+      </div>
+      <div className="p-4 bg-white">
+        {exercise.type === 'multiple_choice' && (
+          <MultipleChoice exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+        {exercise.type === 'matching' && (
+          <Matching exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+        {exercise.type === 'fill_in_blanks' && (
+          <FillInBlanks exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+      </div>
+    </div>
+  );
 }
