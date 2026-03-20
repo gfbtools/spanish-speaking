@@ -44,7 +44,7 @@ const dialectLabel: Record<Dialect, string> = {
   'es-419': 'Latin American Spanish',
 };
 
-export function LessonBrowser({ lessons, currentLessonId, onSelectLesson, dialect, progress, completedLessons }: LessonBrowserProps) {
+export function LessonBrowser({ lessons, currentLessonId, onSelectLesson, dialect, progress: _progress, completedLessons }: LessonBrowserProps) {
   const completed = completedLessons.size;
   const pct = Math.round((completed / lessons.length) * 100);
 
