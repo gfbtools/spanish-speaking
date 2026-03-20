@@ -32,7 +32,7 @@ interface ExerciseCardProps {
 }
 
 // ── Multiple Choice ───────────────────────────────────────────────
-function MultipleChoice({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+function MultipleChoice({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
 
@@ -101,7 +101,7 @@ function MultipleChoice({ exercise, onComplete, isCompleted }: { exercise: Exerc
 }
 
 // ── Matching ──────────────────────────────────────────────────────
-function Matching({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+function Matching({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
   const pairs = exercise.pairs ?? [];
   const [selectedSpanish, setSelectedSpanish] = useState<string | null>(null);
   const [matched, setMatched] = useState<Record<string, string>>({}); // spanish -> english
@@ -242,7 +242,7 @@ function Matching({ exercise, onComplete, isCompleted }: { exercise: Exercise; o
 }
 
 // ── Fill in Blanks ────────────────────────────────────────────────
-function FillInBlanks({ exercise, onComplete, isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
   const answers = exercise.answers ?? [];
   const variants = exercise.acceptable_variants ?? {};
 
