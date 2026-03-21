@@ -245,24 +245,24 @@ function Matching({ exercise, onComplete, isCompleted: _isCompleted }: { exercis
 function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
   const answers = exercise.answers ?? [];
   const variants = exercise.acceptable_variants ?? {};
+  const dialogue = exercise.dialogue ?? [];
 
-  // Build word bank from answers + distractors (shuffle)
-  const [wordBank] = useState(() => {
-    const words = [...answers];
-    // Add a couple fake distractors if answers are short
-    return words.sort(() => Math.random() - 0.5);
-  });
+  // Pre-compute: for each line, store which blank indices it contains
+  // This is stable and doesn't change between renders
+  const lineBlankMap: number[][] = [];
+  let counter = 0;
+  for (const line of dialogue) {
+    const count = (line.text.match(/_____/g) || []).length;
+    const indices: number[] = [];
+    for (let i = 0; i < count; i++) indices.push(counter++);
+    lineBlankMap.push(indices);
+  }
 
+  const [wordBank] = useState(() => [...answers].sort(() => Math.random() - 0.5));
   const [filledBlanks, setFilledBlanks] = useState<(string | null)[]>(answers.map(() => null));
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [usedWords, setUsedWords] = useState<Set<string>>(new Set());
-
-  const dialogue = exercise.dialogue ?? [];
-
-  // Count blanks per line
-  const blankCounts = dialogue.map(line => (line.text.match(/_____/g) || []).length);
-  let blankIndex = 0;
 
   const handleWordTap = (word: string) => {
     if (submitted) return;
@@ -272,9 +272,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
 
   const handleBlankTap = (idx: number) => {
     if (submitted) return;
-
     if (filledBlanks[idx]) {
-      // Return word to bank
       const returned = filledBlanks[idx]!;
       const updated = [...filledBlanks];
       updated[idx] = null;
@@ -282,9 +280,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
       setUsedWords(prev => { const s = new Set(prev); s.delete(returned); return s; });
       return;
     }
-
     if (!selectedWord) return;
-
     const updated = [...filledBlanks];
     updated[idx] = selectedWord;
     setFilledBlanks(updated);
@@ -322,12 +318,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
       <div className="space-y-3">
         {dialogue.map((line: any, lineIdx: number) => {
           const parts = line.text.split('_____');
-          const lineBlankCount = blankCounts[lineIdx];
-          const lineBlankIndices: number[] = [];
-          for (let i = 0; i < lineBlankCount; i++) {
-            lineBlankIndices.push(blankIndex++);
-          }
-          let localBlank = 0;
+          const blankIndicesForLine = lineBlankMap[lineIdx];
 
           return (
             <div key={lineIdx} className="flex items-start gap-2 p-3 bg-gray-50 rounded-xl">
@@ -337,7 +328,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
               <span className="text-gray-800 text-sm leading-relaxed">
                 {parts.map((part: string, partIdx: number) => {
                   if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
-                  const bIdx = lineBlankIndices[localBlank++];
+                  const bIdx = blankIndicesForLine[partIdx];
                   const filled = filledBlanks[bIdx];
                   const isCorrectBlank = submitted && filled?.toLowerCase().trim() === answers[bIdx]?.toLowerCase().trim();
                   const isWrongBlank = submitted && !isCorrectBlank;
@@ -348,13 +339,13 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
                       <button
                         onClick={() => handleBlankTap(bIdx)}
                         className={`
-                          inline-flex items-center justify-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
+                          inline-flex items-center justify-center min-w-[60px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
                           ${filled
                             ? isCorrectBlank ? 'bg-green-100 border-green-400 text-green-800'
                             : isWrongBlank ? 'bg-red-100 border-red-400 text-red-800'
                             : 'bg-amber-100 border-amber-400 text-amber-800'
                             : selectedWord
-                            ? 'bg-blue-50 border-blue-300 border-dashed text-blue-400 animate-pulse'
+                            ? 'bg-blue-50 border-blue-300 border-dashed text-blue-400'
                             : 'bg-white border-gray-300 border-dashed text-gray-400'
                           }
                         `}
@@ -427,8 +418,15 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
   );
 }
 
+const exerciseTypeLabel: Record<string, string> = {
+  multiple_choice: 'Choose the correct answer',
+  matching: 'Match each item on the left with the correct item on the right',
+  fill_in_blanks: 'Fill in the blanks with the correct word',
+};
+
 // ── Exercise Card wrapper ─────────────────────────────────────────
 function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
+  const englishLabel = exerciseTypeLabel[exercise.type] ?? '';
   return (
     <div className={`rounded-2xl border-2 overflow-hidden ${isCompleted ? 'border-green-300' : 'border-amber-200'}`}>
       <div className={`px-4 py-3 flex items-center gap-3 ${isCompleted ? 'bg-green-50' : 'bg-amber-50'}`}>
@@ -436,7 +434,10 @@ function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCard
           ${isCompleted ? 'bg-green-500 text-white' : 'bg-amber-500 text-white'}`}>
           {isCompleted ? '✓' : index + 1}
         </span>
-        <span className="text-sm font-semibold text-gray-700">{exercise.instruction}</span>
+        <div>
+          <p className="text-sm font-bold text-gray-800">{englishLabel}</p>
+          <p className="text-xs text-gray-500 italic">{exercise.instruction}</p>
+        </div>
       </div>
       <div className="p-4 bg-white">
         {exercise.type === 'multiple_choice' && (
