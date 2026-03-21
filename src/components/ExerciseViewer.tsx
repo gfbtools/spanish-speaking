@@ -252,7 +252,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
   const lineBlankMap: number[][] = [];
   let counter = 0;
   for (const line of dialogue) {
-    const count = (line.text.match(/_____/g) || []).length;
+    const count = (line.text.match(/(?<![_])___(?![_])/g) || []).length;
     const indices: number[] = [];
     for (let i = 0; i < count; i++) indices.push(counter++);
     lineBlankMap.push(indices);
@@ -317,7 +317,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
       {/* Dialogue with blanks */}
       <div className="space-y-3">
         {dialogue.map((line: any, lineIdx: number) => {
-          const parts = line.text.split('_____');
+          const parts = line.text.split('___');
           const blankIndicesForLine = lineBlankMap[lineIdx];
 
           return (
