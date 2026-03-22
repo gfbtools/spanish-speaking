@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import type { Exercise, ExerciseResult } from '@/types';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Label } from '@/components/ui/label';
 import { CheckCircle, XCircle, RotateCcw, Check } from 'lucide-react';
 
 interface ExerciseViewerProps {
@@ -31,445 +35,28 @@ interface ExerciseCardProps {
   isCompleted: boolean;
 }
 
-// ── Multiple Choice ───────────────────────────────────────────────
-function MultipleChoice({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
-  const [selected, setSelected] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-
-  const correctOption = exercise.options?.find((o: any) => o.correct);
-  const isCorrect = selected === correctOption?.text;
-
-  const handleSubmit = () => {
-    if (!selected) return;
-    setSubmitted(true);
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect: selected === correctOption?.text, userAnswer: selected, attempts: 1 });
-  };
-
-  return (
-    <div className="space-y-3">
-      {exercise.question && (
-        <p className="font-semibold text-gray-800">{exercise.question}</p>
-      )}
-      <div className="space-y-2">
-        {exercise.options?.map((option: any, i: number) => {
-          const isSelected = selected === option.text;
-          const showCorrect = submitted && option.correct;
-          const showWrong = submitted && isSelected && !option.correct;
-          return (
-            <button
-              key={i}
-              onClick={() => !submitted && setSelected(option.text)}
-              disabled={submitted}
-              className={`
-                w-full text-left p-4 rounded-xl border-2 transition-all font-medium
-                ${showCorrect ? 'bg-green-100 border-green-400 text-green-800' :
-                  showWrong ? 'bg-red-100 border-red-400 text-red-800' :
-                  isSelected ? 'bg-amber-100 border-amber-400 text-amber-800' :
-                  submitted ? 'bg-gray-50 border-gray-200 text-gray-500' :
-                  'bg-white border-gray-200 hover:border-amber-300 hover:bg-amber-50 text-gray-800'}
-              `}
-            >
-              <div className="flex items-center justify-between">
-                <span>{option.text}</span>
-                {showCorrect && <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />}
-                {showWrong && <XCircle className="w-5 h-5 text-red-600 shrink-0" />}
-              </div>
-            </button>
-          );
-        })}
-      </div>
-
-      {submitted && exercise.feedback && (
-        <div className={`p-3 rounded-xl text-sm font-medium ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-          {isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}
-        </div>
-      )}
-
-      {!submitted && (
-        <button
-          onClick={handleSubmit}
-          disabled={!selected}
-          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
-            ${selected ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
-        >
-          <Check className="w-4 h-4" />
-          Check Answer
-        </button>
-      )}
-    </div>
-  );
-}
-
-// ── Matching ──────────────────────────────────────────────────────
-function Matching({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
-  const pairs = exercise.pairs ?? [];
-  const [selectedSpanish, setSelectedSpanish] = useState<string | null>(null);
-  const [matched, setMatched] = useState<Record<string, string>>({}); // spanish -> english
-  const [submitted, setSubmitted] = useState(false);
-  const [wrongPair, setWrongPair] = useState<string | null>(null);
-
-  // Shuffle English options once
-  const [englishOptions] = useState(() => [...pairs.map((p: any) => p.english)].sort(() => Math.random() - 0.5));
-
-  const matchedSpanish = Object.keys(matched);
-  const matchedEnglish = Object.values(matched);
-
-  const handleSpanishTap = (spanish: string) => {
-    if (submitted) return;
-    if (matchedSpanish.includes(spanish)) {
-      // Unselect — remove match
-      const updated = { ...matched };
-      delete updated[spanish];
-      setMatched(updated);
-      return;
-    }
-    setSelectedSpanish(prev => prev === spanish ? null : spanish);
-  };
-
-  const handleEnglishTap = (english: string) => {
-    if (submitted) return;
-    if (!selectedSpanish) return;
-
-    if (matchedEnglish.includes(english)) {
-      // Already matched to another — unlink it
-      const updated = { ...matched };
-      const existingSpanish = Object.keys(updated).find(k => updated[k] === english);
-      if (existingSpanish) delete updated[existingSpanish];
-      setMatched(updated);
-      return;
-    }
-
-    // Check if correct
-    const correctPair = pairs.find((p: any) => p.spanish === selectedSpanish);
-    if (correctPair?.english === english) {
-      setMatched(prev => ({ ...prev, [selectedSpanish]: english }));
-      setSelectedSpanish(null);
-    } else {
-      setWrongPair(selectedSpanish);
-      setTimeout(() => setWrongPair(null), 600);
-      setSelectedSpanish(null);
-    }
-  };
-
-  const allMatched = matchedSpanish.length === pairs.length;
-
-  const handleSubmit = () => {
-    setSubmitted(true);
-    const correct = pairs.every((p: any) => matched[p.spanish] === p.english);
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: JSON.stringify(matched), attempts: 1 });
-  };
-
-  return (
-    <div className="space-y-4">
-      <div className="grid grid-cols-2 gap-3">
-        {/* Spanish column */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
-            🇲🇽 Spanish
-          </div>
-          {pairs.map((pair: any) => {
-            const isSelected = selectedSpanish === pair.spanish;
-            const isMatched = matchedSpanish.includes(pair.spanish);
-            const isWrong = wrongPair === pair.spanish;
-            return (
-              <button
-                key={pair.spanish}
-                onClick={() => handleSpanishTap(pair.spanish)}
-                className={`
-                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
-                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
-                    isWrong ? 'bg-red-100 border-red-400 animate-pulse' :
-                    isSelected ? 'bg-amber-100 border-amber-400 text-amber-800 shadow-md' :
-                    'bg-white border-amber-200 hover:border-amber-400 text-gray-800'}
-                `}
-              >
-                {pair.spanish}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* English column */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-1 text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
-            🇬🇧 English
-          </div>
-          {englishOptions.map((english) => {
-            const isMatched = matchedEnglish.includes(english);
-            const matchedTo = Object.keys(matched).find(k => matched[k] === english);
-            return (
-              <button
-                key={english}
-                onClick={() => handleEnglishTap(english)}
-                className={`
-                  w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
-                  ${isMatched ? 'bg-green-100 border-green-400 text-green-800' :
-                    selectedSpanish ? 'bg-white border-blue-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800' :
-                    'bg-white border-gray-200 text-gray-500'}
-                `}
-              >
-                {english}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <p className="text-center text-sm text-gray-500">
-        {matchedSpanish.length} of {pairs.length} matched
-      </p>
-
-      {!submitted && (
-        <button
-          onClick={handleSubmit}
-          disabled={!allMatched}
-          className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
-            ${allMatched ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
-        >
-          <Check className="w-4 h-4" />
-          Submit Matches
-        </button>
-      )}
-
-      {submitted && (
-        <div className="p-3 rounded-xl text-sm font-medium bg-green-100 text-green-800 flex items-center gap-2">
-          <CheckCircle className="w-5 h-5" />
-          Matching complete!
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ── Fill in Blanks ────────────────────────────────────────────────
-function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
-  const answers = exercise.answers ?? [];
-  const variants = exercise.acceptable_variants ?? {};
-  const dialogue = exercise.dialogue ?? [];
-
-  // Pre-compute blank positions ONCE (stable across renders)
-  // lineBlankMap[lineIdx] = array of global blank indices for that line
-  const lineBlankMap: number[][] = [];
-  let globalBlankIdx = 0;
-  for (const line of dialogue) {
-    const parts = line.text.split('___');
-    const blankCount = parts.length - 1;
-    const indices: number[] = [];
-    for (let i = 0; i < blankCount; i++) indices.push(globalBlankIdx++);
-    lineBlankMap.push(indices);
-  }
-
-  // Word bank: one tile per answer slot, shuffled for display
-  // slotIdx is the STABLE identity — never use array position for lookup
-  const [wordBankSlots] = useState<{ word: string; slotIdx: number }[]>(() => {
-    const slots = answers.map((w: string, i: number) => ({ word: w, slotIdx: i }));
-    // Fisher-Yates shuffle
-    for (let i = slots.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [slots[i], slots[j]] = [slots[j], slots[i]];
-    }
-    return slots;
-  });
-
-  // filledBlanks[blankIdx] = wordBankSlot index that filled it, or null
-  const [filledBlanks, setFilledBlanks] = useState<(number | null)[]>(answers.map(() => null));
-  // selectedSlot = the wordBankSlot index currently selected
-  const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-
-  // Which slots are already placed in a blank
-  const usedSlots = new Set(filledBlanks.filter(b => b !== null) as number[]);
-
-  const handleWordTap = (slotIdx: number) => {
-    if (submitted) return;
-    if (usedSlots.has(slotIdx)) return;
-    setSelectedSlot(prev => prev === slotIdx ? null : slotIdx);
-  };
-
-  const handleBlankTap = (blankIdx: number) => {
-    if (submitted) return;
-
-    if (filledBlanks[blankIdx] !== null) {
-      // Return tile to bank
-      const updated = [...filledBlanks];
-      updated[blankIdx] = null;
-      setFilledBlanks(updated);
-      return;
-    }
-
-    if (selectedSlot === null) return;
-
-    const updated = [...filledBlanks];
-    updated[blankIdx] = selectedSlot;
-    setFilledBlanks(updated);
-    setSelectedSlot(null);
-  };
-
-  const allFilled = filledBlanks.every(b => b !== null);
-
-  const checkCorrect = (blankIdx: number): boolean => {
-    const slotIdx = filledBlanks[blankIdx];
-    if (slotIdx === null) return false;
-    const slot = wordBankSlots.find(s => s.slotIdx === slotIdx);
-    const userWord = slot?.word ?? '';
-    const correctAnswer = answers[blankIdx] ?? '';
-    const acceptedVariants = (variants[correctAnswer] ?? []).map((v: string) => v.toLowerCase().trim());
-    return userWord.toLowerCase().trim() === correctAnswer.toLowerCase().trim() ||
-      acceptedVariants.includes(userWord.toLowerCase().trim());
-  };
-  };
-
-  const allCorrect = answers.every((_: string, i: number) => checkCorrect(i));
-
-  const handleSubmit = () => {
-    setSubmitted(true);
-    onComplete({
-      exerciseId: exercise.exercise_id,
-      isCorrect: allCorrect,
-      userAnswer: filledBlanks.map(s => s !== null ? wordBankSlots.find(w => w.slotIdx === s)?.word ?? '' : '').join(','),
-      attempts: 1
-    });
-  };
-
-  const handleReset = () => {
-    setFilledBlanks(answers.map(() => null));
-    setSelectedSlot(null);
-    setSubmitted(false);
-  };
-
-  return (
-    <div className="space-y-4">
-      {/* Dialogue with blanks */}
-      <div className="space-y-3">
-        {dialogue.map((line: any, lineIdx: number) => {
-          const parts = line.text.split('___');
-          const blankIndicesForLine = lineBlankMap[lineIdx];
-
-          return (
-            <div key={lineIdx} className="flex items-start gap-2 p-3 bg-gray-50 rounded-xl">
-              <span className="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-1 rounded-lg shrink-0 mt-0.5">
-                {line.speaker}
-              </span>
-              <span className="text-gray-800 text-sm leading-relaxed flex flex-wrap items-center gap-y-1">
-                {parts.map((part: string, partIdx: number) => {
-                  if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
-                  const bIdx = blankIndicesForLine[partIdx];
-                  const filledSlot = filledBlanks[bIdx];
-                  const filledWord = filledSlot !== null ? wordBankSlots.find(s => s.slotIdx === filledSlot)?.word ?? null : null;
-                  const isCorrectBlank = submitted && checkCorrect(bIdx);
-                  const isWrongBlank = submitted && !checkCorrect(bIdx);
-
-                  return (
-                    <span key={partIdx} className="inline-flex items-center">
-                      <span>{part}</span>
-                      <button
-                        onClick={() => handleBlankTap(bIdx)}
-                        className={`
-                          inline-flex items-center justify-center min-w-[64px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
-                          ${filledWord
-                            ? isCorrectBlank
-                              ? 'bg-green-100 border-green-400 text-green-800'
-                              : isWrongBlank
-                              ? 'bg-red-100 border-red-400 text-red-800'
-                              : 'bg-amber-100 border-amber-400 text-amber-800'
-                            : selectedSlot !== null
-                            ? 'bg-blue-50 border-blue-400 border-dashed text-blue-400 animate-pulse'
-                            : 'bg-white border-gray-300 border-dashed text-gray-300'
-                          }
-                        `}
-                      >
-                        {filledWord ?? '___'}
-                      </button>
-                    </span>
-                  );
-                })}
-              </span>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Word bank — one tile per answer slot */}
-      <div className="space-y-2">
-        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Word Bank — tap a word, then tap a blank</p>
-        <div className="flex flex-wrap gap-2">
-          {wordBankSlots.map(({ word, slotIdx }) => {
-            const isUsed = usedSlots.has(slotIdx);
-            const isSelected = selectedSlot === slotIdx;
-            return (
-              <button
-                key={slotIdx}
-                onClick={() => handleWordTap(slotIdx)}
-                disabled={isUsed || submitted}
-                className={`
-                  px-4 py-2 rounded-xl border-2 font-bold text-sm transition-all
-                  ${isUsed
-                    ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-not-allowed opacity-40'
-                    : isSelected
-                    ? 'bg-amber-500 border-amber-600 text-white shadow-md scale-105'
-                    : 'bg-white border-amber-300 text-amber-800 hover:bg-amber-50 hover:border-amber-400'}
-                `}
-              >
-                {word}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {submitted && (
-        <div className={`p-3 rounded-xl text-sm font-medium ${allCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-          {allCorrect ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
-        </div>
-      )}
-
-      <div className="flex gap-2">
-        {!submitted ? (
-          <button
-            onClick={handleSubmit}
-            disabled={!allFilled}
-            className={`flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2
-              ${allFilled ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
-          >
-            <Check className="w-4 h-4" />
-            Check Answers
-          </button>
-        ) : (
-          <button
-            onClick={handleReset}
-            className="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-gray-200 text-gray-600 font-semibold hover:bg-gray-50"
-          >
-            <RotateCcw className="w-4 h-4" />
-            Try Again
-          </button>
-        )}
-      </div>
-    </div>
-  );
-}
-
 const exerciseTypeLabel: Record<string, string> = {
   multiple_choice: 'Choose the correct answer',
-  matching: 'Match each item on the left with the correct item on the right',
+  matching: 'Match each item with its correct pair',
   fill_in_blanks: 'Fill in the blanks with the correct word',
 };
 
-// ── Exercise Card wrapper ─────────────────────────────────────────
 function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCardProps) {
   const englishLabel = exerciseTypeLabel[exercise.type] ?? '';
   return (
-    <div className={`rounded-2xl border-2 overflow-hidden ${isCompleted ? 'border-green-300' : 'border-amber-200'}`}>
-      <div className={`px-4 py-3 flex items-center gap-3 ${isCompleted ? 'bg-green-50' : 'bg-amber-50'}`}>
-        <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0
-          ${isCompleted ? 'bg-green-500 text-white' : 'bg-amber-500 text-white'}`}>
-          {isCompleted ? '✓' : index + 1}
-        </span>
-        <div>
-          <p className="text-sm font-bold text-gray-800">{englishLabel}</p>
-          <p className="text-xs text-gray-500 italic">{exercise.instruction}</p>
-        </div>
-      </div>
-      <div className="p-4 bg-white">
+    <Card className={`${isCompleted ? 'border-green-300 bg-green-50/30' : ''}`}>
+      <CardHeader>
+        <CardTitle className="text-lg flex items-center gap-2">
+          <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold">
+            {index + 1}
+          </span>
+          <div>
+            <p className="text-sm font-bold text-gray-800">{englishLabel}</p>
+            <p className="text-xs text-gray-500 italic">{exercise.instruction}</p>
+          </div>
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
         {exercise.type === 'multiple_choice' && (
           <MultipleChoice exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
         )}
@@ -478,6 +65,224 @@ function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCard
         )}
         {exercise.type === 'fill_in_blanks' && (
           <FillInBlanks exercise={exercise} onComplete={onComplete} isCompleted={isCompleted} />
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+function MultipleChoice({ exercise, onComplete }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const [userAnswer, setUserAnswer] = useState<string>('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const correctOption = exercise.options?.find((o: any) => o.correct);
+  const isCorrect = userAnswer === correctOption?.text;
+
+  const handleSubmit = () => {
+    if (!userAnswer) return;
+    setIsSubmitted(true);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: userAnswer === correctOption?.text, userAnswer, attempts: 1 });
+  };
+
+  return (
+    <div className="space-y-3">
+      {exercise.question && <p className="font-semibold text-gray-800">{exercise.question}</p>}
+      <RadioGroup value={userAnswer} onValueChange={setUserAnswer} disabled={isSubmitted && isCorrect}>
+        <div className="space-y-2">
+          {exercise.options?.map((option: any, optIndex: number) => (
+            <div key={optIndex} className={`flex items-center space-x-2 p-3 rounded-lg border transition-colors ${
+              isSubmitted ? option.correct ? 'bg-green-100 border-green-300' : userAnswer === option.text ? 'bg-red-100 border-red-300' : 'bg-gray-50'
+              : 'hover:bg-amber-50 border-gray-200'}`}>
+              <RadioGroupItem value={option.text} id={`${exercise.exercise_id}-${optIndex}`} disabled={isSubmitted && isCorrect} />
+              <Label htmlFor={`${exercise.exercise_id}-${optIndex}`} className="flex-1 cursor-pointer">{option.text}</Label>
+              {isSubmitted && option.correct && <CheckCircle className="w-5 h-5 text-green-600" />}
+              {isSubmitted && userAnswer === option.text && !option.correct && <XCircle className="w-5 h-5 text-red-600" />}
+            </div>
+          ))}
+        </div>
+      </RadioGroup>
+      {isSubmitted && exercise.feedback && (
+        <div className={`p-3 rounded-lg ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          <p className="font-medium">{isCorrect ? exercise.feedback.correct : exercise.feedback.incorrect}</p>
+        </div>
+      )}
+      {!isSubmitted && (
+        <Button onClick={handleSubmit} disabled={!userAnswer} className="bg-amber-500 hover:bg-amber-600">
+          <Check className="w-4 h-4 mr-1" /> Check Answer
+        </Button>
+      )}
+    </div>
+  );
+}
+
+function Matching({ exercise, onComplete }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const pairs = exercise.pairs ?? [];
+  const [selectedSpanish, setSelectedSpanish] = useState<string | null>(null);
+  const [matched, setMatched] = useState<Record<string, string>>({});
+  const [submitted, setSubmitted] = useState(false);
+  const [wrongPair, setWrongPair] = useState<string | null>(null);
+  const [englishOptions] = useState(() => [...pairs.map((p: any) => p.english)].sort(() => Math.random() - 0.5));
+  const matchedSpanish = Object.keys(matched);
+  const matchedEnglish = Object.values(matched);
+  const allMatched = matchedSpanish.length === pairs.length;
+
+  const handleSpanishTap = (spanish: string) => {
+    if (submitted) return;
+    if (matchedSpanish.includes(spanish)) {
+      const updated = { ...matched }; delete updated[spanish]; setMatched(updated); return;
+    }
+    setSelectedSpanish(prev => prev === spanish ? null : spanish);
+  };
+
+  const handleEnglishTap = (english: string) => {
+    if (submitted || !selectedSpanish) return;
+    if (matchedEnglish.includes(english)) {
+      const updated = { ...matched };
+      const existing = Object.keys(updated).find(k => updated[k] === english);
+      if (existing) delete updated[existing]; setMatched(updated); return;
+    }
+    const correctPair = pairs.find((p: any) => p.spanish === selectedSpanish);
+    if (correctPair?.english === english) {
+      setMatched(prev => ({ ...prev, [selectedSpanish]: english })); setSelectedSpanish(null);
+    } else {
+      setWrongPair(selectedSpanish); setTimeout(() => setWrongPair(null), 600); setSelectedSpanish(null);
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 gap-3">
+        <div className="space-y-2">
+          <p className="text-xs font-bold text-gray-500 uppercase">🇲🇽 Spanish</p>
+          {pairs.map((pair: any) => (
+            <button key={pair.spanish} onClick={() => handleSpanishTap(pair.spanish)}
+              className={`w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                ${matchedSpanish.includes(pair.spanish) ? 'bg-green-100 border-green-400 text-green-800'
+                : wrongPair === pair.spanish ? 'bg-red-100 border-red-400'
+                : selectedSpanish === pair.spanish ? 'bg-amber-100 border-amber-400 text-amber-800 shadow-md'
+                : 'bg-white border-amber-200 hover:border-amber-400 text-gray-800'}`}>
+              {pair.spanish}
+            </button>
+          ))}
+        </div>
+        <div className="space-y-2">
+          <p className="text-xs font-bold text-gray-500 uppercase">🇬🇧 English</p>
+          {englishOptions.map((english: string) => (
+            <button key={english} onClick={() => handleEnglishTap(english)}
+              className={`w-full text-left p-3 rounded-xl border-2 text-sm font-medium transition-all
+                ${matchedEnglish.includes(english) ? 'bg-green-100 border-green-400 text-green-800'
+                : selectedSpanish ? 'bg-white border-blue-200 hover:border-blue-400 hover:bg-blue-50 text-gray-800'
+                : 'bg-white border-gray-200 text-gray-500'}`}>
+              {english}
+            </button>
+          ))}
+        </div>
+      </div>
+      <p className="text-center text-sm text-gray-500">{matchedSpanish.length} of {pairs.length} matched</p>
+      {!submitted && (
+        <Button onClick={() => { setSubmitted(true); const correct = pairs.every((p: any) => matched[p.spanish] === p.english); onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: JSON.stringify(matched), attempts: 1 }); }}
+          disabled={!allMatched} className="w-full bg-amber-500 hover:bg-amber-600">
+          <Check className="w-4 h-4 mr-1" /> Submit Matches
+        </Button>
+      )}
+      {submitted && (
+        <div className="p-3 rounded-xl text-sm font-medium bg-green-100 text-green-800 flex items-center gap-2">
+          <CheckCircle className="w-5 h-5" /> Matching complete!
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FillInBlanks({ exercise, onComplete }: { exercise: Exercise; onComplete: (r: ExerciseResult) => void; isCompleted: boolean }) {
+  const answers = exercise.answers ?? [];
+  const variants = exercise.acceptable_variants ?? {};
+  const dialogue = exercise.dialogue ?? [];
+  const [userInputs, setUserInputs] = useState<string[]>(answers.map(() => ''));
+  const [submitted, setSubmitted] = useState(false);
+
+  // Pre-compute for each line which global blank indices it owns
+  const lineBlanks: number[][] = [];
+  let globalIdx = 0;
+  for (const line of dialogue) {
+    const count = (line.text.match(/___/g) || []).length;
+    const indices: number[] = [];
+    for (let b = 0; b < count; b++) indices.push(globalIdx++);
+    lineBlanks.push(indices);
+  }
+
+  const checkCorrect = (idx: number): boolean => {
+    const userWord = (userInputs[idx] ?? '').toLowerCase().trim();
+    const correctAnswer = (answers[idx] ?? '').toLowerCase().trim();
+    const acceptedVariants = (variants[answers[idx]] ?? []).map((v: string) => v.toLowerCase().trim());
+    return userWord === correctAnswer || acceptedVariants.includes(userWord);
+  };
+
+  const allCorrect = answers.every((_: string, i: number) => checkCorrect(i));
+  const allFilled = userInputs.every(v => v.trim() !== '');
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+    onComplete({ exerciseId: exercise.exercise_id, isCorrect: allCorrect, userAnswer: userInputs.join(','), attempts: 1 });
+  };
+
+  return (
+    <div className="space-y-4">
+      <div className="space-y-3">
+        {dialogue.map((line: any, lineIdx: number) => {
+          const parts = line.text.split('___');
+          const blanksForLine = lineBlanks[lineIdx];
+          return (
+            <div key={lineIdx} className="flex items-start gap-2 p-3 bg-gray-50 rounded-xl">
+              <span className="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-1 rounded-lg shrink-0 mt-0.5">
+                {line.speaker}
+              </span>
+              <span className="text-gray-800 text-sm leading-loose flex flex-wrap items-center">
+                {parts.map((part: string, partIdx: number) => {
+                  if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
+                  const blankIdx = blanksForLine[partIdx];
+                  const isCorrectBlank = submitted && checkCorrect(blankIdx);
+                  const isWrongBlank = submitted && !checkCorrect(blankIdx);
+                  return (
+                    <span key={partIdx} className="inline-flex items-center">
+                      <span>{part}</span>
+                      <input
+                        type="text"
+                        value={userInputs[blankIdx] ?? ''}
+                        onChange={e => {
+                          if (submitted) return;
+                          const updated = [...userInputs];
+                          updated[blankIdx] = e.target.value;
+                          setUserInputs(updated);
+                        }}
+                        disabled={submitted}
+                        placeholder="..."
+                        className={`mx-1 px-2 py-0.5 rounded-lg border-2 text-sm font-bold w-24 text-center transition-all outline-none
+                          ${isCorrectBlank ? 'bg-green-100 border-green-400 text-green-800'
+                          : isWrongBlank ? 'bg-red-100 border-red-400 text-red-800'
+                          : 'bg-white border-amber-300 text-gray-800 focus:border-amber-500'}`}
+                      />
+                    </span>
+                  );
+                })}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      {submitted && (
+        <div className={`p-3 rounded-xl text-sm font-medium ${allCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {allCorrect ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
+        </div>
+      )}
+      <div className="flex gap-2">
+        {!submitted ? (
+          <Button onClick={handleSubmit} disabled={!allFilled} className={`flex-1 ${allFilled ? 'bg-amber-500 hover:bg-amber-600' : 'bg-gray-200 text-gray-400'}`}>
+            <Check className="w-4 h-4 mr-1" /> Check Answers
+          </Button>
+        ) : (
+          <Button onClick={() => { setUserInputs(answers.map(() => '')); setSubmitted(false); }} variant="outline">
+            <RotateCcw className="w-4 h-4 mr-1" /> Try Again
+          </Button>
         )}
       </div>
     </div>
