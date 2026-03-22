@@ -99,6 +99,9 @@ function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCard
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
+        {exercise.question && (
+          <p className="font-semibold text-gray-800 text-base">{exercise.question}</p>
+        )}
         {exercise.options && (
           <RadioGroup value={userAnswer} onValueChange={setUserAnswer} disabled={isSubmitted && isCorrect === true}>
             <div className="space-y-2">
