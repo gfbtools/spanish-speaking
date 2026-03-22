@@ -259,11 +259,17 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
     lineBlankMap.push(indices);
   }
 
-  // Word bank: one tile per answer slot (so duplicates get multiple tiles)
-  // Each tile has a unique slot index so duplicates are independent
-  const [wordBankSlots] = useState<{ word: string; slotIdx: number }[]>(() =>
-    answers.map((w, i) => ({ word: w, slotIdx: i })).sort(() => Math.random() - 0.5)
-  );
+  // Word bank: one tile per answer slot, shuffled for display
+  // slotIdx is the STABLE identity — never use array position for lookup
+  const [wordBankSlots] = useState<{ word: string; slotIdx: number }[]>(() => {
+    const slots = answers.map((w: string, i: number) => ({ word: w, slotIdx: i }));
+    // Fisher-Yates shuffle
+    for (let i = slots.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [slots[i], slots[j]] = [slots[j], slots[i]];
+    }
+    return slots;
+  });
 
   // filledBlanks[blankIdx] = wordBankSlot index that filled it, or null
   const [filledBlanks, setFilledBlanks] = useState<(number | null)[]>(answers.map(() => null));
