@@ -247,68 +247,85 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
   const variants = exercise.acceptable_variants ?? {};
   const dialogue = exercise.dialogue ?? [];
 
-  // Pre-compute: for each line, store which blank indices it contains
-  // This is stable and doesn't change between renders
+  // Pre-compute blank positions ONCE (stable across renders)
+  // lineBlankMap[lineIdx] = array of global blank indices for that line
   const lineBlankMap: number[][] = [];
-  let counter = 0;
+  let globalBlankIdx = 0;
   for (const line of dialogue) {
-    const count = (line.text.match(/(?<![_])___(?![_])/g) || []).length;
+    const parts = line.text.split('___');
+    const blankCount = parts.length - 1;
     const indices: number[] = [];
-    for (let i = 0; i < count; i++) indices.push(counter++);
+    for (let i = 0; i < blankCount; i++) indices.push(globalBlankIdx++);
     lineBlankMap.push(indices);
   }
 
-  const [wordBank] = useState(() => [...answers].sort(() => Math.random() - 0.5));
-  const [filledBlanks, setFilledBlanks] = useState<(string | null)[]>(answers.map(() => null));
-  const [selectedWord, setSelectedWord] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [usedWords, setUsedWords] = useState<Set<string>>(new Set());
+  // Word bank: one tile per answer slot (so duplicates get multiple tiles)
+  // Each tile has a unique slot index so duplicates are independent
+  const [wordBankSlots] = useState<{ word: string; slotIdx: number }[]>(() =>
+    answers.map((w, i) => ({ word: w, slotIdx: i })).sort(() => Math.random() - 0.5)
+  );
 
-  const handleWordTap = (word: string) => {
+  // filledBlanks[blankIdx] = wordBankSlot index that filled it, or null
+  const [filledBlanks, setFilledBlanks] = useState<(number | null)[]>(answers.map(() => null));
+  // selectedSlot = the wordBankSlot index currently selected
+  const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  // Which slots are already placed in a blank
+  const usedSlots = new Set(filledBlanks.filter(b => b !== null) as number[]);
+
+  const handleWordTap = (slotIdx: number) => {
     if (submitted) return;
-    if (usedWords.has(word)) return;
-    setSelectedWord(prev => prev === word ? null : word);
+    if (usedSlots.has(slotIdx)) return;
+    setSelectedSlot(prev => prev === slotIdx ? null : slotIdx);
   };
 
-  const handleBlankTap = (idx: number) => {
+  const handleBlankTap = (blankIdx: number) => {
     if (submitted) return;
-    if (filledBlanks[idx]) {
-      const returned = filledBlanks[idx]!;
+
+    if (filledBlanks[blankIdx] !== null) {
+      // Return tile to bank
       const updated = [...filledBlanks];
-      updated[idx] = null;
+      updated[blankIdx] = null;
       setFilledBlanks(updated);
-      setUsedWords(prev => { const s = new Set(prev); s.delete(returned); return s; });
       return;
     }
-    if (!selectedWord) return;
+
+    if (selectedSlot === null) return;
+
     const updated = [...filledBlanks];
-    updated[idx] = selectedWord;
+    updated[blankIdx] = selectedSlot;
     setFilledBlanks(updated);
-    setUsedWords(prev => new Set(prev).add(selectedWord));
-    setSelectedWord(null);
+    setSelectedSlot(null);
   };
 
   const allFilled = filledBlanks.every(b => b !== null);
 
-  const checkAnswers = (): boolean => {
-    return answers.every((answer: string, i: number) => {
-      const userAnswer = filledBlanks[i]?.toLowerCase().trim() ?? '';
-      const correct = answer.toLowerCase().trim();
-      const acceptedVariants = (variants[answer] ?? []).map((v: string) => v.toLowerCase().trim());
-      return userAnswer === correct || acceptedVariants.includes(userAnswer);
-    });
+  const checkCorrect = (blankIdx: number): boolean => {
+    const slotIdx = filledBlanks[blankIdx];
+    if (slotIdx === null) return false;
+    const userWord = wordBankSlots[slotIdx]?.word ?? '';
+    const correctAnswer = answers[blankIdx] ?? '';
+    const acceptedVariants = (variants[correctAnswer] ?? []).map((v: string) => v.toLowerCase().trim());
+    return userWord.toLowerCase().trim() === correctAnswer.toLowerCase().trim() ||
+      acceptedVariants.includes(userWord.toLowerCase().trim());
   };
+
+  const allCorrect = answers.every((_: string, i: number) => checkCorrect(i));
 
   const handleSubmit = () => {
     setSubmitted(true);
-    const correct = checkAnswers();
-    onComplete({ exerciseId: exercise.exercise_id, isCorrect: correct, userAnswer: filledBlanks.join(','), attempts: 1 });
+    onComplete({
+      exerciseId: exercise.exercise_id,
+      isCorrect: allCorrect,
+      userAnswer: filledBlanks.map(s => s !== null ? wordBankSlots[s]?.word : '').join(','),
+      attempts: 1
+    });
   };
 
   const handleReset = () => {
     setFilledBlanks(answers.map(() => null));
-    setUsedWords(new Set());
-    setSelectedWord(null);
+    setSelectedSlot(null);
     setSubmitted(false);
   };
 
@@ -325,32 +342,35 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
               <span className="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-1 rounded-lg shrink-0 mt-0.5">
                 {line.speaker}
               </span>
-              <span className="text-gray-800 text-sm leading-relaxed">
+              <span className="text-gray-800 text-sm leading-relaxed flex flex-wrap items-center gap-y-1">
                 {parts.map((part: string, partIdx: number) => {
                   if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
                   const bIdx = blankIndicesForLine[partIdx];
-                  const filled = filledBlanks[bIdx];
-                  const isCorrectBlank = submitted && filled?.toLowerCase().trim() === answers[bIdx]?.toLowerCase().trim();
-                  const isWrongBlank = submitted && !isCorrectBlank;
+                  const filledSlot = filledBlanks[bIdx];
+                  const filledWord = filledSlot !== null ? wordBankSlots[filledSlot]?.word : null;
+                  const isCorrectBlank = submitted && checkCorrect(bIdx);
+                  const isWrongBlank = submitted && !checkCorrect(bIdx);
 
                   return (
-                    <span key={partIdx}>
-                      {part}
+                    <span key={partIdx} className="inline-flex items-center">
+                      <span>{part}</span>
                       <button
                         onClick={() => handleBlankTap(bIdx)}
                         className={`
-                          inline-flex items-center justify-center min-w-[60px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
-                          ${filled
-                            ? isCorrectBlank ? 'bg-green-100 border-green-400 text-green-800'
-                            : isWrongBlank ? 'bg-red-100 border-red-400 text-red-800'
-                            : 'bg-amber-100 border-amber-400 text-amber-800'
-                            : selectedWord
-                            ? 'bg-blue-50 border-blue-300 border-dashed text-blue-400'
-                            : 'bg-white border-gray-300 border-dashed text-gray-400'
+                          inline-flex items-center justify-center min-w-[64px] mx-1 px-3 py-1 rounded-lg border-2 text-sm font-bold transition-all
+                          ${filledWord
+                            ? isCorrectBlank
+                              ? 'bg-green-100 border-green-400 text-green-800'
+                              : isWrongBlank
+                              ? 'bg-red-100 border-red-400 text-red-800'
+                              : 'bg-amber-100 border-amber-400 text-amber-800'
+                            : selectedSlot !== null
+                            ? 'bg-blue-50 border-blue-400 border-dashed text-blue-400 animate-pulse'
+                            : 'bg-white border-gray-300 border-dashed text-gray-300'
                           }
                         `}
                       >
-                        {filled ?? '___'}
+                        {filledWord ?? '___'}
                       </button>
                     </span>
                   );
@@ -361,23 +381,25 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
         })}
       </div>
 
-      {/* Word bank */}
+      {/* Word bank — one tile per answer slot */}
       <div className="space-y-2">
-        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Word Bank</p>
+        <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Word Bank — tap a word, then tap a blank</p>
         <div className="flex flex-wrap gap-2">
-          {wordBank.map((word: string, i: number) => {
-            const isUsed = usedWords.has(word);
-            const isSelected = selectedWord === word;
+          {wordBankSlots.map(({ word, slotIdx }) => {
+            const isUsed = usedSlots.has(slotIdx);
+            const isSelected = selectedSlot === slotIdx;
             return (
               <button
-                key={i}
-                onClick={() => handleWordTap(word)}
+                key={slotIdx}
+                onClick={() => handleWordTap(slotIdx)}
                 disabled={isUsed || submitted}
                 className={`
                   px-4 py-2 rounded-xl border-2 font-bold text-sm transition-all
-                  ${isUsed ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-not-allowed' :
-                    isSelected ? 'bg-amber-500 border-amber-600 text-white shadow-md scale-105' :
-                    'bg-white border-amber-300 text-amber-800 hover:bg-amber-50 hover:border-amber-400'}
+                  ${isUsed
+                    ? 'bg-gray-100 border-gray-200 text-gray-300 cursor-not-allowed opacity-40'
+                    : isSelected
+                    ? 'bg-amber-500 border-amber-600 text-white shadow-md scale-105'
+                    : 'bg-white border-amber-300 text-amber-800 hover:bg-amber-50 hover:border-amber-400'}
                 `}
               >
                 {word}
@@ -388,8 +410,8 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
       </div>
 
       {submitted && (
-        <div className={`p-3 rounded-xl text-sm font-medium ${checkAnswers() ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-          {checkAnswers() ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
+        <div className={`p-3 rounded-xl text-sm font-medium ${allCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+          {allCorrect ? '¡Correcto! Well done.' : 'Some answers were incorrect. Check the highlighted blanks.'}
         </div>
       )}
 
