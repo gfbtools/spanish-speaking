@@ -304,11 +304,13 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
   const checkCorrect = (blankIdx: number): boolean => {
     const slotIdx = filledBlanks[blankIdx];
     if (slotIdx === null) return false;
-    const userWord = wordBankSlots[slotIdx]?.word ?? '';
+    const slot = wordBankSlots.find(s => s.slotIdx === slotIdx);
+    const userWord = slot?.word ?? '';
     const correctAnswer = answers[blankIdx] ?? '';
     const acceptedVariants = (variants[correctAnswer] ?? []).map((v: string) => v.toLowerCase().trim());
     return userWord.toLowerCase().trim() === correctAnswer.toLowerCase().trim() ||
       acceptedVariants.includes(userWord.toLowerCase().trim());
+  };
   };
 
   const allCorrect = answers.every((_: string, i: number) => checkCorrect(i));
@@ -318,7 +320,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
     onComplete({
       exerciseId: exercise.exercise_id,
       isCorrect: allCorrect,
-      userAnswer: filledBlanks.map(s => s !== null ? wordBankSlots[s]?.word : '').join(','),
+      userAnswer: filledBlanks.map(s => s !== null ? wordBankSlots.find(w => w.slotIdx === s)?.word ?? '' : '').join(','),
       attempts: 1
     });
   };
@@ -347,7 +349,7 @@ function FillInBlanks({ exercise, onComplete, isCompleted: _isCompleted }: { exe
                   if (partIdx === parts.length - 1) return <span key={partIdx}>{part}</span>;
                   const bIdx = blankIndicesForLine[partIdx];
                   const filledSlot = filledBlanks[bIdx];
-                  const filledWord = filledSlot !== null ? wordBankSlots[filledSlot]?.word : null;
+                  const filledWord = filledSlot !== null ? wordBankSlots.find(s => s.slotIdx === filledSlot)?.word ?? null : null;
                   const isCorrectBlank = submitted && checkCorrect(bIdx);
                   const isWrongBlank = submitted && !checkCorrect(bIdx);
 
