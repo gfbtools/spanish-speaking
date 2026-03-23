@@ -77,7 +77,7 @@ function ExerciseCard({ exercise, index, onComplete, isCompleted }: ExerciseCard
           <CardTitle className="text-lg flex items-center gap-2">
             <span className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 text-sm font-bold">{index + 1}</span>
             <div>
-              <p className="text-gray-800 font-bold text-sm">Match each Spanish phrase with its English meaning</p>
+              <p className="text-gray-800 font-bold text-sm">Match each item on the left with the correct item on the right</p>
               <p className="text-gray-500 text-xs font-normal italic">{exercise.instruction}</p>
             </div>
           </CardTitle>
@@ -370,7 +370,7 @@ function Matching({ exercise, onComplete, isCompleted: _ic }: {
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-2">
-          <p className="text-xs font-bold text-gray-500 uppercase">🇲🇽 Spanish</p>
+          <p className="text-xs font-bold text-gray-500 uppercase">Column A</p>
           {pairs.map(pair => {
             const isSelected = selectedSpanish === pair.spanish;
             const isMatched = matchedSpanish.includes(pair.spanish);
@@ -388,7 +388,7 @@ function Matching({ exercise, onComplete, isCompleted: _ic }: {
           })}
         </div>
         <div className="space-y-2">
-          <p className="text-xs font-bold text-gray-500 uppercase">🇬🇧 English</p>
+          <p className="text-xs font-bold text-gray-500 uppercase">Column B</p>
           {englishOptions.map(english => {
             const isMatched = matchedEnglish.includes(english);
             return (
