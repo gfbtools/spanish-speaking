@@ -200,7 +200,7 @@
         }
       ],
       "context": "Asking about parents' names",
-      "translation": "How big is your family?"
+      "translation": "What are your parents' names?"
     },
     {
       "speaker": "María",
@@ -210,7 +210,7 @@
       "audio_asset_id": "a1-fam-mx-005",
       "alternate_phrasing": [],
       "context": "Giving parents' names",
-      "translation": "There are five of us: my parents, my grandmother, my sister and me."
+      "translation": "My mother's name is Carmen and my father's name is José."
     },
     {
       "speaker": "Juan",
@@ -220,7 +220,7 @@
       "audio_asset_id": "a1-fam-mx-006",
       "alternate_phrasing": [],
       "context": "Asking about grandparents",
-      "translation": "Do you live with all of them?"
+      "translation": "Do your grandparents live with you?"
     },
     {
       "speaker": "María",
@@ -230,7 +230,7 @@
       "audio_asset_id": "a1-fam-mx-007",
       "alternate_phrasing": [],
       "context": "Explaining grandparents' living situation",
-      "translation": "Yes, we all live together. It's a bit chaotic but we love it!"
+      "translation": "No, they live in another state. I visit them on weekends."
     }
   ],
   "srs_flashcards": [
