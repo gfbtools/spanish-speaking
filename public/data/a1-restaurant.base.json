@@ -126,7 +126,7 @@
       "audio_asset_id": "a1-rest-mx-001",
       "alternate_phrasing": [],
       "context": "Waiter greeting customers",
-      "translation": "Good evening! Table for two?"
+      "translation": "Waiter: Good afternoon. What would you like to order?"
     },
     {
       "speaker": "Cliente",
@@ -136,7 +136,7 @@
       "audio_asset_id": "a1-rest-mx-002",
       "alternate_phrasing": [],
       "context": "Ordering food",
-      "translation": "Yes please. Do you have a table near the window?"
+      "translation": "Customer: For me, a chicken soup, please."
     },
     {
       "speaker": "Camarero",
@@ -146,7 +146,7 @@
       "audio_asset_id": "a1-rest-mx-003",
       "alternate_phrasing": [],
       "context": "Asking about drinks",
-      "translation": "Of course, follow me please."
+      "translation": "Waiter: And to drink?"
     },
     {
       "speaker": "Cliente",
@@ -156,7 +156,7 @@
       "audio_asset_id": "a1-rest-mx-004",
       "alternate_phrasing": [],
       "context": "Ordering a drink",
-      "translation": "Here is the menu. What would you like to drink?"
+      "translation": "Customer: I would like a water, please."
     },
     {
       "speaker": "Camarero",
@@ -166,7 +166,7 @@
       "audio_asset_id": "a1-rest-mx-005",
       "alternate_phrasing": [],
       "context": "Asking if customer wants anything else",
-      "translation": "Water for me please. And what do you recommend?"
+      "translation": "Waiter: Anything else?"
     },
     {
       "speaker": "Cliente",
@@ -176,7 +176,7 @@
       "audio_asset_id": "a1-rest-mx-006",
       "alternate_phrasing": [],
       "context": "Asking for the bill",
-      "translation": "The enchiladas are excellent today."
+      "translation": "Customer: No, that's all. The bill, please."
     },
     {
       "speaker": "Camarero",
@@ -186,7 +186,7 @@
       "audio_asset_id": "a1-rest-mx-007",
       "alternate_phrasing": [],
       "context": "Bringing the bill",
-      "translation": "Perfect. I'll have the enchiladas and a salad please."
+      "translation": "Waiter: Right away. Here you go."
     }
   ],
   "srs_flashcards": [
